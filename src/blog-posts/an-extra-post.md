@@ -1,0 +1,19 @@
+---
+title: An Extra Post Yes
+date: January 13, 2019
+author: Author
+featured: Yes
+featured_image: /images/feat-img.png
+excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+  condimentum scelerisque tellus rutrum convallis. Nullam varius sapien id
+  vulputate lacinia. Vivamus ante lectus, gravida in tempus sed, laoreet ut
+  lectus. Ut maximus lorem placerat arcu gravida, ut euismod purus elementum. "
+tags:
+  - vision-dental
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus interdum pellentesque. Integer eu vehicula elit. Sed cursus magna in dui suscipit rhoncus.
+
+Curabitur sed elit viverra, fermentum massa non, hendrerit ex. Vivamus eget mattis tortor, eu elementum sapien. Praesent elementum feugiat nisi venenatis vestibulum. Nulla pretium ipsum orci, ut feugiat arcu facilisis sit amet.
+
+Morbi bibendum est non nibh aliquam, non dictum massa elementum. Nullam vitae auctor erat. Mauris at arcu ut purus sodales porttitor ut sit amet ex. Donec viverra quam nisl, a congue arcu fermentum rhoncus.

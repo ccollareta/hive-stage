@@ -1,0 +1,328 @@
+backend:
+  name: git-gateway
+local_backend: true
+
+media_folder: static/images
+public_folder: /images
+publish_mode: editorial_workflow
+logo_url: https://federalist.18f.gov/assets/images/federalist-logo.png
+
+collections:
+  - name: "site_info"
+    label: "Site Info"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "hero"
+        label: "Hero"
+        file: "meta/hero.yml"
+        description: "Hero"
+        fields:
+          - name: hero_content
+            label: Hero
+            label_singular: "Hero"
+            widget: object
+            fields:
+              - {label: "Hero Image", name: "hero_image", widget: "image"}
+              - { label: "Hero Text", name: "hero_text", widget: "text"}
+              - label: "Button One"
+                name: "button_one"
+                widget: "object"
+                hint: "The first button"
+                fields:
+                  - label: "Text"
+                    name: "button_name"
+                    widget: "string"
+                    hint: "Button Text"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+                    hint: "Button Link"
+              - label: "Button Two"
+                name: "button_two"
+                widget: "object"
+                hint: "The second button"
+                fields:
+                  - label: "Text"
+                    name: "button_name"
+                    widget: "string"
+                    hint: "Button Text"
+                  - label: "Link"
+                    name: "link"
+                    widget: "string"
+                    hint: "Button Link"
+              
+      - name: "tags"
+        label: "Categories"
+        file: "meta/tags.yml"
+        description: "List of tags"
+        fields:
+          - name: tags
+            label: Categories
+            label_singular: "Category"
+            widget: list
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                hint: "The part of a URL identifies the category"
+              - label: "Display Name"
+                name: "name"
+                widget: "string"
+                hint: "Category name for displaying on the site"
+      - name: "social"
+        label: "Social Media"
+        file: "meta/social.yml"
+        description: "Social Media Links"
+        fields:
+          - { label: 'Facebook', name: 'facebook', widget: 'string', required: false }
+          - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+          - { label: 'YouTube', name: 'youtube', widget: 'string', required: false }
+          - { label: 'Instagram', name: 'instagram', widget: 'string', required: false }    
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Home"
+      name: "home"
+      slug: '/'
+      editor:
+        preview: false
+      file: "src/pages/content/home.md"
+      fields:
+        - { label: "Slug", name: slug, widget: hidden, default: "/"}
+        - { label: "Body", name: "body", widget: markdown}
+        - label: 'Slider Block'
+          name: "slider"
+          widget: list
+          fields:
+            - { label: "Name", name: "name", widget: "string"}
+            - { label: "Description", name: "description", widget: "text"}
+            - { label: "Thumbnail", name: "thumbnail", widget: "image"}
+    - label: "About"
+      name: "about"
+      slug: '/'
+      editor:
+        preview: false
+      file: "src/pages/content/about.md"
+      fields:
+        - { label: "URL", name: url, widget: hidden, default: "/about"}
+        - label: "Top Section"
+          name: "top_section"
+          widget: object
+          fields:
+            - {label: "Title", name: "title", widget: string}
+            - {label: "Text Block", name: "text_block", widget: text}
+            - {label: "Hero Image", name: "hero_image", widget: image}
+            - label: "Button"
+              name: "button" 
+              widget: object
+              fields:
+                - {label: "Button Text", name: "button_text", widget: string}
+                - {label: "Button Link", name: "button_link", widget: string}
+        - label: "Blocks"
+          name: "blocks"
+          widget: list
+          fields:
+              - label: "Block"
+                name: "block"
+                widget: object
+                fields:
+                  - { label: "Icon", name: "icon", widget: image}
+                  - { label: "Text", name: "text", widget: text}
+
+        - { label: "Body", name: "body", widget: markdown}
+    - label: "Overview"
+      name: "overview"
+      slug: '/'
+      editor:
+        preview: false
+      file: "src/pages/content/overview.md"
+      fields:
+        - { label: "URL", name: url, widget: hidden, default: "/overview"}
+        - label: "Top Section"
+          name: "top_section"
+          widget: object
+          fields:
+            - {label: "Title", name: "title", widget: string}
+            - {label: "Hero Image", name: "hero_image", widget: image}
+        - label: "Blocks"
+          name: "blocks"
+          widget: list
+          limit: 3
+          fields:
+              - label: "Block"
+                name: "block"
+                widget: object
+                fields:
+                  - { label: "Icon", name: "icon", widget: image}
+                  - { label: "Text", name: "text", widget: text}
+    - label: "Contact"
+      name: "contact"
+      editor:
+        preview: false
+      file: "src/pages/content/contact.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { label: "Body", name: "body", widget: "markdown"}
+        - { label: "Address", name: "address", widget: "text"}
+        - { label: "E-Mail", name: "email", widget: "string"}
+        - { label: "Phone", name: "phone", widget: "string"}
+    - label: "Privacy Policy"
+      name: "privacy"
+      file: "src/pages/content/privacy.md"
+      fields:
+        - { label: "Date Updated", name: "date", widget: "datetime"}
+        - { label: "Body", name: "body", widget: markdown}
+  - name: blog
+    label: News
+    label_singular: News Article
+    folder: src/blog-posts
+    create: true
+    preview_path: 'blog/{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'MMMM D, YYYY',
+          dateFormat: 'MMMM D, YYYY',
+          timeFormat: false
+        }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - { label: "Featured Image", name: "featured_image", widget: image}
+      - { label: "Excerpt", name: "excerpt", widget: text}
+      - { label: "Pre Text", name: "pre_text", widget: text}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: Categories
+        label_singular: "Category"
+        name: "tags"
+        widget: list
+        summary: "{{fields.tag}}"
+        field:
+          label: Categories
+          name: tag
+          widget: relation
+          collection: "site_info"
+          file: "tags"
+          searchFields:
+            - "tags.*.name"
+          displayFields:
+            - "tags.*.name"
+          valueField: "tags.*.slug"
+  - name: resources
+    label: Resources
+    label_singular: Resource
+    folder: src/resources
+    create: true
+    preview_path: '/resource/{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'File', name: 'file', widget: 'file' }
+      - { label: 'File Size', name: 'file_size', widget: 'string' }
+      - { label: 'Thumbnail', name: 'resource_thumb', widget: 'image' }
+  - name: events
+    label: Events
+    label_singular: Event
+    folder: src/events
+    create: true
+    preview_path: '/event/{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: "author", widget: string}
+      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - { label: 'Featured Image', name: 'event_image', widget: 'image' }
+      - {
+        label: 'Event Date',
+        name: 'event_date',
+        widget: 'datetime',
+        format: 'MMMM D, YYYY',
+        dateFormat: 'MMMM D, YYYY',
+        timeFormat: true
+      }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: "Pre Text", name: "pre_text", widget: text}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: exchange-opps
+    label: Opportunities
+    label_singular: Opportunity
+    folder: src/exchange-opps
+    create: true
+    preview_path: '/opportunity/{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: "author", widget: string}
+      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - {
+        label: 'Date',
+        name: 'date',
+        widget: 'datetime',
+        format: 'MMMM D, YYYY',
+        dateFormat: 'MMMM D, YYYY',
+        timeFormat: false
+      }
+      - { label: 'Featured Image', name: 'event_image', widget: 'image' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: "Pre Text", name: "pre_text", widget: text}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: exchanges
+    label: Exchanges
+    label_singular: Exchange
+    folder: src/exchanges
+    create: true
+    preview_path: '/exchange/{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: "author", widget: string}
+      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - {
+        label: 'Date',
+        name: 'date',
+        widget: 'datetime',
+        format: 'MMMM D, YYYY',
+        dateFormat: 'MMMM D, YYYY',
+        timeFormat: false
+      }
+      - { label: 'Featured Image', name: 'event_image', widget: 'image' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: "Pre Text", name: "pre_text", widget: text}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: ideas
+    label: Ideas
+    label_singular: Idea
+    folder: src/ideas
+    create: true
+    preview_path: '/idea/{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: "author", widget: string}
+      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - {
+        label: 'Date',
+        name: 'date',
+        widget: 'datetime',
+        format: 'MMMM D, YYYY',
+        dateFormat: 'MMMM D, YYYY',
+        timeFormat: false
+      }
+      - { label: 'Featured Image', name: 'event_image', widget: 'image' }
+      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: "Pre Text", name: "pre_text", widget: text}
+      - { label: 'Body', name: 'body', widget: 'markdown' }

@@ -1,0 +1,13 @@
+featured_resource:
+  - resource:
+      title: Test Resource
+      description: This is a test description
+      file: /images/federalist-icon.png
+      file_size: 2 MB
+      resource_thumb: /images/img_20200716_171935_557.jpg
+  - resource:
+      title: Test Two
+      description: Two
+      file: /images/img_20200716_171935_557.jpg
+      file_size: 3MB
+      resource_thumb: /images/federalist-icon.png

@@ -1,0 +1,48 @@
+{
+  "name": "federalist-uswds-gatsby",
+  "description": "A Federalist template using USWDS 2.0 + Gatsby",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "rimraf .cache public _site",
+    "build": "gatsby build",
+    "reset": "npx rimraf .git",
+    "develop": "gatsby develop -p 3000",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "federalist": "npm run federalist:build && npm run federalist:copy",
+    "federalist:build": "gatsby build --prefix-paths",
+    "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r public/* _site/"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "gatsby": "^2.24.53",
+    "gatsby-awesome-pagination": "^0.3.6",
+    "gatsby-plugin-manifest": "^2.4.27",
+    "gatsby-plugin-netlify-cms": "^4.3.12",
+    "gatsby-plugin-offline": "^3.2.26",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-source-filesystem": "^2.3.27",
+    "gatsby-transformer-remark": "^2.8.32",
+    "netlify-cms-app": "^2.12.19",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "uswds": "^2.8.1"
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^5.2.1",
+    "prettier": "^2.1.1",
+    "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "node": "12.x.x",
+    "npm": "6.x.x"
+  }
+}

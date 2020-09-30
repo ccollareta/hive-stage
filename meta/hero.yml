@@ -1,0 +1,18 @@
+hero_content:
+  hero_image: /images/hero-bg.jpg
+  hero_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+    pulvinar venenatis lacus, vel rhoncus erat. Suspendisse mauris arcu,
+    pulvinar non nulla sit amet, ultrices volutpat diam. Suspendisse a maximus
+    odio. Sed eget massa quis ante congue placerat. Vestibulum in egestas odio.
+    Nulla facilisi. Etiam mi dolor, tempus at bibendum a, hendrerit nec urna.
+    Phasellus faucibus lobortis diam non sodales. Quisque lectus tortor, pretium
+    sed blandit non, ullamcorper vel est. Fusce nec porta lacus. Maecenas vel
+    tellus eu mauris dignissim sollicitudin. In nisi purus, ultrices vel magna
+    nec, vehicula pharetra nisi. Donec sit amet leo blandit, blandit risus sed,
+    congue lectus.
+  button_one:
+    button_name: Test Link
+    link: /blog
+  button_two:
+    button_name: Test Link 2
+    link: /document

@@ -14,6 +14,12 @@ import link_arrow from '../images/link-arrow.png';
 import conv from '../images/conv.png';
 import art_1 from '../images/section-art-1.png';
 import art_2 from '../images/section-art-2.png'
+import c1 from '../images/c1.png';
+import c2 from '../images/c2.png';
+import c3 from '../images/c3.png';
+import idea_1 from '../images/idea1.png';
+import idea_2 from '../images/idea2.png';
+import idea_3 from '../images/idea3.png';
 
 
 const OverviewPage = ({data}) => {
@@ -47,7 +53,7 @@ const OverviewPage = ({data}) => {
                 <div className="row">
                     <div className="col col-4">
                         <div className="col-item">
-                            <img src="dist/images/c1.png" alt="img" />
+                            <img src={c1} alt="img" />
                             <div className="col-content">
                                 <h6>Explore Our Needs</h6>
                                 <p>
@@ -60,7 +66,7 @@ const OverviewPage = ({data}) => {
                     </div>
                     <div className="col col-4">
                         <div className="col-item">
-                            <img src="dist/images/c2.png" alt="img" />
+                            <img src={c2} alt="img" />
                             <div className="col-content">
                                 <h6>Pitch Your Idea</h6>
                                 <p>
@@ -73,7 +79,7 @@ const OverviewPage = ({data}) => {
                     </div>
                     <div className="col col-4">
                         <div className="col-item">
-                            <img src="dist/images/c3.png" alt="img" />
+                            <img src={c3} alt="img" />
                             <div className="col-content">
                                 <h6>Connect With Us</h6>
                                 <p>
@@ -106,7 +112,7 @@ const OverviewPage = ({data}) => {
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src="dist/images/idea1.png" className="card-img" alt="item1" />
+                                <img src={idea_1} className="card-img" alt="item1" />
                             </div>
                             <div className="card-body">
                                 <a href="javascript:void(0)">
@@ -126,7 +132,7 @@ const OverviewPage = ({data}) => {
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src="dist/images/idea2.png" className="card-img" alt="item2" />
+                                <img src={idea_2} className="card-img" alt="item2" />
                             </div>
                             <div className="card-body">
                                 <a href="javascript:void(0)">
@@ -146,7 +152,7 @@ const OverviewPage = ({data}) => {
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src="dist/images/idea3.png" className="card-img" alt="item3" />
+                                <img src={idea_3} className="card-img" alt="item3" />
                             </div>
                             <div className="card-body">
                                 <a href="javascript:void(0)">
@@ -175,7 +181,7 @@ const OverviewPage = ({data}) => {
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src="dist/images/idea1.png" className="card-img" alt="item1" />
+                                <img src={idea_1} className="card-img" alt="item1" />
                             </div>
                             <div className="card-body">
                                 <a href="javascript:void(0)">
@@ -195,7 +201,7 @@ const OverviewPage = ({data}) => {
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src="dist/images/idea2.png" className="card-img" alt="item2" />
+                                <img src={idea_2} className="card-img" alt="item2" />
                             </div>
                             <div className="card-body">
                                 <a href="javascript:void(0)">
@@ -215,7 +221,7 @@ const OverviewPage = ({data}) => {
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src="dist/images/idea3.png" className="card-img" alt="item3" />
+                                <img src={idea_3} className="card-img" alt="item3" />
                             </div>
                             <div className="card-body">
                                 <a href="javascript:void(0)">
@@ -235,7 +241,7 @@ const OverviewPage = ({data}) => {
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src="dist/images/idea1.png" className="card-img" alt="item1" />
+                                <img src={idea_1} className="card-img" alt="item1" />
                             </div>
                             <div className="card-body">
                                 <a href="javascript:void(0)">
@@ -255,7 +261,7 @@ const OverviewPage = ({data}) => {
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src="dist/images/idea2.png" className="card-img" alt="item2" />
+                                <img src={idea_2} className="card-img" alt="item2" />
                             </div>
                             <div className="card-body">
                                 <a href="javascript:void(0)">
@@ -275,7 +281,7 @@ const OverviewPage = ({data}) => {
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src="dist/images/idea3.png" className="card-img" alt="item1" />
+                                <img src={idea_3} className="card-img" alt="item1" />
                             </div>
                             <div className="card-body">
                                 <a href="javascript:void(0)">

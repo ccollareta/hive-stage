@@ -1,7 +1,7 @@
 // MailWidgetWrapper.js
 import React from 'react';
 
-import MailWidget from './MailWidget';
+import MailWidget from './mailwidget';
 
 const MailWidgetWrapper = ({ children }) => (
   <>

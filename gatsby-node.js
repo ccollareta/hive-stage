@@ -70,7 +70,7 @@ async function createResourcePages(createPage, graphql) {
     createPage,
     items: resources,
     itemsPerPage: 7,
-    pathPrefix: '/resource-library',
+    pathPrefix: '/resource-library/',
     component: resourcesTemplate,
   });
 

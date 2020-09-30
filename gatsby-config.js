@@ -8,7 +8,7 @@ module.exports = {
         items: [{ text: 'About', link: '/about/' }],
       },
       {
-        items: [{ text: 'Hive', link: '/hive/' }],
+        items: [{ text: 'Hive', link: '/overview/' }],
       },
       {
         items: [{ text: 'News & Events', link: '/news-events/' }],

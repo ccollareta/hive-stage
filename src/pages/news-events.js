@@ -80,7 +80,7 @@ const Blog = ({ data, pageContext }) => {
                         <h2 className="title text-white">Latest news.</h2>
                     </div>
                     <div className="link d-link">
-                        <Link to="/news/" className="font-exo text-white">View all <img src={link_arrow} /></Link>
+                        <a href="/news/" className="font-exo text-white">View all <img src={link_arrow} /></a>
                     </div>
                 </div>
                 <div className="row">
@@ -94,7 +94,7 @@ const Blog = ({ data, pageContext }) => {
                                 <img src={post.featured_image} className="card-img" alt="item1" />
                             </div>
                             <div className="card-body">
-                                <Link to={post.path}><h4 className="text-white">{post.title}</h4></Link>
+                                <a href={post.path}><h4 className="text-white">{post.title}</h4></a>
                                 <p className="text-white">
                                     {post.excerpt}
                                 </p>
@@ -109,7 +109,7 @@ const Blog = ({ data, pageContext }) => {
                     
                 </div>
                 <div className="link m-link">
-                    <Link to="/news/" className="font-exo text-white">View all <img src={link_arrow} /></Link>
+                    <a href="/news/" className="font-exo text-white">View all <img src={link_arrow} /></a>
                 </div>
             </div>
         </section>
@@ -138,7 +138,7 @@ const Blog = ({ data, pageContext }) => {
                                     </div>
                                     <div className="col col-9">
                                         <div className="card-body">
-                                            <Link to={post.path}><h4>{post.title}</h4></Link>
+                                            <a href={post.path}><h4>{post.title}</h4></a>
                                             <p>
                                                 {post.excerpt}
                                             </p>
@@ -153,9 +153,9 @@ const Blog = ({ data, pageContext }) => {
               ))}
                         </div>
                         <div className="link">
-                            <Link to="/news/" className="font-exo text-dark">
+                            <a href="/news/" className="font-exo text-dark">
                                 See all exchanges <img src={link_arrow} />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="col col-4">
@@ -163,7 +163,7 @@ const Blog = ({ data, pageContext }) => {
                         <div className="oppn-container">
                         {events.map((event,index) => (
                             <div className="oppn-item" key={`event${index}`}>
-                                <Link to={event.path}><h6>{event.title}</h6></Link>
+                                <a href={event.path}><h6>{event.title}</h6></a>
                                 <div className="post-details">
                                     <span className="author">Submitted by {event.author}</span>
                                     <span className="date">{event.event_date}</span>

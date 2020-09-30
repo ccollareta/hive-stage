@@ -48,7 +48,7 @@ const AboutPage = ({data}) => {
                     {posts.top_section.text_block}
                     </p>
                     <div className="hero-ctas">
-                    <Link className="btn rounded" to={posts.top_section.button.button_link}>{posts.top_section.button.button_text}</Link>
+                    <a className="btn rounded" href={posts.top_section.button.button_link}>{posts.top_section.button.button_text}</a>
                     </div>
                 </div>
             </div>
@@ -114,7 +114,7 @@ const AboutPage = ({data}) => {
                         <h2 className="title">News & upcoming events.</h2>
                     </div>
                     <div className="link d-link">
-                        <Link to="/news-events/" className="font-exo text-dark">View all <img src={link_arrow} /></Link>
+                        <a href="/news-events/" className="font-exo text-dark">View all <img src={link_arrow} /></a>
                     </div>
                 </div>
                 <div className="slider-container">
@@ -124,11 +124,11 @@ const AboutPage = ({data}) => {
                          <div className="hne-img-wrapper img-hover">
                              <img src={post.featured_image} className="img-fluid" alt="slide_image" />
                          </div>
-                         <h4><Link to={post.path} className="text-dark">{post.title}</Link></h4>
+                         <h4><a href={post.path} className="text-dark">{post.title}</a></h4>
                          <div className="link type-2">
-                             <Link to={post.path} className="font-exo text-dark">
+                             <a href={post.path} className="font-exo text-dark">
                                  LEARN MORE <img src={link_arrow_2} />
-                             </Link>
+                             </a>
                          </div>
                      </div>
                     ))}

@@ -17,7 +17,7 @@ const FeaturedPost = ({title, slug, description, thumb, date, author }) => {
                     </div>
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: description }} />
-                <Link to={slug} className="btn rounded">Read More</Link>
+                <a href={slug} className="btn rounded">Read More</a>
             </div>
             <div className="col-6">
                 <img src={thumb} className="featured-img" alt="img" />

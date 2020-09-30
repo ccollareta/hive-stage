@@ -38,7 +38,7 @@ const Blog = ({ data, pageContext }) => {
                                 <img src={post.featured_image} className="card-img" alt="item2" />
                             </div>
                             <div className="card-body">
-                                <Link to={post.path}><h4>{post.title}</h4></Link>
+                                <a href={post.path}><h4>{post.title}</h4></a>
                                 <p>{post.excerpt}</p>
                                 <div className="post-details">
                                     <span className="author">Submitted by {post.author}</span>
@@ -51,7 +51,7 @@ const Blog = ({ data, pageContext }) => {
                     
                     
                 </div>
-                <nav>
+                <nav className="paged">
                 { /* Pagination added here */ }
                 </nav>
             </div>

@@ -11,10 +11,10 @@ import SearchForm from './search-form';
 const Nav = ({ navigation, secondaryLinks }) => (
   
                 <nav className="navbar navbar-expand-lg">
-                  <Link className="navbar-brand" to="/">
+                  <a className="navbar-brand" href="/">
                         <img src={logo_white} className="white-logo" alt="logo" />
                         <img src={logo} className="logo" alt="logo" />
-                    </Link>
+                    </a>
                     <button className="navbar-toggler">
                         <div className="hamburger">
                             <span className="line"></span>
@@ -50,19 +50,18 @@ const Nav = ({ navigation, secondaryLinks }) => (
                 >
                   {navGroup.items.map((navItem, idx) => (
                     <li key={idx} className="usa-nav__submenu-item">
-                      <Link to={navItem.link}>{navItem.text}</Link>
+                      <a href={navItem.link}>{navItem.text}</a>
                     </li>
                   ))}
                 </ul>
               </>
             ) : (
-              <Link
+              <a
                 className="nav-link"
-                activeClassName="current"
-                to={navGroup.items[0].link}
+                href={navGroup.items[0].link}
               >
                 {navGroup.items[0].text}
-              </Link>
+              </a>
             )}
           </li>
         ))}
@@ -77,9 +76,9 @@ const Nav = ({ navigation, secondaryLinks }) => (
                                 <SearchForm />
                             </li>
                             <li className="nav-item">
-                                <Link className="btn rounded outline" to="/contact/">
+                                <a className="btn rounded outline" href="/contact/">
                                     Contact Us
-                                </Link>
+                                </a>
                             </li>
         </ul>
     </div>

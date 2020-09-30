@@ -132,12 +132,12 @@ const Blog = ({ data, pageContext }) => {
         </div>
         </div>
                 </div>
-                <nav>
-                <ul className="pagination">
+                <nav className="resource">
+                <ul className="paginationr">
                   {Array.from({ length: pageContext.numberOfPages }, (_, i) => (
-        <li key={`pagination-number${i + 1}`} className="page-item"><Link className={`page-link ${i == pageContext.pageNumber ? "current" : ""}`}  to={`${i == pageContext.pageNumber ? "" : i === 0 ? "/resource-library" : pageContext.pageNumber == 1 ? pageVar + (i + 1):  pageVar + (i + 1)}`}>
+        <li key={`pagination-number${i + 1}`} className="page-item"><a className={`page-link ${i == pageContext.pageNumber ? "current" : ""}`}  href={`${i == pageContext.pageNumber ? "" : i === 0 ? "/resource-library" : pageContext.pageNumber == 1 ? pageVar + (i + 1):  pageVar + (i + 1)}`}>
           {i + 1}
-        </Link></li>
+        </a></li>
       ))}
       </ul>
                 </nav>

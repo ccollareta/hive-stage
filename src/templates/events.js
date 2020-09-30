@@ -42,13 +42,13 @@ const Blog = ({ data, pageContext }) => {
                                     <div className="section-head">
                                         <div className="section-title">
                                             <p className="sub-title text-orange-alt">FEATURED EVENT</p>
-                                            <h2 className="title text-white"><Link to={feat.path} className="text-dark">{feat.title}</Link></h2>
+                                            <h2 className="title text-white"><a href={feat.path} className="text-dark">{feat.title}</a></h2>
                                         </div>
                                     </div>
                                     <p>
                                         {feat.description}
                                     </p>
-                                    <Link to={feat.path} className="btn rounded">Register Now</Link>
+                                    <a href={feat.path} className="btn rounded">Register Now</a>
                                 </div>
                                 <div className="col-6">
                                     <img src={feat.event_image} className="featured-img" alt="img" />
@@ -80,7 +80,7 @@ const Blog = ({ data, pageContext }) => {
                         <img src={post.event_image} className="card-img" alt="item1" />
                     </div>
                     <div className="card-body">
-                        <h4><Link to={post.path} className="text-dark">{post.title}</Link></h4>
+                        <h4><a href={post.path} className="text-dark">{post.title}</a></h4>
                         <div className="post-details">
                             <span className="time">{post.event_date}</span>
                         </div>

@@ -41,9 +41,9 @@ const Blog = ({ data, pageContext }) => {
                   className="padding-bottom-5 margin-top-4 usa-prose border-bottom-05 border-base-lightest"
                 >
                   <h3 className="title">
-                    <Link className="usa-link text-no-underline" to={post.path}>
+                    <a className="usa-link text-no-underline" href={post.path}>
                       {post.title}
-                    </Link>
+                    </a>
                   </h3>
                   <div className="text-base margin-bottom-2">
                     <div className="margin-top-neg-105">
@@ -69,36 +69,36 @@ const Blog = ({ data, pageContext }) => {
                 <div className="tablet:grid-col-4 text-right tablet:order-3">
                   {pageContext.nextPagePath && (
                     <>
-                      <Link
-                        to={pageContext.nextPagePath}
+                      <a
+                        href={pageContext.nextPagePath}
                         className="paginate-link usa-link text-no-underline text-bold tablet:margin-top-0"
                       >
                         Next {pageContext.limit} Posts &rsaquo;
-                      </Link>
-                      <Link
-                        to={pageContext.nextPagePath}
+                      </a>
+                      <a
+                        href={pageContext.nextPagePath}
                         className="paginate-button usa-button margin-top-3"
                       >
                         Next {pageContext.limit} Posts &rsaquo;
-                      </Link>
+                      </a>
                     </>
                   )}
                 </div>
                 <div className="tablet:grid-col-4 text-left tablet:order-1">
                   {pageContext.previousPagePath && (
                     <>
-                      <Link
-                        to={pageContext.previousPagePath}
+                      <a
+                        href={pageContext.previousPagePath}
                         className="paginate-link usa-link text-no-underline text-bold tablet:margin-top-0"
                       >
                         &lsaquo; Previous {pageContext.limit} Posts
-                      </Link>
-                      <Link
-                        to={pageContext.previousPagePath}
+                      </a>
+                      <a
+                        href={pageContext.previousPagePath}
                         className="paginate-button usa-button margin-top-2"
                       >
                         &lsaquo; Previous {pageContext.limit} Posts
-                      </Link>
+                      </a>
                     </>
                   )}
                 </div>

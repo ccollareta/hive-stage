@@ -82,8 +82,8 @@ const IndexPage = ({data}) => {
                         <h2 className="title text-white">HIVE opportunity buzz.</h2>
                     </div>
                     <div className="link d-link">
-                        <Link to="/" className="font-exo text-white">See all opportunities <img
-                                src={link_arrow} /></Link>
+                        <a href="/" className="font-exo text-white">See all opportunities <img
+                                src={link_arrow} /></a>
                     </div>
                 </div>
                 <div className="row ">
@@ -124,7 +124,7 @@ const IndexPage = ({data}) => {
                             </div>
                             <div className="col col-9">
                                 <div className="card-body">
-                                    <Link to={exchange.path}><h4>{exchange.title}</h4></Link>
+                                    <a href={exchange.path}><h4>{exchange.title}</h4></a>
                                     <p>
                                         {exchange.description}
                                     </p>

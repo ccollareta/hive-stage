@@ -9,9 +9,9 @@ const Footer = () => (
             <div className="container">
                 <div className="footer-primary">
                     <div className="footer-social">
-                        <Link to="/">
+                        <a href="/">
                             <img src={logo} className="logo" alt="logo" />
-                        </Link>
+                        </a>
                         <Social />
                     </div>
                     <div className="footer-widgets">
@@ -20,8 +20,8 @@ const Footer = () => (
                                 <h6>Useful Links</h6>
                                 <ul className="list-unstyled">
                                     <li><a href="/about/">About PEO-DHMS</a></li>
-                                    <li><a href="#">Capabilities</a></li>
-                                    <li><a href="#">HIVE</a></li>
+                                    <li><a href="/">Capabilities</a></li>
+                                    <li><a href="/overview/">HIVE</a></li>
                                     <li><a href="/contact/">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -46,7 +46,7 @@ const Footer = () => (
                 <div className="footer-secondary">
                     <ul className="footer-links list-unstyled">
                         <li>© 2020 Hive. All Rights Reserved</li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="/privacy-policy">Privacy Policy</a></li>
                     </ul>
                     <ul className="footer-links list-unstyled">
                         <li><a href="#">Accessibility/508 Compliance</a></li>

@@ -33,6 +33,7 @@ const loadScript = (src, onLoad, attrs = {}) => new Promise(resolve => {
 const loadScripts = (src, onLoad, attrs = {}) => new Promise(resolve => {
   const script = document.createElement('script');
   script.src = src;
+  script.async=true;
   Object.assign(script, attrs);
   document.body.appendChild(script);
 });
@@ -82,8 +83,10 @@ export const onInitialClientRender = () => {
   scripts.push(loadScripts(jq));
   scripts.push(loadScripts(lity));
   scripts.push(loadScripts(slick));
+  if(pathname !== '/resource-library'){
   scripts.push(loadScripts(isoptope));
   scripts.push(loadScripts(isotope2));
+  }
   scripts.push(loadScripts(cust));
 
 

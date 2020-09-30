@@ -36,7 +36,6 @@ const Blog = ({ data, pageContext }) => {
   const pgVar = 'style-3';
   return (
     <Layout pgVar={pgVar}>
-
       <SEO title="Resource Library" />
       <section className="hero-slider">
             <div className="container">

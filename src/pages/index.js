@@ -199,7 +199,6 @@ const IndexPage = ({data}) => {
         </div>
     </div>
 </section>
-      {/*<MultiList /> */}
      <Highlights />
     <Tagline />
   </Layout>

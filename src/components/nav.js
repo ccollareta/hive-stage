@@ -77,7 +77,7 @@ const Nav = ({ navigation, secondaryLinks }) => (
                                 <SearchForm />
                             </li>
                             <li className="nav-item">
-                                <Link className="btn rounded outline" to="/contact">
+                                <Link className="btn rounded outline" to="/contact/">
                                     Contact Us
                                 </Link>
                             </li>

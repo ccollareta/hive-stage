@@ -114,7 +114,7 @@ const AboutPage = ({data}) => {
                         <h2 className="title">News & upcoming events.</h2>
                     </div>
                     <div className="link d-link">
-                        <Link to="/news-events" className="font-exo text-dark">View all <img src={link_arrow} /></Link>
+                        <Link to="/news-events/" className="font-exo text-dark">View all <img src={link_arrow} /></Link>
                     </div>
                 </div>
                 <div className="slider-container">

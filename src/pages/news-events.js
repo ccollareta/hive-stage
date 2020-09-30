@@ -80,7 +80,7 @@ const Blog = ({ data, pageContext }) => {
                         <h2 className="title text-white">Latest news.</h2>
                     </div>
                     <div className="link d-link">
-                        <Link to="/news" className="font-exo text-white">View all <img src={link_arrow} /></Link>
+                        <Link to="/news/" className="font-exo text-white">View all <img src={link_arrow} /></Link>
                     </div>
                 </div>
                 <div className="row">
@@ -109,7 +109,7 @@ const Blog = ({ data, pageContext }) => {
                     
                 </div>
                 <div className="link m-link">
-                    <Link to="/news" className="font-exo text-white">View all <img src={link_arrow} /></Link>
+                    <Link to="/news/" className="font-exo text-white">View all <img src={link_arrow} /></Link>
                 </div>
             </div>
         </section>
@@ -153,7 +153,7 @@ const Blog = ({ data, pageContext }) => {
               ))}
                         </div>
                         <div className="link">
-                            <Link to="/news" className="font-exo text-dark">
+                            <Link to="/news/" className="font-exo text-dark">
                                 See all exchanges <img src={link_arrow} />
                             </Link>
                         </div>

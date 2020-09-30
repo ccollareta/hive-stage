@@ -19,17 +19,17 @@ const Footer = () => (
                             <div className="col col-3">
                                 <h6>Useful Links</h6>
                                 <ul className="list-unstyled">
-                                    <li><a href="/about">About PEO-DHMS</a></li>
+                                    <li><a href="/about/">About PEO-DHMS</a></li>
                                     <li><a href="#">Capabilities</a></li>
                                     <li><a href="#">HIVE</a></li>
-                                    <li><a href="/contact">Contact Us</a></li>
+                                    <li><a href="/contact/">Contact Us</a></li>
                                 </ul>
                             </div>
                             <div className="col col-3">
                                 <h6>Resources</h6>
                                 <ul className="list-unstyled">
-                                    <li><a href="/news-events">News & Events</a></li>
-                                    <li><a href="/resource-library">Resource Library</a></li>
+                                    <li><a href="/news-events/">News & Events</a></li>
+                                    <li><a href="/resource-library/">Resource Library</a></li>
                                 </ul>
                             </div>
                             <div className="col col-6">

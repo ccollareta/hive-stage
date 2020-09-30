@@ -23,7 +23,7 @@ const FeatOpp = ({title, description, thumbnail,link, author, date }) => {
                                 </div>
                             </div>
         <div className="card-body">
-            <Link to={`${link}`}><h4 className="text-white">{title}</h4></Link>
+            <Link to={`${link}/`}><h4 className="text-white">{title}</h4></Link>
             <p className="text-white">
             {description}
             </p>

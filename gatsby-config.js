@@ -5,22 +5,22 @@ module.exports = {
     description: `HIVE PEO-DHMS`,
     navigation: [
       {
-        items: [{ text: 'About', link: '/about' }],
+        items: [{ text: 'About', link: '/about/' }],
       },
       {
-        items: [{ text: 'Hive', link: '/hive' }],
+        items: [{ text: 'Hive', link: '/hive/' }],
       },
       {
-        items: [{ text: 'News & Events', link: '/news-events' }],
+        items: [{ text: 'News & Events', link: '/news-events/' }],
       },
       {
         items: [
-          { text: 'Resource Library', link: '/resource-library' },
+          { text: 'Resource Library', link: '/resource-library/' },
         ],
       },
     ],
     secondaryLinks: [
-      { text: 'Contact Us', link: '/contact' },
+      { text: 'Contact Us', link: '/contact/' },
     ],
 
     /**

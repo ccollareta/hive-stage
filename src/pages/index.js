@@ -40,13 +40,7 @@ const IndexPage = ({data}) => {
   const pgVar = 'style-1';
   return (
   <Layout pgVar={pgVar}>
-    <Helmet>
-    <link rel="stylesheet" href={withPrefix('../../vendor/lity/lity.min.css')} />
-    <script src={withPrefix('../../scripts/jquery.min.js')} type="text/javascript" />
     
-    <script src={withPrefix('../../vendor/lity/lity.min.js')} type="text/javascript"/>
-    <script src={withPrefix('../../scripts/custom.js')} type="text/javascript"/>
-  </Helmet>
     <SEO title="Home" />
     <Hero />
     <section className="hive-scroller-section">

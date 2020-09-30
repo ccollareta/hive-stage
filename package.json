@@ -21,6 +21,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "gatsby": "^2.24.53",
     "gatsby-awesome-pagination": "^0.3.6",
+    "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^2.4.27",
     "gatsby-plugin-netlify-cms": "^4.3.12",
     "gatsby-plugin-offline": "^3.2.26",

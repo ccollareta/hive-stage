@@ -6,7 +6,7 @@
 import './src/styles/style.scss';
 import 'uswds';
 import React from 'react';
-import MailWidgetWrapper from './src/components/MailWidgetWrapper';
+import MailWidgetWrapper from 'src/components/MailWidgetWrapper';
 
 import { siteMetadata } from './gatsby-config';
 

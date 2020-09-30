@@ -20,16 +20,16 @@ const Blog = ({ data, pageContext }) => {
             <div className="inner-container">
                 <h1 className="text-center">All Posts</h1>
                 <div className="post-filters filterby">
-                {Tags.tags.map(tag => (
-              <a  className="filter" data-filter={`${tag.slug}`} key={tag.slug}>{tag.name}</a>
+                {Tags.tags.map((tag,index) => (
+              <a className="filter" data-filter={`${tag.slug}`} key={tag.slug}>{tag.name}</a>
 
           ))}
-          <a href="javascript: void(0);" className="filter active" data-filter="*">All Posts</a>
+          <a className="filter active" data-filter="*">All Posts</a>
                 </div>
                 <div className="row filter-container">
-                {posts.map(post => (
+                {posts.map((post,index) => (
                 <div
-                  key={post.title}
+                  key={`news${index}`}
                   className={`col col-4 filter-item`}
                   data-filter={`${post.tags.join(' ')}`}
                 >

@@ -42,8 +42,8 @@ const Blog = ({ data, pageContext }) => {
             <div className="container">
                 <div className="slider-container">
                     <div className="featured-slider">
-                        {feat.map(resource => (
-          <div className="featured-item" key={resource.title}>
+                        {feat.map((resource,index) => (
+          <div className="featured-item" key={`Featured${index}`}>
           <FeaturedResource title={resource.title} 
           file={resource.file}
           file_size={resource.file_size}
@@ -83,7 +83,7 @@ const Blog = ({ data, pageContext }) => {
                     <div className="col col-8">
                         <div className="row">
                     {resources.slice(0, 4).map((resource,index) => (
-          <div className="col col-6">
+          <div className="col col-6" key={`top${index}`}>
           <div className="card">
                                     <div className="img-hover">
                                         <img src={resource.resource_thumb} className="card-img" alt="item1" />
@@ -110,7 +110,7 @@ const Blog = ({ data, pageContext }) => {
         <div className="col col-12">
                         <div className="row">
                     {resources.slice(4, 7).map((resource,index) => (
-          <div className="col col-4">
+          <div className="col col-4" key={`bottom${index}`}>
           <div className="card">
                                     <div className="img-hover">
                                         <img src={resource.resource_thumb} className="card-img" alt="item1" />

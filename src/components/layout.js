@@ -40,15 +40,15 @@ const Layout = ({ children, pgVar }) => {
   const { title, navigation, secondaryLinks } = data.site.siteMetadata;
   return (
     <>
-      <div className="site-wrapper">
-      <Helmet>
-  <link rel="stylesheet" href={withPrefix('../../vendor/slick/slick.css')} />
-  <link rel="stylesheet" href={withPrefix('../../vendor/lity/lity.min.css')} />
-    <script src={withPrefix('../../scripts/jquery.min.js')} type="text/javascript" />
-    <script src={withPrefix('../../vendor/slick/slick.min.js')} type="text/javascript"/>
-    <script src={withPrefix('../../vendor/lity/lity.min.js')} type="text/javascript"/>
-    <script src={withPrefix('../../scripts/custom.js')} type="text/javascript"/>
+     <Helmet>
+  <link rel="stylesheet" href={withPrefix('/vendor/slick/slick.css')} />
+  <link rel="stylesheet" href={withPrefix('/vendor/lity/lity.min.css')} />
+    <script src={withPrefix('/scripts/jquery.min.js')} type="text/javascript" />
+    <script src={withPrefix('/vendor/slick/slick.min.js')} type="text/javascript"/>
+    <script src={withPrefix('/vendor/lity/lity.min.js')} type="text/javascript"/>
+    <script src={withPrefix('/scripts/custom.js')} type="text/javascript"/>
   </Helmet>
+      <div className="site-wrapper">
       <Header siteTitle={title} pgVar={pgVar}>
         <Nav {...{ navigation, secondaryLinks }} />
       </Header>

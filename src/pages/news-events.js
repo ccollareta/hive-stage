@@ -46,7 +46,7 @@ const Blog = ({ data, pageContext }) => {
                     <div className="featured-slider">
                     {feat.map((feat_post,index) => (
                 <div
-                  key={index}
+                  key={`feat${index}`}
                   className="featured-item"
                 >
                   
@@ -84,9 +84,9 @@ const Blog = ({ data, pageContext }) => {
                     </div>
                 </div>
                 <div className="row">
-                {late.map(post => (
+                {late.map((post,index) => (
                 <div
-                  key={post.title}
+                  key={`latest${index}`}
                   className="col col-4"
                 >
                         <div className="card">
@@ -127,9 +127,9 @@ const Blog = ({ data, pageContext }) => {
                         <div className="card-exchanges">
                                 
                             
-                            {posts.map(post => (
+                            {posts.map((post,index) => (
                 <div
-                  key={post.title}
+                  key={`news${index}`}
                   className="card"
                 >
                   <div className="row secondary-row">
@@ -161,8 +161,8 @@ const Blog = ({ data, pageContext }) => {
                     <div className="col col-4">
                         <h4>Upcoming events.</h4>
                         <div className="oppn-container">
-                        {events.map(event => (
-                            <div className="oppn-item" key={event.title}>
+                        {events.map((event,index) => (
+                            <div className="oppn-item" key={`event${index}`}>
                                 <Link to={event.path}><h6>{event.title}</h6></Link>
                                 <div className="post-details">
                                     <span className="author">Submitted by {event.author}</span>

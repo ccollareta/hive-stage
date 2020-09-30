@@ -4,14 +4,7 @@ import { Link } from 'gatsby';
 import cmt from '../images/cmt.png';
 import plus from '../images/plus.png';
 
-const MailWidget = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const toggleVisible = () => {
-    setIsVisible(!isVisible);
-  };
-
-  return (
+const MailWidget = () => (
     <div className="fabtn-container">
             <div className="fabtn" id="masterfabtn">
                 <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
@@ -47,5 +40,4 @@ const MailWidget = () => {
             </div>
         </div>
   );
-};
 export default MailWidget;

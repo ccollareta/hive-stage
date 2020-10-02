@@ -33,7 +33,6 @@ const loadScript = (src, onLoad, attrs = {}) => new Promise(resolve => {
 const loadScripts = (src, onLoad, attrs = {}) => new Promise(resolve => {
   const script = document.createElement('script');
   script.src = src;
-  script.async=true;
   Object.assign(script, attrs);
   document.body.appendChild(script);
 });

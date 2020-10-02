@@ -35,6 +35,9 @@ const loadScripts = (src, onLoad, attrs = {}) => new Promise(resolve => {
   script.src = src;
   Object.assign(script, attrs);
   document.body.appendChild(script);
+  script.onload = () => {
+    resolve();
+  };
 });
 
 export const onInitialClientRender = () => {

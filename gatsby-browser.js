@@ -73,9 +73,9 @@ export const onInitialClientRender = () => {
   }
 
   const jq = '/scripts/jquery.min.js';
-  const lity = '/vendor/lity/lity.min.js';
+  const lity = '/vendor/lity/lity.js';
   const slick = '/vendor/slick/slick.min.js';
-  const isoptope ='/vendor/isotope/isotope.pkgd.min.js';
+  const isoptope ='/vendor/isotope/isotope.js';
   const isotope2 = '/scripts/isotope.js';
   const cust = '/scripts/custom.js';
 

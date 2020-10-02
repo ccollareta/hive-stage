@@ -38,23 +38,12 @@ const Layout = ({ children, pgVar }) => {
   `);
   
   const { title, navigation, secondaryLinks } = data.site.siteMetadata;
-  const jq = '../scripts/jquery.min.js';
-  const lity = '../vendor/lity/lity.js';
-  const slick = '../vendor/slick/slick.min.js';
-  const isoptope ='../vendor/isotope/isotope.js';
-  const isotope2 = '../scripts/isotope.js';
-  const cust = '../scripts/custom.js';
+ 
   return (
     <>
      <Helmet>
   <link rel="stylesheet" href={withPrefix('../vendor/slick/slick.css')} />
   <link rel="stylesheet" href={withPrefix('../vendor/lity/lity.min.css')} />
-      <script src={withPrefix(`${jq}`)}/>
-      <script src={withPrefix(`${lity}`)}/>
-      <script src={withPrefix(`${slick}`)}/>
-      <script src={withPrefix(`${isoptope}`)}/>
-      <script src={withPrefix(`${isotope2}`)}/>
-      <script src={withPrefix(`${cust}`)}/>
   </Helmet>
       <div className="site-wrapper">
       <Header siteTitle={title} pgVar={pgVar}>

@@ -72,7 +72,21 @@ export const onInitialClientRender = () => {
     document.body.appendChild(gtag);
   }
 
-  
+  const jq = '/scripts/jquery.min.js';
+  const lity = '/vendor/lity/lity.min.js';
+  const slick = '/vendor/slick/slick.min.js';
+  const isoptope ='/vendor/isotope/isotope.pkgd.min.js';
+  const isotope2 = '/scripts/isotope.js';
+  const cust = '/scripts/custom.js';
+
+  scripts.push(loadScripts(jq));
+  scripts.push(loadScripts(lity));
+  scripts.push(loadScripts(slick));
+  if(pathname !== '/resource-library'){
+  scripts.push(loadScripts(isoptope));
+  scripts.push(loadScripts(isotope2));
+  }
+  scripts.push(loadScripts(cust));
 
 
 

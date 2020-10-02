@@ -2,9 +2,13 @@
 title: Event 1
 author: HIVE
 featured: Yes
-event_image: /images/img_20200716_171935_557.jpg
+event_image: /images/event.png
 event_date: September 25, 2020
 description: This is a test
+pre_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis
+  arcu nec enim sollicitudin, in varius augue tempor. Aliquam venenatis, nulla a
+  interdum dignissim, ante tellus finibus risus, sit amet tincidunt ligula nisi
+  id augue.
 ---
 <!--StartFragment-->
 

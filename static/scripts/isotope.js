@@ -95,7 +95,7 @@ jQuery(function ($) {
                     $pagerLi.appendTo($isotopePager);
                 }
 
-                ('.paged').append($isotopePager);
+                jQuery('.paged').append($isotopePager);
             }();
         }
 

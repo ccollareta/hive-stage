@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    author: 'Foo',
+    author: 'PEO-DHMS',
     title: `HIVE`,
     description: `HIVE PEO-DHMS`,
     navigation: [

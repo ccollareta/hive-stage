@@ -6,7 +6,7 @@ event_image: /images/idea1.png
 event_date: October 30, 2020
 description: PEO DHMS is looking for Industry Day involvement from both the
   traditional systems integrator community and innovative technologies who may
-  be a part of the solution stack but not the comprehensive solution. \[REGISTER
+  be a part of the solution stack but not the comprehensive solution. [REGISTER
   LINK] to attend the session using the form below.
 pre_text: PEO DHMS is looking for Industry Day involvement from both the
   traditional systems integrator community and innovative technologies who may

@@ -3,7 +3,10 @@ title: We Want to Hear from You
 date: October 7, 2020
 author: Holly Joers
 featured: No
-featured_image: /images/idea1.png
+featured_image: /images/idea1.
+tags:
+  - health
+  - vision-dental
 excerpt: Have a question for the Virtual Industry Day Team?
 pre_text: "Have a question for the Virtual Industry Day Team? Submit it below. "
 ---

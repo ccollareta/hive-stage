@@ -3,6 +3,9 @@ title: What You Need to Know to Participate in Industry Day
 date: October 7, 2020
 author: Staff
 featured: No
+tags:
+  - health
+  - vision-dental
 featured_image: /images/idea1.png
 excerpt: "Make sure you’re registered on the SAM site and eligible to
   participate in future events.  "

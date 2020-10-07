@@ -4,6 +4,9 @@ date: October 15, 2020
 author: Holly Joers
 featured: Yes
 featured_image: /images/bio_joers.jpg
+tags:
+  - health
+  - vision-dental
 excerpt: Together, we will propel PEO DHMS to a leader in Healthcare IT
 pre_text: Together, we will propel PEO DHMS to a leader in Healthcare IT
 ---

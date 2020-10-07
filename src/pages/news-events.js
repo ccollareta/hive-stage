@@ -39,7 +39,7 @@ const Blog = ({ data, pageContext }) => {
   return (
     <Layout pgVar={pgVar}>
      
-      <SEO title="Blog" />
+      <SEO title="Workforce 3.0" />
       <section className="hero-slider">
             <div className="container">
                 <div className="slider-container">

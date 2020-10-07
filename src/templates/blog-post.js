@@ -24,8 +24,7 @@ const BlogPost = ({ data }) => {
       <section className="hive-submission-details">
             <div className="inner-container">
                 <div className="post-category-date">
-                    {frontmatter.tags != '' &&
-                    <span className="category"><a href="#">{frontmatter.tags.join(' ')}</a></span> }
+                    
                     <span className="date">{frontmatter.date}</span>
                 </div>
                 <h1>{frontmatter.title}</h1>

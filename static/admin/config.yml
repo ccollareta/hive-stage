@@ -251,6 +251,7 @@ collections:
         dateFormat: 'MMMM D, YYYY',
         timeFormat: true
       }
+      - { label: 'Vimeo Code', name: 'vimeo_code', widget: 'string'}
       - { label: 'Description', name: 'description', widget: 'markdown' }
       - { label: "Pre Text", name: "pre_text", widget: text}
       - { label: 'Body', name: 'body', widget: 'markdown' }

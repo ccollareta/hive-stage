@@ -4,6 +4,7 @@ author: HIVE
 featured: Yes
 event_image: /images/event.png
 event_date: September 25, 2020
+vimeo_code: "359409"
 description: This is a test
 pre_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis
   arcu nec enim sollicitudin, in varius augue tempor. Aliquam venenatis, nulla a

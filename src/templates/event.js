@@ -40,45 +40,16 @@ const BlogPost = ({ data }) => {
                     </p>
                     <p dangerouslySetInnerHTML={{ __html: html }} />
                 </div>
-            </div>
+           
+            {frontmatter.vimeo_code != '' && 
+            <div style={{padding: '56.25% 0 0 0',
+            position: 'relative'}}>
+              <iframe src={`https://vimeo.com/event/${frontmatter.vimeo_code}/embed/f85d593830`} frameborder="0" allow="autoplay; fullscreen" allowfullscreen style={{position:'absolute', top:'0', left: '0', width:'100%', height:'100%'}}></iframe>
+              <iframe src={`https://vimeo.com/event/${frontmatter.vimeo_code}/chat/f85d593830`} width="400" height="600" frameborder="0"></iframe>
+              </div>
+            }
+             </div>
         </section>
-        <div className="form-card card-popup lity-hide" id="submit-response">
-        <form className="form">
-            <h2 className="text-center">Submit A Response</h2>
-            <div className="form-group">
-                <label>What is your name?</label>
-                <div className="row">
-                    <div className="col col-6">
-                        <input type="text" className="form-control" name="name" placeholder="First name" />
-                    </div>
-                    <div className="col col-6">
-                        <input type="text" className="form-control" name="name" placeholder="Last name" />
-                    </div>
-                </div>
-            </div>
-            <div className="form-group">
-                <label>What is your email?</label>
-                <input type="email" className="form-control" name="email" placeholder="Enter your email address" />
-            </div>
-            <div className="form-group">
-                <label>What is your response?</label>
-                <textarea className="form-control" rows="5" placeholder="Let us know how we can help"></textarea>
-            </div>
-            <label className="custom-checkbox">
-                I consent to having this website store my submitted information so they can
-                respond to my inquiry.*
-                <input type="checkbox" defaultChecked /> 
-                <span className="checkmark"></span>
-            </label>
-            <div className="submit-btn text-center">
-                <a href="#" className="btn rounded">Submit</a>
-            </div>
-            <p className="terms text-center">
-                By submitting this form, you accept our <a href="#" className="text-underline">Terms of
-                    Use</a> and <a href="#" className="text-underline">Privacy Policy.</a>
-            </p>
-        </form>
-    </div>
     </Layout>
   );
 };

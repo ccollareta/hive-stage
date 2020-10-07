@@ -12,9 +12,9 @@ const Footer = () => (
                         <a href="/">
                             <img src={logo} className="logo" alt="logo" />
                         </a>
-                        <Social />
+                        { /* <Social /> */}
                     </div>
-                    <div className="footer-widgets">
+                    {/* <div className="footer-widgets">
                         <div className="row">
                             <div className="col col-3">
                                 <h6>Useful Links</h6>
@@ -41,7 +41,7 @@ const Footer = () => (
                                 </form>
                             </div>
                         </div>
-                    </div>
+</div> */}
                 </div>
                 <div className="footer-secondary">
                     <ul className="footer-links list-unstyled">
@@ -49,11 +49,11 @@ const Footer = () => (
                         <li><a href="/privacy-policy">Privacy Policy</a></li>
                     </ul>
                     <ul className="footer-links list-unstyled">
-                        <li><a href="#">Accessibility/508 Compliance</a></li>
-                        <li><a href="#">FOIA</a></li>
-                        <li><a href="#">USA.gov</a></li>
-                        <li><a href="#">HHS.gov</a></li>
-                        <li><a href="#">GSA.gov</a></li>
+                        <li><a href="https://www.section508.gov/">Accessibility/508 Compliance</a></li>
+                        <li><a href="https://www.foia.gov/">FOIA</a></li>
+                        <li><a href="https://www.usa.gov/">USA.gov</a></li>
+                        <li><a href="https://www.hhs.gov/">HHS.gov</a></li>
+                        <li><a href="https://www.gsa.gov/">GSA.gov</a></li>
                     </ul>
                     <div className="address">
                         <img src={dhms} />

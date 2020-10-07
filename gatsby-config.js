@@ -5,19 +5,8 @@ module.exports = {
     description: `HIVE PEO-DHMS`,
     navigation: [
       {
-        items: [{ text: 'About', link: '/about/' }],
-      },
-      {
-        items: [{ text: 'Hive', link: '/overview/' }],
-      },
-      {
-        items: [{ text: 'News & Events', link: '/news-events/' }],
-      },
-      {
-        items: [
-          { text: 'Resource Library', link: '/resource-library/' },
-        ],
-      },
+        items: [{ text: 'Workforce 3.0', link: '/news-events/' }],
+      }
     ],
     secondaryLinks: [
       { text: 'Contact Us', link: '/contact/' },

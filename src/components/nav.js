@@ -76,8 +76,8 @@ const Nav = ({ navigation, secondaryLinks }) => (
                                 <SearchForm />
                             </li>
                             <li className="nav-item">
-                                <a className="btn rounded outline" href="/contact/">
-                                    Contact Us
+                                <a className="btn rounded outline" target="_blank" href="https://workforce30.mobilize.io/registrations/groups/43575">
+                                    Registration
                                 </a>
                             </li>
         </ul>

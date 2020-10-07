@@ -76,8 +76,8 @@ const Blog = ({ data, pageContext }) => {
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
-                        <p className="sub-title text-orange">LOREM IPSUM DOLAR</p>
-                        <h2 className="title text-white">Latest news.</h2>
+                        <p className="sub-title text-orange">Latest News</p>
+                        <h2 className="title text-white">Learn More.</h2>
                     </div>
                     <div className="link d-link">
                         <a href="/news/" className="font-exo text-white">View all <img src={link_arrow} /></a>
@@ -118,8 +118,8 @@ const Blog = ({ data, pageContext }) => {
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
-                        <p className="sub-title text-orange-alt">Lorem ipsum dolor sit amet,</p>
-                        <h2 className="title">Trending posts.</h2>
+                        <p className="sub-title text-orange-alt">Upcoming Events</p>
+                        <h2 className="title">Join Us.</h2>
                     </div>
                 </div>
                 <div className="row primary-row">
@@ -159,7 +159,7 @@ const Blog = ({ data, pageContext }) => {
                         </div>
                     </div>
                     <div className="col col-4">
-                        <h4>Upcoming events.</h4>
+                        <h4>Get Started</h4>
                         <div className="oppn-container">
                         {events.map((event,index) => (
                             <div className="oppn-item" key={`event${index}`}>

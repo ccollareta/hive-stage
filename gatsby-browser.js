@@ -6,6 +6,10 @@
 import './src/styles/style.scss';
 import 'uswds';
 import React from 'react';
+
+import $ from "jquery";
+
+
 import MailWidgetWrapper from './src/components/mailwidgetwrapper';
 
 import { siteMetadata } from './gatsby-config';

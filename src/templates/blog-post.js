@@ -37,7 +37,7 @@ const BlogPost = ({ data }) => {
                     <p className="pre-text">
                         {frontmatter.pre_text}
                     </p>
-                    <p dangerouslySetInnerHTML={{ __html: html }} />
+                    <div dangerouslySetInnerHTML={{ __html: html }} />
                     
                    
                 </div>

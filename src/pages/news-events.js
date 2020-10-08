@@ -210,7 +210,7 @@ export const pageQuery = graphql`
       }
     }
     latenews: allMarkdownRemark(
-      filter: {fields: {sourceName: {eq: "blog-posts"}}, frontmatter: {featured: {eq: "No"}}}
+      filter: {fields: {sourceName: {eq: "blog-posts"}}}
       sort: { fields: frontmatter___date, order: DESC }
       limit: 3
     ) {

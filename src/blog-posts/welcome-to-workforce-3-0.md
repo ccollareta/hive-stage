@@ -3,7 +3,7 @@ title: Welcome to Workforce 3.0
 date: October 15, 2020
 author: Holly Joers
 featured: Yes
-featured_image: /images/bio_joers.jpg
+featured_image: /images/hero-bg.jpg
 excerpt: Together, we will propel PEO DHMS to a leader in Healthcare IT
 pre_text: Together, we will propel PEO DHMS to a leader in Healthcare IT
 tags:

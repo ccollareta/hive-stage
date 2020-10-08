@@ -139,7 +139,6 @@ collections:
         preview: false
       file: "src/pages/content/overview.md"
       fields:
-        - { label: "URL", name: url, widget: hidden, default: "/overview"}
         - label: "Top Section"
           name: "top_section"
           widget: object
@@ -251,8 +250,8 @@ collections:
         dateFormat: 'MMMM D, YYYY',
         timeFormat: true
       }
-      - { label: 'Vimeo Code', name: 'vimeo_code', widget: 'string'}
-      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'Vimeo Code', name: 'vimeo_code', widget: 'string', required: false}
+      - { label: 'Description', name: 'description', widget: 'text' }
       - { label: "Pre Text", name: "pre_text", widget: text}
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: exchange-opps
@@ -276,7 +275,7 @@ collections:
         timeFormat: false
       }
       - { label: 'Featured Image', name: 'event_image', widget: 'image' }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'Description', name: 'description', widget: 'text' }
       - { label: "Pre Text", name: "pre_text", widget: text}
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: exchanges
@@ -300,7 +299,7 @@ collections:
         timeFormat: false
       }
       - { label: 'Featured Image', name: 'event_image', widget: 'image' }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'Description', name: 'description', widget: 'text' }
       - { label: "Pre Text", name: "pre_text", widget: text}
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: ideas
@@ -324,6 +323,6 @@ collections:
         timeFormat: false
       }
       - { label: 'Featured Image', name: 'event_image', widget: 'image' }
-      - { label: 'Description', name: 'description', widget: 'markdown' }
+      - { label: 'Description', name: 'description', widget: 'text' }
       - { label: "Pre Text", name: "pre_text", widget: text}
       - { label: 'Body', name: 'body', widget: 'markdown' }

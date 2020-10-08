@@ -46,11 +46,10 @@ const Footer = () => (
                 <div className="footer-secondary">
                     <ul className="footer-links list-unstyled">
                         <li>© 2020 Hive. All Rights Reserved</li>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
+                      
                     </ul>
                     <ul className="footer-links list-unstyled">
-                        <li><a href="https://www.section508.gov/">Accessibility/508 Compliance</a></li>
-                        <li><a href="https://www.foia.gov/">FOIA</a></li>
+                       
                         <li><a href="https://www.usa.gov/">USA.gov</a></li>
                         <li><a href="https://www.hhs.gov/">HHS.gov</a></li>
                         <li><a href="https://www.gsa.gov/">GSA.gov</a></li>

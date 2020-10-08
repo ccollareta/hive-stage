@@ -46,8 +46,8 @@ const Layout = ({ children, pgVar }) => {
   return (
     <>
      <Helmet>
-  <link rel="stylesheet" href={withPrefix('../vendor/slick/slick.css')} />
-  <link rel="stylesheet" href={withPrefix('../vendor/lity/lity.min.css')} />
+  <link rel="stylesheet" href={withPrefix('/vendor/slick/slick.css')} />
+  <link rel="stylesheet" href={withPrefix('/vendor/lity/lity.min.css')} />
   </Helmet>
       <div className="site-wrapper">
       <Header siteTitle={title} pgVar={pgVar}>

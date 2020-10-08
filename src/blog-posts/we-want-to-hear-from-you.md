@@ -3,12 +3,12 @@ title: We Want to Hear from You
 date: October 7, 2020
 author: Holly Joers
 featured: No
-featured_image: /images/idea1.
+featured_image: /images/idea1.png
+excerpt: Have a question for the Virtual Industry Day Team?
+pre_text: "Have a question for the Virtual Industry Day Team? Submit it below. "
 tags:
   - health
   - vision-dental
-excerpt: Have a question for the Virtual Industry Day Team?
-pre_text: "Have a question for the Virtual Industry Day Team? Submit it below. "
 ---
 PEO DHMS wants to begin a lasting dialogue with you as we embark on this process together. Please submit your questions using the form below. 
 

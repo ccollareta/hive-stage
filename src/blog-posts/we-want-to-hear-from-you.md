@@ -12,6 +12,6 @@ tags:
 ---
 PEO DHMS wants to begin a lasting dialogue with you as we embark on this process together. Please submit your questions using the form below. 
 
------ Insert Question Form -----
+!!! Insert Question Form !!!
 
-All questions received and their answers will be made public. Answers to your questions and those submitted by others will be shared in a timely manner. Visit website to view the Virtual Industry Day question responses once available. 
+All questions received and their answers will be made public. Answers to your questions and those submitted by others will be shared in a timely manner. Visit website to view the Virtual Industry Day question responses once available.

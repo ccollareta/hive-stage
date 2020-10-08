@@ -4,11 +4,11 @@ date: October 15, 2020
 author: Holly Joers
 featured: Yes
 featured_image: /images/bio_joers.jpg
+excerpt: Together, we will propel PEO DHMS to a leader in Healthcare IT
+pre_text: Together, we will propel PEO DHMS to a leader in Healthcare IT
 tags:
   - health
   - vision-dental
-excerpt: Together, we will propel PEO DHMS to a leader in Healthcare IT
-pre_text: Together, we will propel PEO DHMS to a leader in Healthcare IT
 ---
 Welcome Partners. I’m Holly Joers, the Acting Program Executive Officer of the Program Executive Office Defense Healthcare Management Systems – PEO DHMS. 
 I am incredibly excited about the opportunity to work together, bring about lasting transformation in Healthcare IT, and elevate the level of care we can provide to our Nation’s service members, their families, and Veterans.  
@@ -19,4 +19,4 @@ The PEO was established in 2014 with the mission to “transform the delivery of
 
 Looking forward to the evolution of our work and partnership. 
 
-[IMAGE OF SIGNATURE is this poosible?]
+\[IMAGE OF SIGNATURE is this poosible?]

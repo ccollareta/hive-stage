@@ -12,6 +12,6 @@ tags:
 ---
 PEO DHMS wants to begin a lasting dialogue with you as we embark on this process together. Please submit your questions using the form below. 
 
-!!! Insert Question Form !!!
+<a class="btn rounded" href="https://workforce30.mobilize.io/main/groups/43511/lounge/members">Ask Questions Here</a>
 
 All questions received and their answers will be made public. Answers to your questions and those submitted by others will be shared in a timely manner. Visit website to view the Virtual Industry Day question responses once available.

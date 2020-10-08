@@ -12,7 +12,7 @@ pre_text: PEO DHMS is looking for Industry Day involvement from both the
   traditional systems integrator community and innovative technologies who may
   be a part of the solution stack but not the comprehensive solution.
 ---
-<a class="btn rounded" href="/">Register</a>
+<a class="btn rounded" href="https://workforce30.mobilize.io/registrations/groups/43575">Register</a>
 
 Moving forward, PEO DHMS is shifting the paradigm in how it typically works with partner organizations. Instead of putting out a Request for Proposal (RFP) including requirements, PEO DHMS will look to you to determine those requirements based on desired outcomes. 
 

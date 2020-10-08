@@ -8,12 +8,12 @@ CMS.registerEditorComponent({
     // Fields the user need to fill out when adding an instance of the component
     fields: [{name: 'link', label: 'Button Link', widget: 'string'},{name: 'text', label: 'Button Text', widget: 'string'}],
     // Pattern to identify a block as being an instance of this component
-    pattern: /button (\S+)\s/,
+    pattern: `<a[^>]+href=\"(.*?)\"[^>]*>(.*?)</a>`,
     // Function to extract data elements from the regexp match
     fromBlock: function(match) {
       return {
         link: match[1],
-        text: match[1]
+        text: match[2]
       };
     },
     // Function to create a text block from an instance of this component

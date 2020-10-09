@@ -12,6 +12,7 @@ import section_2 from '../images/section-art-2.png';
 import section_3 from '../images/section-art-3.png';
 import link_arrow from '../images/link-arrow.png';
 import link_arrow_2 from '../images/link-arrow-2.png';
+import hne3 from '../images/idea2.png';
 
 const Blog = ({ data, pageContext }) => {
     
@@ -144,13 +145,32 @@ const Blog = ({ data, pageContext }) => {
                                             </p>
                                             <div className="post-details">
                                                 <span className="author">Submitted by {post.author}</span>
-                                                <span className="date">{post.event_date}</span>
+                                                <span className="date">{post.event_date} {post.event_time}</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                 </div>
               ))}
+              <div className="card">
+              <div className="row secondary-row">
+                                    <div className="col col-3">
+                                        <img src={hne3} alt="item1" />
+                                    </div>
+                                    <div className="col col-9">
+                                        <div className="card-body">
+                                            <a href="/virtual-industry-day"><h4>Virtual Industry Day</h4></a>
+                                            <p>
+                                                lipsum
+                                            </p>
+                                            <div className="post-details">
+                                                <span className="author">Submitted by HOLLY JOERS</span>
+                                                <span className="date">October 30, 2020</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
                         </div>
                         <div className="link">
                             <a href="/events/" className="font-exo text-dark">
@@ -166,6 +186,7 @@ const Blog = ({ data, pageContext }) => {
                                 <a href={event.file}><h6>{event.title}</h6></a>
                                 <div className="post-details">
                                     <span className="author">Submitted by {event.author}</span>
+                                    <span className="author">In {event.category}</span>
                                     <span className="date">{event.date}</span>
                                 </div>
                             </div>
@@ -267,6 +288,7 @@ export const pageQuery = graphql`
               author
               date
               event_date
+              event_time
               description
               title
               event_image
@@ -292,6 +314,7 @@ export const pageQuery = graphql`
               file
               file_size
               description
+              category
               resource_thumb
             }
             fields {

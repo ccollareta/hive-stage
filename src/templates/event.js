@@ -25,7 +25,7 @@ const BlogPost = ({ data }) => {
             <div className="inner-container">
                 <div className="post-category-date">
                     
-                    <span className="date">{frontmatter.event_date}</span>
+                    <span className="date">{frontmatter.event_date} {frontmatter.event_time}</span>
                 </div>
                 <h1>{frontmatter.title}</h1>
                 <div className="author">
@@ -58,6 +58,7 @@ export const pageQuery = graphql`
       frontmatter {
         author
         event_date
+        event_time
         title
         event_image
         pre_text

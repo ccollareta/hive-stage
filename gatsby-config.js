@@ -6,9 +6,6 @@ module.exports = {
     navigation: [
       {
         items: [{ text: 'Workforce 3.0', link: '/news-events/' }],
-      },
-      {
-        items: [{ text: 'Industry Day', link: '/virtual-industry-day/' }],
       }
     ],
     secondaryLinks: [

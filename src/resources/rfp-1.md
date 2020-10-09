@@ -7,4 +7,5 @@ description: RFP
 file: /images/dummy.pdf
 file_size: 2mb
 resource_thumb: /images/st4.jpg
+category: Workplace 3.0
 ---

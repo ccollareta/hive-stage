@@ -268,6 +268,7 @@ collections:
       - { label: 'File', name: 'file', widget: 'file' }
       - { label: 'File Size', name: 'file_size', widget: 'string' }
       - { label: 'Thumbnail', name: 'resource_thumb', widget: 'image' }
+      - { label: 'Category', name: 'category', widget: 'select', required: false, options: ["Workforce 3.0", "Workplace 3.0", "Integrated Business Team", "HIVE.gov"]}
   - name: events
     label: Events
     label_singular: Event
@@ -285,11 +286,20 @@ collections:
         label: 'Event Date',
         name: 'event_date',
         widget: 'datetime',
-          format: 'MMMM D, YYYY LT',
-          date_format: 'MMMM D, YYYY',
-          dateFormat: 'MMMM D, YYYY',
-          time_format: 'hh:mm A',
-          timeFormat: 'hh:mm A'
+        format: 'MMMM D, YYYY',
+        date_format: 'MMMM D, YYYY',
+        dateFormat: 'MMMM D, YYYY',
+        timeFormat: false
+      }
+      - {
+        label: 'Event Time',
+        name: 'event_time',
+        widget: 'datetime',
+        format: 'LT',
+        dateFormat: false,
+        time_format: 'hh:mm A',
+        timeFormat: 'hh:mm A',
+        required: false
       }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: "Pre Text", name: "pre_text", widget: text}

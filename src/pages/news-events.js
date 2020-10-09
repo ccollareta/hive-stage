@@ -186,7 +186,6 @@ const Blog = ({ data, pageContext }) => {
                                 <a href={event.file}><h6>{event.title}</h6></a>
                                 <div className="post-details">
                                     <span className="author">Submitted by {event.author}</span>
-                                    <span className="author">In {event.category}</span>
                                     <span className="date">{event.date}</span>
                                 </div>
                             </div>

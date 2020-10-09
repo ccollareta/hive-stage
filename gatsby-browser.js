@@ -77,7 +77,7 @@ export const onInitialClientRender = () => {
     document.body.appendChild(gtag);
   }
 
-  const jq = '/scripts/jquery.min.js';
+  const jq = '/scripts/jquery.js';
   const lity = '/vendor/lity/lity.js';
   const slick = '/vendor/slick/slick.min.js';
   const isoptope ='/vendor/isotope/isotope.js';
@@ -87,10 +87,10 @@ export const onInitialClientRender = () => {
   scripts.push(loadScripts(jq));
   scripts.push(loadScripts(lity));
   scripts.push(loadScripts(slick));
-  if(pathname !== '/resource-library'){
+ 
   scripts.push(loadScripts(isoptope));
   scripts.push(loadScripts(isotope2));
-  }
+
   scripts.push(loadScripts(cust));
 
 

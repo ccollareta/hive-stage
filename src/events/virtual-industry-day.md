@@ -1,7 +1,7 @@
 ---
 vimeo_code: "359409"
-title: "Virtual Industry Day "
-author: Holly Joers
+title: "Register for Virtual Industry Day "
+author: Staff
 featured: Yes
 event_image: /images/idea1.png
 event_date: October 30, 2020 2:00 PM

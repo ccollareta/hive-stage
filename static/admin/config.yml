@@ -255,6 +255,15 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - {
+        label: 'Date',
+        name: 'date',
+        widget: 'datetime',
+        format: 'MMMM D, YYYY',
+        dateFormat: 'MMMM D, YYYY',
+        timeFormat: false
+      }
+      - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'File', name: 'file', widget: 'file' }
       - { label: 'File Size', name: 'file_size', widget: 'string' }

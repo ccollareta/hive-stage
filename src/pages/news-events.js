@@ -15,11 +15,6 @@ import link_arrow_2 from '../images/link-arrow-2.png';
 
 const Blog = ({ data, pageContext }) => {
     
-  const posts = data.news.edges.map(({ node }) => ({
-    html: node.html,
-    ...node.frontmatter,
-    path: '/news/' + node.fields.name,
-  }));
   const late = data.latenews.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
@@ -31,6 +26,11 @@ const Blog = ({ data, pageContext }) => {
     path: '/news/' + node.fields.name,
   }));
   const events = data.events.edges.map(({ node }) => ({
+    html: node.html,
+    ...node.frontmatter,
+    path: '/event/' + node.fields.name,
+  }));
+  const side = data.side.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
     path: '/event/' + node.fields.name,
@@ -76,8 +76,8 @@ const Blog = ({ data, pageContext }) => {
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
-                        <p className="sub-title text-orange">Latest News</p>
-                        <h2 className="title text-white">Learn More.</h2>
+                        <p className="sub-title text-orange">The Buzz</p>
+                        <h2 className="title text-white">Latest News & Announcements</h2>
                     </div>
                     <div className="link d-link">
                         <a href="/news/" className="font-exo text-white">View all <img src={link_arrow} /></a>
@@ -118,8 +118,8 @@ const Blog = ({ data, pageContext }) => {
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
-                        <p className="sub-title text-orange-alt">Upcoming Events</p>
-                        <h2 className="title">Join Us.</h2>
+                        <p className="sub-title text-orange-alt">Join Us.</p>
+                        <h2 className="title">Upcoming Events</h2>
                     </div>
                 </div>
                 <div className="row primary-row">
@@ -127,24 +127,24 @@ const Blog = ({ data, pageContext }) => {
                         <div className="card-exchanges">
                                 
                             
-                            {posts.map((post,index) => (
+                            {events.map((post,index) => (
                 <div
                   key={`news${index}`}
                   className="card"
                 >
                   <div className="row secondary-row">
                                     <div className="col col-3">
-                                        <img src={post.featured_image} alt="item1" />
+                                        <img src={post.event_image} alt="item1" />
                                     </div>
                                     <div className="col col-9">
                                         <div className="card-body">
                                             <a href={post.path}><h4>{post.title}</h4></a>
                                             <p>
-                                                {post.excerpt}
+                                                {post.description}
                                             </p>
                                             <div className="post-details">
                                                 <span className="author">Submitted by {post.author}</span>
-                                                <span className="date">{post.date}</span>
+                                                <span className="date">{post.event_date}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -153,20 +153,20 @@ const Blog = ({ data, pageContext }) => {
               ))}
                         </div>
                         <div className="link">
-                            <a href="/news/" className="font-exo text-dark">
-                                See all exchanges <img src={link_arrow} />
+                            <a href="/events/" className="font-exo text-dark">
+                                See all events <img src={link_arrow} />
                             </a>
                         </div>
                     </div>
                     <div className="col col-4">
-                        <h4>Get Started</h4>
+                        <h4>Resources</h4>
                         <div className="oppn-container">
-                        {events.map((event,index) => (
+                        {side.map((event,index) => (
                             <div className="oppn-item" key={`event${index}`}>
-                                <a href={event.path}><h6>{event.title}</h6></a>
+                                <a href={event.file}><h6>{event.title}</h6></a>
                                 <div className="post-details">
                                     <span className="author">Submitted by {event.author}</span>
-                                    <span className="date">{event.event_date}</span>
+                                    <span className="date">{event.date}</span>
                                 </div>
                             </div>
                         ))}
@@ -267,8 +267,32 @@ export const pageQuery = graphql`
               author
               date
               event_date
+              description
               title
+              event_image
               tags
+            }
+            fields {
+              name
+            }
+          }
+        }
+      }
+      side: allMarkdownRemark(
+        filter: {fields: {sourceName: {eq: "resources"}}}
+        sort: { fields: frontmatter___date, order: DESC }
+      ) {
+        edges {
+          node {
+            html
+            frontmatter {
+              author
+              date
+              title
+              file
+              file_size
+              description
+              resource_thumb
             }
             fields {
               name

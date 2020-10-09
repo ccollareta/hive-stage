@@ -19,4 +19,4 @@ The PEO was established in 2014 with the mission to “transform the delivery of
 
 Looking forward to the evolution of our work and partnership. 
 
-\[IMAGE OF SIGNATURE is this poosible?]
+\[IMAGE OF SIGNATURE]

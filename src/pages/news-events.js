@@ -36,6 +36,7 @@ const Blog = ({ data, pageContext }) => {
     ...node.frontmatter,
     path: '/event/' + node.fields.name,
   }));
+  const abouts = data.abouts.frontmatter;
   const pgVar = 'style-3';
   return (
     <Layout pgVar={pgVar}>
@@ -159,13 +160,13 @@ const Blog = ({ data, pageContext }) => {
                                     </div>
                                     <div className="col col-9">
                                         <div className="card-body">
-                                            <a href="/virtual-industry-day"><h4>Virtual Industry Day</h4></a>
+                                            <a href="/virtual-industry-day"><h4>{abouts.title}</h4></a>
                                             <p>
-                                                lipsum
+                                                {abouts.text}
                                             </p>
                                             <div className="post-details">
-                                                <span className="author">Submitted by HOLLY JOERS</span>
-                                                <span className="date">October 30, 2020</span>
+                                            <span className="author">Submitted by HOLLY JOER</span>
+                                                <span className="date">{abouts.event_date}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -322,6 +323,16 @@ export const pageQuery = graphql`
           }
         }
       }
+      abouts: markdownRemark(fileAbsolutePath: { regex: "./content/viday.md/" }) {
+        html
+        frontmatter {
+          title
+          vimeo_code
+          event_date
+          sub_title
+          text
+          }
+        }
   }
 `;
 

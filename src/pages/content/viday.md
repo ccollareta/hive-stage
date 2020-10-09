@@ -1,6 +1,6 @@
 ---
-title: Industry Day
-event_date: Thu Oct 15, 2020 2:00 PM
+title: Virtual Industry Day
+event_date: Fri Oct 30, 2020 2:00 PM
 vimeo_code: "359409"
 sub_title: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
   fermentum elit tortor, vel posuere justo bibendum euismod.

@@ -40,14 +40,6 @@ const BlogPost = ({ data }) => {
                     </p>
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                 </div>
-           
-            {frontmatter.vimeo_code.length > 1 && 
-            <div style={{padding: '56.25% 0 0 0',
-            position: 'relative'}}>
-              <iframe src={`https://vimeo.com/event/${frontmatter.vimeo_code}/embed/f85d593830`} frameBorder="0" allow="autoplay; fullscreen" allowFullScreen style={{position:'absolute', top:'0', left: '0', width:'100%', height:'100%'}}></iframe>
-              <iframe src={`https://vimeo.com/event/${frontmatter.vimeo_code}/chat/f85d593830`} width="400" height="600" frameBorder="0"></iframe>
-              </div>
-            }
              </div>
         </section>
     </Layout>
@@ -68,7 +60,6 @@ export const pageQuery = graphql`
         event_date
         title
         event_image
-        vimeo_code
         pre_text
       }
     }

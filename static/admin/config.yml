@@ -163,7 +163,16 @@ collections:
       file: "src/pages/content/contact.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { 
+            label: "Publish Date", 
+            name: "date", 
+            widget: 'datetime',
+            format: 'ddd MMM D, YYYY LT',
+            date_format: 'ddd MMM D, YYYY',
+            dateFormat: 'ddd MMM D, YYYY',
+            time_format: 'hh:mm A',
+            timeFormat: 'hh:mm A', 
+            }
         - { label: "Body", name: "body", widget: "markdown"}
         - { label: "Address", name: "address", widget: "text"}
         - { label: "E-Mail", name: "email", widget: "string"}
@@ -267,11 +276,12 @@ collections:
         label: 'Event Date',
         name: 'event_date',
         widget: 'datetime',
-        format: 'MMMM D, YYYY',
-        dateFormat: 'MMMM D, YYYY',
-        timeFormat: true
+          format: 'MMMM D, YYYY LT',
+          date_format: 'MMMM D, YYYY',
+          dateFormat: 'MMMM D, YYYY',
+          time_format: 'hh:mm A',
+          timeFormat: 'hh:mm A'
       }
-      - { label: 'Vimeo Code', name: 'vimeo_code', widget: 'string', required: false}
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: "Pre Text", name: "pre_text", widget: text}
       - { label: 'Body', name: 'body', widget: 'markdown' }

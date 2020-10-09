@@ -1,10 +1,10 @@
 ---
+vimeo_code: "359409"
 title: "Virtual Industry Day "
 author: Holly Joers
 featured: Yes
 event_image: /images/idea1.png
-event_date: October 30, 2020
-vimeo_code: "359409"
+event_date: October 30, 2020 2:00 PM
 description: PEO DHMS is looking for Industry Day involvement from both the
   traditional systems integrator community and innovative technologies who may
   be a part of the solution stack but not the comprehensive solution.

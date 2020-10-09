@@ -1431,6 +1431,13 @@
         }
     }
 }
+.industry{
+    margin-top: -150px;
+    @media (max-width:1023px){
+        margin-top: 0;
+        
+    }
+}
 
 .hive-conversation {
     position: relative;

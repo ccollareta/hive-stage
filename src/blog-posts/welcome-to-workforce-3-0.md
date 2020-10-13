@@ -1,6 +1,6 @@
 ---
 title: Welcome to Workforce 3.0
-date: October 15, 2020
+date: October 13, 2020
 author: Holly Joers
 featured: Yes
 featured_image: /images/feat-img.png

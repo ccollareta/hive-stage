@@ -25,11 +25,11 @@ const Nav = ({ navigation, secondaryLinks }) => (
                     <div className="navbar-collapse">
     
       <ul className="navbar-nav">
-      {/*<li className="nav-item m-link">
+      <li className="nav-item m-link">
                                 <form className="search-box mobile">
                                     <input type="text" className="text search-input" placeholder="Type here to search..." />
                                 </form>
-</li>*/}
+</li>
         {navigation.map((navGroup, idx) => (
           <li key={idx} className="nav-item">
             {navGroup.items.length > 1 ? (
@@ -68,16 +68,16 @@ const Nav = ({ navigation, secondaryLinks }) => (
       </ul>
       
         <ul className="navbar-nav right-menu">
-        {/*<li className="nav-item d-link">
+        <li className="nav-item d-link">
                                 <a className="nav-link search-toggle" href="#">
                                     <img className="search-white" src={search_white} alt="search" />
                                     <img className="search" src={search} alt="search" />
                                 </a>
                                 <SearchForm />
-            </li>*/}
+            </li>
                             <li className="nav-item">
-                                <a className="btn rounded outline" target="_blank" href="https://workforce30.mobilize.io/registrations/groups/43575">
-                                    Registration
+                                <a className="btn rounded outline" href="/contact">
+                                    Contact Us
                                 </a>
                             </li>
         </ul>

@@ -31,12 +31,12 @@ const Hero = () => (
         }
                     </div>
                 </div>
-                {/* <div className="scroll-down">
+                 <div className="scroll-down">
                     <a id="go-down" href="#">
                         <img src={down_arrow} />
                     </a>
                 </div> 
-      <Social /> */}
+      <Social /> 
             </div>
   </section>
 );

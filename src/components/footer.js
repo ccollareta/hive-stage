@@ -50,8 +50,8 @@ const Footer = () => (
                     </ul>
                     <ul className="footer-links list-unstyled">
                        
-                        <li><a href="https://Health.MIL/">Health.MIL</a></li>
-                        <li><a href="https://www.HealthIT.GOV/">HealthIT.GOV</a></li>
+                        <li><a href="https://Health.MIL/" target="_blank">Health.MIL</a></li>
+                        <li><a href="https://www.HealthIT.GOV/" target="_blank">HealthIT.GOV</a></li>
                     </ul>
                     <div className="address">
                         <img src={dhms} />

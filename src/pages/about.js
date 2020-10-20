@@ -19,7 +19,7 @@ import hne_2 from '../images/hne-2.png';
 import hne_3 from '../images/hne-3.png';
 import hne_4 from '../images/hne-4.png';
 import hne_5 from '../images/hne-5.png';
-import art_7 from '../images/section-art-7.png';
+import art_7 from '../images/Hexagon-Patter-On-White-Bottom.png';
 import art_5 from '../images/section-art-5.png';
 import art_4 from '../images/section-art-4.png';
 import DHMS from '../images/dhms.png';

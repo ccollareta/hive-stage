@@ -9,7 +9,8 @@ import prev from '../images/prev.png';
 import next from '../images/next.png';
 import section_1 from '../images/section-art-1.png';
 import section_2 from '../images/section-art-2.png';
-import section_3 from '../images/section-art-3.png';
+import section_3 from '../images/Hexagon-Patter-On-White-Top.png';
+import section_4 from '../images/Hexagon-Patter-On-White-Bottom.png';
 import link_arrow from '../images/link-arrow.png';
 import link_arrow_2 from '../images/link-arrow-2.png';
 import hne3 from '../images/idea2.png';
@@ -117,6 +118,7 @@ const Blog = ({ data, pageContext }) => {
         </section>
         <section className="hive-multi-lists-section">
             <img className="section-art art-3" src={section_3} />
+            <img className="section-art art-4" src={section_4} />
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">

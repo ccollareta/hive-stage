@@ -15,7 +15,8 @@ import st3 from '../images/st3.jpg';
 import st4 from '../images/st4.jpg';
 import sect_1 from '../images/section-art-1.png';
 import sect_2 from'../images/section-art-2.png';
-import sect_3 from '../images/section-art-3.png';
+import section_3 from '../images/Hexagon-Patter-On-White-Top.png';
+import section_4 from '../images/Hexagon-Patter-On-White-Bottom.png';
 import link_arrow from '../images/link-arrow.png';
 import link_arrow_2 from '../images/link-arrow-2.png';
 
@@ -105,7 +106,8 @@ const IndexPage = ({data}) => {
             </div>
         </section>
         <section className="hive-multi-lists-section">
-    <img className="section-art art-3" src={sect_3} />
+        <img className="section-art art-3" src={section_3} />
+        <img className="section-art art-4" src={section_4} />
     <div className="inner-container">
         <div className="section-head">
             <div className="section-title">

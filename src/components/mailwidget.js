@@ -27,14 +27,14 @@ const MailWidget = () => (
             </div>
             <div className="backdrop"></div>
             <div className="fabtn child" data-subitem="1">
-                <a href="#">
+                <a href="/contact">
                     <div className="lable">Support</div>
                     <div className="icon"><img src={cmt} /></div>
                 </a>
             </div>
             <div className="fabtn child" data-subitem="2">
                 <a href="#submit-idea" data-lity>
-                    <div className="lable">New Post</div>
+                    <div className="lable">Submit an Idea</div>
                     <div className="icon"><img src={plus} /></div>
                 </a>
             </div>

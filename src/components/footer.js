@@ -37,7 +37,7 @@ const Footer = () => (
                                 <form className="footer-form">
                                     <p>Receive the latest updates from Hive in your inbox</p>
                                     <input type="text" className="form-control" placeholder="Enter your email address" />
-                                    <a className="btn rounded" href="#">Get Started</a>
+                                    <a className="btn rounded" href="#">Sign Up</a>
                                 </form>
                             </div>
                         </div>

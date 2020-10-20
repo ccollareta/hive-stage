@@ -22,6 +22,12 @@ import hne_5 from '../images/hne-5.png';
 import art_7 from '../images/section-art-7.png';
 import art_5 from '../images/section-art-5.png';
 import art_4 from '../images/section-art-4.png';
+import DHMS from '../images/dhms.png';
+import DHA from '../images/1920px-US_Defense_Health_Agency_seal.png';
+import VA from '../images/Seal_of_the_U.S._Department_of_Veterans_Affairs.svg.png';
+import FEHRM from '../images/fehrm.png';
+import DOD from '../images/United_States_Department_of_Defense_Seal.svg.png';
+import HHS from '../images/Seal_of_the_United_States_Department_of_Health_and_Human_Services.svg.png';
 import partners from '../images/partners.png';
 import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
 
@@ -99,7 +105,31 @@ const AboutPage = ({data}) => {
                         </p>
                     </div>
                     <div className="col col-6">
-                        <img src={partners} className="img-fluid" alt="partners" />
+                        <div className="row">
+                        <div className="col col-4">
+                            <img src={DHMS} alt="DHMS" className="img-fluid" />
+                        </div>
+                        <div className="col col-4">
+                            <img src={DHA} alt="DHA" className="img-fluid" />
+                        </div>
+                        <div className="col col-4">
+
+                        </div>
+                        </div>
+                        <div className="row" style={{marginTop:'10px'}}>
+                        <div className="col col-3">
+                            <img src={VA} alt="VA" className="img-fluid" />
+                        </div>
+                        <div className="col col-3">
+                            <img src={DOD} alt="DOD" className="img-fluid" />
+                        </div>
+                        <div className="col col-3">
+                        <img src={FEHRM} alt="FEHRM" className="img-fluid" />
+                        </div>
+                        <div className="col col-3">
+                        <img src={HHS} alt="HHS" className="img-fluid" />
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>

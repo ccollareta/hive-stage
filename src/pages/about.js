@@ -107,10 +107,10 @@ const AboutPage = ({data}) => {
                     <div className="col col-6">
                         <div className="row">
                         <div className="col col-4">
-                            <img src={DHMS} alt="DHMS" className="img-fluid" />
+                            <a href="https://health.mil/About-MHS/OASDHA/Defense-Health-Agency/Defense-Healthcare-Management-Systems" target="_blank"><img src={DHMS} alt="DHMS" className="img-fluid" /></a>
                         </div>
                         <div className="col col-4">
-                            <img src={DHA} alt="DHA" className="img-fluid" />
+                        <a href="https://health.mil/About-MHS/OASDHA/Defense-Health-Agency" target="_blank"><img src={DHA} alt="DHA" className="img-fluid" /></a>
                         </div>
                         <div className="col col-4">
 
@@ -118,16 +118,16 @@ const AboutPage = ({data}) => {
                         </div>
                         <div className="row" style={{marginTop:'10px'}}>
                         <div className="col col-3">
-                            <img src={VA} alt="VA" className="img-fluid" />
+                        <a href="https://www.va.gov/" target="_blank"><img src={VA} alt="VA" className="img-fluid" /></a>
                         </div>
                         <div className="col col-3">
-                            <img src={DOD} alt="DOD" className="img-fluid" />
+                        <a href="https://www.defense.gov/" target="_blank"><img src={DOD} alt="DOD" className="img-fluid" /></a>
                         </div>
                         <div className="col col-3">
                         <img src={FEHRM} alt="FEHRM" className="img-fluid" />
                         </div>
                         <div className="col col-3">
-                        <img src={HHS} alt="HHS" className="img-fluid" />
+                        <a href="https://www.hhs.gov/" target="_blank"><img src={HHS} alt="HHS" className="img-fluid" /></a>
                         </div>
                         </div>
                     </div>

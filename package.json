@@ -38,6 +38,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "react-slick": "^0.27.12",
+    "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
     "uswds": "^2.8.1"
   },

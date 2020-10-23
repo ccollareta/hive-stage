@@ -15,6 +15,10 @@ import PostFoot from './postfoot';
 import Header from './header';
 import Nav from './nav';
 
+import '../../static/vendor/slick/slick.css';
+import '../../static/vendor/lity/lity.min.css';
+
+
 const Layout = ({ children, pgVar }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -46,8 +50,13 @@ const Layout = ({ children, pgVar }) => {
   return (
     <>
      <Helmet>
-  <link rel="stylesheet" href={withPrefix('/vendor/slick/slick.css')} />
-  <link rel="stylesheet" href={withPrefix('/vendor/lity/lity.min.css')} />
+      <script src={withPrefix(jq)} type="text/javascript"></script>
+      <script src={withPrefix(lity)} type="text/javascript" />
+      <script src={withPrefix(slick)} type="text/javascript" />
+      <script src={withPrefix(isoptope)} type="text/javascript" />
+      <script src={withPrefix(isotope2)} type="text/javascript" />
+      <script src={withPrefix(cust)} type="text/javascript" />
+
   </Helmet>
       <div className="site-wrapper">
       <Header siteTitle={title} pgVar={pgVar}>

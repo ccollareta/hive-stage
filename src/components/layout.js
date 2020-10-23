@@ -41,7 +41,7 @@ const Layout = ({ children, pgVar }) => {
   `);
   
   const { title, navigation, secondaryLinks } = data.site.siteMetadata;
-  const jq = '/scripts/jquery.min.js';
+  const jq = '/scripts/jquery.js';
   const lity = '/vendor/lity/lity.js';
   const slick = '/vendor/slick/slick.min.js';
   const isoptope ='/vendor/isotope/isotope.js';

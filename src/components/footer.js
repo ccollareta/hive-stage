@@ -56,7 +56,7 @@ const Footer = () => (
                     <div className="address">
                         <img src={dhms} />
                         <p>
-                            DHMS Address: <span>770 Arlington Boulevard, Suite 5101, Fall Church, VA 22042-5101</span>
+                            DHMS Address: <span>1501 Wilson Blvd, 8th Floor Arlington, VA 22209</span>
                         </p>
                     </div>
                 </div>

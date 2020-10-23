@@ -85,7 +85,11 @@ export const onInitialClientRender = () => {
   const isotope2 = '/scripts/isotope.js';
   const cust = '/scripts/custom.js';
 
-
+  scripts.push(loadScripts(lity));
+  scripts.push(loadScripts(slick));
+  scripts.push(loadScripts(isoptope));
+  scripts.push(loadScripts(isotope2));
+  scripts.push(loadScripts(cust));
   
 
 

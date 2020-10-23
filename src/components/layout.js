@@ -51,11 +51,6 @@ const Layout = ({ children, pgVar }) => {
     <>
      <Helmet>
       <script src={withPrefix(jq)} type="text/javascript"></script>
-      <script src={withPrefix(lity)} type="text/javascript" />
-      <script src={withPrefix(slick)} type="text/javascript" />
-      <script src={withPrefix(isoptope)} type="text/javascript" />
-      <script src={withPrefix(isotope2)} type="text/javascript" />
-      <script src={withPrefix(cust)} type="text/javascript" />
 
   </Helmet>
       <div className="site-wrapper">

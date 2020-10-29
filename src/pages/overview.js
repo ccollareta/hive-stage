@@ -7,7 +7,7 @@ import Tagline from '../components/tagline';
 import Highlights from '../components/highlights';
 import Slider from '../components/slider'
 import FeatOpp from '../components/opp'
-import { Link, withPrefix } from 'gatsby';
+import { Link, withPrefix, graphql } from 'gatsby';
 import hero_bg from '../images/hero-bg-3.jpg';
 import { Helmet } from 'react-helmet';
 import link_arrow from '../images/link-arrow.png';
@@ -26,6 +26,11 @@ const OverviewPage = ({data}) => {
   const { markdownRemark } = data;
   const posts = data.abouts.frontmatter;
   const news = data.news.edges.map(({ node }) => ({
+    html: node.html,
+    ...node.frontmatter,
+    path: '/news/' + node.fields.name,
+  }));
+  const ideas = data.ideas.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
     path: '/news/' + node.fields.name,
@@ -49,50 +54,26 @@ const OverviewPage = ({data}) => {
             </div>
         </section>
         <section className="hive-conversation">
+        <h2>Join The Conversation</h2>
             <div className="inner-container">
+            
                 <div className="row">
-                    <div className="col col-4">
+                    {posts.blocks.slice(0, 3).map((block,index) => (
+                        <div className="col col-4" key={index}>
                         <div className="col-item">
-                            <img src={c1} alt="img" />
+                            <img src={block.block.icon} alt="img" />
                             <div className="col-content">
-                                <h6>Explore Our Needs</h6>
+                                <h6>{block.block.title}</h6>
                                 <p>
-                                    Lorem ipsum dolor sit amet, elit
-                                    sed do eiusmod tempor incididunt
-                                    ut labore et dolore .
+                                    {block.block.text}
                                 </p>
+                                <div className="link"><a href={block.block.url}>Learn More <img src={link_arrow} /></a></div>
                             </div>
                         </div>
                     </div>
-                    <div className="col col-4">
-                        <div className="col-item">
-                            <img src={c2} alt="img" />
-                            <div className="col-content">
-                                <h6>Pitch Your Idea</h6>
-                                <p>
-                                    Lorem ipsum dolor sit amet, elit
-                                    sed do eiusmod tempor incididunt
-                                    ut labore et dolore .
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col col-4">
-                        <div className="col-item">
-                            <img src={c3} alt="img" />
-                            <div className="col-content">
-                                <h6>Connect With Us</h6>
-                                <p>
-                                    Lorem ipsum dolor sit amet, elit
-                                    sed do eiusmod tempor incididunt
-                                    ut labore et dolore .
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
+                    
                 </div>
-                <h2>Join The Conversation</h2>
-                <img src={conv} className="img-fluid" alt="img" />
             </div>
         </section>
         <section className="hive-3-col-section style-1">
@@ -109,66 +90,27 @@ const OverviewPage = ({data}) => {
                     </div>
                 </div>
                 <div className="row ">
-                    <div className="col col-4">
+                    {ideas.map((idea,index)=> (
+                        <div className="col col-4" key={index}>
                         <div className="card">
                             <div className="img-hover">
-                                <img src={idea_1} className="card-img" alt="item1" />
+                                <img src={idea.event_image} className="card-img" alt="item1" />
                             </div>
                             <div className="card-body">
-                                <a href="javascript:void(0)">
-                                    <h4 className="text-white">Lorem ipsum dolor sit ed amet, consectetur</h4>
+                                <a href={idea.url}>
+                                    <h4 className="text-white">{idea.title}</h4>
                                 </a>
                                 <p className="text-white">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
+                                    {idea.description}
                                 </p>
                                 <div className="post-details">
-                                    <span className="author">Submitted by User Name</span>
-                                    <span className="date">June 26, 2020</span>
+                                    <span className="author">Submitted by {idea.author}</span>
+                                    <span className="date">{idea.date}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col col-4">
-                        <div className="card">
-                            <div className="img-hover">
-                                <img src={idea_2} className="card-img" alt="item2" />
-                            </div>
-                            <div className="card-body">
-                                <a href="javascript:void(0)">
-                                    <h4 className="text-white">Lorem ipsum dolor sit ed amet, consectetur</h4>
-                                </a>
-                                <p className="text-white">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div className="post-details">
-                                    <span className="author">Submitted by User Name</span>
-                                    <span className="date">June 26, 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col col-4">
-                        <div className="card">
-                            <div className="img-hover">
-                                <img src={idea_3} className="card-img" alt="item3" />
-                            </div>
-                            <div className="card-body">
-                                <a href="javascript:void(0)">
-                                    <h4 className="text-white">Lorem ipsum dolor sit ed amet, consectetur</h4>
-                                </a>
-                                <p className="text-white">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div className="post-details">
-                                    <span className="author">Submitted by User Name</span>
-                                    <span className="date">June 26, 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
                 <div className="link m-link">
                     <a href="#" className="font-exo text-white">View all <img src={link_arrow} /></a>
@@ -178,134 +120,33 @@ const OverviewPage = ({data}) => {
         <section className="hive-3-col-section style-2">
             <div className="inner-container">
                 <div className="row ">
+                        {news.map((post,index)=>(
                     <div className="col col-4">
                         <div className="card">
                             <div className="img-hover">
-                                <img src={idea_1} className="card-img" alt="item1" />
+                                <img src={post.featured_image} className="card-img" alt="item1" />
                             </div>
                             <div className="card-body">
-                                <a href="javascript:void(0)">
-                                    <h4>Lorem ipsum dolor sit ed amet, consectetur</h4>
+                                <a href={post.path}>
+                                    <h4>{post.title}</h4>
                                 </a>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
+                                    {post.excerpt}
                                 </p>
                                 <div className="post-details">
-                                    <span className="author">Submitted by User Name</span>
-                                    <span className="date">June 26, 2020</span>
+                                    <span className="author">Submitted by {post.author}</span>
+                                    <span className="date">{post.date}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col col-4">
-                        <div className="card">
-                            <div className="img-hover">
-                                <img src={idea_2} className="card-img" alt="item2" />
-                            </div>
-                            <div className="card-body">
-                                <a href="javascript:void(0)">
-                                    <h4>Lorem ipsum dolor sit ed amet, consectetur</h4>
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div className="post-details">
-                                    <span className="author">Submitted by User Name</span>
-                                    <span className="date">June 26, 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col col-4">
-                        <div className="card">
-                            <div className="img-hover">
-                                <img src={idea_3} className="card-img" alt="item3" />
-                            </div>
-                            <div className="card-body">
-                                <a href="javascript:void(0)">
-                                    <h4>Lorem ipsum dolor sit ed amet, consectetur</h4>
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div className="post-details">
-                                    <span className="author">Submitted by User Name</span>
-                                    <span className="date">June 26, 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col col-4">
-                        <div className="card">
-                            <div className="img-hover">
-                                <img src={idea_1} className="card-img" alt="item1" />
-                            </div>
-                            <div className="card-body">
-                                <a href="javascript:void(0)">
-                                    <h4>Lorem ipsum dolor sit ed amet, consectetur</h4>
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div className="post-details">
-                                    <span className="author">Submitted by User Name</span>
-                                    <span className="date">June 26, 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col col-4">
-                        <div className="card">
-                            <div className="img-hover">
-                                <img src={idea_2} className="card-img" alt="item2" />
-                            </div>
-                            <div className="card-body">
-                                <a href="javascript:void(0)">
-                                    <h4>Lorem ipsum dolor sit ed amet, consectetur</h4>
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div className="post-details">
-                                    <span className="author">Submitted by User Name</span>
-                                    <span className="date">June 26, 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col col-4">
-                        <div className="card">
-                            <div className="img-hover">
-                                <img src={idea_3} className="card-img" alt="item1" />
-                            </div>
-                            <div className="card-body">
-                                <a href="javascript:void(0)">
-                                    <h4>Lorem ipsum dolor sit ed amet, consectetur</h4>
-                                </a>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <div className="post-details">
-                                    <span className="author">Submitted by User Name</span>
-                                    <span className="date">June 26, 2020</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        ))}
+                    
+
+                    
                 </div>
                 <nav>
                     <ul className="pagination">
-                        <li className="page-item"><a className="page-link current" href="#">1</a></li>
-                        <li className="page-item"><a className="page-link" href="#">2</a></li>
-                        <li className="page-item"><a className="page-link" href="#">3</a></li>
-                        <li className="page-item"><a className="page-link" href="#">4</a></li>
-                        <li className="page-item"><a className="page-link" href="#">5</a></li>
                     </ul>
                 </nav>
             </div>
@@ -329,6 +170,8 @@ const OverviewPage = ({data}) => {
             block{
                 icon
                 text
+                title
+                url
             }
         }
         }
@@ -336,7 +179,6 @@ const OverviewPage = ({data}) => {
     news: allMarkdownRemark(
         filter: { fields: { sourceName: { eq: "blog-posts" } } }
         sort: { fields: frontmatter___date, order: ASC }
-        limit: 5
       ) {
         edges {
           node {
@@ -349,6 +191,30 @@ const OverviewPage = ({data}) => {
               tags
               featured_image
               excerpt
+            }
+            fields {
+              name
+            }
+          }
+        }
+      }
+      ideas: allMarkdownRemark(
+        filter: { fields: { sourceName: { eq: "ideas" } } }
+        sort: { fields: frontmatter___date, order: ASC }
+        limit: 3
+      ) {
+        edges {
+          node {
+            html
+            frontmatter {
+              author
+              featured
+              date
+              title
+              tags
+              event_image
+              description
+              url
             }
             fields {
               name

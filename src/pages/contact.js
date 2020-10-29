@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, withPrefix } from 'gatsby';
+import { Link, withPrefix, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/layout';
 import SEO from '../components/seo';

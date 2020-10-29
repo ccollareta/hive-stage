@@ -12,7 +12,8 @@
     "serve": "gatsby serve",
     "federalist": "npm run federalist:build && npm run federalist:copy",
     "federalist:build": "gatsby build --prefix-paths",
-    "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r public/* _site/"
+    "federalist:copy": "mkdir -p _site && rm -rf _site/* && cp -r public/* _site/",
+    "omg": "npm run build && npm run serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",

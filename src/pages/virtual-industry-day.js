@@ -7,7 +7,7 @@ import Tagline from '../components/tagline';
 import Highlights from '../components/highlights';
 import Slider from '../components/slider'
 import FeatOpp from '../components/opp'
-import { Link, withPrefix } from 'gatsby';
+import { Link, withPrefix, graphql } from 'gatsby';
 import hero_bg from '../images/hero-bg-3.jpg';
 import { Helmet } from 'react-helmet';
 import link_arrow from '../images/link-arrow.png';

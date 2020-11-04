@@ -1,26 +1,9 @@
 ---
 slider:
-  - name: Explore our needs
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
-      ultricies.
+  - name: Learn More and Explore
+    description: Engage with other partners, ask questions about open opportunities,
+      and attend upcoming events.
     thumbnail: /images/st1.jpg
-  - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
-      ultricies.
-    name: Join the conversation
-    thumbnail: /images/st2.jpg
-  - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
-      ultricies.
-    name: Pitch Your Idea
-    thumbnail: /images/st3.jpg
-  - description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
-      ultricies.
-    name: Connect With Us
-    thumbnail: /images/st4.jpg
-    link: /about
 featured_opportunity:
   - opportunity:
       link: test-opportunity

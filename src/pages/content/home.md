@@ -20,6 +20,7 @@ slider:
       ultricies.
     name: Connect With Us
     thumbnail: /images/st4.jpg
+    link: /about
 featured_opportunity:
   - opportunity:
       link: test-opportunity

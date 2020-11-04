@@ -99,6 +99,7 @@ collections:
             - { label: "Name", name: "name", widget: "string"}
             - { label: "Description", name: "description", widget: "text"}
             - { label: "Thumbnail", name: "thumbnail", widget: "image"}
+            - { label: "Link", name: "link", widget: string, required: false}
     - label: "About"
       name: "about"
       slug: '/'

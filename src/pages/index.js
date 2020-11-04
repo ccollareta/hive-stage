@@ -29,13 +29,18 @@ const IndexPage = ({data}) => {
   const exchanges = data.exchanges.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
-    path: '/exchange/' + node.fields.name,
+    path: '/event/' + node.fields.name,
+  }));
+  const res = data.res.edges.map(({ node }) => ({
+    html: node.html,
+    ...node.frontmatter,
+    path: '/resources/' + node.fields.name,
   }));
 
   const opps = data.opps.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
-    path: '/opportunity/' + node.fields.name,
+    path: '/news/' + node.fields.name,
   }));
 
   const pgVar = 'style-1';
@@ -61,7 +66,7 @@ const IndexPage = ({data}) => {
                         <div className="step-items">
                         {posts.slider.map((slide) =>(
                           <div className="step-item" key={slide.name}>
-                          <img src={slide.thumbnail} className="img-fluid" alt="step-item1" />
+                          <a href={slide.link}><img src={slide.thumbnail} className="img-fluid" alt="step-item1" /></a>
                           <h4>{slide.name}</h4>
                           <p>
                               {slide.description}
@@ -79,11 +84,11 @@ const IndexPage = ({data}) => {
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
-                        <p className="sub-title text-orange">The pollination platform</p>
-                        <h2 className="title text-white">HIVE opportunity buzz.</h2>
+                        <p className="sub-title text-orange">Latest News</p>
+                        <h2 className="title text-white">Learn More</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="/" className="font-exo text-white">See all opportunities <img
+                        <a href="/news" className="font-exo text-white">View All <img
                                 src={link_arrow} /></a>
                     </div>
                 </div>
@@ -91,16 +96,16 @@ const IndexPage = ({data}) => {
                 {opps.map(feat => (
       <div key={feat.title} className="col col-4">
         <FeatOpp title={feat.title}
-        description = {feat.description}
+        description = {feat.excerpt}
         author = {feat.author}
         date = {feat.date}
-        thumbnail = {feat.event_image}
+        thumbnail = {feat.featured_image}
         link = {feat.path}/>
       </div>
     )) }
                 </div>
                 <div className="link m-link">
-                    <a href="#" className="font-exo text-white">See all opportunities <img
+                    <a href="/news" className="font-exo text-white">View All <img
                             src={link_arrow} /></a>
                 </div>
             </div>
@@ -111,8 +116,8 @@ const IndexPage = ({data}) => {
     <div className="inner-container">
         <div className="section-head">
             <div className="section-title">
-                <p className="sub-title text-orange-alt">NOW WITH A FULL DOSE OF VITAMIN BEE!</p>
-                <h2 className="title">Popular innovation exchanges.</h2>
+                <p className="sub-title text-orange-alt">Upcoming Events</p>
+                <h2 className="title">Join Us.</h2>
             </div>
         </div>
         <div className="row primary-row">
@@ -141,56 +146,24 @@ const IndexPage = ({data}) => {
                     ))}
                 </div>
                 <div className="link">
-                    <a href="#" className="font-exo text-dark">
-                        See all exchanges <img src={link_arrow} />
+                    <a href="/events" className="font-exo text-dark">
+                        See all events <img src={link_arrow} />
                     </a>
                 </div>
             </div>
             <div className="col col-4">
-                <h4>Contracting opportunities.</h4>
+                <h4>Get Started.</h4>
                 <div className="oppn-container">
-                    <div className="oppn-item">
-                        <a href="#"><h6>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</h6></a>
-                        <div className="post-details">
-                            <span className="author">Submitted by Organization</span>
-                            <span className="date">June 26, 2020</span>
-                        </div>
-                    </div>
-                    <div className="oppn-item">
-                        <a href="#"><h6>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</h6></a>
-                        <div className="post-details">
-                            <span className="author">Submitted by Organization</span>
-                            <span className="date">June 26, 2020</span>
-                        </div>
-                    </div>
-                    <div className="oppn-item">
-                        <a href="#"><h6>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</h6></a>
-                        <div className="post-details">
-                            <span className="author">Submitted by Organization</span>
-                            <span className="date">June 26, 2020</span>
-                        </div>
-                    </div>
-                    <div className="oppn-item">
-                        <a href="#"><h6>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</h6></a>
-                        <div className="post-details">
-                            <span className="author">Submitted by Organization</span>
-                            <span className="date">June 26, 2020</span>
-                        </div>
-                    </div>
-                    <div className="oppn-item">
-                        <a href="#"><h6>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</h6></a>
-                        <div className="post-details">
-                            <span className="author">Submitted by Organization</span>
-                            <span className="date">June 26, 2020</span>
-                        </div>
-                    </div>
-                    <div className="oppn-item">
-                        <a href="#"><h6>Lorem ipsum dolor sit, consectetur adipiscing elit, sed do eiusmod tempor</h6></a>
-                        <div className="post-details">
-                            <span className="author">Submitted by Organization</span>
-                            <span className="date">June 26, 2020</span>
-                        </div>
-                    </div>
+                    {res.map((res,index)=>(
+                      <div className="oppn-item" key={index}>
+                      <a href={res.file} download><h6>{res.title}</h6></a>
+                      <div className="post-details">
+                          <span className="author">Submitted by {res.author}</span>
+                          <span className="date">{res.date}</span>
+                      </div>
+                  </div>
+                    ))}
+                    
                 </div>
                 <div className="link type-2">
                     <a href="#" className="font-exo text-dark">
@@ -216,6 +189,7 @@ const IndexPage = ({data}) => {
           name
           description
           thumbnail
+          link
         }
         featured_opportunity{
           opportunity{
@@ -228,7 +202,7 @@ const IndexPage = ({data}) => {
       }
     }
     exchanges: allMarkdownRemark(
-      filter: { fields: { sourceName: { eq: "exchanges" } } }
+      filter: { fields: { sourceName: { eq: "events" } } }
       sort: { fields: frontmatter___event_date, order: ASC }
       limit: 5
     ) {
@@ -250,8 +224,32 @@ const IndexPage = ({data}) => {
         }
       }
     }
+    res: allMarkdownRemark(
+      filter: { fields: { sourceName: { eq: "resources" } } }
+      sort: { fields: frontmatter___event_date, order: ASC }
+      limit: 5
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            author
+              date
+              title
+              file
+              file_size
+              description
+              category
+              resource_thumb
+          }
+          fields {
+            name
+          }
+        }
+      }
+    }
     opps: allMarkdownRemark(
-      filter: { fields: { sourceName: { eq: "opps" } } }
+      filter: { fields: { sourceName: { eq: "blog-posts" } } }
       sort: { fields: frontmatter___date, order: ASC }
       limit: 3
     ) {
@@ -262,8 +260,9 @@ const IndexPage = ({data}) => {
             author
             date
             title
-            event_image
+            featured_image
             description
+            excerpt
           }
           fields {
             name

@@ -22,24 +22,23 @@ const Highlights = () => (
                         <div className="section-head">
                             <div className="section-title">
                                 <p className="sub-title text-white">Let’s make some honey</p>
-                                <h2 className="title text-white">Have an idea?</h2>
+                                <h2 className="title text-white">Interested In Getting Involved?</h2>
                             </div>
                         </div>
                         <form className="idea-form">
                             <p className="text-white">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua bibendum est ultricies.
+                            PEO DHMS is excited by the opportunity
+to work together, bring about lasting
+transformation in Healthcare IT, and elevate
+the level of care we can provide to our
+Nation’s service members, their families, and
+Veterans.
                             </p>
                             <div className="form-group">
                                 <input type="text" className="form-control" placeholder="Enter your email address" />
-                                <a className="btn rounded" href="#">Get Started</a>
+                                <a className="btn rounded" href="#">Join The Community</a>
                             </div>
-                            <p className="terms text-white">
-                                Two lines about <a href="#" className="text-orange text-underline">participant
-                                    qualifications</a> that links to a page that details
-                                qualifications and regulations.
-                            </p>
+                           
                         </form>
                     </div>
                     <div className="col col-7">

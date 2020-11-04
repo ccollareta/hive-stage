@@ -4,6 +4,7 @@ slider:
     description: Engage with other partners, ask questions about open opportunities,
       and attend upcoming events.
     thumbnail: /images/st1.jpg
+    link: /about
 featured_opportunity:
   - opportunity:
       link: test-opportunity

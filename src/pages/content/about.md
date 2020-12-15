@@ -3,7 +3,7 @@ top_section:
   button:
     button_text: Learn More
     button_link: /
-  title: Welcome to The Health Insurance Vision Exchange known as HIVE
+  title: Welcome to The Health Innovation Vision Exchange known as HIVE
   text_block: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
     ultricies integer quis. Iaculis urna id volutpat lacus laoreet. Mauris vitae

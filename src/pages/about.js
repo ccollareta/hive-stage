@@ -106,13 +106,16 @@ const AboutPage = ({data}) => {
                     </div>
                     <div className="col col-6">
                         <div className="row">
-                        <div className="col col-4">
+                        <div className="col col-3">
                             <a href="https://health.mil/About-MHS/OASDHA/Defense-Health-Agency/Defense-Healthcare-Management-Systems" target="_blank"><img src={DHMS} alt="DHMS" className="img-fluid" /></a>
                         </div>
-                        <div className="col col-4">
+                        <div className="col col-3">
                         <a href="https://health.mil/About-MHS/OASDHA/Defense-Health-Agency" target="_blank"><img src={DHA} alt="DHA" className="img-fluid" /></a>
                         </div>
-                        <div className="col col-4">
+                        <div className="col col-3">
+
+                        </div>
+                        <div className="col col-3">
 
                         </div>
                         </div>

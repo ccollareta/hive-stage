@@ -29,7 +29,7 @@ const Footer = () => (
                                 <h6>Resources</h6>
                                 <ul className="list-unstyled">
                                     <li><a href="/news-events/">News & Events</a></li>
-                                    <li><a href="/resource-library/">Resource Library</a></li>
+                                    <li><a href="/opportunities/">Opportunities</a></li>
                                 </ul>
                             </div>
                             <div className="col col-6">

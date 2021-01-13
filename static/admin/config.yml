@@ -320,16 +320,38 @@ collections:
       - { label: 'Author', name: "author", widget: string}
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
       - {
-        label: 'Date',
+        label: 'Date Posted',
         name: 'date',
         widget: 'datetime',
         format: 'MMMM D, YYYY',
         dateFormat: 'MMMM D, YYYY',
         timeFormat: false
       }
+      - label: "Resources"
+        name: "resources"
+        widget: list
+        fields:
+              - label: "Resource"
+                name: "resource"
+                widget: object
+                fields:
+                  - { label: "Title", name: "title", widget: string}
+                  - { label: "Text", name: "text", widget: text}
+                  - { label: 'File', name: 'file', widget: 'file' }
+      - label: "Important Dates"
+        name: "dates"
+        widget: list
+        fields:
+              - label: "Date"
+                name: "date"
+                widget: object
+                fields:
+                  - { label: "Title", name: "title", widget: string}
+                  - { label: "Text", name: "text", widget: text}
+                  - { label: 'Date Posted', name: 'date', widget: 'datetime', format: 'MMMM D, YYYY', dateFormat: 'MMMM D, YYYY', timeFormat: false }
       - { label: 'Featured Image', name: 'event_image', widget: 'image' }
       - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: "Pre Text", name: "pre_text", widget: text}
+      - { label: "Pre Text", name: "pre_text", widget: text, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: exchanges
     label: Exchanges

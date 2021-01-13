@@ -65,14 +65,6 @@ async function createResourcePages(createPage, graphql) {
   const resourceTemplate = path.resolve('./src/templates/resource-post.js');
   const resources = await markdownQuery(graphql, 'resources');
 
-  // Create pagination index page
-  paginate({
-    createPage,
-    items: resources,
-    itemsPerPage: 7,
-    pathPrefix: '/resource-library/',
-    component: resourcesTemplate,
-  });
 
 }
 

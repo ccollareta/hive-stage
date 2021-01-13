@@ -14,7 +14,7 @@ module.exports = {
         items: [{ text: 'News & Events', link: '/news-events/' }],
       },
       {
-        items: [{ text: 'Resource Library', link: '/resource-library/' }],
+        items: [{ text: 'Opportunities', link: '/opportunities/' }],
       },
     ],
     secondaryLinks: [

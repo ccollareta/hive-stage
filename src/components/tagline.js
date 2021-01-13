@@ -10,9 +10,9 @@ const Tagline = () => (
   <section className="hive-cta-section">
   <div className="inner-container">
       <div className="cta">
-          <h5 className="text-white">Need help getting started? Check out our resource hub!</h5>
+          <h5 className="text-white">Need help getting started? Check out our opportunities!</h5>
           <div className="link">
-              <Link to="/resource-library/" className="font-exo text-white">
+              <Link to="/opportunities/" className="font-exo text-white">
                   Learn More <img src={link_arrow} />
               </Link>
           </div>

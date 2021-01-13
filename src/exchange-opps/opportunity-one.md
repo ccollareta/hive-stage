@@ -3,8 +3,23 @@ title: Opportunity One
 author: HIVE
 featured: Yes
 date: September 24, 2020
+resources:
+  - resource:
+      title: RFI Document
+      text: Information for RFI
+      file: /images/dummy.pdf
+dates:
+  - date:
+      date: January 28, 2021
+      title: Open
+      text: Date Things Open
+  - date:
+      date: January 31, 2021
+      title: Closes
+      text: Last Day
 event_image: /images/i4.png
 description: This is an opportunity. Hope this works
+pre_text: " "
 ---
 <!--StartFragment-->
 

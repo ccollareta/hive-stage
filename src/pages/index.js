@@ -34,7 +34,7 @@ const IndexPage = ({data}) => {
   const res = data.res.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
-    path: '/resources/' + node.fields.name,
+    path: '/opportunity/' + node.fields.name,
   }));
 
   const opps = data.opps.edges.map(({ node }) => ({
@@ -156,7 +156,7 @@ const IndexPage = ({data}) => {
                 <div className="oppn-container">
                     {res.map((res,index)=>(
                       <div className="oppn-item" key={index}>
-                      <a href={res.file} download><h6>{res.title}</h6></a>
+                      <a href={res.path}><h6>{res.title}</h6></a>
                       <div className="post-details">
                           <span className="author">Submitted by {res.author}</span>
                           <span className="date">{res.date}</span>
@@ -225,7 +225,7 @@ const IndexPage = ({data}) => {
       }
     }
     res: allMarkdownRemark(
-      filter: { fields: { sourceName: { eq: "resources" } } }
+      filter: { fields: { sourceName: { eq: "opps" } } }
       sort: { fields: frontmatter___event_date, order: ASC }
       limit: 5
     ) {

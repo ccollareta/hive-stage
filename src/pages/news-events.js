@@ -35,7 +35,7 @@ const Blog = ({ data, pageContext }) => {
   const side = data.side.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
-    path: '/event/' + node.fields.name,
+    path: '/opportunity/' + node.fields.name,
   }));
   const abouts = data.abouts.frontmatter;
   const pgVar = 'style-3';
@@ -182,11 +182,11 @@ const Blog = ({ data, pageContext }) => {
                         </div>
                     </div>
                     <div className="col col-4">
-                        <h4>Resources</h4>
+                        <h4>Opportunities</h4>
                         <div className="oppn-container">
                         {side.map((event,index) => (
                             <div className="oppn-item" key={`event${index}`}>
-                                <a href={event.file}><h6>{event.title}</h6></a>
+                                <a href={event.path}><h6>{event.title}</h6></a>
                                 <div className="post-details">
                                     <span className="author">Submitted by {event.author}</span>
                                     <span className="date">{event.date}</span>
@@ -195,8 +195,8 @@ const Blog = ({ data, pageContext }) => {
                         ))}
                         </div>
                         <div className="link type-2">
-                            <a href="#" className="font-exo text-dark">
-                                LEARN MORE AT SAM.GOV <img src={link_arrow_2} />
+                            <a href="/opportunities" className="font-exo text-dark">
+                                LEARN MORE <img src={link_arrow_2} />
                             </a>
                         </div>
                     </div>
@@ -303,7 +303,7 @@ export const pageQuery = graphql`
         }
       }
       side: allMarkdownRemark(
-        filter: {fields: {sourceName: {eq: "resources"}}}
+        filter: {fields: {sourceName: {eq: "opps"}}}
         sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {

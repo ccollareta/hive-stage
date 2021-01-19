@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, withPrefix, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import axios from 'axios';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
@@ -11,10 +12,53 @@ import FeatOpp from '../components/opp'
 import li_hexa from '../images/li-hexa.png';
 import hero_bg from '../images/conntact-banner.jpg';
 
+
+
 const ContactPage = ({data}) => {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   const pgVar = 'style-1';
+
+  const [serverState, setServerState] = useState({
+    submitting: false,
+    status: null
+  });
+  const handleServerResponse = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg }
+    });
+    if (ok) {
+      form.reset();
+    }
+  };
+  const handleOnSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    let axiosConfig = {
+        headers: {
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer uh619dbu94fzl5psuna1ujiuvn",
+            'Access-Control-Allow-Origin': '*',
+        }
+      };
+    setServerState({ submitting: true });
+    axios({
+      method: "post",
+      url: "https://api.smartsheet.com/2.0/sheets/5667866911905908/rows",
+      data: new FormData(form),
+      headers: {axiosConfig},
+    })
+      .then(r => {
+        console.log(r);
+      })
+      .catch(r => {
+        console.log(r);
+      });
+  };
+
+
+
   return (
   <Layout pgVar={pgVar}>
     <SEO title="Contact" />
@@ -52,7 +96,7 @@ const ContactPage = ({data}) => {
                             </div>
                             <div className="col col-7">
                                 <div className="form-card">
-                                    <form className="form">
+                                    <form className="form" onSubmit={handleOnSubmit}>
                                         <h2 className="text-center">Contact Us</h2>
                                         <div className="form-group">
                                             <label>What is your name?</label>
@@ -93,8 +137,13 @@ const ContactPage = ({data}) => {
                                             <span className="checkmark"></span>
                                         </label>
                                         <div className="submit-btn text-center">
-                                            <a href="#" className="btn rounded">Submit</a>
+                                            <button type="submit" href="#" className="btn rounded" disabled={serverState.submitting}>Submit</button>
                                         </div>
+                                        {serverState.status && (
+                <p className={!serverState.status.ok ? "errorMsg" : ""}>
+                {serverState.status.msg}
+                </p>
+            )}
                                     </form>
                                 </div>
                                 <p className="terms text-center">

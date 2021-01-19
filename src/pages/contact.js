@@ -43,8 +43,7 @@ const ContactPage = ({data}) => {
         }
       };
     setServerState({ submitting: true });
-    axios({
-      method: "post",
+    axios.post({
       url: "https://api.smartsheet.com/2.0/sheets/5667866911905908/rows",
       data: new FormData(form),
       headers: {axiosConfig},

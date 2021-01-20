@@ -63,9 +63,7 @@ const ContactPage = ({data}) => {
     const form = e.target;
 
     setServerState({ submitting: true });
-    axios.post({
-      url: "https://api.smartsheetgov.com/2.0/sheets/5667866911905908/rows",
-      data: {
+    axios.post("https://api.smartsheetgov.com/2.0/sheets/5667866911905908/rows",{
         "toBottom": true,
         "cells": [
             {
@@ -110,17 +108,18 @@ const ContactPage = ({data}) => {
             }
             ]
           },
-      headers: {
-          'Content-Type': 'application/json',
-            "Authorization": "Bearer uh619dbu94fzl5psuna1ujiuvn",
+      {headers: {
             'Access-Control-Allow-Origin': '*',
-      },
-    })
+            'Content-Type': 'application/json',
+            "Authorization": "Bearer uh619dbu94fzl5psuna1ujiuvn",
+            
+      },}
+    )
       .then(r => {
-        console.log(r);
+        console.log(r.message);
       })
       .catch(r => {
-        console.log(r);
+        console.log(r.message);
       });
   };
 

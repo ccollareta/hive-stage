@@ -15,6 +15,14 @@ import hero_bg from '../images/conntact-banner.jpg';
 
 
 const ContactPage = ({data}) => {
+
+
+        let newDate = new Date()
+        let date = newDate.getDate();
+        let month = newDate.getMonth() + 1;
+        let year = newDate.getFullYear();
+        let separator = '/';
+
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   const pgVar = 'style-1';
@@ -23,6 +31,24 @@ const ContactPage = ({data}) => {
     submitting: false,
     status: null
   });
+   const [state, setValueState] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    role: "",
+    message: ""
+  });
+
+  const handleInputChange = event => {
+    const target = event.target
+    const value = target.value
+    const name = target.name
+    setValueState({
+        ...state,
+      [name]: value,
+    })
+  };
+
   const handleServerResponse = (ok, msg, form) => {
     setServerState({
       submitting: false,
@@ -35,18 +61,60 @@ const ContactPage = ({data}) => {
   const handleOnSubmit = e => {
     e.preventDefault();
     const form = e.target;
-    let axiosConfig = {
-        headers: {
-            'Content-Type': 'application/json',
-            "Authorization": "Bearer uh619dbu94fzl5psuna1ujiuvn",
-            'Access-Control-Allow-Origin': '*',
-        }
-      };
+
     setServerState({ submitting: true });
     axios.post({
-      url: "https://api.smartsheet.com/2.0/sheets/5667866911905908/rows",
-      data: new FormData(form),
-      headers: {axiosConfig},
+      url: "https://api.smartsheetgov.com/2.0/sheets/5667866911905908/rows",
+      data: {
+        "toBottom": true,
+        "cells": [
+            {
+                "columnId": 8331462521972612,
+                "type": "DATETIME",
+                "value": `${month<10?`0${month}`:`${month}`}${separator}${date}${separator}${year}`
+            }
+            ,{
+            "columnId": 3339001127036804,
+            "type": "TEXT_NUMBER",
+            "value": "Contact Form Submission"
+            },
+            {
+            "columnId": 7842600754407300,
+            "type": "TEXT_NUMBER",
+            "value": `${state.message}`
+            },
+            {
+                "columnId": 1013113127495556,
+                "type": "TEXT_NUMBER",
+                "value": `${state.firstName} ${state.lastName}`
+            },
+            {
+                "columnId": 5516712754866052,
+                "type": "CONTACT_LIST",
+                "value": `${state.email}`
+            },
+            {
+                "columnId": 1454794679314308,
+                "type": "PICKLIST",
+                "value": "EXTERNAL"
+            },
+            {
+                "columnId": 2213101220194180,
+                "type": "PICKLIST",
+                "value": "Other"
+            },
+            {
+                "columnId": 3264912941180804,
+                "type": "TEXT_NUMBER",
+                "value": 'Other',
+            }
+            ]
+          },
+      headers: {
+          'Content-Type': 'application/json',
+            "Authorization": "Bearer uh619dbu94fzl5psuna1ujiuvn",
+            'Access-Control-Allow-Origin': '*',
+      },
     })
       .then(r => {
         console.log(r);
@@ -101,23 +169,23 @@ const ContactPage = ({data}) => {
                                             <label>What is your name?</label>
                                             <div className="row">
                                                 <div className="col col-6">
-                                                    <input type="text" className="form-control" name="name"
-                                                        placeholder="First name" />
+                                                    <input type="text" className="form-control" name="firstName"
+                                                        placeholder="First name" onChange={handleInputChange} value={state.firstName} />
                                                 </div>
                                                 <div className="col col-6">
-                                                    <input type="text" className="form-control" name="name"
-                                                        placeholder="Last name" />
+                                                    <input type="text" className="form-control" name="lastName"
+                                                        placeholder="Last name" onChange={handleInputChange} value={state.lastName} />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="form-group">
                                             <label>What is your email?</label>
                                             <input type="email" className="form-control" name="email"
-                                                placeholder="Enter your email address" />
+                                                placeholder="Enter your email address"  onChange={handleInputChange} value={state.email}/>
                                         </div>
                                         <div className="form-group">
                                             <label>Which best describes you?</label>
-                                            <select name="role" className="form-control">
+                                            <select name="role" className="form-control" onChange={handleInputChange} value={state.role}>
                                                 <option>select</option>
                                                 <option>op1</option>
                                                 <option>op2</option>
@@ -126,13 +194,13 @@ const ContactPage = ({data}) => {
                                         </div>
                                         <div className="form-group">
                                             <label>What can we help you with?</label>
-                                            <textarea className="form-control" rows="8"
-                                                placeholder="Let us know how we can help"></textarea>
+                                            <textarea className="form-control" rows="8" name="message"
+                                                placeholder="Let us know how we can help" onChange={handleInputChange} value={state.message}></textarea>
                                         </div>
                                         <label className="custom-checkbox">
                                             I consent to having this website store my submitted information so they can
                                             respond to my inquiry.*
-                                            <input type="checkbox" defaultChecked />
+                                            <input type="checkbox" defaultChecked onChange={handleInputChange} />
                                             <span className="checkmark"></span>
                                         </label>
                                         <div className="submit-btn text-center">

@@ -37,9 +37,8 @@ exports.createPages = async ({ actions, graphql }) => {
 
   await createBlogPages(createPage, graphql);
   await createEventPages(createPage, graphql);
-  await createExchangePages(createPage, graphql);
   await createOppPages(createPage, graphql);
-  await createResourcePages(createPage, graphql); 
+ 
 };
 
 async function createBlogPages(createPage, graphql) {
@@ -60,13 +59,6 @@ async function createBlogPages(createPage, graphql) {
   });
 }
 
-async function createResourcePages(createPage, graphql) {
-  const resourcesTemplate = path.resolve('./src/templates/resources.js');
-  const resourceTemplate = path.resolve('./src/templates/resource-post.js');
-  const resources = await markdownQuery(graphql, 'resources');
-
-
-}
 
 async function createEventPages(createPage, graphql) {
   const eventsTemplate = path.resolve('./src/templates/events.js');
@@ -86,22 +78,7 @@ async function createEventPages(createPage, graphql) {
     });
   });
 }
-async function createExchangePages(createPage, graphql) {
-  const exchangesTemplate = path.resolve('./src/templates/exchanges.js');
-  const exchangeTemplate = path.resolve('./src/templates/exchange.js');
-  const exchanges = await markdownQuery(graphql, 'exchanges');
 
-  // Create individual pages
-  exchanges.forEach(({ node }) => {
-    createPage({
-      path: 'exchange/' + node.fields.name,
-      component: exchangeTemplate,
-      context: {
-        name: node.fields.name
-      },
-    });
-  });
-}
 
 async function createOppPages(createPage, graphql) {
   const oppsTemplate = path.resolve('./src/templates/opps.js');
@@ -142,4 +119,5 @@ async function markdownQuery(graphql, source) {
 
   return result.data.allMarkdownRemark.edges;
 }
+
 

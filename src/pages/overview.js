@@ -20,6 +20,16 @@ import c3 from '../images/c3.png';
 import idea_1 from '../images/idea1.png';
 import idea_2 from '../images/idea2.png';
 import idea_3 from '../images/idea3.png';
+import hex_2 from '../images/hero-hex3.png'
+import hex_3 from '../images/hero-hex-3.svg'
+import art1 from '../images/art1.png'
+import art5 from '../images/art5.png'
+import colbg from '../images/col-bg.jpg';
+import hex1 from '../images/hex-1.svg'
+import hex2 from '../images/hex-2.svg'
+import hex3 from '../images/hex-3.svg'
+import art2 from '../images/art2.png'
+import art3 from '../images/art3.png'
 
 
 const OverviewPage = ({data}) => {
@@ -30,129 +40,169 @@ const OverviewPage = ({data}) => {
     ...node.frontmatter,
     path: '/news/' + node.fields.name,
   }));
+  
   const ideas = data.ideas.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
     path: '/news/' + node.fields.name,
   }));
-  const pgVar = 'style-3';
+  const pgVar = 'style-1 animated-hex';
   return (
   <Layout pgVar={pgVar}>
     <SEO title="Overview" />
-    <section className="hero-section style-3"
-    style={{
-        backgroundImage: `url(${posts.top_section.hero_image})`
-      }}>
+<section className="hero-section-2 style-2 title-only animated-hex"
+            style={{
+                backgroundImage: `url(${posts.top_section.hero_image})`
+              }}>
+            <img src={art1} className="art" />
+            <div className="hero-hex">
+                <img data-depth="0.05" src={hex_3} className="hex-img" />
+                <img src={hex_2} />
+            </div>
             <div className="container">
                 <div className="hero-action">
                     <div className="row">
-                        <div className="col-7">
-                            <h2 className="hero-title text-white">{posts.top_section.title} </h2>
+                        <div className="col-6">
+                            <h1 className="hero-title text-white"><span>{posts.top_section.title}</span>
+                            </h1>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section className="hive-conversation">
-        <h2>Join The Conversation</h2>
+        <section className="hive-slider-section">
+            <img src={art5} className="art" />
             <div className="inner-container">
-            
-                <div className="row">
+                <div className="slider-container">
+                    <div className="feature-slider">
                     {posts.blocks.slice(0, 3).map((block,index) => (
-                        <div className="col col-4" key={index}>
-                        <div className="col-item">
-                            <img src={block.block.icon} alt="img" />
-                            <div className="col-content">
-                                <h6>{block.block.title}</h6>
-                                <p>
-                                    {block.block.text}
-                                </p>
-                                <div className="link"><a href={block.block.url}>Learn More <img src={link_arrow} /></a></div>
+                        <div className="feature-item" key={index}>
+                            <div className="row">
+                                <div className="col-6 text">
+                                    <div className="section-head">
+                                        <div className="section-title">
+                                            <p className="sub-title text-orange-alt">{block.block.subtitle}</p>
+                                            <h2 className="title text-white"><a href="#" className="text-dark">{block.block.title}</a></h2>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        {block.block.text}
+                                    </p>
+                                    <a href={block.block.url} className="btn rounded"><span>Read More</span></a>
+                                </div>
+                                <div className="col-6 image">
+                                    <img src={block.block.icon} className="img-fluid" alt="img" />
+                                </div>
                             </div>
                         </div>
+                         ))}
                     </div>
-                    ))}
-                    
                 </div>
             </div>
         </section>
-        <section className="hive-3-col-section style-1">
-            <img className="section-art art-1" src={art_1} />
-            <img className="section-art art-2" src={art_2} />
+        <section className="hive-3-col-section-2 animated-hex" style={{
+          backgroundImage: `url(${colbg})`
+          }}>
+            <img data-depth="0.05" src={hex1} className="hex-img img-1" />
+            <img data-depth="0.05" src={hex2} className="hex-img img-2" />
+            <img data-depth="0.05" src={hex3} className="hex-img img-3" />
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
-                        <p className="sub-title text-orange">LOREM IPSUM DOLAR</p>
-                        <h2 className="title text-white">Latest ideas.</h2>
+                        <p className="sub-title text-orange">The pollination platform</p>
+                        <h2 className="title text-white">HIVE opportunity buzz.</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="#" className="font-exo text-white">View all <img src={link_arrow} /></a>
+                        <a href="#" className="font-exo text-white">See all opportunities <img
+                                src={link_arrow} /></a>
                     </div>
                 </div>
                 <div className="row ">
-                    {ideas.map((idea,index)=> (
-                        <div className="col col-4" key={index}>
-                        <div className="card">
-                            <div className="img-hover">
-                                <img src={idea.event_image} className="card-img" alt="item1" />
-                            </div>
-                            <div className="card-body">
-                                <a href={idea.url}>
-                                    <h4 className="text-white">{idea.title}</h4>
-                                </a>
-                                <p className="text-white">
-                                    {idea.description}
-                                </p>
-                                <div className="post-details">
-                                    <span className="author">Submitted by {idea.author}</span>
-                                    <span className="date">{idea.date}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    ))}
+                {ideas.map(feat => (
+      <div key={feat.title} className="col col-4">
+        <FeatOpp title={feat.title}
+        description = {feat.excerpt}
+        author = {feat.author}
+        date = {feat.date}
+        thumbnail = {feat.featured_image}
+        link = {feat.path}/>
+      </div>
+    )) }
+                    
                 </div>
                 <div className="link m-link">
-                    <a href="#" className="font-exo text-white">View all <img src={link_arrow} /></a>
+                    <a href="#" className="font-exo text-white">See all opportunities <img
+                            src={link_arrow} /></a>
                 </div>
             </div>
         </section>
-        <section className="hive-3-col-section style-2">
+        
+        <section className="hive-multi-lists-section-2">
+            <img className="art art-1" src={art2} />
+            <img className="art art-2" src={art3} />
             <div className="inner-container">
-                <div className="row ">
-                        {news.map((post,index)=>(
-                    <div className="col col-4">
-                        <div className="card">
-                            <div className="img-hover">
-                                <img src={post.featured_image} className="card-img" alt="item1" />
-                            </div>
-                            <div className="card-body">
-                                <a href={post.path}>
-                                    <h4>{post.title}</h4>
-                                </a>
-                                <p>
-                                    {post.excerpt}
-                                </p>
-                                <div className="post-details">
-                                    <span className="author">Submitted by {post.author}</span>
-                                    <span className="date">{post.date}</span>
-                                </div>
-                            </div>
+                <div className="section-head">
+                    <div className="section-title">
+                        <p className="sub-title text-orange-alt">NOW WITH A FULL DOSE OF VITAMIN BEE!</p>
+                        <h2 className="title">Latest New Posts</h2>
+                    </div>
+                </div>
+                <div className="row primary-row">
+                    <div className="col col-8">
+                        <div className="card-exchanges">
+                        {news.map(exchange =>(
+      <div className="card" key={exchange.title}>
+      <div className="row secondary-row">
+          <div className="col col-3">
+              <img src={exchange.featured_image} alt="item1" />
+          </div>
+          <div className="col col-9">
+              <div className="card-body">
+                  <a href={exchange.path}>
+                      <h4>{exchange.title}</h4>
+                  </a>
+                  <p>
+                  {exchange.description}
+                  </p>
+                  <div className="post-details">
+                      <a href="#" className="author">Submitted by {exchange.author}</a>
+                      <span className="date">{exchange.date}</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  ))}
+                            
+                          
+                        </div>
+                        <div className="link">
+                            <a href="#" className="font-exo text-dark">
+                                See all news posts <img src={link_arrow} />
+                            </a>
                         </div>
                     </div>
-                        ))}
-                    
-
-                    
+                    <div className="col col-4">
+                        <h4>Featured News Posts</h4>
+                        <div className="oppn-container">
+                            
+                        {news.map((res,index)=>(
+      <div className="oppn-item" key={index}>
+                                <a href={res.path}>
+                                    <h6>{res.title}</h6>
+                                </a>
+                                <div className="post-details">
+                                    <a href={res.path} className="author">Submitted by {res.author}</a>
+                                    <span className="date">{res.date}</span>
+                                </div>
+                            </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
-                <nav>
-                    <ul className="pagination">
-                    </ul>
-                </nav>
             </div>
         </section>
     <Highlights />
-    <Tagline />
     
   </Layout>
 );
@@ -170,6 +220,7 @@ const OverviewPage = ({data}) => {
             block{
                 icon
                 text
+                subtitle
                 title
                 url
             }
@@ -199,7 +250,7 @@ const OverviewPage = ({data}) => {
         }
       }
       ideas: allMarkdownRemark(
-        filter: { fields: { sourceName: { eq: "ideas" } } }
+        filter: { fields: { sourceName: { eq: "blog-posts" } } }
         sort: { fields: frontmatter___date, order: ASC }
         limit: 3
       ) {
@@ -208,13 +259,10 @@ const OverviewPage = ({data}) => {
             html
             frontmatter {
               author
-              featured
-              date
-              title
-              tags
-              event_image
-              description
-              url
+            date
+            title
+            featured_image
+            excerpt
             }
             fields {
               name

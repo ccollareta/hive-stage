@@ -51,6 +51,7 @@ const Layout = ({ children, pgVar }) => {
     <>
      <Helmet>
       <script src={withPrefix(jq)} type="text/javascript"></script>
+      <body className="home" />
 
   </Helmet>
       <div className="site-wrapper">
@@ -58,9 +59,10 @@ const Layout = ({ children, pgVar }) => {
         <Nav {...{ navigation, secondaryLinks }} />
       </Header>
         {children}
+        </div>
       <Footer />
       <PostFoot />
-      </div>
+      
       
     </>
   );

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import one_icon from '../images/one-icon-1.svg';
+import one_icon from '../images/hover-icon.svg';
 import two_icon from '../images/one-icon-2.svg';
 
 
@@ -10,29 +10,26 @@ const FeatOpp = ({title, description, thumbnail,link, author, date }) => {
     
     
     return (
-        <div className="card">
-        <div className="hex-img-container one">
-                                <img src={one_icon} className="sub-hex hex-1" alt="item1" />
-                                <img src={two_icon} className="sub-hex hex-2" alt="item1" />
-                                <div className='hex main-hex'>
-                                    <div className='hex-inner'>
-                                        <div className='hex-inner-inner'>
-                                            <img className="hex-img" src={thumbnail} />
-                                        </div>
-                                    </div>
+                        <div className="card">
+                            <div className="card-img">
+                                <img src={thumbnail} className="img-fluid" />
+                                <a href={`${link}/`} className="card-overlay">
+                                    <img src={one_icon} />
+                                </a>
+                            </div>
+                            <div className="card-body">
+                                <a href={`${link}/`}>
+                                    <h4 className="text-white">{title}</h4>
+                                </a>
+                                <p className="text-white">
+                                    {description}
+                                </p>
+                                <div className="post-details">
+                                    <a href="#" className="author">Submitted by {author}</a>
+                                    <span className="date">{date}</span>
                                 </div>
                             </div>
-        <div className="card-body">
-            <a href={`${link}/`}><h4 className="text-white">{title}</h4></a>
-            <p className="text-white">
-            {description}
-            </p>
-            <div className="post-details">
-                <span className="author">Submitted by {author}</span>
-                <span className="date">{date}</span>
-            </div>
-        </div>
-    </div>
+                        </div>
     );
 };
 

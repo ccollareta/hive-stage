@@ -10,8 +10,8 @@ import MultiList from '../components/multilist';
 import Slider from '../components/slider'
 import FeatOpp from '../components/opp'
 import st1 from '../images/st1.jpg';
-import st2 from '../images/st2.jpg';
-import st3 from '../images/st3.jpg';
+import st2 from '../images/idea4.jpg';
+import st3 from '../images/idea-mobile.jpg';
 import st4 from '../images/st4.jpg';
 import sect_1 from '../images/section-art-1.png';
 import sect_2 from'../images/section-art-2.png';
@@ -19,6 +19,15 @@ import section_3 from '../images/Hexagon-Patter-On-White-Top.png';
 import section_4 from '../images/Hexagon-Patter-On-White-Bottom.png';
 import link_arrow from '../images/link-arrow.png';
 import link_arrow_2 from '../images/link-arrow-2.png';
+import subhex from '../images/sub-hex.svg';
+import art5 from '../images/art5.png'
+import colbg from '../images/col-bg.jpg';
+import hex1 from '../images/hex-1.svg'
+import hex2 from '../images/hex-2.svg'
+import hex3 from '../images/hex-3.svg'
+import art2 from '../images/art2.png'
+import art3 from '../images/art3.png'
+import { post } from 'jquery';
 
 
 const IndexPage = ({data}) => {
@@ -42,58 +51,89 @@ const IndexPage = ({data}) => {
     ...node.frontmatter,
     path: '/news/' + node.fields.name,
   }));
-
-  const pgVar = 'style-1';
+  const test = exchanges.concat(opps);
+  test.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  console.log(test);
+  const pgVar = 'style-1 animated-hex';
   return (
   <Layout pgVar={pgVar}>
     
     <SEO title="Home" />
     <Hero />
-    <section className="hive-scroller-section">
+    <section className="hive-scroller-v-2 animated-hex">
+            <img src={art5} className="art" />
             <div className="inner-container">
-                <div className="row">
-                    <div className="col col-6">
-                        <div className="steps">
-                            <p className="step-intro font-exo">HIVE Is An Information Exchange Platform</p>
-                            <div className="step-nav">
-                              {posts.slider.map((slide,index) =>(
-                                <h1 className={`step-title ${index === 0 ? 'active' : '' }`} key={index}>{slide.name}</h1>
-                              ))}
+                <div className="step-container">
+                    <div className="step-hexes">
+                        <div className="step-hexes-inner">
+                            {posts.slider.map((slide,index) => (
+                                <div className="step-hex hex-img step-link" data-step={index + 1} key={`part${index}`}>
+                                <img data-depth="0.05" src={subhex} className="sub-hex" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="327.846" height="318.144"
+                                    viewBox="0 0 327.846 318.144">
+                                    <defs>
+                                        <mask id="msk">
+                                            <path className="a" transform="translate(50 50) rotate(15 130.5 20.5)"
+                                                d="M172.871,0a28.906,28.906,0,0,1,25.009,14.412L245.805,97.1a28.906,28.906,0,0,1,0,28.989L197.88,208.784A28.906,28.906,0,0,1,172.871,223.2H76.831a28.906,28.906,0,0,1-25.009-14.412L3.9,126.092A28.906,28.906,0,0,1,3.9,97.1L51.821,14.412A28.906,28.906,0,0,1,76.831,0Z" />
+                                        </mask>
+                                    </defs>
+                                    <image mask="url(#msk)" height="100%" width="100%" xlinkHref={slide.thumbnail}
+                                        preserveAspectRatio="xMidYMin slice">
+                                    </image>
+                                </svg>
                             </div>
+                            ))}
                         </div>
                     </div>
-                    <div className="col col-6">
-                        <div className="step-items">
-                        {posts.slider.map((slide) =>(
-                          <div className="step-item" key={slide.name}>
-                          <a href={slide.link}><img src={slide.thumbnail} className="img-fluid" alt="step-item1" /></a>
-                          <h4>{slide.name}</h4>
-                          <p>
-                              {slide.description}
-                          </p>
-                      </div>
-                        ))}
+                    <div className="step-items">
+                    {posts.slider.map((slide,index) => (
+                        <div className="step-item step-highlight" data-step={index + 1} key={`part2${index}`}>
+                            <div className="step-text">
+                                <div className="step-hex-mobile hex-img">
+                                    <img data-depth="0.05" src={subhex} className="sub-hex" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="327.846" height="318.144"
+                                        viewBox="0 0 327.846 318.144">
+                                        <defs>
+                                            <mask id="msk11">
+                                                <path className="a" transform="translate(50 50) rotate(15 130.5 20.5)"
+                                                    d="M172.871,0a28.906,28.906,0,0,1,25.009,14.412L245.805,97.1a28.906,28.906,0,0,1,0,28.989L197.88,208.784A28.906,28.906,0,0,1,172.871,223.2H76.831a28.906,28.906,0,0,1-25.009-14.412L3.9,126.092A28.906,28.906,0,0,1,3.9,97.1L51.821,14.412A28.906,28.906,0,0,1,76.831,0Z" />
+                                            </mask>
+                                        </defs>
+                                        <image mask="url(#msk11)" height="100%" width="100%"
+                                            xlinkHref={slide.thumbnail} preserveAspectRatio="xMidYMin slice">
+                                        </image>
+                                    </svg>
+                                </div>
+                                <h4>{slide.name}</h4>
+                                <p>
+                                    {slide.description}
+                                </p>
+                            </div>
                         </div>
+                    ))}
                     </div>
                 </div>
             </div>
         </section>
-        <section className="hive-3-col-section style-1">
-            <img className="section-art art-1" src={sect_1} />
-            <img className="section-art art-2" src={sect_2} />
+        <section className="hive-3-col-section-2 animated-hex" style={{
+          backgroundImage: `url(${colbg})`
+          }}>
+            <img data-depth="0.05" src={hex1} className="hex-img img-1" />
+            <img data-depth="0.05" src={hex2} className="hex-img img-2" />
+            <img data-depth="0.05" src={hex3} className="hex-img img-3" />
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
-                        <p className="sub-title text-orange">Latest News</p>
-                        <h2 className="title text-white">Learn More</h2>
+                        <p className="sub-title text-orange">The pollination platform</p>
+                        <h2 className="title text-white">HIVE opportunity buzz.</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="/news" className="font-exo text-white">View All <img
+                        <a href="#" className="font-exo text-white">See all opportunities <img
                                 src={link_arrow} /></a>
                     </div>
                 </div>
                 <div className="row ">
-                {opps.map(feat => (
+                {opps.slice(0,3).map(feat => (
       <div key={feat.title} className="col col-4">
         <FeatOpp title={feat.title}
         description = {feat.excerpt}
@@ -103,79 +143,81 @@ const IndexPage = ({data}) => {
         link = {feat.path}/>
       </div>
     )) }
+                    
                 </div>
                 <div className="link m-link">
-                    <a href="/news" className="font-exo text-white">View All <img
+                    <a href="#" className="font-exo text-white">See all opportunities <img
                             src={link_arrow} /></a>
                 </div>
             </div>
         </section>
-        <section className="hive-multi-lists-section">
-        <img className="section-art art-3" src={section_3} />
-        <img className="section-art art-4" src={section_4} />
-    <div className="inner-container">
-        <div className="section-head">
-            <div className="section-title">
-                <p className="sub-title text-orange-alt">Upcoming Events</p>
-                <h2 className="title">Join Us.</h2>
-            </div>
-        </div>
-        <div className="row primary-row">
-            <div className="col col-8">
-                <div className="card-exchanges">
-                  {exchanges.map(exchange =>(
-                  <div className="card" key={exchange.title}>
-                        <div className="row secondary-row">
-                            <div className="col col-3">
-                                <img src={exchange.event_image} alt="item1" />
-                            </div>
-                            <div className="col col-9">
-                                <div className="card-body">
-                                    <a href={exchange.path}><h4>{exchange.title}</h4></a>
-                                    <p>
-                                        {exchange.description}
-                                    </p>
-                                    <div className="post-details">
-                                        <span className="author">Submitted by {exchange.author}</span>
-                                        <span className="date">{exchange.date}</span>
-                                    </div>
-                                </div>
-                            </div>
+        <section className="hive-multi-lists-section-2">
+            <img className="art art-1" src={art2} />
+            <img className="art art-2" src={art3} />
+            <div className="inner-container">
+                <div className="section-head">
+                    <div className="section-title">
+                        <p className="sub-title text-orange-alt">NOW WITH A FULL DOSE OF VITAMIN BEE!</p>
+                        <h2 className="title">Latest New Posts</h2>
+                    </div>
+                </div>
+                <div className="row primary-row">
+                    <div className="col col-8">
+                        <div className="card-exchanges">
+                        {test.map(exchange =>(
+      <div className="card" key={exchange.title}>
+      <div className="row secondary-row">
+          <div className="col col-3">
+              <img src={exchange.featured_image} alt="item1" />
+          </div>
+          <div className="col col-9">
+              <div className="card-body">
+                  <a href={exchange.path}>
+                      <h4>{exchange.title}</h4>
+                  </a>
+                  <p>
+                  {exchange.description}
+                  </p>
+                  <div className="post-details">
+                      <a href="#" className="author">Submitted by {exchange.author}</a>
+                      <span className="date">{exchange.date}</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  ))}
+                            
+                          
+                        </div>
+                        <div className="link">
+                            <a href="/news-events" className="font-exo text-dark">
+                                See all news posts <img src={link_arrow} />
+                            </a>
                         </div>
                     </div>
-                    ))}
-                </div>
-                <div className="link">
-                    <a href="/events" className="font-exo text-dark">
-                        See all events <img src={link_arrow} />
-                    </a>
-                </div>
-            </div>
-            <div className="col col-4">
-                <h4>Get Started.</h4>
-                <div className="oppn-container">
-                    {res.map((res,index)=>(
-                      <div className="oppn-item" key={index}>
-                      <a href={res.path}><h6>{res.title}</h6></a>
-                      <div className="post-details">
-                          <span className="author">Submitted by {res.author}</span>
-                          <span className="date">{res.date}</span>
-                      </div>
-                  </div>
-                    ))}
-                    
-                </div>
-                <div className="link type-2">
-                    <a href="#" className="font-exo text-dark">
-                        LEARN MORE AT SAM.GOV <img src={link_arrow_2} />
-                    </a>
+                    <div className="col col-4">
+                        <h4>Featured News Posts</h4>
+                        <div className="oppn-container">
+                            
+                        {test.map((res,index)=>(
+      <div className="oppn-item" key={index}>
+                                <a href={res.path}>
+                                    <h6>{res.title}</h6>
+                                </a>
+                                <div className="post-details">
+                                    <a href={res.path} className="author">Submitted by {res.author}</a>
+                                    <span className="date">{res.date}</span>
+                                </div>
+                            </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
      <Highlights />
-    <Tagline />
+    
   </Layout>
   
 );
@@ -189,15 +231,6 @@ const IndexPage = ({data}) => {
           name
           description
           thumbnail
-          link
-        }
-        featured_opportunity{
-          opportunity{
-            title
-            description
-            resource_thumb
-            link
-          }
         }
       }
     }
@@ -212,11 +245,9 @@ const IndexPage = ({data}) => {
           frontmatter {
             author
             date
-            event_date
-            description
-            event_image
             title
-            tags
+            featured_image
+            excerpt
           }
           fields {
             name
@@ -234,13 +265,12 @@ const IndexPage = ({data}) => {
           html
           frontmatter {
             author
-              date
-              title
-              file
-              file_size
-              description
-              category
-              resource_thumb
+            date
+            title
+            featured_image
+            excerpt
+              
+              
           }
           fields {
             name
@@ -251,7 +281,7 @@ const IndexPage = ({data}) => {
     opps: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "blog-posts" } } }
       sort: { fields: frontmatter___date, order: ASC }
-      limit: 3
+      limit: 5
     ) {
       edges {
         node {
@@ -261,7 +291,6 @@ const IndexPage = ({data}) => {
             date
             title
             featured_image
-            description
             excerpt
           }
           fields {

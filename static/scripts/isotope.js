@@ -95,7 +95,7 @@ jQuery(function ($) {
                     $pagerLi.appendTo($isotopePager);
                 }
 
-                jQuery('.paged').append($isotopePager);
+                $container.next('nav').append($isotopePager);
             }();
         }
 
@@ -134,6 +134,7 @@ jQuery(function ($) {
         // reset pagination
         itemsPerPage = defineItemsPerPage();
         goToPage(1);
+        currentPageActive();
 
         $(".filter").removeClass('active');
         $(this).addClass('active');
@@ -156,6 +157,20 @@ jQuery(function ($) {
     $(window).resize(function () {
         itemsPerPage = defineItemsPerPage();
         goToPage(1);
+        currentPageActive();
     });
+
+    currentPageActive();
+
+    // On load first page active class
+    function currentPageActive() {
+        $('.pager').each(function () {
+            var pageNo = $(this).data('page');
+
+            if (pageNo === 1) {
+                $(this).addClass('current');
+            }
+        });
+    }
 
 });

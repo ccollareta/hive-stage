@@ -2,8 +2,8 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import close from '../../node_modules/uswds/dist/img/close.svg';
-import logo_white from '../images/logo-white.png';
-import logo from '../images/logo.png';
+import logo_white from '../images/logo-white.svg';
+import logo from '../images/logo.svg';
 import search_white from '../images/search-white.png';
 import search from '../images/search.png';
 import SearchForm from './search-form';

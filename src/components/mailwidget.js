@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import cmt from '../images/cmt.png';
 import plus from '../images/plus.png';
+import plussvg from '../images/plus.svg';
 
 const MailWidget = () => (
     <div className="fabtn-container">
@@ -22,8 +23,7 @@ const MailWidget = () => (
                            L5,54  Q3,50 5,46
                            L22,11 Q24,7 28,7z' vectorEffect='non-scaling-stroke' fill='url(#g1)' />
                 </svg>
-                
-                <span>+</span>
+                <span><img src={plussvg} /></span>
             </div>
             <div className="backdrop"></div>
             <div className="fabtn child" data-subitem="1">
@@ -34,7 +34,7 @@ const MailWidget = () => (
             </div>
             <div className="fabtn child" data-subitem="2">
                 <a href="#submit-idea" data-lity>
-                    <div className="lable">Submit an Idea</div>
+                    <div className="lable">New Post</div>
                     <div className="icon"><img src={plus} /></div>
                 </a>
             </div>

@@ -13,9 +13,6 @@ module.exports = {
       {
         items: [{ text: 'News & Events', link: '/news-events/' }],
       },
-      {
-        items: [{ text: 'Opportunities', link: '/opportunities/' }],
-      },
     ],
     secondaryLinks: [
       { text: 'Contact Us', link: '/contact/' },
@@ -116,27 +113,8 @@ module.exports = {
         path: `${__dirname}/src/blog-posts`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `documentation-pages`,
-        path: `${__dirname}/src/documentation-pages`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `resources`,
-        path: `${__dirname}/src/resources`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `ideas`,
-        path: `${__dirname}/src/ideas`,
-      },
-    },
+    
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -144,13 +122,7 @@ module.exports = {
         path: `${__dirname}/src/pages/content`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `exchanges`,
-        path: `${__dirname}/src/exchanges`,
-      },
-    },
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {

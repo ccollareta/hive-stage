@@ -1,10 +1,26 @@
 ---
 slider:
-  - name: Learn More and Explore
-    description: Engage with other partners, ask questions about open opportunities,
-      and attend upcoming events.
+  - name: Explore our needs
+    description: Opportunities and Areas of Interest bring a specific connection
+      point for our community. Submit your ideas for consideration.
     thumbnail: /images/st1.jpg
-    link: /about
+  - name: Join the conversation
+    description: >+
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Bibendum est
+      ultricies.
+
+    thumbnail: /images/idea-mobile.jpg
+  - name: Pitch your idea
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
+      ultricies.
+    thumbnail: /images/idea4.jpg
+  - name: Connect with us
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
+      ultricies.
+    thumbnail: /images/st1.jpg
 featured_opportunity:
   - opportunity:
       link: test-opportunity

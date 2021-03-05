@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const Header = ({ children, siteTitle, pgVar }) => (
-  <header className={`header ${pgVar}`} role="banner">
+  <header className={`header ${pgVar}`}>
     <div className="container">
     {children}
     </div>

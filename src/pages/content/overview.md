@@ -1,24 +1,36 @@
 ---
 top_section:
-  title: Welcome To The Health Information Vision Exchange
-  hero_image: /images/hero-bg-3_r1.jpg
+  title: Join The Conversation.
+  hero_image: /images/hero-bg2.png
 blocks:
   - block:
-      icon: /images/c1.png
-      text: Lorem ipsum dolor sit amet, elit sed do eiusmod tempor incididunt ut
-        labore et dolore .
+      icon: /images/slide-img.svg
+      text: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor
+                                                incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer
+                                                quis. Iaculis urna id volutpat.
       title: Explore Our Needs
       url: "#"
+      subtitle: START BUZZING
   - block:
-      icon: /images/c2.png
-      text: Lorem ipsum dolor sit amet, elit sed do eiusmod tempor incididunt ut
-        labore et dolore .
+      icon: /images/slide-img.svg
+      text: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor
+                                                incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer
+                                                quis. Iaculis urna id volutpat.
       title: Pitch Your Idea
       url: "#"
+      subtitle: START BUZZING
   - block:
-      icon: /images/c3.png
-      text: Lorem ipsum dolor sit amet, elit sed do eiusmod tempor incididunt ut
-        labore et dolore .
+      icon: /images/slide-img.svg
+      text: >-
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor
+                                                incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer
+                                                quis. Iaculis urna id volutpat.
       url: "#"
       title: Connect With Us
+      subtitle: START BUZZING
 ---

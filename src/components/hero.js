@@ -3,6 +3,12 @@ import { Link } from 'gatsby';
 import HEROData from '../../meta/hero.yml'
 import Social from './social'
 import down_arrow from '../images/down-arrow.png';
+import hero_bg from '../images/hero-bg.png';
+import art1 from '../images/art1.png'
+import hero_hex from '../images/hero-hex.png'
+import hex1 from '../images/hero-hex-1.svg'
+import hex2 from '../images/hero-hex-2.svg'
+import hex3 from '../images/hero-hex-3.svg'
 
 
 /*
@@ -12,33 +18,32 @@ import down_arrow from '../images/down-arrow.png';
 
 
 const Hero = () => (
-  <section className={"hero-section style-1"} 
-  style={{
-    background: `url(${HEROData.hero_content.hero_image})`
-  }}>
+    <section className="hero-section-2 animated-hex" style={{
+        backgroundImage: `url(${hero_bg})`
+    }}>
+    <img src={art1} className="art" />
+    <img src={hero_hex} className="hero-hex" />
     <div className="container">
-                <div className="hero-action">
-                    <h1 className="hero-title text-white">Welcome to the <span className="text-uppercase">HIVE</span>. </h1>
-                    <h6 className="hero-subtitle text-white">The Health Information Vision Exchange.<br />{HEROData.hero_content.hero_text}</h6>
+        <img data-depth="0.05" src={hex1} className="hex-img img-1" />
+        <img data-depth="0.05" src={hex2} className="hex-img img-2" />
+        <img data-depth="0.05" src={hex3} className="hex-img img-3" />
+        <div className="hero-action">
+            <div className="row">
+                <div className="col-6">
+                    <h1 className="hero-title text-white">Welcome to the <span className="text-uppercase">HIVE</span>.
+                    </h1>
+                    <h6 className="hero-subtitle text-white">HEALTH INFORMATION VISION EXCHANGE</h6>
                     <div className="hero-ctas">
-                        <a className="btn rounded" href={HEROData.hero_content.button_one.link}>
-        {HEROData.hero_content.button_one.button_name}
-        </a>    
-          {HEROData.hero_content.button_two.button_name != ' ' && 
-                        <a className="btn rounded outline" href={HEROData.hero_content.button_two.link}>
-        {HEROData.hero_content.button_two.button_name}
-        </a>
-        }
+                        <a className="btn rounded" href={HEROData.hero_content.button_one.link}><span>{HEROData.hero_content.button_one.button_name}</span></a>
+                        {HEROData.hero_content.button_two.button_name != ' ' && 
+                        <a className="btn rounded outline" href={HEROData.hero_content.button_two.link}><span>{HEROData.hero_content.button_two.button_name}</span></a>
+  }
                     </div>
                 </div>
-                 <div className="scroll-down">
-                    <a id="go-down" href="#">
-                        <img src={down_arrow} />
-                    </a>
-                </div> 
-      <Social /> 
             </div>
-  </section>
+        </div>
+    </div>
+</section>
 );
 
 export default Hero;

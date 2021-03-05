@@ -7,14 +7,14 @@ import link_arrow from '../images/link-arrow.png';
 */
 
 const Tagline = () => (
-  <section className="hive-cta-section">
+  <section className="hive-cta-section-2">
   <div className="inner-container">
       <div className="cta">
-          <h5 className="text-white">Need help getting started? Check out our opportunities!</h5>
+          <h5 className="text-white">Need Help Getting Started? Check Out Our Opportunities!</h5>
           <div className="link">
-              <Link to="/opportunities/" className="font-exo text-white">
+              <a href="#" className="font-exo text-white">
                   Learn More <img src={link_arrow} />
-              </Link>
+              </a>
           </div>
       </div>
   </div>

@@ -2,34 +2,30 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Hero from '../components/hero';
 import Tagline from '../components/tagline';
 import HiveIdeas from '../components/hiveideas';
-import Slider from '../components/slider'
-import FeatOpp from '../components/opp'
+
 import { Link, withPrefix, graphql } from 'gatsby';
-import hero_bg from '../images/hero-bg-2.jpg';
+
 import { Helmet } from 'react-helmet';
 import link_arrow from '../images/link-arrow.png';
-import link_arrow_2 from '../images/link-arrow-2.png';
-import prev from '../images/prev.png';
-import next from '../images/next.png';
-import hne_1 from '../images/hne-1.png';
-import hne_2 from '../images/hne-2.png';
-import hne_3 from '../images/hne-3.png';
-import hne_4 from '../images/hne-4.png';
-import hne_5 from '../images/hne-5.png';
-import art_7 from '../images/Hexagon-Patter-On-White-Bottom.png';
-import art_5 from '../images/section-art-5.png';
-import art_4 from '../images/section-art-4.png';
-import DHMS from '../images/dhms.png';
-import DHA from '../images/1920px-US_Defense_Health_Agency_seal.png';
-import VA from '../images/Seal_of_the_U.S._Department_of_Veterans_Affairs.svg.png';
-import FEHRM from '../images/fehrm.png';
-import DOD from '../images/United_States_Department_of_Defense_Seal.svg.png';
-import HHS from '../images/Seal_of_the_United_States_Department_of_Health_and_Human_Services.svg.png';
-import partners from '../images/partners.png';
-import { faNewspaper } from '@fortawesome/free-solid-svg-icons';
+
+import art_5 from '../images/art5.png';
+import art2 from '../images/art2.png';
+
+
+import art1 from '../images/art1.png'
+import hex2 from '../images/hero-hex2.png'
+import hex3 from '../images/hero-hex-3.svg'
+import c1 from '../images/c1.png';
+import c2 from '../images/c2.png';
+import c3 from '../images/c3.png';
+import c4 from '../images/c4.png';
+import c5 from '../images/c5.png';
+import c6 from '../images/c6.png';
+import hovericon from '../images/hover-icon.svg'
+import arrow_r from '../images/arrow-r.svg'
+
 
 const AboutPage = ({data}) => {
   const { markdownRemark } = data;
@@ -39,29 +35,45 @@ const AboutPage = ({data}) => {
     ...node.frontmatter,
     path: '/news/' + node.fields.name,
   }));
-  const pgVar = 'style-2';
+  const events = data.events.edges.map(({ node }) => ({
+    html: node.html,
+    ...node.frontmatter,
+    path: '/event/' + node.fields.name,
+  }));
+
+  const test = news.concat(events);
+  test.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const pgVar = 'style-1 animated-hex';
   return (
   <Layout pgVar={pgVar}>
     <SEO title="About Us" />
-    <section className="hero-section style-2">
-            <div className="hero-img" style={{
-    backgroundImage: `url(${hero_bg})`
-  }}></div>
+    
+        <section className="hero-section-2 style-2 animated-hex" style={{
+    backgroundImage: `url(${posts.top_section.hero_image})`
+  }}>
+            <img src={art1} className="art" />
+            <div className="hero-hex">
+                <img data-depth="0.05" src={hex3} className="hex-img" />
+                <img src={hex2} />
+               
+            </div>
             <div className="container">
                 <div className="hero-action">
-                    <h2 className="hero-title">{posts.top_section.title}</h2>
-                    <p>
-                    {posts.top_section.text_block}
-                    </p>
-                    <div className="hero-ctas">
-                    <a className="btn rounded" href={posts.top_section.button.button_link}>{posts.top_section.button.button_text}</a>
+                    <div className="row">
+                        <div className="col-6">
+                            <h1 className="hero-title small text-white">{posts.top_section.title}</h1>
+                            <p className="hero-subtitle text-white">
+                            {posts.top_section.text_block}
+                            </p>
+                            <div className="hero-ctas">
+                                <a className="btn rounded" href={posts.top_section.button.button_link}><span>{posts.top_section.button.button_text}</span></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section className="hive-info">
-            <img className="section-art art-1" src={art_5} />
-            <img className="section-art art-2" src={art_4} />
+        <section className="hive-info-2">
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
@@ -69,30 +81,33 @@ const AboutPage = ({data}) => {
                         <h2 className="title">What is HIVE?</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="#" className="font-exo text-dark">Get Started <img src={link_arrow} /></a>
+                        <a href="#" className="font-exo text-dark">View opportunities <img
+                                src={link_arrow} /></a>
                     </div>
                 </div>
                 <div className="row">
                 {posts.blocks.map(block => (
-              <div className="col col-6" key={block.block.icon}>
-              <div className="info">
-                  <img src={block.block.icon} alt="info1" />
-                  <p>
-                      {block.block.text}
-                  </p>
-              </div>
+          <div className="col col-3" key={block.block.icon}>
+          <div className="info">
+              <img src={block.block.icon} alt="info1" />
+              <p>
+              {block.block.text}
+              </p>
           </div>
+      </div>
           ))}
+                    
                 </div>
                 <div className="link m-link">
-                    <a href="#" className="font-exo text-dark">Get Started <img src={link_arrow} /></a>
+                    <a href="#" className="font-exo text-dark">View opportunities <img src={link_arrow} /></a>
                 </div>
             </div>
         </section>
-        <section className="hive-partners">
+        <section className="hive-partners-2">
+            <img src={art_5} className="art" />
             <div className="inner-container">
                 <div className="row">
-                    <div className="col col-6">
+                    <div className="col col-9 text-center">
                         <div className="section-head">
                             <div className="section-title">
                                 <p className="sub-title text-orange-alt">WE’RE PART OF A GREATER COLONY</p>
@@ -100,46 +115,28 @@ const AboutPage = ({data}) => {
                             </div>
                         </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                            Bridging the gap between Federal Health IT organizations is key to bringing together the
+                            entire community and providing the best solutions for Federal Healthcare. HIVE works with
+                            government partners across the Federal landscape.
                         </p>
                     </div>
-                    <div className="col col-6">
-                        <div className="row">
-                        <div className="col col-3">
-                            <a href="https://health.mil/About-MHS/OASDHA/Defense-Health-Agency/Defense-Healthcare-Management-Systems" target="_blank"><img src={DHMS} alt="DHMS" className="img-fluid" /></a>
-                        </div>
-                        <div className="col col-3">
-                        <a href="https://health.mil/About-MHS/OASDHA/Defense-Health-Agency" target="_blank"><img src={DHA} alt="DHA" className="img-fluid" /></a>
-                        </div>
-                        <div className="col col-3">
-
-                        </div>
-                        <div className="col col-3">
-
-                        </div>
-                        </div>
-                        <div className="row" style={{marginTop:'10px'}}>
-                        <div className="col col-3">
-                        <a href="https://www.va.gov/" target="_blank"><img src={VA} alt="VA" className="img-fluid" /></a>
-                        </div>
-                        <div className="col col-3">
-                        <a href="https://www.defense.gov/" target="_blank"><img src={DOD} alt="DOD" className="img-fluid" /></a>
-                        </div>
-                        <div className="col col-3">
-                        <img src={FEHRM} alt="FEHRM" className="img-fluid" />
-                        </div>
-                        <div className="col col-3">
-                        <a href="https://www.hhs.gov/" target="_blank"><img src={HHS} alt="HHS" className="img-fluid" /></a>
-                        </div>
+                    <div className="col col-12">
+                        <div className="img-container logos">
+                            <img src={c1} />
+                            <img src={c2} />
+                            <img src={c3} />
+                            <img src={c4} />
+                            <img src={c5} />
+                            <img src={c6} />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
         <HiveIdeas />
-        <section className="hive-news-events" >
-            <img className="section-art art-1" src={art_7} />
+        <section className="hive-news-events-2">
+            <img src={art2} className="art" />
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
@@ -147,36 +144,79 @@ const AboutPage = ({data}) => {
                         <h2 className="title">News & upcoming events.</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="/news-events/" className="font-exo text-dark">View all <img src={link_arrow} /></a>
+                        <a href="/news" className="font-exo text-dark">View all <img src={link_arrow} /></a>
                     </div>
                 </div>
-                <div className="slider-container">
-                    <div className="hne-slider">
-                    {news.map((post,index) => (
-                         <div key={`post${index}`} className="hne-item">
-                         <div className="hne-img-wrapper img-hover">
-                             <img src={post.featured_image} className="img-fluid" alt="slide_image" />
-                         </div>
-                         <h4><a href={post.path} className="text-dark">{post.title}</a></h4>
-                         <div className="link type-2">
-                             <a href={post.path} className="font-exo text-dark">
-                                 LEARN MORE <img src={link_arrow_2} />
-                             </a>
-                         </div>
-                     </div>
-                    ))}
-                        
+                <div className="row">
+                {test.slice(0,1).map((post,index) => (
+            <div className={`col col-6 ${index}`} key={`First${index}`}>
+                        <div className="ne-card main" style={{
+                            backgroundImage: `url(${post.featured_image})`
+                            }}>
+                            <h3 className="text-white">{post.title} <img src={arrow_r} /></h3>
+                            <a href={post.path} className="ne-overlay">
+                                <img src={hovericon} />
+                            </a>
+                        </div>
                     </div>
+))}
+
+            <div className="col col-6">
+                <div className="row">
+                {test.slice(1,4).map((post,index) => (
+                    <>
+             {index == 0 &&
+             <>
+             <div className={`col col-12 ${index}`} key={`Second${index}`}>
+             <div className="ne-card fixed-h" style={{
+                 backgroundImage: `url(${post.featured_image})`
+                 }}>
+                 <h3 className="text-white">{post.title}</h3>
+                 <a href={post.path} className="ne-overlay">
+                     <img src={hovericon} />
+                 </a>
+             </div>
+            </div>
+            </>
+             }
+             {index == 1 &&
+                <div className={`col col-6  ${index}`} key={`Third${index}`}>
+                                <div className="ne-card fixed-h" style={{
+                 backgroundImage: `url(${post.featured_image})`
+                 }}>
+                                    <h3 className="text-white">{post.title}</h3>
+                                    <a href={post.path} className="ne-overlay">
+                                        <img src={hovericon} />
+                                    </a>
+                                </div>
+                            </div>
+
+             } 
+             {index == 2 &&
+                <div className={`col col-6  ${index}`} key={`Fourth${index}`}>
+                                <div className="ne-card fixed-h" style={{
+                 backgroundImage: `url(${post.featured_image})`
+                 }}>
+                                    <h3 className="text-white">{post.title}</h3>
+                                    <a href={post.path} className="ne-overlay">
+                                        <img src={hovericon} />
+                                    </a>
+                                </div>
+                            </div>
+
+             }
+             
+            </>
+                ))}    
                 </div>
-                <div className="slider-control">
-                    <div className="prev-slide"><img src={prev} /></div>
-                    <div className="next-slide"><img src={next} /></div>
+                </div>
                 </div>
                 <div className="link m-link">
-                    <a href="#" className="font-exo text-dark">View all <img src={link_arrow} /></a>
+                    <a href="/news" className="font-exo text-dark">View all <img src={link_arrow} /></a>
                 </div>
             </div>
         </section>
+        
     <Tagline />
     
   </Layout>
@@ -207,7 +247,7 @@ const AboutPage = ({data}) => {
     news: allMarkdownRemark(
         filter: { fields: { sourceName: { eq: "blog-posts" } } }
         sort: { fields: frontmatter___date, order: ASC }
-        limit: 5
+        limit: 4
       ) {
         edges {
           node {
@@ -227,5 +267,26 @@ const AboutPage = ({data}) => {
           }
         }
       }
+      events: allMarkdownRemark(
+      filter: { fields: { sourceName: { eq: "events" } } }
+      sort: { fields: frontmatter___date, order: ASC }
+      limit: 5
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            author
+            date
+            title
+            featured_image
+            excerpt
+          }
+          fields {
+            name
+          }
+        }
+      }
+    }
   }`
 export default AboutPage;

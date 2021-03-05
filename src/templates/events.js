@@ -108,10 +108,10 @@ export const pageQuery = graphql`
           html
           frontmatter {
             author
-            event_date
+            date
             title
-            event_image
-            description
+            featured_image
+            excerpt
           }
           fields {
             name
@@ -129,11 +129,10 @@ export const pageQuery = graphql`
           html
           frontmatter {
             author
-            event_date
+            date
             title
-            featured
-            description
-            event_image
+            featured_image
+            excerpt
           }
           fields {
             name

@@ -1,0 +1,190 @@
+.hive-scroller-v-2 {
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hive-scroller-v-2 .art {
+  position: absolute;
+  left: -125px;
+  bottom: -125px;
+}
+
+.hive-scroller-v-2 .hex-img .sub-hex {
+  position: absolute;
+  top: 110px;
+  right: -40px;
+  width: 182px;
+  height: 162px;
+}
+
+.hive-scroller-v-2 .hex-img svg {
+  height: 630px;
+  width: auto;
+}
+
+.hive-scroller-v-2 .arrow-img {
+  display: none;
+}
+
+.hive-scroller-v-2 .step-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hive-scroller-v-2 .step-items,
+.hive-scroller-v-2 .step-hexes {
+  position: relative;
+}
+
+.hive-scroller-v-2 .step-hexes {
+  width: 50%;
+  position: relative;
+  padding-top: 50px;
+}
+
+.hive-scroller-v-2 .step-items {
+  width: 50%;
+}
+
+.hive-scroller-v-2 .step-hexes .step-hexes-inner {
+  position: fixed;
+  top: 16vh;
+  left: 115px;
+  width: 34%;
+  height: 80vh;
+}
+
+.hive-scroller-v-2 .step-hexes .step-hex {
+  opacity: 0;
+  transition: opacity .2s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3.333vw;
+}
+
+.hive-scroller-v-2 .step-hexes .step-hex.active {
+  opacity: 1;
+}
+
+.hive-scroller-v-2 .step-items>p {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-top: 60px;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+}
+
+.hive-scroller-v-2 .step-items .step-item {
+  opacity: 0.34;
+}
+
+.hive-scroller-v-2 .step-items .step-item.active {
+  opacity: 1;
+}
+
+.hive-scroller-v-2 .step-items .step-item h4 {
+  font-size: 61px;
+  line-height: 73px;
+  color: #000;
+}
+
+.hive-scroller-v-2 .step-items .step-item.active h4 {
+  color: #0962CC;
+}
+
+.hive-scroller-v-2 .step-items .step-item p {
+  font-size: 24px;
+  line-height: 40px;
+  margin-top: 16px;
+}
+
+@media (min-width: 1200px) {
+  .hive-scroller-v-2 .step-items .step-item .step-text {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 0;
+  }
+
+  .step-hex-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hive-scroller-v-2 .step-items .step-item .step-text {
+    min-height: 700px;
+  }
+}
+
+@media (max-width: 1599.98px) {
+  .hive-scroller-v-2 .step-hexes .step-hexes-inner {
+    left: 0;
+  }
+
+  .hive-scroller-v-2 .hex-img .sub-hex {
+    right: -140px;
+  }
+}
+
+@media (max-width: 1499.98px) {
+  .hive-scroller-v-2 .hex-img .sub-hex {
+    top: 65px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+
+  .hive-scroller-v-2 {
+    padding: 100px 0;
+  }
+
+  .hive-scroller-v-2 .step-hexes,
+  .hive-scroller-v-2 .hex-img .sub-hex {
+    display: none;
+  }
+
+  .hive-scroller-v-2 .step-items {
+    width: 100%;
+  }
+
+  .hive-scroller-v-2 .step-items .step-item h4 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .hive-scroller-v-2 .step-items .step-item .step-hex-mobile {
+    display: flex;
+  }
+
+  .hive-scroller-v-2 .step-items .step-item .step-hex-mobile svg {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hive-scroller-v-2 {
+    padding: 72px 0;
+  }
+
+  .hive-scroller-v-2 .hex-img svg {
+    height: auto;
+  }
+
+  .hive-scroller-v-2 .step-items .step-item h4 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .hive-scroller-v-2 .step-items .step-item p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

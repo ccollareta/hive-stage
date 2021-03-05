@@ -3,7 +3,12 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-import './src/styles/style.scss';
+
+import './src/styles/style.css';
+import './src/styles/style2.css';
+import './src/styles/style3.css';
+import './static/vendor/lity/lity.min.css';
+import './static/vendor/slick/slick.css';
 import 'uswds';
 import React from 'react';
 
@@ -83,13 +88,20 @@ export const onInitialClientRender = () => {
   const slick = '/vendor/slick/slick.min.js';
   const isoptope ='/vendor/isotope/isotope.js';
   const isotope2 = '/scripts/isotope.js';
+  const isotope3 = '/scripts/isotope-new.js';
+  const isotope4 = '/vendor/isotope/imagesloaded.pkgd.min.js';
   const cust = '/scripts/custom.js';
+  const cust2 = '/scripts/custom-scroll.js';
 
   scripts.push(loadScripts(lity));
   scripts.push(loadScripts(slick));
   scripts.push(loadScripts(isoptope));
+  scripts.push(loadScripts(isotope4));
   scripts.push(loadScripts(isotope2));
+  scripts.push(loadScripts(isotope3));
+ 
   scripts.push(loadScripts(cust));
+  scripts.push(loadScripts(cust2));
   
 
 
@@ -99,6 +111,7 @@ export const onInitialClientRender = () => {
 };
 
 export const onRouteUpdate = ({ location }) => {
+  window.scrollTo(0,0);
   if (loaded) {
     digitalAnalytics(location.pathname);
     googleAnalytics(location.pathname);

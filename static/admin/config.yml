@@ -71,6 +71,24 @@ collections:
                 name: "name"
                 widget: "string"
                 hint: "Category name for displaying on the site"
+      - name: "collections"
+        label: "Collections"
+        file: "meta/collections.yml"
+        description: "List of Collections"
+        fields:
+          - name: collections
+            label: "Collections"
+            label_singular: "Collection"
+            widget: list
+            fields:
+              - label: "Slug"
+                name: "slug"
+                widget: "string"
+                hint: "The part of a URL identifies the collection"
+              - label: "Display Name"
+                name: "name"
+                widget: "string"
+                hint: "Collection name for displaying on the site"
       - name: "social"
         label: "Social Media"
         file: "meta/social.yml"
@@ -156,8 +174,9 @@ collections:
                 widget: object
                 fields:
                   - { label: "Icon", name: "icon", widget: image}
-                  - { label: "Text", name: "text", widget: text}
                   - { label: "Title", name: "title", widget: string}
+                  - { label: "Sub Title", name: "subtitle", widget: string}
+                  - { label: "Text", name: "text", widget: text}
                   - { label: "URL", name: "url", widget: string}
     - label: "Contact"
       name: "contact"
@@ -196,7 +215,7 @@ collections:
         - { label: "Title", name: 'title', widget: string}
         - {
           label: 'Event Date',
-          name: 'event_date',
+          name: 'date',
           widget: 'datetime',
           format: 'ddd MMM D, YYYY LT',
           date_format: 'ddd MMM D, YYYY',
@@ -212,7 +231,7 @@ collections:
     label_singular: News Article
     folder: src/blog-posts
     create: true
-    preview_path: 'blog/{{slug}}'
+    preview_path: 'news/{{slug}}'
     editor:
       preview: false
     fields:
@@ -229,8 +248,30 @@ collections:
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
       - { label: "Featured Image", name: "featured_image", widget: image}
       - { label: "Excerpt", name: "excerpt", widget: text}
-      - { label: "Pre Text", name: "pre_text", widget: text}
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
+      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false}
+      - { label: "Pre Text", name: "pre_text", widget: text, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      -   label: "Information"
+          name: "information"
+          widget: object
+          fields:
+            - {label: "Value", name: "value", widget: string, required: false}
+            - {label: "Type", name: "type", widget: string, required: false}
+            - {label: "Release Date", name: "release", widget: string, required: false}
+      -   label: "Changelog"
+          name: "changelog"
+          widget: list
+          fields:
+            - {label: "Value", name: "value", widget: string}
+      -   label: "Important Links"
+          name: "impLinks"
+          widget: list
+          fields:
+            - {label: "Link Text", name: "text", widget: string}
+            - {label: "Link URL", name: "url", widget: string}
+      - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false}
+      - { label: 'File', name: 'file', widget: 'file', required: false }
       - label: Categories
         label_singular: "Category"
         name: "tags"
@@ -247,31 +288,22 @@ collections:
           displayFields:
             - "tags.*.name"
           valueField: "tags.*.slug"
-  - name: resources
-    label: Resources
-    label_singular: Resource
-    folder: src/resources
-    create: true
-    preview_path: '/resource/{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
-      - {
-        label: 'Date',
-        name: 'date',
-        widget: 'datetime',
-        format: 'MMMM D, YYYY',
-        dateFormat: 'MMMM D, YYYY',
-        timeFormat: false
-      }
-      - { label: 'Author', name: 'author', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: 'File', name: 'file', widget: 'file' }
-      - { label: 'File Size', name: 'file_size', widget: 'string' }
-      - { label: 'Thumbnail', name: 'resource_thumb', widget: 'image' }
-      - { label: 'Category', name: 'category', widget: 'select', required: false, options: ["Workforce 3.0", "Workplace 3.0", "Integrated Business Team", "HIVE.gov"]}
+      - label: Collections
+        label_singular: "Collection"
+        name: "collections"
+        widget: list
+        summary: "{{fields.collection}}"
+        field:
+          label: Categories
+          name: tag
+          widget: relation
+          collection: "site_info"
+          file: "collections"
+          searchFields:
+            - "collections.*.name"
+          displayFields:
+            - "collections.*.name"
+          valueField: "collections.*.slug"
   - name: events
     label: Events
     label_singular: Event
@@ -282,31 +314,74 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Author', name: "author", widget: string}
+      - {
+          label: 'Event Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'MMMM D, YYYY',
+          dateFormat: 'MMMM D, YYYY',
+          timeFormat: false
+        }
+      - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
-      - { label: 'Featured Image', name: 'event_image', widget: 'image' }
-      - {
-        label: 'Event Date',
-        name: 'event_date',
-        widget: 'datetime',
-        format: 'MMMM D, YYYY',
-        date_format: 'MMMM D, YYYY',
-        dateFormat: 'MMMM D, YYYY',
-        timeFormat: false
-      }
-      - {
-        label: 'Event Time',
-        name: 'event_time',
-        widget: 'datetime',
-        format: 'LT',
-        dateFormat: false,
-        time_format: 'hh:mm A',
-        timeFormat: 'hh:mm A',
-        required: false
-      }
-      - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: "Pre Text", name: "pre_text", widget: text}
+      - { label: "Featured Image", name: "featured_image", widget: image}
+      - { label: "Excerpt", name: "excerpt", widget: text}
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
+      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false}
+      - { label: "Pre Text", name: "pre_text", widget: text, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      -   label: "Information"
+          name: "information"
+          widget: object
+          fields:
+            - {label: "Value", name: "value", widget: string, required: false}
+            - {label: "Type", name: "type", widget: string, required: false}
+            - {label: "Release Date", name: "release", widget: string, required: false}
+      -   label: "Changelog"
+          name: "changelog"
+          widget: list
+          fields:
+            - {label: "Value", name: "value", widget: string}
+      -   label: "Important Links"
+          name: "impLinks"
+          widget: list
+          fields:
+            - {label: "Link Text", name: "text", widget: string}
+            - {label: "Link URL", name: "url", widget: string}
+      - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false}
+      - { label: 'File', name: 'file', widget: 'file', required: false }
+      - label: Categories
+        label_singular: "Category"
+        name: "tags"
+        widget: list
+        summary: "{{fields.tag}}"
+        field:
+          label: Categories
+          name: tag
+          widget: relation
+          collection: "site_info"
+          file: "tags"
+          searchFields:
+            - "tags.*.name"
+          displayFields:
+            - "tags.*.name"
+          valueField: "tags.*.slug"
+      - label: Collections
+        label_singular: "Collection"
+        name: "collections"
+        widget: list
+        summary: "{{fields.collection}}"
+        field:
+          label: Categories
+          name: tag
+          widget: relation
+          collection: "site_info"
+          file: "collections"
+          searchFields:
+            - "collections.*.name"
+          displayFields:
+            - "collections.*.name"
+          valueField: "collections.*.slug"
   - name: exchange-opps
     label: Opportunities
     label_singular: Opportunity
@@ -317,88 +392,71 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Author', name: "author", widget: string}
-      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
       - {
-        label: 'Date Posted',
-        name: 'date',
-        widget: 'datetime',
-        format: 'MMMM D, YYYY',
-        dateFormat: 'MMMM D, YYYY',
-        timeFormat: false
-      }
-      - label: "Resources"
-        name: "resources"
-        widget: list
-        fields:
-              - label: "Resource"
-                name: "resource"
-                widget: object
-                fields:
-                  - { label: "Title", name: "title", widget: string}
-                  - { label: "Text", name: "text", widget: text}
-                  - { label: 'File', name: 'file', widget: 'file' }
-      - label: "Important Dates"
-        name: "dates"
-        widget: list
-        fields:
-              - label: "Date"
-                name: "date"
-                widget: object
-                fields:
-                  - { label: "Title", name: "title", widget: string}
-                  - { label: "Text", name: "text", widget: text}
-                  - { label: 'Date Posted', name: 'date', widget: 'datetime', format: 'MMMM D, YYYY', dateFormat: 'MMMM D, YYYY', timeFormat: false }
-      - { label: 'Featured Image', name: 'event_image', widget: 'image' }
-      - { label: 'Description', name: 'description', widget: 'text' }
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'MMMM D, YYYY',
+          dateFormat: 'MMMM D, YYYY',
+          timeFormat: false
+        }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - { label: "Featured Image", name: "featured_image", widget: image}
+      - { label: "Excerpt", name: "excerpt", widget: text}
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
+      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false}
       - { label: "Pre Text", name: "pre_text", widget: text, required: false}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: exchanges
-    label: Exchanges
-    label_singular: Exchange
-    folder: src/exchanges
-    create: true
-    preview_path: '/exchange/{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Author', name: "author", widget: string}
-      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
-      - {
-        label: 'Date',
-        name: 'date',
-        widget: 'datetime',
-        format: 'MMMM D, YYYY',
-        dateFormat: 'MMMM D, YYYY',
-        timeFormat: false
-      }
-      - { label: 'Featured Image', name: 'event_image', widget: 'image' }
-      - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: "Pre Text", name: "pre_text", widget: text}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: ideas
-    label: Ideas
-    label_singular: Idea
-    folder: src/ideas
-    create: true
-    preview_path: '/idea/{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Author', name: "author", widget: string}
-      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
-      - { label: "External URL", name: 'url', widget: string }
-      - {
-        label: 'Date',
-        name: 'date',
-        widget: 'datetime',
-        format: 'MMMM D, YYYY',
-        dateFormat: 'MMMM D, YYYY',
-        timeFormat: false
-      }
-      - { label: 'Featured Image', name: 'event_image', widget: 'image' }
-      - { label: 'Description', name: 'description', widget: 'text' }
-      - { label: "Pre Text", name: "pre_text", widget: text, required: false }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+      -   label: "Information"
+          name: "information"
+          widget: object
+          fields:
+            - {label: "Value", name: "value", widget: string, required: false}
+            - {label: "Type", name: "type", widget: string, required: false}
+            - {label: "Release Date", name: "release", widget: string, required: false}
+      -   label: "Changelog"
+          name: "changelog"
+          widget: list
+          fields:
+            - {label: "Value", name: "value", widget: string}
+      -   label: "Important Links"
+          name: "impLinks"
+          widget: list
+          fields:
+            - {label: "Link Text", name: "text", widget: string}
+            - {label: "Link URL", name: "url", widget: string}
+      - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false}
+      - { label: 'File', name: 'file', widget: 'file', required: false }
+      - label: Categories
+        label_singular: "Category"
+        name: "tags"
+        widget: list
+        summary: "{{fields.tag}}"
+        field:
+          label: Categories
+          name: tag
+          widget: relation
+          collection: "site_info"
+          file: "tags"
+          searchFields:
+            - "tags.*.name"
+          displayFields:
+            - "tags.*.name"
+          valueField: "tags.*.slug"
+      - label: Collections
+        label_singular: "Collection"
+        name: "collections"
+        widget: list
+        summary: "{{fields.collection}}"
+        field:
+          label: Categories
+          name: tag
+          widget: relation
+          collection: "site_info"
+          file: "collections"
+          searchFields:
+            - "collections.*.name"
+          displayFields:
+            - "collections.*.name"
+          valueField: "collections.*.slug"

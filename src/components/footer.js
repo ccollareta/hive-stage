@@ -32,16 +32,16 @@ const Footer = () => (
                         <div className="col col-2">
                             <h6 className="col-title">Useful Links</h6>
                             <ul className="list-unstyled">
-                                <li><a href="#">About PEO-DHMS</a></li>
+                                <li><a href="/about">About PEO-DHMS</a></li>
                                 <li><a href="#">Capabilities</a></li>
-                                <li><a href="#">HIVE</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="/overview">HIVE</a></li>
+                                <li><a href="/contact-us">Contact Us</a></li>
                             </ul>
                         </div>
                         <div className="col col-2">
                             <h6 className="col-title">Resources</h6>
                             <ul className="list-unstyled">
-                                <li><a href="#">News & Events</a></li>
+                                <li><a href="/news-events">News & Events</a></li>
                                 <li><a href="#">Resource Library</a></li>
                             </ul>
                         </div>
@@ -58,7 +58,7 @@ const Footer = () => (
             <div className="footer-secondary">
                 <ul className="footer-links list-unstyled">
                     <li>© 2020 Hive. All Rights Reserved</li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
                     <li><a href="#">Accessibility/508 Compliance</a></li>
                 </ul>
                 <ul className="footer-links list-unstyled">

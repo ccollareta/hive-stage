@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from "gatsby"
-import { SimilarArticlesFactory } from './SimilarArticlesFactory'
+import { SimilarArticlesFactory } from './similararticlesfactory'
 import Article from './article'
 import link_arrow from '../images/link-arrow.png';
 

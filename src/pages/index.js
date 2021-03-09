@@ -68,17 +68,23 @@ const IndexPage = ({data}) => {
                         <div className="step-hexes-inner">
                             {posts.slider.map((slide,index) => (
                                 <div className="step-hex hex-img step-link" data-step={index + 1} key={`part${index}`}>
-                                <svg width="327.846" height="318.144" class="sub-hex" data-depth="0.05">
+                                <svg width="327.846" height="318.144" className="sub-hex" data-depth="0.05">
                                 <defs>
                                     <linearGradient id="grad3" x1="0%" y1="100%" x2="0%" y2="0%">
-                                        <stop offset="0%" style="stop-color:rgb(226,210,198);stop-opacity:1" />
-                                        <stop offset="80%" style="stop-color:rgb(255,255,254);stop-opacity:1" />
+                                        <stop offset="0%" style={{
+                                            stopColor: 'rgb(226,210,198)',
+                                            stopOpacity:1
+                                            }} />
+                                        <stop offset="80%" style={{
+                                            stopColor:'rgb(255,255,254)',
+                                            stopOpacity:1
+                                            }} />
                                     </linearGradient>
                                 </defs>
                                 <style type="text/css">
-                                    .st0 {
+                                    {`.st0 {
                                         fill: url(#grad3)
-                                    }
+                                    }`}
                                 </style>
                                 <path class="st0"
                                     d="M152.2,37.7c6.5,3.7,10.5,10.7,10.5,18.2l0.1,69.5c0,7.5-4,14.5-10.5,18.2l-60.2,34.6c-6.5,3.7-14.5,3.7-21,0

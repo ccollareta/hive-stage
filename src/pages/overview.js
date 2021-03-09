@@ -20,7 +20,7 @@ import c3 from '../images/c3.png';
 import idea_1 from '../images/idea1.png';
 import idea_2 from '../images/idea2.png';
 import idea_3 from '../images/idea3.png';
-import hex_2 from '../images/hero-hex3.png'
+import hex_2 from '../images/HIVE-Overview_v2.png'
 import hex_3 from '../images/hero-hex-3.svg'
 import art1 from '../images/art1.png'
 import art5 from '../images/art5.png'

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { graphql, withPrefix } from 'gatsby';
 import { Helmet } from 'react-helmet';
+import art2 from '../images/art2.png';
+import art5 from '../images/art5.png';
 
 import Layout from '../components/layout';
 
@@ -31,8 +33,11 @@ const SearchPage = ({ data, location }) => {
 
   return (
     <Layout pgVar={pgVar}>
-      <section className="hive-privacy-policy">
-            <div className="inner-container">
+     <section className="pp-section">
+            <img src={art2} className="art art-1"/>
+            <img src={art5} className="art art-2"/>
+            <img src={art5} className="art art-3"/>
+            <div className="pp-container">
               <h1>Search Results</h1>
 
               {results.length > 0 ? (

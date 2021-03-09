@@ -343,7 +343,7 @@ p {
 
 .btn.outline:hover:after,
 .btn.outline:focus:after {
-  opacity: 1;
+  
 }
 
 .btn:hover:after,

@@ -1338,6 +1338,7 @@ svg .a {
 
 .hive-news-events-2.style-2 .featured-news .featured-item .art {
   position: absolute;
+  z-index: -1;
 }
 
 .hive-news-events-2.style-2 .featured-news .featured-item .art.art-1 {

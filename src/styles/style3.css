@@ -234,4 +234,17 @@
   }
 
 
-  
+  .st0 {
+    filter: url(#a) !important;
+}
+
+.st1 {
+    fill: url(#grad1) !important;
+}
+
+.st10 {
+  fill: url(#grad2)
+}
+.st100 {
+  fill: url(#grad3)
+}

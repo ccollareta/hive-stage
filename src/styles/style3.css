@@ -16,6 +16,8 @@
   right: -40px;
   width: 182px;
   height: 183px;
+  backdrop-filter: blur(30px);
+-webkit-backdrop-filter: blur(30px);
 }
 
 .hive-scroller-v-2 .hex-img svg {
@@ -235,16 +237,24 @@
 
 
   .st0 {
-    filter: url(#a) !important;
+    filter: url(#a) blur(30px) !important;
+    
+-webkit-filter: blur(30px);
 }
 
 .st1 {
     fill: url(#grad1) !important;
+    filter: blur(30px);
+-webkit-filter: blur(30px);
 }
 
 .st10 {
-  fill: url(#grad2)
+  fill: url(#grad2);
+  filter: blur(30px);
+-webkit-filter: blur(30px);
 }
 .st100 {
-  fill: url(#grad3)
+  fill: url(#grad3);
+  filter: blur(30px);
+-webkit-filter: blur(30px);
 }

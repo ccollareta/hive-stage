@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql, Link, withPrefix } from 'gatsby';
-import YAMLData from '../../meta/tags.yml'
+import PData from '../pages/content/news.yml';
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -176,7 +176,7 @@ const Blog = ({ data, pageContext }) => {
                     </div>
                 </div>
                 <div className="row primary-row">
-                    <div className="col col-8">
+                    <div className={PData.hide ? "col col-12" : "col col-8"}>
                         <div className="card-exchanges">
                         {late.map(exchange =>(
       <div className="card" key={exchange.title}>
@@ -210,12 +210,13 @@ const Blog = ({ data, pageContext }) => {
                             </a>
                         </div>
                     </div>
+                    {!PData.hide &&
                     <div className="col col-4">
                         <h4>Featured News Posts</h4>
                         <div className="oppn-container">
                             
                         {test.map((res,index)=>(
-      <div className="oppn-item" key={index}>
+                    <div className="oppn-item" key={index}>
                                 <a href={res.path}>
                                     <h6>{res.title}</h6>
                                 </a>
@@ -227,6 +228,7 @@ const Blog = ({ data, pageContext }) => {
                             ))}
                         </div>
                     </div>
+                  }
                 </div>
             </div>
         </section>

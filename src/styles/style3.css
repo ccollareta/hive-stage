@@ -235,16 +235,18 @@
           transform: rotate(-60deg);
   }
 
+  .img-3{
+  }
 
   .st0 {
-    filter: url(#a) blur(30px) !important;
+    filter: url(#a) !important;
     
 -webkit-filter: blur(30px);
 }
 
 .st1 {
-    fill: url(#grad1) !important;
-    filter: blur(30px);
+    fill: url(#grad1)  !important;
+    backdrop-filter: blur(30px) !important;
 -webkit-filter: blur(30px);
 }
 
@@ -255,6 +257,14 @@
 }
 .st100 {
   fill: url(#grad3);
-  filter: blur(30px);
+  filter: blur(30px) !important;
 -webkit-filter: blur(30px);
+}
+.st100:after{
+  display: block;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(30px);
+-webkit-backdrop-filter: blur(30px);
 }

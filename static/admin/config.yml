@@ -118,6 +118,14 @@ collections:
             - { label: "Description", name: "description", widget: "text"}
             - { label: "Thumbnail", name: "thumbnail", widget: "image"}
             - { label: "Link", name: "link", widget: string, required: false}
+    - label: "News & Events"
+      name: "news"
+      slug: '/'
+      editor:
+        preview: false
+      file: "src/pages/content/news.yml"
+      fields:
+        - { label: "Hide Featured", name: hide, widget: boolean, default: false}
     - label: "About"
       name: "about"
       slug: '/'

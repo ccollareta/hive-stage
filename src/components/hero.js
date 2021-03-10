@@ -26,7 +26,8 @@ const Hero = () => (
     <div className="container">
         <img data-depth="0.05" src={hex1} className="hex-img img-1" />
         <img data-depth="0.05" src={hex2} className="hex-img img-2" />
-        <img data-depth="0.05" src={hex3} className="hex-img img-3" />
+        
+        <div className="hexagon hexagon1 hex-img img-3"><div className="hexagon-in1"><div className="hexagon-in2"></div></div></div>
         <div className="hero-action">
             <div className="row">
                 <div className="col-6">

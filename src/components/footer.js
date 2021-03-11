@@ -32,9 +32,9 @@ const Footer = () => (
                         <div className="col col-2">
                             <h6 className="col-title">Useful Links</h6>
                             <ul className="list-unstyled">
-                                <li><a href="/about-peo">About PEO-DHMS</a></li>
-                                <li><a href="/overview">HIVE</a></li>
-                                <li><a href="/contact-us">Contact Us</a></li>
+                                <li><a href="/about-peo-dhms">About PEO-DHMS</a></li>
+                                <li><a href="/opportunities">HIVE</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
                             </ul>
                         </div>
                         <div className="col col-2">

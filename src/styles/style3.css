@@ -16,8 +16,7 @@
   right: -40px;
   width: 182px;
   height: 183px;
-  backdrop-filter: blur(30px);
--webkit-backdrop-filter: blur(30px);
+ 
 }
 
 .hive-scroller-v-2 .hex-img svg {

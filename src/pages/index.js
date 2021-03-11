@@ -55,7 +55,7 @@ const IndexPage = ({data}) => {
   test.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   console.log(test);
   const pgVar = 'style-1 animated-hex';
-  var options = {year: 'numeric', month: 'long', day: 'numeric' };
+  var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
   return (
   <Layout pgVar={pgVar}>
     

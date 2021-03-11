@@ -8,7 +8,7 @@ import two_icon from '../images/one-icon-2.svg';
 
 const FeatOpp = ({title, description, thumbnail,link, author, date }) => {
     const date2 = new Date(date);
-    var options = {year: 'numeric', month: 'long', day: 'numeric' };
+    var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
     
     
     return (

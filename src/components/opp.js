@@ -7,6 +7,8 @@ import two_icon from '../images/one-icon-2.svg';
 
 
 const FeatOpp = ({title, description, thumbnail,link, author, date }) => {
+    const date2 = new Date(date);
+    var options = {year: 'numeric', month: 'long', day: 'numeric' };
     
     
     return (
@@ -26,7 +28,7 @@ const FeatOpp = ({title, description, thumbnail,link, author, date }) => {
                                 </p>
                                 <div className="post-details">
                                     <a href="#" className="author">Submitted by {author}</a>
-                                    <span className="date">{date}</span>
+                                    <span className="date">{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
                         </div>

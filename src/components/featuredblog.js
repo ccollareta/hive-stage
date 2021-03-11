@@ -3,7 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from "gatsby"
-import { SimilarArticlesFactory } from './similararticlesfactory'
+import { SimilarArticlesFactoryFeat } from './similararticlesfactoryfeat'
 import FeatArticle from './featarticle'
 import link_arrow from '../images/link-arrow.png';
 
@@ -13,7 +13,7 @@ const FeaturedBlogComponent = ({ articles }) => (
         <h4 className="widget-title">Related Posts</h4>
         <div className="related-post-container">
         {articles.slice(0,3).map((article, i) => (
-      <FeatArticle {...article} key={i}/>
+      <FeatArticle {...article.article} key={i}/>
     ))}
         </div>
     </div>
@@ -27,7 +27,7 @@ export default (props) => (
       query FeaturedArticles {    
         posts: allMarkdownRemark(
     filter: {fields: {sourceName: {eq: "blog-posts"}}, frontmatter: {featured: {eq: "Yes"}}}
-      sort: { fields: frontmatter___date, order: ASC }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 3
     ) {
       edges {
@@ -62,10 +62,16 @@ export default (props) => (
       }));
 console.log(articles);
       // (3.) Use a SimilarArticlesFactory to get my similar articles
-      
+      const similarArticles = new SimilarArticlesFactoryFeat(
+        articles, currentArticleSlug
+      )
+      .setMaxArticles(3)
+      .getArticles()
+console.log(similarArticles)
+      // (4.) Render it
       return (
         <FeaturedBlogComponent
-          articles={articles}
+          articles={similarArticles}
         />
       )
     }}

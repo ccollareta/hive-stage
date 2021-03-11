@@ -4,7 +4,7 @@ import PData from '../pages/content/news.yml';
 import { Helmet } from 'react-helmet'
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import HiveIdeas from '../components/hiveideas'
+import HiveIdeas from '../components/hiveideas' 
 import prev from '../images/prev.png';
 import next from '../images/next.png';
 import section_1 from '../images/section-art-1.png';
@@ -49,6 +49,7 @@ const Blog = ({ data, pageContext }) => {
   console.log(test);
   const abouts = data.abouts.frontmatter;
   const pgVar = 'style-3';
+  var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
   return (
     <Layout pgVar={pgVar}>
      
@@ -193,8 +194,8 @@ const Blog = ({ data, pageContext }) => {
                   {exchange.description}
                   </p>
                   <div className="post-details">
-                      <a href="#" className="author">Submitted by {exchange.author}</a>
-                      <span className="date">{exchange.date}</span>
+                      <span className="author">Submitted by {exchange.author}</span>
+                      <span className="date">{exchange.date ? new Date(exchange.date).toLocaleDateString('en-US',options) : ''}</span>
                   </div>
               </div>
           </div>
@@ -222,7 +223,7 @@ const Blog = ({ data, pageContext }) => {
                                 </a>
                                 <div className="post-details">
                                     <a href={res.path} className="author">Submitted by {res.author}</a>
-                                    <span className="date">{res.date}</span>
+                                    <span className="date">{res.date ? new Date(res.date).toLocaleDateString('en-US',options) : ''}</span>
                                 </div>
                             </div>
                             ))}
@@ -240,7 +241,7 @@ export const pageQuery = graphql`
   query {
     feat: allMarkdownRemark(
       filter: {fields: {sourceName: {eq: "blog-posts"}}, frontmatter: {featured: {eq: "Yes"}}}
-      sort: { fields: frontmatter___date, order: ASC }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 3
     ) {
       edges {
@@ -263,7 +264,7 @@ export const pageQuery = graphql`
     }
     latenews: allMarkdownRemark(
       filter: {fields: {sourceName: {eq: "blog-posts"}}}
-      sort: { fields: frontmatter___date, order: ASC }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 4
     ) {
       edges {
@@ -286,7 +287,7 @@ export const pageQuery = graphql`
     }
     news: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "blog-posts" } } }
-      sort: { fields: frontmatter___date, order: ASC }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 5
     ) {
       edges {

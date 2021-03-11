@@ -7,15 +7,16 @@ import hovericon from '../images/hover-icon.svg';
 
 
 const FeatArticle = ({path, title,tags, author,html,featured_image,date}) => {
- 
-    return (
+ const date2 = new Date(date);
+ var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
+     return (
         <div className="post-item">
                 <a href={path}>
                     <h6>{title}</h6>
                 </a>
                 <div className="post-details">
                     <a href={path} className="author">Submitted by {author}</a>
-                    <span className="date">{date}</span>
+                    <span className="date">{date2.toLocaleDateString('en-US',options)}</span>
                 </div>
             </div>
     );

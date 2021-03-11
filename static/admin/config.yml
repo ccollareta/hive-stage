@@ -248,7 +248,7 @@ collections:
           label: 'Date',
           name: 'date',
           widget: 'datetime',
-          format: 'MMMM D, YYYY',
+          format: 'YYYY-MM-DD',
           dateFormat: 'MMMM D, YYYY',
           timeFormat: false
         }
@@ -256,30 +256,30 @@ collections:
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
       - { label: "Featured Image", name: "featured_image", widget: image}
       - { label: "Excerpt", name: "excerpt", widget: text}
-      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
-      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false}
-      - { label: "Pre Text", name: "pre_text", widget: text, required: false}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false, default: ''}
+      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false, default: ''}
+      - { label: "Pre Text", name: "pre_text", widget: text, required: false, default: ''}
+      - { label: 'Body', name: 'body', widget: 'markdown', default: '' }
       -   label: "Information"
           name: "information"
           widget: object
           fields:
-            - {label: "Value", name: "value", widget: string, required: false}
-            - {label: "Type", name: "type", widget: string, required: false}
-            - {label: "Release Date", name: "release", widget: string, required: false}
+            - {label: "Value", name: "value", widget: string, required: false, default: ''}
+            - {label: "Type", name: "type", widget: string, required: false, default: ''}
+            - {label: "Release Date", name: "release", widget: string, required: false, default: ''}
       -   label: "Changelog"
           name: "changelog"
           widget: list
           fields:
-            - {label: "Value", name: "value", widget: string}
+            - {label: "Value", name: "value", widget: string, default: ''}
       -   label: "Important Links"
           name: "impLinks"
           widget: list
           fields:
-            - {label: "Link Text", name: "text", widget: string}
-            - {label: "Link URL", name: "url", widget: string}
-      - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false}
-      - { label: 'File', name: 'file', widget: 'file', required: false }
+            - {label: "Link Text", name: "text", widget: string, default: ''}
+            - {label: "Link URL", name: "url", widget: string, default: ''}
+      - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false, default: ''}
+      - { label: 'File', name: 'file', widget: 'file', required: false, default: '' }
       - label: Categories
         label_singular: "Category"
         name: "tags"
@@ -326,36 +326,36 @@ collections:
           label: 'Event Date',
           name: 'date',
           widget: 'datetime',
-          format: 'MMMM D, YYYY',
+          format: 'YYYY-MM-DD',
           dateFormat: 'MMMM D, YYYY',
           timeFormat: false
         }
-      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string', default: '' }
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
       - { label: "Featured Image", name: "featured_image", widget: image}
       - { label: "Excerpt", name: "excerpt", widget: text}
-      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
-      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false}
-      - { label: "Pre Text", name: "pre_text", widget: text, required: false}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false, default: ''}
+      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false, default: ''}
+      - { label: "Pre Text", name: "pre_text", widget: text, required: false, default: ''}
+      - { label: 'Body', name: 'body', widget: 'markdown', default: '' }
       -   label: "Information"
           name: "information"
           widget: object
           fields:
-            - {label: "Value", name: "value", widget: string, required: false}
-            - {label: "Type", name: "type", widget: string, required: false}
-            - {label: "Release Date", name: "release", widget: string, required: false}
+            - {label: "Value", name: "value", widget: string, required: false, default: ''}
+            - {label: "Type", name: "type", widget: string, required: false, default: ''}
+            - {label: "Release Date", name: "release", widget: string, required: false, default: ''}
       -   label: "Changelog"
           name: "changelog"
           widget: list
           fields:
-            - {label: "Value", name: "value", widget: string}
+            - {label: "Value", name: "value", widget: string, default: ''}
       -   label: "Important Links"
           name: "impLinks"
           widget: list
           fields:
-            - {label: "Link Text", name: "text", widget: string}
-            - {label: "Link URL", name: "url", widget: string}
+            - {label: "Link Text", name: "text", widget: string, default: ''}
+            - {label: "Link URL", name: "url", widget: string, default: ''}
       - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false}
       - { label: 'File', name: 'file', widget: 'file', required: false }
       - label: Categories
@@ -404,37 +404,37 @@ collections:
           label: 'Date',
           name: 'date',
           widget: 'datetime',
-          format: 'MMMM D, YYYY',
+          format: 'YYYY-MM-DD',
           dateFormat: 'MMMM D, YYYY',
           timeFormat: false
         }
-      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string', default: '' }
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
       - { label: "Featured Image", name: "featured_image", widget: image}
       - { label: "Excerpt", name: "excerpt", widget: text}
-      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false}
-      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false}
-      - { label: "Pre Text", name: "pre_text", widget: text, required: false}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false, default: ''}
+      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false, default: ''}
+      - { label: "Pre Text", name: "pre_text", widget: text, required: false, default: ''}
+      - { label: 'Body', name: 'body', widget: 'markdown', default: '' }
       -   label: "Information"
           name: "information"
           widget: object
           fields:
-            - {label: "Value", name: "value", widget: string, required: false}
-            - {label: "Type", name: "type", widget: string, required: false}
-            - {label: "Release Date", name: "release", widget: string, required: false}
+            - {label: "Value", name: "value", widget: string, required: false, default: ''}
+            - {label: "Type", name: "type", widget: string, required: false, default: ''}
+            - {label: "Release Date", name: "release", widget: string, required: false, default: ''}
       -   label: "Changelog"
           name: "changelog"
           widget: list
           fields:
-            - {label: "Value", name: "value", widget: string}
+            - {label: "Value", name: "value", widget: string, default: ''}
       -   label: "Important Links"
           name: "impLinks"
           widget: list
           fields:
-            - {label: "Link Text", name: "text", widget: string}
-            - {label: "Link URL", name: "url", widget: string}
-      - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false}
+            - {label: "Link Text", name: "text", widget: string, default: ''}
+            - {label: "Link URL", name: "url", widget: string, default: ''}
+      - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false, default: ''}
       - { label: 'File', name: 'file', widget: 'file', required: false }
       - label: Categories
         label_singular: "Category"

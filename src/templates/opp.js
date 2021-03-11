@@ -6,8 +6,8 @@ import { Helmet } from 'react-helmet';
 import Layout from '../components/layout';
 import SocialShare from '../components/social-share';
 import Tagline from '../components/tagline';
-import SimilarBlogComponent from '../components/similararticles'
-import FeaturedBlogComponent from '../components/featuredblog'
+import SimilarOppComponent from '../components/similaropps'
+import FeaturedOppComponent from '../components/featuredopp'
 import SEO from '../components/seo';
 import usr_img from '../images/user.svg';
 import up_img from '../images/up.png';
@@ -31,6 +31,9 @@ import link_arrow from '../images/link-arrow.png';
 const BlogPost = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html, fields } = markdownRemark;
+  const date2 = new Date(frontmatter.date);
+  var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
+
   const pgVar = 'style-3';
   return (
     <Layout pgVar={pgVar}>
@@ -40,7 +43,7 @@ const BlogPost = ({ data }) => {
             <img src={art4} className="art art-2"/>
             <div className="inner-container">
                 <div className="post-category">
-                    <span className="category"><a href="#">{frontmatter.tags.join(', ')}</a></span>
+                    <span className="category">{frontmatter.tags ? frontmatter.tags.join(', ') : ''}</span>
                 </div>
                 <h1>{frontmatter.title}</h1>
                 <div className="row">
@@ -50,11 +53,11 @@ const BlogPost = ({ data }) => {
                             <div className="author">
                                 <img src={usr_img} alt="user" />
                                 <div className="name">
-                                    <a href="#">{frontmatter.author}</a>
-                                    <span>{frontmatter.date}</span>
+                                    {frontmatter.author}
+                                    <span>{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
-                            <SocialShare />
+                        
                         </div>
                         <div className="post-content">
                             <h3>{frontmatter.subtitle}</h3>
@@ -92,7 +95,7 @@ const BlogPost = ({ data }) => {
                             } 
                         </div>
                     </div>
-                    <FeaturedBlogComponent />
+                    <FeaturedOppComponent currentArticleSlug={`/opportunity/${fields.name}`} />
                 </div>
             </div>
         </section>
@@ -138,7 +141,7 @@ const BlogPost = ({ data }) => {
                 </div>
             </div>
         </section>
-        <SimilarBlogComponent currentArticleSlug={`/news/${fields.name}`} tags={frontmatter.tags} category={frontmatter.collections} />
+        <SimilarOppComponent currentArticleSlug={`/opportunity/${fields.name}`} tags={frontmatter.tags} category={frontmatter.collections} />
         <Tagline />
     </Layout>
   );

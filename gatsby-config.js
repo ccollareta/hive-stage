@@ -113,8 +113,6 @@ module.exports = {
         path: `${__dirname}/src/blog-posts`,
       },
     },
-    
-    
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -17,6 +17,7 @@ const Blog = ({ data, pageContext }) => {
     path: '/news/' + node.fields.name,
   }));
   const pgVar = 'style-3'
+  var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
   return (
     <Layout pgVar={pgVar}>
       <SEO title="Blog" />
@@ -24,7 +25,7 @@ const Blog = ({ data, pageContext }) => {
             <img src={art5} className="art art-1" />
             <img src={art4} className="art art-2" />
             <div className="inner-container">
-                <h1>All Opportunities</h1>
+                <h1>All News</h1>
                 <div className="filter-form">
                     <div className="filters">
                         <select className="filter" data-filter-group="0">
@@ -68,7 +69,7 @@ const Blog = ({ data, pageContext }) => {
                   <div className="card">
                             <div className="card-img">
                                 <img src={post.featured_image} className="img-fluid" alt="item1" />
-                                <a href="#" className="card-overlay">
+                                <a href={post.path} className="card-overlay">
                                     <img src={hovericon} />
                                 </a>
                             </div>

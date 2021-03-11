@@ -12,7 +12,7 @@ const Tagline = () => (
       <div className="cta">
           <h5 className="text-white">Need Help Getting Started? Check Out Our Opportunities!</h5>
           <div className="link">
-              <a href="#" className="font-exo text-white">
+              <a href="/opportunities" className="font-exo text-white">
                   Learn More <img src={link_arrow} />
               </a>
           </div>

@@ -9,3 +9,7 @@ tags:
     name: Insurance
   - slug: assistance
     name: Assistance
+  - slug: federal-xaas
+    name: Federal XaaS
+  - slug: workforce
+    name: Workforce 3.0

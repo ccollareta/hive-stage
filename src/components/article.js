@@ -6,8 +6,10 @@ import { Helmet } from 'react-helmet';
 import hovericon from '../images/hover-icon.svg';
 
 
-const Article = ({path, title,tags, author,html,featured_image,date}) => {
- 
+const Article = ({path, title,tags, author,excerpt,featured_image,date}) => {
+    const date2 = new Date(date);
+    var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
+        console.log(date2.toLocaleDateString('en-US',options));
     return (
         <div className="col col-4">
                         <div className="card">
@@ -22,11 +24,11 @@ const Article = ({path, title,tags, author,html,featured_image,date}) => {
                                     <h4>{title}</h4>
                                 </a>
                                 <p>
-                                    Please see the file folder labeled Draft RFP 1.75 in the resources section.
+                                    {excerpt}
                                 </p>
                                 <div className="post-details">
-                                    <a href="#" className="author">Submitted by {author}</a>
-                                    <span className="date">{date}</span>
+                                    <span className="author">Submitted by {author}</span>
+                                    <span className="date">{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
                         </div>

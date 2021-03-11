@@ -14,10 +14,10 @@ const SimilarBlogComponent = ({ articles }) => (
     <div className="inner-container">
         <div className="section-head">
             <div className="section-title">
-                <h2 className="title">Other Submissions</h2>
+                <h2 className="title">Other News Articles</h2>
             </div>
             <div className="link d-link">
-                <a href="#" className="font-exo text-dark">View all <img src={link_arrow}/></a>
+                <a href="/news" className="font-exo text-dark">View all <img src={link_arrow}/></a>
             </div>
         </div>
         <div className="row ">
@@ -26,7 +26,7 @@ const SimilarBlogComponent = ({ articles }) => (
     ))}
      </div>
                 <div className="link m-link">
-                    <a href="#" className="font-exo text-dark">View all <img src={link_arrow} /></a>
+                    <a href="/news" className="font-exo text-dark">View all <img src={link_arrow} /></a>
                 </div>
             </div>
         </section>
@@ -41,7 +41,7 @@ export default (props) => (
       query SimilarArticles {    
         posts: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "blog-posts" } } }
-      sort: { fields: frontmatter___date, order: ASC }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {

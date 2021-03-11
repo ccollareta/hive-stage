@@ -43,18 +43,19 @@ const IndexPage = ({data}) => {
   const res = data.res.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
-    path: '/opportunity/' + node.fields.name,
+    path: '/news/' + node.fields.name,
   }));
 
   const opps = data.opps.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
-    path: '/news/' + node.fields.name,
+    path: '/opportunity/' + node.fields.name,
   }));
-  const test = exchanges.concat(opps);
+  const test = exchanges.concat(res);
   test.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   console.log(test);
   const pgVar = 'style-1 animated-hex';
+  var options = {year: 'numeric', month: 'long', day: 'numeric' };
   return (
   <Layout pgVar={pgVar}>
     
@@ -143,7 +144,7 @@ const IndexPage = ({data}) => {
                         <h2 className="title text-white">HIVE opportunity buzz.</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="#" className="font-exo text-white">See all opportunities <img
+                        <a href="/opportunities" className="font-exo text-white">See all opportunities <img
                                 src={link_arrow} /></a>
                     </div>
                 </div>
@@ -161,7 +162,7 @@ const IndexPage = ({data}) => {
                     
                 </div>
                 <div className="link m-link">
-                    <a href="#" className="font-exo text-white">See all opportunities <img
+                    <a href="/opportunities" className="font-exo text-white">See all opportunities <img
                             src={link_arrow} /></a>
                 </div>
             </div>
@@ -195,7 +196,7 @@ const IndexPage = ({data}) => {
                   </p>
                   <div className="post-details">
                       <a href="#" className="author">Submitted by {exchange.author}</a>
-                      <span className="date">{exchange.date}</span>
+                      <span className="date">{exchange.date ? new Date(exchange.date).toLocaleDateString('en-US',options) : ''}</span>
                   </div>
               </div>
           </div>
@@ -222,7 +223,7 @@ const IndexPage = ({data}) => {
                                 </a>
                                 <div className="post-details">
                                     <a href={res.path} className="author">Submitted by {res.author}</a>
-                                    <span className="date">{res.date}</span>
+                                    <span className="date">{res.date ? new Date(res.date).toLocaleDateString('en-US',options) : ''}</span>
                                 </div>
                             </div>
                             ))}
@@ -251,7 +252,7 @@ const IndexPage = ({data}) => {
     }
     exchanges: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "events" } } }
-      sort: { fields: frontmatter___event_date, order: ASC }
+      sort: { fields: frontmatter___event_date, order: DESC }
       limit: 5
     ) {
       edges {
@@ -271,8 +272,8 @@ const IndexPage = ({data}) => {
       }
     }
     res: allMarkdownRemark(
-      filter: { fields: { sourceName: { eq: "opps" } } }
-      sort: { fields: frontmatter___event_date, order: ASC }
+      filter: { fields: { sourceName: { eq: "blog-posts" } } }
+      sort: { fields: frontmatter___event_date, order: DESC }
       limit: 5
     ) {
       edges {
@@ -294,8 +295,8 @@ const IndexPage = ({data}) => {
       }
     }
     opps: allMarkdownRemark(
-      filter: { fields: { sourceName: { eq: "blog-posts" } } }
-      sort: { fields: frontmatter___date, order: ASC }
+      filter: { fields: { sourceName: { eq: "opps" } } }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 5
     ) {
       edges {

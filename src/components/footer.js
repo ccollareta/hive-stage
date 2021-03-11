@@ -25,7 +25,7 @@ const Footer = () => (
                     <a href="index.html">
                         <img src={logo} className="logo" alt="logo" />
                     </a>
-                    <Social />
+                   
                 </div>
                 <div className="footer-widgets">
                     <div className="row">
@@ -42,13 +42,11 @@ const Footer = () => (
                             <h6 className="col-title">Resources</h6>
                             <ul className="list-unstyled">
                                 <li><a href="/news-events">News & Events</a></li>
-                                <li><a href="#">Resource Library</a></li>
                             </ul>
                         </div>
                         <div className="col col-2">
                             <h6 className="col-title">Contact Us</h6>
                             <ul className="list-unstyled">
-                                <li><a href="tel:(123) 456-7890">(123) 456-7890</a></li>
                                 <li><a href="mailto:info@hive.gov">info@hive.gov</a></li>
                             </ul>
                         </div>
@@ -62,10 +60,10 @@ const Footer = () => (
                     <li><a href="#">Accessibility/508 Compliance</a></li>
                 </ul>
                 <ul className="footer-links list-unstyled">
-                    <li><a href="#">FOIA</a></li>
-                    <li><a href="#">USA.gov</a></li>
-                    <li><a href="#">HHS.gov</a></li>
-                    <li><a href="#">GSA.gov</a></li>
+                    <li><a href="https://www.foia.gov/">FOIA</a></li>
+                    <li><a href="https://www.usa.gov/">USA.gov</a></li>
+                    <li><a href="https://www.hhs.gov/">HHS.gov</a></li>
+                    <li><a href="https://www.gsa.gov/">GSA.gov</a></li>
                 </ul>
                 <div className="address">
                     <img src={dhms} />

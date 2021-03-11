@@ -20,7 +20,7 @@ import c3 from '../images/c3.png';
 import idea_1 from '../images/idea1.png';
 import idea_2 from '../images/idea2.png';
 import idea_3 from '../images/idea3.png';
-import hex_2 from '../images/HIVE-Overview_v2.png'
+import hex_2 from '../images/Join-The-Conversation-lowpoly_v2.png'
 import hex_3 from '../images/hero-hex-3.svg'
 import art1 from '../images/art1.png'
 import art5 from '../images/art5.png'
@@ -38,13 +38,13 @@ const OverviewPage = ({data}) => {
   const news = data.news.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
-    path: '/news/' + node.fields.name,
+    path: '/opportunity/' + node.fields.name,
   }));
   
   const ideas = data.ideas.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
-    path: '/news/' + node.fields.name,
+    path: '/opportunity/' + node.fields.name,
   }));
   const pgVar = 'style-1 animated-hex';
   return (
@@ -82,7 +82,7 @@ const OverviewPage = ({data}) => {
                                     <div className="section-head">
                                         <div className="section-title">
                                             <p className="sub-title text-orange-alt">{block.block.subtitle}</p>
-                                            <h2 className="title text-white"><a href="#" className="text-dark">{block.block.title}</a></h2>
+                                            <h2 className="title text-white"><a href={block.block.url} className="text-dark">{block.block.title}</a></h2>
                                         </div>
                                     </div>
                                     <p>
@@ -113,7 +113,7 @@ const OverviewPage = ({data}) => {
                         <h2 className="title text-white">HIVE opportunity buzz.</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="#" className="font-exo text-white">See all opportunities <img
+                        <a href="/opportunities" className="font-exo text-white">See all opportunities <img
                                 src={link_arrow} /></a>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ const OverviewPage = ({data}) => {
                     
                 </div>
                 <div className="link m-link">
-                    <a href="#" className="font-exo text-white">See all opportunities <img
+                    <a href="/opportunities" className="font-exo text-white">See all opportunities <img
                             src={link_arrow} /></a>
                 </div>
             </div>
@@ -162,8 +162,8 @@ const OverviewPage = ({data}) => {
         }
       }
     news: allMarkdownRemark(
-        filter: { fields: { sourceName: { eq: "blog-posts" } } }
-        sort: { fields: frontmatter___date, order: ASC }
+        filter: { fields: { sourceName: { eq: "opps" } } }
+        sort: { fields: frontmatter___date, order: DESC }
       ) {
         edges {
           node {
@@ -184,8 +184,8 @@ const OverviewPage = ({data}) => {
         }
       }
       ideas: allMarkdownRemark(
-        filter: { fields: { sourceName: { eq: "blog-posts" } } }
-        sort: { fields: frontmatter___date, order: ASC }
+        filter: { fields: { sourceName: { eq: "opps" } } }
+        sort: { fields: frontmatter___date, order: DESC }
         limit: 3
       ) {
         edges {

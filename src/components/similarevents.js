@@ -15,7 +15,7 @@ const SimilarEventComponent = ({ articles }) => (
     <div className="inner-container">
         <div className="section-head">
             <div className="section-title">
-                <h2 className="title">Other Submissions</h2>
+                <h2 className="title">Other Events</h2>
             </div>
             <div className="link d-link">
                 <a href="#" className="font-exo text-dark">View all <img src={link_arrow}/></a>
@@ -43,7 +43,7 @@ export default (props) => (
       query SimilarEvents {    
         posts: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "events" } } }
-      sort: { fields: frontmatter___date, order: ASC }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {

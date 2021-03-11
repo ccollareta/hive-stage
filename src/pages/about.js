@@ -15,7 +15,7 @@ import art2 from '../images/art2.png';
 
 
 import art1 from '../images/art1.png'
-import hex2 from '../images/HIVE-About_v2.png'
+import hex2 from '../images/4-hands-lowpoly_v3.png'
 import hex3 from '../images/hero-hex-3.svg'
 import c1 from '../images/c1.png';
 import c2 from '../images/c2.png';

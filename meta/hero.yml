@@ -1,11 +1,11 @@
 hero_content:
-  hero_image: /images/hero-bg.jpg
+  hero_image: /images/hero-bg-hex.png
   hero_text: PEO DHMS is shifting the paradigm in how it typically works with you,
     its partner organizations. Explore HIVE to learn more about transformation
     initiatives, upcoming events, and opportunities to get involved.
   button_one:
-    button_name: Get Started
+    button_name: Learn More
     link: /news-events
   button_two:
-    button_name: " "
-    link: " "
+    button_name: " Get Started"
+    link: /

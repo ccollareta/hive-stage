@@ -60,10 +60,7 @@ const ContactPage = ({data}) => {
                                         <img src={li_hexa} />
                                         <span>{frontmatter.address}</span>
                                     </li>
-                                    <li>
-                                        <img src={li_hexa} />
-                                        <a href={`tel:${frontmatter.phone}`} className="text-dark">{frontmatter.phone}</a>
-                                    </li>
+                                    
                                     <li>
                                         <img src={li_hexa} />
                                         <a href={`mailto:${frontmatter.email}`} className="text-dark">{frontmatter.email}</a>

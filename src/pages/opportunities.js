@@ -1,86 +1,88 @@
 import React from 'react';
-import { graphql, Link, withPrefix } from 'gatsby';
-import YAMLData from '../../meta/tags.yml'
+import { graphql, Link, withPrefix  } from 'gatsby';
+import Tags from '../../meta/tags.yml'
+import Collections from '../../meta/collections.yml';
 import { Helmet } from 'react-helmet';
+import art4 from '../images/art4.png';
+import art5 from '../images/art5.png';
+import hovericon from '../images/hover-icon.svg';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import prev from '../images/prev.png';
-import next from '../images/next.png';
 
 const Blog = ({ data, pageContext }) => {
-  const posts = data.events.edges.map(({ node }) => ({
+  const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
     path: '/opportunity/' + node.fields.name,
   }));
-  const feat = data.feat.edges.map(({ node }) => ({
-    html: node.html,
-    ...node.frontmatter,
-    path: '/opportunity/' + node.fields.name,
-  }));
-  const pgVar = 'style-3';
+  const pgVar = 'style-3'
+  var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
   return (
     <Layout pgVar={pgVar}>
-      
       <SEO title="Blog" />
-      <section className="hero-slider">
-            <div className="container">
-                <div className="slider-container">
-                    <div className="featured-slider">
-                      {feat.map((feat,index) =>(
-                        <div className="featured-item" key={index}>
-                            <div className="row">
-                                <div className="col-6 text">
-                                    <div className="section-head">
-                                        <div className="section-title">
-                                            <p className="sub-title text-orange-alt">FEATURED OPPORTUNITY</p>
-                                            <h2 className="title text-white"><a href={feat.path} className="text-dark">{feat.title}</a></h2>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        {feat.description}
-                                    </p>
-                                    <a href={feat.path} className="btn rounded">Read More</a>
-                                </div>
-                                <div className="col-6">
-                                    <img src={feat.event_image} className="featured-img" alt="img" />
+      <section className="all-news">
+            <img src={art5} className="art art-1" />
+            <img src={art4} className="art art-2" />
+            <div className="inner-container">
+                <h1>All Opportunites</h1>
+                <div className="filter-form">
+                    <div className="filters">
+                        <select className="filter" data-filter-group="0">
+                            <option value="title">Category</option>
+                            {Tags.tags.map((tag,index) => (
+                              <option value={`.${tag.slug}`} key={tag.slug}>{tag.name}</option>
+                              ))}
+                        </select>
+                        <select className="filter" data-filter-group="1">
+                            <option value="title">Collection</option>
+                            {Collections.collections.map((tag,index) => (
+                              <option value={`.${tag.slug}`} key={tag.slug}>{tag.name}</option>
+                              ))}
+                        </select>
+                        <a href="javascript: void(0);" className="btn rounded outline btn-filter">
+                            <span>Sort & Filter</span>
+                        </a>
+                    </div>
+                    <div className="selected-filters"></div>
+                </div>
+
+      
+            
+                <div className="row filter-container">
+                {posts.map((post,index) => (
+                <div
+                  key={`news${index}`}
+                  className={`col col-4 filter-item ${posts.tags ? post.tags.join(' ') : ''} ${post.collections ? post.collections.join(' '): ''}`}
+                >
+                  <div className="card">
+                            <div className="card-img">
+                                <img src={post.featured_image} className="img-fluid" alt="item1" />
+                                <a href={post.path} className="card-overlay">
+                                    <img src={hovericon} />
+                                </a>
+                            </div>
+                            <div className="card-body">
+                                <a href={post.path}>
+                                    <h4>{post.title}</h4>
+                                </a>
+                                <p>
+                                    {post.excerpt}
+                                </p>
+                                <div className="post-details">
+                                    <span className="author">Submitted by {post.author}</span>
+                                    <span className="date">{post.date ? new Date(post.date).toLocaleDateString('en-US',options) : ''}</span>
                                 </div>
                             </div>
                         </div>
-                        ))}
                     </div>
-                    <div className="slider-control">
-                        <div className="prev-slide"><img src={prev} /></div>
-                        <div className="next-slide"><img src={next} /></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section className="hive-3-col-section style-2 events">
-            <div className="inner-container">
-                <div className="section-head">
-                    <div className="section-title">
-                        <p className="sub-title text-orange-alt">Lorem ipsum dolor sit amet,</p>
-                        <h2 className="title">All Opportunities.</h2>
-                    </div>
-                </div>
-                <div className="row ">
-                    {posts.map((post,index) => (
-                <div className="col col-4" key={post.title} >
-                <div className="card">
-                    <div className="img-hover">
-                        <img src={post.event_image} className="card-img" alt="item1" />
-                    </div>
-                    <div className="card-body">
-                        <h4><a href={post.path} className="text-dark">{post.title}</a></h4>
-                        <div className="post-details">
-                            <span className="time">{post.event_date}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
               ))}
+                    
+                    
                 </div>
+                <nav className="paged">
+                { /* Pagination added here */ }
+                </nav>
             </div>
         </section>
     </Layout>
@@ -89,9 +91,9 @@ const Blog = ({ data, pageContext }) => {
 
 export const pageQuery = graphql`
   query {
-    events: allMarkdownRemark(
+      allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "opps" } } }
-      sort: { fields: frontmatter___event_date, order: DESC }
+      sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
         node {
@@ -100,8 +102,10 @@ export const pageQuery = graphql`
             author
             date
             title
-            featured_image
+            tags
+            collections
             excerpt
+            featured_image
           }
           fields {
             name
@@ -109,27 +113,9 @@ export const pageQuery = graphql`
         }
       }
     }
-    feat: allMarkdownRemark(
-      filter: {fields: {sourceName: {eq: "opps"}}}
-      sort: { fields: frontmatter___event_date, order: DESC }
-      limit: 5
-    ) {
-      edges {
-        node {
-          html
-          frontmatter {
-            author
-            date
-            title
-            featured_image
-            excerpt
-          }
-          fields {
-            name
-          }
-        }
-      }
-    }
+  
+      
+    
   }
 `;
 

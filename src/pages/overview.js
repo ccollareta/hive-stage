@@ -136,7 +136,7 @@ const OverviewPage = ({data}) => {
                 </div>
             </div>
         </section>
-    <Highlights />
+    
     
   </Layout>
 );

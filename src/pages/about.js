@@ -73,7 +73,7 @@ const AboutPage = ({data}) => {
                 </div>
             </div>
         </section>
-        <section className="hive-info-2">
+        <section className="hive-info-2" id="about-hive">
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">
@@ -122,19 +122,19 @@ const AboutPage = ({data}) => {
                     </div>
                     <div className="col col-12">
                         <div className="img-container logos">
-                            <img src={c1} />
-                            <img src={c2} />
-                            <img src={c3} />
-                            <img src={c4} />
-                            <img src={c5} />
-                            <img src={c6} />
+                            <a href="https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency/Defense-Healthcare-Management-SystemsSeal"><img src={c1} /></a>
+                            <a href="https://health.mil/About-MHS/OASDHA/Defense-Health-Agency"><img src={c2} /></a>
+                            <a href="https://www.va.gov/"><img src={c3} /></a>
+                            <a href="https://www.defense.gov/"><img src={c4} /></a>
+                            <a href="https://www.health.mil/Military-Health-Topics/Technology/Military-Electronic-Health-Record"><img src={c5} /></a>
+                            <a href="https://www.hhs.gov/"><img src={c6} /></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <HiveIdeas />
+
         <section className="hive-news-events-2">
             <img src={art2} className="art" />
             <div className="inner-container">
@@ -144,7 +144,7 @@ const AboutPage = ({data}) => {
                         <h2 className="title">News & upcoming events.</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="/news" className="font-exo text-dark">View all <img src={link_arrow} /></a>
+                        <a href="/news-events" className="font-exo text-dark">View all <img src={link_arrow} /></a>
                     </div>
                 </div>
                 <div className="row">
@@ -212,7 +212,7 @@ const AboutPage = ({data}) => {
                 </div>
                 </div>
                 <div className="link m-link">
-                    <a href="/news" className="font-exo text-dark">View all <img src={link_arrow} /></a>
+                    <a href="/news-events" className="font-exo text-dark">View all <img src={link_arrow} /></a>
                 </div>
             </div>
         </section>

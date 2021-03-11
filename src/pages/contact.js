@@ -72,8 +72,7 @@ const ContactPage = ({data}) => {
                 </div>
             </div>
         </section>
-        <ContactForm />
-        <Highlights />
+        
   </Layout>
 );
     };

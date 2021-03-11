@@ -2,7 +2,7 @@
 top_section:
   button:
     button_text: Learn More
-    button_link: /
+    button_link: "#about-hive"
   title: Welcome To The Health Information Vision Exchange Website Known As HIVE.
   text_block: PEO DHMS is modernizing it organization, including the way it
     communications with potential business partners throughout industry.

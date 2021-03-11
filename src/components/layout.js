@@ -61,7 +61,7 @@ const Layout = ({ children, pgVar }) => {
         {children}
         </div>
       <Footer />
-      <PostFoot />
+
       
       
     </>

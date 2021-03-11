@@ -232,7 +232,7 @@ const IndexPage = ({data}) => {
                 </div>
             </div>
         </section>
-     <Highlights />
+     
     
   </Layout>
   

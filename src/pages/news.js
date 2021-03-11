@@ -40,16 +40,7 @@ const Blog = ({ data, pageContext }) => {
                               <option value={`.${tag.slug}`} key={tag.slug}>{tag.name}</option>
                               ))}
                         </select>
-                        <select className="filter" data-filter-group="2">
-                            <option value="title">Author</option>
-                            <option value=".vision-dental">Vision Dental</option>
-                            <option value=".assistance">Assistance</option>
-                        </select>
-                        <select className="filter" data-filter-group="3">
-                            <option value="title">Stuff</option>
-                            <option value=".filter-01">Filter 01</option>
-                            <option value=".filter-02">Filter 02</option>
-                        </select>
+                        
                         <a href="javascript: void(0);" className="btn rounded outline btn-filter">
                             <span>Sort & Filter</span>
                         </a>
@@ -63,8 +54,8 @@ const Blog = ({ data, pageContext }) => {
                 {posts.map((post,index) => (
                 <div
                   key={`news${index}`}
-                  className={`col col-4 filter-item ${post.tags.join(' ')} ${post.collections.join(' ')}`}
-                  data-filter={`${post.tags.join(' ')}`}
+                  className={`col col-4 filter-item ${posts.tags ? post.tags.join(' ') : ''} ${post.collections ? post.collections.join(' '): ''}`}
+                  
                 >
                   <div className="card">
                             <div className="card-img">
@@ -82,7 +73,7 @@ const Blog = ({ data, pageContext }) => {
                                 </p>
                                 <div className="post-details">
                                     <span className="author">Submitted by {post.author}</span>
-                                    <span className="date">{post.date}</span>
+                                    <span className="date">{post.date ? new Date(post.date).toLocaleDateString('en-US',options) : ''}</span>
                                 </div>
                             </div>
                         </div>

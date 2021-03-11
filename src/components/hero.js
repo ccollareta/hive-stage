@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import HEROData from '../../meta/hero.yml'
 import Social from './social'
 import down_arrow from '../images/down-arrow.png';
-import hero_bg from '../images/HERO_BG_HEX.png';
+import hero_bg from '../images/Hero_BG_Hex.png';
 import art1 from '../images/art1.png'
 import hero_hex from '../images/hero-hex.png'
 import hex1 from '../images/hero-hex-1.svg'

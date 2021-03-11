@@ -13,9 +13,9 @@ const Footer = () => (
     <footer className="footer-2 animated-hex">
     <div className="footer-hex">
         <img src={footer_hex} className="big-hex-img" />
-        <img data-depth="0.05" src={foo_hex_1} className="hex-img img-1" />
-        <img data-depth="0.05" src={foo_hex_2} className="hex-img img-2" />
-        <img data-depth="0.05" src={foo_hex_3} className="hex-img img-3" />
+        <div data-depth="0.05"  className="hex-img img-1 hexagon" />
+        <div data-depth="0.05"  className="hex-img img-2 hexagon" />
+        <div data-depth="0.05"  className="hex-img img-3 hexagon" />
     </div>
     <div className="footer-inner" style={{
         backgroundImage: `url(${col_bg})` }}>

@@ -213,6 +213,11 @@ collections:
       fields:
         - { label: "Date Updated", name: "date", widget: "datetime"}
         - { label: "Body", name: "body", widget: markdown}
+    - label: "About PEO-DHMS"
+      name: "peo-dhms"
+      file: "src/pages/content/peo-dhms.md"
+      fields:
+        - { label: "Body", name: "body", widget: markdown}
     - label: "Virtual Industry Day"
       name: "vi_day"
       slug: '/virtual-industry-day'

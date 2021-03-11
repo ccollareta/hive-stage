@@ -119,6 +119,3 @@ export const onRouteUpdate = ({ location }) => {
 };
 
 
-export const wrapPageElement = ({ element, props }) => (
-  <MailWidgetWrapper {...props}>{element}</MailWidgetWrapper>
-);

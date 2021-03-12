@@ -141,7 +141,7 @@ const AboutPage = ({data}) => {
                 <div className="section-head">
                     <div className="section-title">
                         <p className="sub-title text-orange-alt">Whats the buzz?</p>
-                        <h2 className="title">News & Upcoming events.</h2>
+                        <h2 className="title">News & Upcoming Events</h2>
                     </div>
                     <div className="link d-link">
                         <a href="/news-events" className="font-exo text-dark">View all <img src={link_arrow} /></a>

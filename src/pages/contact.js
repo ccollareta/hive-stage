@@ -19,6 +19,7 @@ import hex12 from '../images/hex-12.svg';
 import hex13 from '../images/hex-13.svg';
 import art2 from '../images/art2.png';
 import art5 from '../images/art5.png';
+import HiveIdeas from '../components/hiveideas';
 
 const ContactPage = ({data}) => {
 
@@ -72,7 +73,8 @@ const ContactPage = ({data}) => {
                 </div>
             </div>
         </section>
-        
+        <HiveIdeas />
+        <Tagline />
   </Layout>
 );
     };

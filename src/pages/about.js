@@ -99,7 +99,7 @@ const AboutPage = ({data}) => {
                     
                 </div>
                 <div className="link m-link">
-                    <a href="#" className="font-exo text-dark">View opportunities <img src={link_arrow} /></a>
+                    <a href="/opportunities" className="font-exo text-dark">View opportunities <img src={link_arrow} /></a>
                 </div>
             </div>
         </section>
@@ -141,7 +141,7 @@ const AboutPage = ({data}) => {
                 <div className="section-head">
                     <div className="section-title">
                         <p className="sub-title text-orange-alt">Whats the buzz?</p>
-                        <h2 className="title">News & upcoming events.</h2>
+                        <h2 className="title">News & Upcoming events.</h2>
                     </div>
                     <div className="link d-link">
                         <a href="/news-events" className="font-exo text-dark">View all <img src={link_arrow} /></a>

@@ -90,7 +90,7 @@ const Blog = ({ data, pageContext }) => {
                 <div class="section-head">
                     <div class="section-title">
                         <p class="sub-title text-orange-alt">Whats the buzz?</p>
-                        <h2 class="title">News & upcoming events.</h2>
+                        <h2 class="title">News & Upcoming events.</h2>
                     </div>
                     <div class="link d-link">
                         <a href="/news" class="font-exo text-dark">View all <img src={link_arrow} /></a>

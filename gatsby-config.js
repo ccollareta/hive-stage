@@ -11,13 +11,13 @@ module.exports = {
         items: [{ text: 'Opportunities', link: '/opportunities/' }],
       },
       {
-        items: [{ text: 'Join the Conversation', link: '/overview/' }],
+        items: [{ text: 'Our Community', link: '/our-community/' }],
       },
       {
         items: [{ text: 'About', link: '/about/' }],
       },
       {
-        items: [{ text: 'PEO-DHMS', link: '/about-peo-dhms/' }],
+        items: [{ text: 'PEO-DHMS', link: '/peo-dhms/' }],
       },
       
     ],

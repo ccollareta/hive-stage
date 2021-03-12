@@ -1,27 +1,32 @@
 ---
 slider:
   - name: Explore our needs
-    description: Opportunities and Areas of Interest bring a specific connection
-      point for our community. Submit your ideas for consideration.
+    description: "We continue to find partners throughout industry and government to
+      help fill the needs of. It all starts with understanding what people,
+      process, transformations, and technologies are needed to create a
+      cutting-edge Federal Health IT ecosystem of the future. "
     thumbnail: /images/st1.jpg
-  - name: Join the conversation
-    description: >+
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Bibendum est
-      ultricies.
-
+    link: /opportunities
+  - name: What’s the Buzz
+    description: >
+      Find out all the latest news and events across the HIVE such as the latest
+      announcements, how the government is approaching the future, upcoming
+      industry days, and more.
     thumbnail: /images/idea-mobile.jpg
-  - name: Pitch your idea
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
-      ultricies.
+    link: /news-events/
+  - name: Join the Conversation
+    description: "The HIVE Community continues to make connections between and
+      within government and industry. Join us as we revolutionize Federal Health
+      IT through collaborative vision and innovation. "
     thumbnail: /images/idea4.jpg
-  - name: Connect with us
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-      eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
-      ultricies.
+    link: /our-community
+  - name: PEO DHMS
+    description: The Program Executive Office, Defense Healthcare Management Systems
+      (PEO DHMS) has embarked on its journey to transform Federal Health IT
+      across the board. Learn more about PEO DHMS’s goals, program offices, and
+      values.
     thumbnail: /images/st1.jpg
-    link: /contact
+    link: /peo-dhms
 featured_opportunity:
   - opportunity:
       link: test-opportunity

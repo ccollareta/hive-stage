@@ -5,7 +5,7 @@ hero_content:
     initiatives, upcoming events, and opportunities to get involved.
   button_one:
     button_name: Learn More
-    link: /opportunities
+    link: /about
   button_two:
     button_name: " Get Started"
-    link: /contact
+    link: /our-community

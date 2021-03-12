@@ -111,7 +111,7 @@ const IndexPage = ({data}) => {
                                     {slide.description}
                                    
                                 </p>
-                                {index + 1 == 4 ? <a href={slide.link} className="btn rounded">Learn More</a>: ''}
+                                {slide.link ? <a href={slide.link} className="btn rounded">Learn More</a>: ''}
                             </div>
                         </div>
                     ))}
@@ -129,7 +129,7 @@ const IndexPage = ({data}) => {
                 <div className="section-head">
                     <div className="section-title">
                         <p className="sub-title text-orange">The pollination platform</p>
-                        <h2 className="title text-white">HIVE opportunity buzz.</h2>
+                        <h2 className="title text-white">HIVE Opportunity buzz.</h2>
                     </div>
                     <div className="link d-link">
                         <a href="/opportunities" className="font-exo text-white">See all opportunities <img

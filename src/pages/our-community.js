@@ -49,7 +49,7 @@ const OverviewPage = ({data}) => {
   const pgVar = 'style-1 animated-hex';
   return (
   <Layout pgVar={pgVar}>
-    <SEO title="Overview" />
+    <SEO title="Our Community" />
 <section className="hero-section-2 style-2 title-only animated-hex"
             style={{
                 backgroundImage: `url(${posts.top_section.hero_image})`
@@ -110,7 +110,7 @@ const OverviewPage = ({data}) => {
                 <div className="section-head">
                     <div className="section-title">
                         <p className="sub-title text-orange">The pollination platform</p>
-                        <h2 className="title text-white">HIVE opportunity buzz.</h2>
+                        <h2 className="title text-white">HIVE Opportunity buzz.</h2>
                     </div>
                     <div className="link d-link">
                         <a href="/opportunities" className="font-exo text-white">See all opportunities <img

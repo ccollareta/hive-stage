@@ -49,7 +49,7 @@ $(document).ready(function () {
 	$(document).on('click', '.clear-filter', function () {
 		filtersContainer.empty();
 		filters = {};
-		$('.filters').val('title');
+		$('.filter').val('title');
 		filterValue = defaultFilterValue;
 		$container.isotope({
 			filter: filterValue

@@ -39,7 +39,7 @@ const Blog = ({ data, pageContext }) => {
                             <div class="text">
                                 <div class="section-head">
                                     <div class="section-title">
-                                        <p class="sub-title text-orange-alt">FEATURED NEWS</p>
+                                        <p class="sub-title text-orange-alt">FEATURED OPPORTUNITY</p>
                                         <h2 class="title">{feat_post.title}</h2>
                                     </div>
                                 </div>

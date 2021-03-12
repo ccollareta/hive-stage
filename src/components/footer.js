@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import logo from '../images/footer-logo.png';
+import logo from '../images/HIVE-Logo-Powered-By-DHMS-white_v2.svg';
 import Social from './social'
 import dhms from '../images/dhms.png';
 import footer_hex from '../images/footer-hex.png';

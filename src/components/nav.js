@@ -2,8 +2,8 @@ import { Link } from 'gatsby';
 import React from 'react';
 
 import close from '../../node_modules/uswds/dist/img/close.svg';
-import logo_white from '../images/logo-white.svg';
-import logo from '../images/logo.svg';
+import logo_white from '../images/HIVE-Logo-Powered-By-DHMS-white_v2.svg';
+import logo from '../images/HIVE-Logo-Powered-By-DHMS_v2.svg';
 import search_white from '../images/search-white.png';
 import search from '../images/search.png';
 import SearchForm from './search-form';

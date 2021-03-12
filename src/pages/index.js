@@ -109,6 +109,7 @@ const IndexPage = ({data}) => {
                                 <h4>{slide.name}</h4>
                                 <p>
                                     {slide.description}
+                                    {index + 1 == 4 ? <a href="" className="btn rounded">Learn More</a>: ''}
                                 </p>
                             </div>
                         </div>

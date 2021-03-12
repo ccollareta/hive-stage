@@ -11,7 +11,12 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 
 const Blog = ({ data, pageContext }) => {
-  const posts = data.allMarkdownRemark.edges.map(({ node }) => ({
+  const posts = data.posts.edges.map(({ node }) => ({
+    html: node.html,
+    ...node.frontmatter,
+    path: '/opportunity/' + node.fields.name,
+  }));
+  const feat = data.feat.edges.map(({ node }) => ({
     html: node.html,
     ...node.frontmatter,
     path: '/opportunity/' + node.fields.name,
@@ -24,6 +29,36 @@ const Blog = ({ data, pageContext }) => {
       <section className="all-news">
             <img src={art5} className="art art-1" />
             <img src={art4} className="art art-2" />
+            <div class="inner-container">
+                <div class="featured-news">
+                    <div class="row featured-item">
+                        
+                        {feat.slice(0,1).map((feat_post,index) => (
+                          <>
+                    <div class="col col-6">
+                            <div class="text">
+                                <div class="section-head">
+                                    <div class="section-title">
+                                        <p class="sub-title text-orange-alt">FEATURED NEWS</p>
+                                        <h2 class="title">{feat_post.title}</h2>
+                                    </div>
+                                </div>
+                                <p>
+                                {feat_post.excerpt}
+                                </p>
+                                <a href={feat_post.path} class="btn rounded"><span>Read More</span></a>
+                            </div>
+                        </div>
+                        <div class="col col-6">
+                            <div class="image" style={{
+                              backgroundImage: `url(${feat_post.featured_image})`
+                              }}></div>
+                        </div>
+                </>
+              ))}
+                    </div>
+                </div>
+            </div>
             <div className="inner-container">
                 <h1>All Opportunites</h1>
                 <div className="filter-form">
@@ -91,7 +126,7 @@ const Blog = ({ data, pageContext }) => {
 
 export const pageQuery = graphql`
   query {
-      allMarkdownRemark(
+      posts: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "opps" } } }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
@@ -113,7 +148,29 @@ export const pageQuery = graphql`
         }
       }
     }
-  
+    feat: allMarkdownRemark(
+      filter: {fields: {sourceName: {eq: "opps"}}, frontmatter: {featured: {eq: "Yes"}}}
+      sort: { fields: frontmatter___date, order: DESC }
+      limit: 3
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            author
+            featured
+            date
+            title
+            tags
+            featured_image
+            excerpt
+          }
+          fields {
+            name
+          }
+        }
+      }
+    }
       
     
   }

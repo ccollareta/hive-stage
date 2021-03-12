@@ -43,7 +43,7 @@ const HiveIdeas = () => (
                                 <span>Articles in media the community should cover</span>
                             </li>
                         </ul>
-                        <a href="#" className="btn rounded"><span>Tap Into the Hive</span></a>
+                        <a href="https://hivegov.mobilize.io/main/groups/43511/lounge" target="_blank" className="btn rounded"><span>Tap Into the Hive</span></a>
                     </div>
                     <div className="col col-7">
                         <div className="hexagon-img">

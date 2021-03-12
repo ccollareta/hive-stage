@@ -78,7 +78,7 @@ const Blog = ({ data, pageContext }) => {
                         </div>
                         <div class="col col-6">
                             <div class="image" style={{
-                              backgroundImage: `url(${feat_post.featured_image})`
+                              backgroundImage: `url(${feat_post.thumbnail})`
                               }}></div>
                         </div>
                 </>
@@ -100,7 +100,7 @@ const Blog = ({ data, pageContext }) => {
                 {test.slice(0,1).map((post,index) => (
             <div className={`col col-6 ${index}`} key={`First${index}`}>
                         <div className="ne-card main" style={{
-                            backgroundImage: `url(${post.featured_image})`
+                            backgroundImage: `url(${post.thumbnail})`
                             }}>
                             <h3 className="text-white">{post.title} <img src={arrow_r} /></h3>
                             <a href={post.path} className="ne-overlay">
@@ -118,7 +118,7 @@ const Blog = ({ data, pageContext }) => {
              <>
              <div className={`col col-12 ${index}`} key={`Second${index}`}>
              <div className="ne-card fixed-h" style={{
-                 backgroundImage: `url(${post.featured_image})`
+                 backgroundImage: `url(${post.thumbnail})`
                  }}>
                  <h3 className="text-white">{post.title}</h3>
                  <a href={post.path} className="ne-overlay">
@@ -131,7 +131,7 @@ const Blog = ({ data, pageContext }) => {
              {index == 1 &&
                 <div className={`col col-6  ${index}`} key={`Third${index}`}>
                                 <div className="ne-card fixed-h" style={{
-                 backgroundImage: `url(${post.featured_image})`
+                 backgroundImage: `url(${post.thumbnail})`
                  }}>
                                     <h3 className="text-white">{post.title}</h3>
                                     <a href={post.path} className="ne-overlay">
@@ -144,7 +144,7 @@ const Blog = ({ data, pageContext }) => {
              {index == 2 &&
                 <div className={`col col-6  ${index}`} key={`Fourth${index}`}>
                                 <div className="ne-card fixed-h" style={{
-                 backgroundImage: `url(${post.featured_image})`
+                 backgroundImage: `url(${post.thumbnail})`
                  }}>
                                     <h3 className="text-white">{post.title}</h3>
                                     <a href={post.path} className="ne-overlay">
@@ -183,7 +183,7 @@ const Blog = ({ data, pageContext }) => {
       <div className="card" key={exchange.title}>
       <div className="row secondary-row">
           <div className="col col-3">
-              <img src={exchange.featured_image} alt="item1" />
+              <img src={exchange.thumbnail} alt="item1" />
           </div>
           <div className="col col-9">
               <div className="card-body">
@@ -254,6 +254,7 @@ export const pageQuery = graphql`
             title
             tags
             featured_image
+            thumbnail
             excerpt
           }
           fields {
@@ -277,6 +278,7 @@ export const pageQuery = graphql`
             title
             tags
             featured_image
+            thumbnail
             excerpt
           }
           fields {
@@ -299,6 +301,7 @@ export const pageQuery = graphql`
             date
             title
             tags
+            thumbnail
             featured_image
             excerpt
           }
@@ -321,6 +324,7 @@ export const pageQuery = graphql`
             date
             title
             featured_image
+            thumbnail
             excerpt
             }
             fields {
@@ -340,6 +344,7 @@ export const pageQuery = graphql`
               author
             date
             title
+            thumbnail
             featured_image
             excerpt
               

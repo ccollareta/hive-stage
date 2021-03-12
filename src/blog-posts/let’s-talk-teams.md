@@ -3,7 +3,8 @@ title: Let’s Talk Teams
 date: 2020-11-09
 author: Matt Hudson
 featured: No
-featured_image: /images/details.jpg
+thumbnail: /images/05-lets-talk-teams.jpg
+featured_image: /images/05-lets-talk-teams.jpg
 excerpt: >-
   I wanted to share some thoughts about what I think is probably the most
   important, certainly one of the most important, keys to WF3 being successful.

@@ -143,7 +143,7 @@ const IndexPage = ({data}) => {
         description = {feat.excerpt}
         author = {feat.author}
         date = {feat.date}
-        thumbnail = {feat.featured_image}
+        thumbnail = {feat.thumbnail}
         link = {feat.path}/>
       </div>
     )) }
@@ -172,7 +172,7 @@ const IndexPage = ({data}) => {
       <div className="card" key={exchange.title}>
       <div className="row secondary-row">
           <div className="col col-3">
-              <img src={exchange.featured_image} alt="item1" />
+              <img src={exchange.thumbnail} alt="item1" />
           </div>
           <div className="col col-9">
               <div className="card-body">
@@ -252,6 +252,7 @@ const IndexPage = ({data}) => {
             date
             title
             featured_image
+            thumbnail
             excerpt
           }
           fields {
@@ -273,6 +274,7 @@ const IndexPage = ({data}) => {
             date
             title
             featured_image
+            thumbnail
             excerpt
               
               
@@ -296,6 +298,7 @@ const IndexPage = ({data}) => {
             date
             title
             featured_image
+            thumbnail
             excerpt
           }
           fields {

@@ -3,7 +3,8 @@ title: Workforce 3.0
 date: 2020-10-02
 author: HIVE Staff
 featured: Yes
-featured_image: /images/wf3.png
+thumbnail: /images/09-wf3-thumbnail.jpg
+featured_image: /images/09-wf3-fullpage.png
 excerpt: Workforce 3.0 (WF3) is a different way for government to get work done.
   Rather than focusing on the quantity of labor, WF3 leaves the offeror
   responsible for mission outcomes and incentivizes best practices. new

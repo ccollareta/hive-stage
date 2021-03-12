@@ -129,7 +129,7 @@ const OverviewPage = ({data}) => {
         description = {feat.excerpt}
         author = {feat.author}
         date = {feat.date}
-        thumbnail = {feat.featured_image}
+        thumbnail = {feat.thumbnail}
         link = {feat.path}/>
       </div>
     )) }
@@ -184,6 +184,7 @@ const OverviewPage = ({data}) => {
               date
               title
               tags
+              thumbnail
               featured_image
               excerpt
             }
@@ -206,6 +207,7 @@ const OverviewPage = ({data}) => {
             date
             title
             featured_image
+            thumbnail
             excerpt
             }
             fields {

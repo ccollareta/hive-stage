@@ -3,7 +3,8 @@ title: PEO Overview
 date: 2020-12-06
 author: Holly Joers
 featured: Yes
-featured_image: /images/details.jpg
+thumbnail: /images/04-peo-overview.png
+featured_image: /images/04-peo-overview.png
 excerpt: >-
   I really appreciate all of the engagement in the HIVE!
 

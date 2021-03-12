@@ -3,7 +3,8 @@ title: Two – and – Twenty
 date: 2021-01-13
 author: Matt Hudson
 featured: Yes
-featured_image: /images/details.jpg
+thumbnail: /images/03-2-and-20.png
+featured_image: /images/03-2-and-20.png
 excerpt: Good afternoon HIVE community! Here is a video of Tony Kwag where he
   takes us through the 2-and-20 concept, the DHMS pain-points that led to the
   concept, the inspiration from Industry, and what this means for Offerors.

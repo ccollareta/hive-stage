@@ -266,6 +266,7 @@ collections:
         }
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - { label: "Thumbnail", name: "thumbnail", widget: image}
       - { label: "Featured Image", name: "featured_image", widget: image}
       - { label: "Excerpt", name: "excerpt", widget: text}
       - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false, default: ''}
@@ -344,6 +345,7 @@ collections:
         }
       - { label: 'Author', name: 'author', widget: 'string', default: '' }
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - { label: "Thumbnail", name: "thumbnail", widget: image}
       - { label: "Featured Image", name: "featured_image", widget: image}
       - { label: "Excerpt", name: "excerpt", widget: text}
       - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false, default: ''}
@@ -422,6 +424,7 @@ collections:
         }
       - { label: 'Author', name: 'author', widget: 'string', default: '' }
       - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
+      - { label: "Thumbnail", name: "thumbnail", widget: image}
       - { label: "Featured Image", name: "featured_image", widget: image}
       - { label: "Excerpt", name: "excerpt", widget: text}
       - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false, default: ''}

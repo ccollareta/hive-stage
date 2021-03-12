@@ -3,6 +3,7 @@ title: "Workforce 3.0: Industry Day 1 Recap"
 date: 2020-11-23
 author: Amy Chase
 featured: Yes
+thumbnail: /images/details.jpg
 featured_image: /images/details.jpg
 excerpt: We have put together 4 video answers to some of the top poll responses.
   Each video covers a topic and will allow you to understand our thought process

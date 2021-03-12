@@ -53,6 +53,7 @@ export default (props) => (
             collections
             title
             featured_image
+            thumbnail
       
             excerpt
           }

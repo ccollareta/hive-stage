@@ -6,14 +6,14 @@ import { Helmet } from 'react-helmet';
 import hovericon from '../images/hover-icon.svg';
 
 
-const Article = ({path, title,tags, author,excerpt,featured_image,date}) => {
+const Article = ({path, title,tags, author,excerpt,featured_image,date,thumbnail}) => {
     const date2 = new Date(date);
     var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
     return (
         <div className="col col-4">
                         <div className="card">
                             <div className="card-img">
-                                <img src={featured_image} className="img-fluid" />
+                                <img src={thumbnail} className="img-fluid" />
                                 <a href={path} className="card-overlay">
                                     <img src={hovericon} />
                                 </a>

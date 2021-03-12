@@ -3,6 +3,7 @@ title: The 4 Cornerstones of PEO 3.0
 date: 2021-01-14
 author: Matt Hudson
 featured: Yes
+thumbnail: /images/peo3.png
 featured_image: /images/peo3.png
 excerpt: Over the last 50 years, one thing has been evident – organizations that
   are unable to adapt to changing technology lose value and collapse. This has

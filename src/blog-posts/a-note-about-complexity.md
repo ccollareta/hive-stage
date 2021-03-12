@@ -3,7 +3,8 @@ title: A Note About Complexity
 date: 2020-11-02
 author: Matt Hudson
 featured: Yes
-featured_image: /images/details.jpg
+thumbnail: /images/06-a-note-about-complexity.jpg
+featured_image: /images/06-a-note-about-complexity.jpg
 excerpt: >-
   I wanted to stimulate some conversation here.
 

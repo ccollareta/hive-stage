@@ -151,7 +151,7 @@ const AboutPage = ({data}) => {
                 {test.slice(0,1).map((post,index) => (
             <div className={`col col-6 ${index}`} key={`First${index}`}>
                         <div className="ne-card main" style={{
-                            backgroundImage: `url(${post.featured_image})`
+                            backgroundImage: `url(${post.thumbnail})`
                             }}>
                             <h3 className="text-white">{post.title} <img src={arrow_r} /></h3>
                             <a href={post.path} className="ne-overlay">
@@ -169,7 +169,7 @@ const AboutPage = ({data}) => {
              <>
              <div className={`col col-12 ${index}`} key={`Second${index}`}>
              <div className="ne-card fixed-h" style={{
-                 backgroundImage: `url(${post.featured_image})`
+                 backgroundImage: `url(${post.thumbnail})`
                  }}>
                  <h3 className="text-white">{post.title}</h3>
                  <a href={post.path} className="ne-overlay">
@@ -182,7 +182,7 @@ const AboutPage = ({data}) => {
              {index == 1 &&
                 <div className={`col col-6  ${index}`} key={`Third${index}`}>
                                 <div className="ne-card fixed-h" style={{
-                 backgroundImage: `url(${post.featured_image})`
+                 backgroundImage: `url(${post.thumbnail})`
                  }}>
                                     <h3 className="text-white">{post.title}</h3>
                                     <a href={post.path} className="ne-overlay">
@@ -195,7 +195,7 @@ const AboutPage = ({data}) => {
              {index == 2 &&
                 <div className={`col col-6  ${index}`} key={`Fourth${index}`}>
                                 <div className="ne-card fixed-h" style={{
-                 backgroundImage: `url(${post.featured_image})`
+                 backgroundImage: `url(${post.thumbnail})`
                  }}>
                                     <h3 className="text-white">{post.title}</h3>
                                     <a href={post.path} className="ne-overlay">
@@ -259,6 +259,7 @@ const AboutPage = ({data}) => {
               title
               tags
               featured_image
+              thumbnail
               excerpt
             }
             fields {
@@ -280,6 +281,7 @@ const AboutPage = ({data}) => {
             date
             title
             featured_image
+            thumbnail
             excerpt
           }
           fields {

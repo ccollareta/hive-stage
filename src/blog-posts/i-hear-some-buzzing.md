@@ -3,7 +3,8 @@ title: I hear some buzzing!!
 date: 2021-01-14
 author: Matt Hudson
 featured: Yes
-featured_image: /images/hiveart.png
+thumbnail: /images/01-i-hear-some-buzzing-thumbnail.jpg
+featured_image: /images/01-i-hear-some-buzzing-fullpage.png
 excerpt: We're Buzzing with Excitement! I’ve barely slept a wink over the past
   two days as my mind continues to swirl on how this could fundamentally change
   the way our business is conducted. HIVE is the first step in our digital

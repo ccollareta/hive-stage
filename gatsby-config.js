@@ -17,7 +17,7 @@ module.exports = {
         items: [{ text: 'About', link: '/about/' }],
       },
       {
-        items: [{ text: 'PEO-DHMS', link: '/peo-dhms/' }],
+        items: [{ text: 'PEO DHMS', link: '/peo-dhms/' }],
       },
       
     ],

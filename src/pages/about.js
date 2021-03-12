@@ -81,7 +81,7 @@ const AboutPage = ({data}) => {
                         <h2 className="title">What is HIVE?</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="#" className="font-exo text-dark">View opportunities <img
+                        <a href="/opportunities" className="font-exo text-dark">View opportunities <img
                                 src={link_arrow} /></a>
                     </div>
                 </div>

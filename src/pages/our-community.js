@@ -57,7 +57,7 @@ const OverviewPage = ({data}) => {
             <img src={art1} className="art" />
             <div className="hero-hex">
                 <img data-depth="0.05" src={hex_3} className="hex-img" />
-                <img src={hex_2} />
+                <img src={hex_2} /> 
             </div>
             <div className="container">
                 <div className="hero-action">

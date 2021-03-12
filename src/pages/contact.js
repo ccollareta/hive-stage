@@ -43,9 +43,9 @@ const ContactPage = ({data}) => {
             <img src={art5} className="art art-1"/>
             <img src={art2} className="art art-2"/>
             <div className="hero-hex">
-                <img data-depth="0.05" src={hex11} className="hex-img img-1"/>
-                <img data-depth="0.05" src={hex12} className="hex-img img-2"/>
-                <img data-depth="0.05" src={hex13} className="hex-img img-3"/>
+                <div data-depth="0.05" className="hexagon hex-img img-1"/>
+                <div data-depth="0.05" className="hexagon hex-img img-2"/>
+                <div data-depth="0.05" className="hexagon hex-img img-3"/>
                 <img src={hero4}/>
             </div>
             <div className="container">

@@ -53,7 +53,7 @@ const AboutPage = ({data}) => {
   }}>
             <img src={art1} className="art" />
             <div className="hero-hex">
-                <img data-depth="0.05" src={hex3} className="hex-img" />
+                <div data-depth="0.05"  className="hexagon hex-img" />
                 <img src={hex2} />
                
             </div>

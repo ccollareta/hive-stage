@@ -56,7 +56,7 @@ const OverviewPage = ({data}) => {
               }}>
             <img src={art1} className="art" />
             <div className="hero-hex">
-                <img data-depth="0.05" src={hex_3} className="hex-img" />
+                <div data-depth="0.05" className="hexagon hex-img" />
                 <img src={hex_2} /> 
             </div>
             <div className="container">
@@ -108,9 +108,9 @@ const OverviewPage = ({data}) => {
         <section className="hive-3-col-section-2 animated-hex" style={{
           backgroundImage: `url(${colbg})`
           }}>
-            <img data-depth="0.05" src={hex1} className="hex-img img-1" />
-            <img data-depth="0.05" src={hex2} className="hex-img img-2" />
-            <img data-depth="0.05" src={hex3} className="hex-img img-3" />
+            <div data-depth="0.05" className="hexagon hex-img img-1" />
+            <div data-depth="0.05"  className="hexagon hex-img img-2" />
+            <div data-depth="0.05"  className="hexagon hex-img img-3" />
             <div className="inner-container">
                 <div className="section-head">
                     <div className="section-title">

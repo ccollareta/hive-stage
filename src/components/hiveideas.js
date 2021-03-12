@@ -14,8 +14,8 @@ const HiveIdeas = () => (
     <section className="hive-ideas-2 animated-hex" style={{
         backgroundImage: `url(${colbg})`
     }}>
-            <img data-depth="0.05" src={hex1} className="hex-img img-1" />
-            <img data-depth="0.05" src={hex2} className="hex-img img-2" />
+            <div data-depth="0.05"  className="hexagon hex-img img-1" />
+            <div data-depth="0.05"  className="hexagon hex-img img-2" />
             <div className="inner-container">
                 <div className="row">
                     <div className="col col-5">
@@ -47,7 +47,7 @@ const HiveIdeas = () => (
                     </div>
                     <div className="col col-7">
                         <div className="hexagon-img">
-                            <img data-depth="0.05" src={herohex} className="sub-hex" />
+                            <div data-depth="0.05"  className=" hexagon sub-hex" />
                             <svg xmlns="http://www.w3.org/2000/svg" width="327.846" height="318.144"
                                 viewBox="0 0 327.846 318.144">
                                 <defs>

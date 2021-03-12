@@ -3,8 +3,8 @@ title: "Workforce 3.0: Industry Day 2 Recap"
 date: 2020-12-18
 author: Matt Hudson
 featured: Yes
-thumbnail: /images/details.jpg
-featured_image: /images/details.jpg
+thumbnail: /images/11-wf3-industryday2recap.png
+featured_image: /images/11-wf3-industryday2recap.png
 excerpt: >-
   Good evening, happy Friday, and thanks for your patience!
 

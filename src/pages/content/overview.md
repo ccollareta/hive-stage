@@ -2,6 +2,12 @@
 top_section:
   title: Our Community
   hero_image: /images/hero-bg2.png
+  text_block: "The HIVE Community continues to make connections between and within
+    government and industry. Join us as we revolutionize Federal Health IT
+    through collaborative vision and innovation. "
+  button:
+    button_text: Join the Conversation
+    button_link: https://hivegov.mobilize.io/main/groups/43575/lounge
 blocks:
   - block:
       icon: /images/slide-img.svg

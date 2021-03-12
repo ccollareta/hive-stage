@@ -50,7 +50,7 @@ const OverviewPage = ({data}) => {
   return (
   <Layout pgVar={pgVar}>
     <SEO title="Our Community" />
-<section className="hero-section-2 style-2 title-only animated-hex"
+<section className="hero-section-2 style-2 animated-hex"
             style={{
                 backgroundImage: `url(${posts.top_section.hero_image})`
               }}>
@@ -63,8 +63,13 @@ const OverviewPage = ({data}) => {
                 <div className="hero-action">
                     <div className="row">
                         <div className="col-6">
-                            <h1 className="hero-title text-white"><span>{posts.top_section.title}</span>
-                            </h1>
+                            <h1 className="hero-title text-white"><span>{posts.top_section.title}</span></h1>
+                            <p className="hero-subtitle text-white">
+                            {posts.top_section.text_block}
+                            </p>
+                            <div className="hero-ctas">
+                                <a className="btn rounded" href={posts.top_section.button.button_link}><span>{posts.top_section.button.button_text}</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,6 +154,11 @@ const OverviewPage = ({data}) => {
         top_section{
             title
             hero_image
+            text_block
+            button{
+                button_text
+                button_link
+            }
         }
         blocks{
             block{

@@ -159,7 +159,7 @@ collections:
                   - { label: "Text", name: "text", widget: text}
 
         - { label: "Body", name: "body", widget: markdown}
-    - label: "Overview"
+    - label: "Our Community"
       name: "overview"
       slug: '/'
       editor:
@@ -172,6 +172,13 @@ collections:
           fields:
             - {label: "Title", name: "title", widget: string}
             - {label: "Hero Image", name: "hero_image", widget: image}
+            - {label: "Text Block", name: "text_block", widget: text}
+            - label: "Button"
+              name: "button" 
+              widget: object
+              fields:
+                - {label: "Button Text", name: "button_text", widget: string}
+                - {label: "Button Link", name: "button_link", widget: string}
         - label: "Blocks"
           name: "blocks"
           widget: list

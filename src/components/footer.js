@@ -46,7 +46,7 @@ const Footer = () => (
                         <div className="col col-2">
                             <h6 className="col-title">Contact Us</h6>
                             <ul className="list-unstyled">
-                                <li><a href="mailto:info@hive.gov">info@hive.gov</a></li>
+                                <li><a href="mailto:dha.ncr.j-4.mbx.peo-hive@mail.mil">info@hive.gov</a></li>
                             </ul>
                         </div>
                     </div>

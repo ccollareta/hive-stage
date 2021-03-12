@@ -9,7 +9,6 @@ import hovericon from '../images/hover-icon.svg';
 const Article = ({path, title,tags, author,excerpt,featured_image,date}) => {
     const date2 = new Date(date);
     var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
-        console.log(date2.toLocaleDateString('en-US',options));
     return (
         <div className="col col-4">
                         <div className="card">

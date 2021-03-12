@@ -76,7 +76,6 @@ export default (props) => (
         slug: node.fields.name,
         path: '/event/' + node.fields.name,
       }));
-console.log(articles);
       // (3.) Use a SimilarArticlesFactory to get my similar articles
       const similarArticles = new SimilarArticlesFactory(
         articles, currentArticleSlug
@@ -85,7 +84,6 @@ console.log(articles);
       .setCategory(category)
       .setTags(tags)
       .getArticles()
-console.log(similarArticles)
       // (4.) Render it
       return (
         <SimilarEventComponent

@@ -21,7 +21,7 @@ $(document).ready(function () {
 			var filterGroup = 'filter-' + $this.attr('data-filter-group');
 			filters[filterGroup] = $this.val();
 			filterValue = concatValues(filters);
-			$this.val('title');
+			$this.val();
 			filters = sortObjectByKeys(filters);
 			//console.log(filterGroup, filterValue);
 			console.log(filters);

@@ -60,14 +60,12 @@ export default (props) => (
         slug: node.fields.name,
         path: '/news/' + node.fields.name,
       }));
-console.log(articles);
       // (3.) Use a SimilarArticlesFactory to get my similar articles
       const similarArticles = new SimilarArticlesFactoryFeat(
         articles, currentArticleSlug
       )
       .setMaxArticles(3)
       .getArticles()
-console.log(similarArticles)
       // (4.) Render it
       return (
         <FeaturedBlogComponent

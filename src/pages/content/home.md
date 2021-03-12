@@ -21,6 +21,7 @@ slider:
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est
       ultricies.
     thumbnail: /images/st1.jpg
+    link: /contact
 featured_opportunity:
   - opportunity:
       link: test-opportunity

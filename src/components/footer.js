@@ -33,7 +33,7 @@ const Footer = () => (
                             <h6 className="col-title">Useful Links</h6>
                             <ul className="list-unstyled">
                                 <li><a href="/about">About</a></li>
-                                <li><a href="/peo-dhms">PEO-DHMS</a></li>
+                                <li><a href="/peo-dhms">PEO DHMS</a></li>
                                 <li><a href="/our-community">Our Community</a></li>
                                 <li><a href="/contact">Contact Us</a></li>
                             </ul>

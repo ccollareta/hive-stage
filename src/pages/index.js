@@ -129,7 +129,7 @@ const IndexPage = ({data}) => {
                 <div className="section-head">
                     <div className="section-title">
                         <p className="sub-title text-orange">The pollination platform</p>
-                        <h2 className="title text-white">HIVE Opportunity buzz.</h2>
+                        <h2 className="title text-white">HIVE Opportunity Buzz</h2>
                     </div>
                     <div className="link d-link">
                         <a href="/opportunities" className="font-exo text-white">See all opportunities <img

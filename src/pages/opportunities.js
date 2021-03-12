@@ -25,7 +25,7 @@ const Blog = ({ data, pageContext }) => {
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
   return (
     <Layout pgVar={pgVar}>
-      <SEO title="Blog" />
+      <SEO title="Opportunities" />
       <section className="all-news">
             <img src={art5} className="art art-1" />
             <img src={art4} className="art art-2" />

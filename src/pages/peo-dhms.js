@@ -12,7 +12,7 @@ const PeoPage = ({data}) => {
   const pgVar = 'style-3';
   return (
   <Layout pgVar={pgVar}>
-    <SEO title="About PEO-DHMS" />
+    <SEO title="About PEO DHMS" />
     <section className="pp-section">
             <img src={art2} className="art art-1"/>
             <img src={art5} className="art art-2"/>

@@ -5,7 +5,7 @@ address: |-
   1501 Wilson Blvd
   8th Floor
   Arlington, VA 22209
-email: dha.ncr.j-4.mbx.peo-hive@mail.mil
+email: hive-team@groups.mobilize.io
 phone: 123-456-7890
 ---
 This is the contact page

@@ -48,7 +48,7 @@ const Footer = () => (
                         <div className="col col-2">
                             <h6 className="col-title">Contact Us</h6>
                             <ul className="list-unstyled">
-                                <li><a href="mailto:dha.ncr.j-4.mbx.peo-hive@mail.mil">info@hive.gov</a></li>
+                                <li><a href="mailto:hive-team@groups.mobilize.io">hive-team@groups.mobilize.io</a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,13 +58,13 @@ const Footer = () => (
                 <ul className="footer-links list-unstyled">
                     <li>© 2020 Hive. All Rights Reserved</li>
                     <li><a href="/privacy-policy">Privacy Policy</a></li>
-                    <li><a href="#">Accessibility/508 Compliance</a></li>
+                    <li><a href="https://www.section508.gov/" target="_blank">Accessibility/508 Compliance</a></li>
                 </ul>
                 <ul className="footer-links list-unstyled">
-                    <li><a href="https://www.foia.gov/">FOIA</a></li>
-                    <li><a href="https://www.usa.gov/">USA.gov</a></li>
-                    <li><a href="https://www.hhs.gov/">HHS.gov</a></li>
-                    <li><a href="https://www.gsa.gov/">GSA.gov</a></li>
+                    <li><a href="https://www.foia.gov/" target="_blank">FOIA</a></li>
+                    <li><a href="https://www.usa.gov/" target="_blank">USA.gov</a></li>
+                    <li><a href="https://www.hhs.gov/" target="_blank">HHS.gov</a></li>
+                    <li><a href="https://www.gsa.gov/" target="_blank">GSA.gov</a></li>
                 </ul>
                 <div className="address">
                     <img src={dhms} />

@@ -26,7 +26,7 @@ changelog:
   - value: "December 2nd: AcqServe Portal Directions Added"
   - value: "November 2nd: RFP Draft 1 released"
 mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge
-file: /images/workforce-3.0-managed-solution-defense-healthcare-management-systems-wf3-.zip
+file: https://beta.sam.gov/api/prod/opps/v3/opportunities/8593b4f9248048e58c50428be58e1ed5/resources/download/zip?api_key=null&token=
 tags:
   - federal-xaas
 collections:

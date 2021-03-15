@@ -292,7 +292,7 @@ collections:
             - {label: "Link Text", name: "text", widget: string, default: ''}
             - {label: "Link URL", name: "url", widget: string, default: ''}
       - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false, default: ''}
-      - { label: 'File', name: 'file', widget: 'file', required: false, default: '' }
+      - { label: 'File', name: 'file', widget: 'string', required: false, default: '' }
       - label: Categories
         label_singular: "Category"
         name: "tags"
@@ -371,7 +371,7 @@ collections:
             - {label: "Link Text", name: "text", widget: string, default: ''}
             - {label: "Link URL", name: "url", widget: string, default: ''}
       - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false}
-      - { label: 'File', name: 'file', widget: 'file', required: false }
+      - { label: 'File', name: 'file', widget: 'string', required: false }
       - label: Categories
         label_singular: "Category"
         name: "tags"
@@ -450,7 +450,7 @@ collections:
             - {label: "Link Text", name: "text", widget: string, default: ''}
             - {label: "Link URL", name: "url", widget: string, default: ''}
       - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false, default: ''}
-      - { label: 'File', name: 'file', widget: 'file', required: false }
+      - { label: 'File', name: 'file', widget: 'string', required: false }
       - label: Categories
         label_singular: "Category"
         name: "tags"

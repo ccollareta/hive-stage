@@ -112,8 +112,7 @@ const BlogPost = ({ data }) => {
                             </div>
                         </div>
                         <p className="text-white subtext">
-                            We’re interested in ideas that don’t target one of our Areas of Interest. Use the ‘Other
-                            AOI’ category to submit these types of ideas!
+                        Join this opportunity’s dedicated HIVE Community to see the latest information, ask questions, and interact with other HIVE members. Don’t miss your chance to help shape this opportunity with us!
                         </p>
                         <div className="ctas">
                             {frontmatter.mobLink && <a href={frontmatter.mobLink} className="btn rounded"><span>Join the Conversation</span></a> }

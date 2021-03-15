@@ -273,26 +273,8 @@ collections:
       - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false, default: ''}
       - { label: "Pre Text", name: "pre_text", widget: text, required: false, default: ''}
       - { label: 'Body', name: 'body', widget: 'markdown', default: '' }
-      -   label: "Information"
-          name: "information"
-          widget: object
-          fields:
-            - {label: "Value", name: "value", widget: string, required: false, default: ''}
-            - {label: "Type", name: "type", widget: string, required: false, default: ''}
-            - {label: "Release Date", name: "release", widget: string, required: false, default: ''}
-      -   label: "Changelog"
-          name: "changelog"
-          widget: list
-          fields:
-            - {label: "Value", name: "value", widget: string, default: ''}
-      -   label: "Important Links"
-          name: "impLinks"
-          widget: list
-          fields:
-            - {label: "Link Text", name: "text", widget: string, default: ''}
-            - {label: "Link URL", name: "url", widget: string, default: ''}
       - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false, default: ''}
-      - { label: 'File', name: 'file', widget: 'string', required: false, default: '' }
+      
       - label: Categories
         label_singular: "Category"
         name: "tags"
@@ -352,26 +334,8 @@ collections:
       - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false, default: ''}
       - { label: "Pre Text", name: "pre_text", widget: text, required: false, default: ''}
       - { label: 'Body', name: 'body', widget: 'markdown', default: '' }
-      -   label: "Information"
-          name: "information"
-          widget: object
-          fields:
-            - {label: "Value", name: "value", widget: string, required: false, default: ''}
-            - {label: "Type", name: "type", widget: string, required: false, default: ''}
-            - {label: "Release Date", name: "release", widget: string, required: false, default: ''}
-      -   label: "Changelog"
-          name: "changelog"
-          widget: list
-          fields:
-            - {label: "Value", name: "value", widget: string, default: ''}
-      -   label: "Important Links"
-          name: "impLinks"
-          widget: list
-          fields:
-            - {label: "Link Text", name: "text", widget: string, default: ''}
-            - {label: "Link URL", name: "url", widget: string, default: ''}
       - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false}
-      - { label: 'File', name: 'file', widget: 'string', required: false }
+      
       - label: Categories
         label_singular: "Category"
         name: "tags"

@@ -1,6 +1,6 @@
 ---
 title: DevMac
-date: 2021-03-10
+date: 2020-10-28
 author: HIVE Staff
 featured: Yes
 thumbnail: /images/07-devmac.jpg

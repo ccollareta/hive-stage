@@ -19,7 +19,7 @@ blocks:
       url: /opportunities
       subtitle: START BUZZING
   - block:
-      icon: /images/slide-img.svg
+      icon: /images/hive-community-icons-02.svg
       text: Collaboration is the key to a strong community. Let us know your ideas on
         how to improve, what content you would like to see, what members we
         should interview, or anything else on your mind.
@@ -27,7 +27,7 @@ blocks:
       url: https://hivegov.mobilize.io/main/groups/43511/lounge
       subtitle: START BUZZING
   - block:
-      icon: /images/slide-img.svg
+      icon: /images/hive-community-icons-03.svg
       text: Each group in our community is dedicated to bringing together the right
         people fill the needs of Federal Health IT. Join up today to understand
         how you can help!

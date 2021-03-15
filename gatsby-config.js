@@ -79,10 +79,10 @@ module.exports = {
      * SSA     - Social Security Administration
      */
     dap: {
-      // agency: 'DOD',
+       //agency: 'DOD',
 
       // Optional
-      // subagency: 'PEO-DHMS',
+       //subagency: 'PEO DHMS',
     },
 
     /**

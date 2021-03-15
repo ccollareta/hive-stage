@@ -22,25 +22,25 @@ const HiveIdeas = () => (
                         <div className="section-head">
                             <div className="section-title">
                                 <p className="sub-title text-orange">DON’T BEE AFRAID</p>
-                                <h2 className="title text-white">We’re Looking For Your Innovative Ideas!</h2>
+                                <h2 className="title text-white">We Want to Hear from You!</h2>
                             </div>
                         </div>
                         <ul className="ideas-list list-unstyled">
                             <li>
                                 <img src={hexa} />
-                                <span>News, Content, or Upcoming Events</span>
+                                <span>Be in the know with the latest news, content, and upcoming events</span>
                             </li>
                             <li>
                                 <img src={hexa} />
-                                <span>Areas of Interest important to our Partners</span>
+                                <span>Ask questions directly to government partners</span>
                             </li>
                             <li>
                                 <img src={hexa} />
-                                <span>Innovative Solutions</span>
+                                <span>Discuss articles, posts, and more</span>
                             </li>
                             <li>
                                 <img src={hexa} />
-                                <span>Articles in media the community should cover</span>
+                                <span>Talk, team, and ideate with industry partners</span>
                             </li>
                         </ul>
                         <a href="https://hivegov.mobilize.io/main/groups/43511/lounge" target="_blank" className="btn rounded"><span>Tap Into the Hive</span></a>

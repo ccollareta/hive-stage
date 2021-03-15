@@ -26,9 +26,10 @@ changelog:
   - value: "December 2nd: AcqServe Portal Directions Added"
   - value: "November 2nd: RFP Draft 1 released"
 mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge
+file: /images/workforce-3.0-managed-solution-defense-healthcare-management-systems-wf3-.zip
 tags:
   - federal-xaas
 collections:
   - peo-3
 ---
-For all WF3 official questions please submit them using the questionnaire spreadsheet, which can be found in the zip package below, to [dha.ncr.peo-ipo.mbx.dhms-enablers@mail.mil](https://hivegov.mobilize.io/links?lid=0fBoSonL7SMg3IyFiwP9Vg&token=mb315f64376d565f516f64794976542d5a6e5950556c773d3d&url=mailto%3Adha.ncr.peo-ipo.mbx.dhms-enablers%40mail.mil).
+For all WF3 official questions please submit them using the questionnaire spreadsheet, which can be found in the zip package below, to [dha.ncr.peo-ipo.mbx.dhms-enablers@mail.mil](mailto:dha.ncr.peo-ipo.mbx.dhms-enablers@mail.mil).

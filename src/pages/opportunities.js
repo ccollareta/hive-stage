@@ -92,7 +92,7 @@ const Blog = ({ data, pageContext }) => {
                 >
                   <div className="card">
                             <div className="card-img">
-                                <img src={post.featured_image} className="img-fluid" alt="item1" />
+                                <img src={post.thumbnail} className="img-fluid" alt="item1" />
                                 <a href={post.path} className="card-overlay">
                                     <img src={hovericon} />
                                 </a>
@@ -141,6 +141,7 @@ export const pageQuery = graphql`
             collections
             excerpt
             featured_image
+            thumbnail
           }
           fields {
             name

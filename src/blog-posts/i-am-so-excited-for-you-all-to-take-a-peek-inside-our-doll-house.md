@@ -1,7 +1,7 @@
 ---
 title: I am so excited for you all to take a peek inside our doll house!
 date: 2020-11-02
-author: HIVE Staff
+author: Malissa Smith
 featured: No
 thumbnail: /images/thumbnail_doll-house-icon.png
 featured_image: /images/thumbnail_doll-house-icon.png

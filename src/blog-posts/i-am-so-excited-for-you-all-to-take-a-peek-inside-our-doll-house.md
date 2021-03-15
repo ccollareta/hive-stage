@@ -11,7 +11,7 @@ excerpt: Come on this journey with us as we take a different approach in
 subtitle: ""
 pre_title: ""
 pre_text: ""
-mobLink: ""
+mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge/posts/583853?tab=comment
 tags:
   - workforce
 collections:

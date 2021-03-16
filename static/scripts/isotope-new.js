@@ -65,6 +65,7 @@ $(document).ready(function () {
 	$(document).on('click', '.clear-filter', function () {
 		filtersContainer.empty();
 		filters = {};
+		filterL = {};
 		$('.filter').val('title');
 		filterValue = defaultFilterValue;
 		$container.isotope({

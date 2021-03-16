@@ -11,7 +11,7 @@ In order to do that, our goals are to:
 * Enhance patient experience through seamless transition of care.
 * Accelerate healthcare IT improvements.
 
-  ![PEO-DHMS and Program Offices](/images/slide5newb.png "PEO-DHMS and Program Offices")
+![PEO DHMS & PMOs](/images/slide5newb.png "PEO DHMS & PMOs")
 
 Established in 2014, PEO DHMS oversees three program offices:
 

@@ -1,7 +1,7 @@
 ---
 title: I am so excited for you all to take a peek inside our doll house!
-date: 2021-03-15
-author: HIVE Staff
+date: 2020-11-02
+author: Malissa Smith
 featured: No
 thumbnail: /images/thumbnail_doll-house-icon.png
 featured_image: /images/thumbnail_doll-house-icon.png
@@ -11,7 +11,7 @@ excerpt: Come on this journey with us as we take a different approach in
 subtitle: ""
 pre_title: ""
 pre_text: ""
-mobLink: ""
+mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge/posts/583853?tab=comment
 tags:
   - workforce
 collections:

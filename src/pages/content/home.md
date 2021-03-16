@@ -2,16 +2,16 @@
 slider:
   - name: Explore our needs
     description: "We continue to find partners throughout industry and government to
-      help fill the needs of. It all starts with understanding what people,
-      process, transformations, and technologies are needed to create a
-      cutting-edge Federal Health IT ecosystem of the future. "
+      help fill the needs of PEO DHMS and its partners. It all starts with
+      understanding what people, process, transformations, and technologies are
+      needed to create a cutting-edge Federal Health IT ecosystem of the future.
+      "
     thumbnail: /images/st1.jpg
     link: /opportunities
   - name: What’s the Buzz
     description: >
       Find out all the latest news and events across the HIVE such as the latest
-      announcements, how the government is approaching the future, upcoming
-      industry days, and more.
+      announcements, upcoming industry days, and more.
     thumbnail: /images/idea-mobile.jpg
     link: /news-events/
   - name: Join the Conversation

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link, withPrefix } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
-
+import Tags from '../../meta/tags.yml'
 import Layout from '../components/layout';
 import SocialShare from '../components/social-share';
 import Tagline from '../components/tagline';
@@ -27,14 +27,20 @@ import link_arrow from '../images/link-arrow.png';
 /*
   This is used in blog posts. The index page can be found at src/pages/blog.js
 */
-
 const BlogPost = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html, fields } = markdownRemark;
   const date2 = new Date(frontmatter.date);
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
-
+  
   const pgVar = 'style-3';
+  var tagT = [];
+  const tag2 = frontmatter.tags.map((tag)=>(
+    Tags.tags.map((tags) => (
+      tag != tags.slug ? '' : tagT.push(tags.name) 
+    ))
+  ))
+    
   return (
     <Layout pgVar={pgVar}>
       <SEO title={frontmatter.title} />
@@ -43,7 +49,7 @@ const BlogPost = ({ data }) => {
             <img src={art4} className="art art-2"/>
             <div className="inner-container">
                 <div className="post-category">
-                    <span className="category">{frontmatter.tags ? frontmatter.tags.join(', ') : ''}</span>
+                    <span className="category">{tagT.length > 0 ? tagT.join(', ') : ''}</span>
                 </div>
                 <h1>{frontmatter.title}</h1>
                 <div className="row">
@@ -122,7 +128,7 @@ const BlogPost = ({ data }) => {
                     </div>
                     <div className="col col-7">
                         <div className="hex-img">
-                            <img data-depth="0.05" src={subhex} className="sub-hex"/>
+                            <div data-depth="0.05" src={subhex} className=" hexagon sub-hex"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="327.846" height="318.144"
                                 viewBox="0 0 327.846 318.144">
                                 <defs>

@@ -82,21 +82,21 @@ svg .a {
 .hero-section-2 .hex-img.img-1 {
   top: -35px;
   left: 80px;
-  height: 104px;
+  height: 116px;
   width: 116px;
 }
 
 .hero-section-2 .hex-img.img-2 {
   top: 305px;
   left: 265px;
-  height: 230px;
+  height: 258px;
   width: 258px;
 }
 
 .hero-section-2 .hex-img.img-3 {
   top: -225px;
   right: 85px;
-  width: 211px;
+  width: 189px;
   height: 189px;
 }
 
@@ -150,7 +150,7 @@ svg .a {
 .hero-section-2.style-2 .hex-img {
   top: 135px;
   right: -50px;
-  width: 211px;
+  width: 189px;
   height: 189px;
   z-index: 2;
 }
@@ -226,14 +226,14 @@ svg .a {
 }
 
 .hero-section-2.style-3 .hero-hex .hex-img.img-1 {
-  width: 105px;
+  width: 95px;
   height: 95px;
   top: 0;
   left: 0;
 }
 
 .hero-section-2.style-3 .hero-hex .hex-img.img-2 {
-  width: 215px;
+  width: 192px;
   height: 192px;
   top: 0;
   right: 0;
@@ -241,7 +241,7 @@ svg .a {
 }
 
 .hero-section-2.style-3 .hero-hex .hex-img.img-3 {
-  width: 434px;
+  width: 388px;
   height: 388px;
   bottom: -180px;
   right: -255px;
@@ -724,21 +724,21 @@ svg .a {
   bottom: 100px;
   left: 45px;
   height: 76px;
-  width: 85px;
+  width: 76px;
 }
 
 .hive-3-col-section-2 .hex-img.img-2 {
   top: 100px;
   left: 195px;
   height: 162px;
-  width: 182px;
+  width: 162px;
 }
 
 .hive-3-col-section-2 .hex-img.img-3 {
   bottom: 230px;
   right: -100px;
-  width: 300px;
-  height: 268px;
+  width: 270px;
+  height: 270px;
 }
 
 .hive-3-col-section-2 .section-head {
@@ -853,7 +853,7 @@ svg .a {
   position: absolute;
   top: 80px;
   left: 70px;
-  width: 182px;
+  width: 162px;
   height: 162px;
  
 }
@@ -1008,7 +1008,7 @@ svg .a {
   position: absolute;
   top: 80px;
   left: 70px;
-  width: 182px;
+  width: 162px;
 }
 
 .hive-idea-section-2 .hex-img svg {
@@ -1150,14 +1150,14 @@ svg .a {
   bottom: 100px;
   left: 45px;
   height: 76px;
-  width: 85px;
+  width: 76px;
 }
 
 .hive-ideas-2 .hex-img.img-2 {
   top: 80px;
   left: 195px;
   height: 162px;
-  width: 182px;
+  width: 162px;
 }
 
 .hive-ideas-2 .hexagon-img {
@@ -1169,8 +1169,8 @@ svg .a {
   position: absolute;
   top: 100px;
   right: -270px;
-  width: 300px;
-  height: 268px;
+  width: 250px;
+  height: 250px;
 }
 
 .hive-ideas-2 .hexagon-img svg {
@@ -1476,20 +1476,20 @@ svg .a {
   top: 410px;
   left: -160px;
   height: 100px;
-  width: 112px;
+  width: 100px;
 }
 
 .footer-2 .footer-hex .hex-img.img-2 {
   bottom: 140px;
   left: -75px;
-  width: 300px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
 }
 
 .footer-2 .footer-hex .hex-img.img-3 {
   top: 160px;
   right: 160px;
-  width: 228px;
+  width: 205px;
   height: 205px;
 }
 

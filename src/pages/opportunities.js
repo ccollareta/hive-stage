@@ -88,7 +88,7 @@ const Blog = ({ data, pageContext }) => {
                 {posts.map((post,index) => (
                 <div
                   key={`news${index}`}
-                  className={`col col-4 filter-item ${posts.tags ? post.tags.join(' ') : ''} ${post.collections ? post.collections.join(' '): ''}`}
+                  className={`col col-4 filter-item ${post.tags ? post.tags.join(' ') : ''} ${post.collections ? post.collections.join(' '): ''}`}
                 >
                   <div className="card">
                             <div className="card-img">

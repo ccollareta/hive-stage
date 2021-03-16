@@ -48,7 +48,9 @@ const Footer = () => (
                         <div className="col col-2">
                             <h6 className="col-title">Contact Us</h6>
                             <ul className="list-unstyled">
-                                <li><a href="mailto:hive-team@groups.mobilize.io">hive-team@groups.mobilize.io</a></li>
+                                <li><a style={{
+                                    fontSize: '14px',
+                                }} href="mailto:hive-team@groups.mobilize.io">hive-team@groups.mobilize.io</a></li>
                             </ul>
                         </div>
                     </div>

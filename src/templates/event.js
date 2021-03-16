@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link, withPrefix } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
-
+import Tags from '../../meta/tags.yml'
 import Layout from '../components/layout';
 import SocialShare from '../components/social-share';
 import Tagline from '../components/tagline';
@@ -34,6 +34,13 @@ const BlogPost = ({ data }) => {
   const pgVar = 'style-3';
   const date2 = new Date(frontmatter.date)
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
+
+  var tagT = [];
+  const tag2 = frontmatter.tags.map((tag)=>(
+    Tags.tags.map((tags) => (
+      tag != tags.slug ? '' : tagT.push(tags.name) 
+    ))
+  ))
   return (
     <Layout pgVar={pgVar}>
       <SEO title={frontmatter.title} />
@@ -42,7 +49,7 @@ const BlogPost = ({ data }) => {
             <img src={art4} className="art art-2"/>
             <div className="inner-container">
                 <div className="post-category">
-                    <span className="category">{frontmatter.tags ? frontmatter.tags.join(', ') : ''}</span>
+                    <span className="category">{tagT.length > 0 ? tagT.join(', ') : ''}</span>
                 </div>
                 <h1>{frontmatter.title}</h1>
                 <div className="row">

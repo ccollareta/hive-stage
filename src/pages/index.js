@@ -45,6 +45,16 @@ const IndexPage = ({data}) => {
     ...node.frontmatter,
     path: '/news/' + node.fields.name,
   }));
+  const exchangesf = data.exchangesF.edges.map(({ node }) => ({
+    html: node.html,
+    ...node.frontmatter,
+    path: '/event/' + node.fields.name,
+  }));
+  const resf = data.resF.edges.map(({ node }) => ({
+    html: node.html,
+    ...node.frontmatter,
+    path: '/news/' + node.fields.name,
+  }));
 
   const opps = data.opps.edges.map(({ node }) => ({
     html: node.html,
@@ -53,6 +63,8 @@ const IndexPage = ({data}) => {
   }));
   const test = exchanges.concat(res);
   test.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const testf = exchangesf.concat(resf);
+  testf.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   console.log(test);
   const pgVar = 'style-1 animated-hex';
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
@@ -204,7 +216,7 @@ const IndexPage = ({data}) => {
                         <h4>Featured News Posts</h4>
                         <div className="oppn-container">
                             
-                        {test.map((res,index)=>(
+                        {testf.map((res,index)=>(
       <div className="oppn-item" key={index}>
                                 <a href={res.path}>
                                     <h6>{res.title}</h6>
@@ -263,6 +275,52 @@ const IndexPage = ({data}) => {
     }
     res: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "blog-posts" } } }
+      sort: { fields: frontmatter___event_date, order: DESC }
+      limit: 5
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            author
+            date
+            title
+            featured_image
+            thumbnail
+            excerpt
+              
+              
+          }
+          fields {
+            name
+          }
+        }
+      }
+    }
+    exchangesF: allMarkdownRemark(
+      filter: {fields: {sourceName: {eq: "events"}}, frontmatter: {featured: {eq: "Yes"}}}
+      sort: { fields: frontmatter___event_date, order: DESC }
+      limit: 5
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+           author
+            date
+            title
+            featured_image
+            thumbnail
+            excerpt
+          }
+          fields {
+            name
+          }
+        }
+      }
+    }
+    resF: allMarkdownRemark(
+      filter: {fields: {sourceName: {eq: "blog-posts"}}, frontmatter: {featured: {eq: "Yes"}}}
       sort: { fields: frontmatter___event_date, order: DESC }
       limit: 5
     ) {

@@ -13,7 +13,7 @@ import FeatOpp from '../components/opp'
 import li_hexa from '../images/li-hexa.png';
 import hero_bg from '../images/col-bg.jpg';
 import hero3 from '../images/hero-bg3.png';
-import hero4 from '../images/hero-hex4.png';
+import hero4 from '../images/HIVE-Contact_v2.png';
 import hex11 from '../images/hex-11.svg';
 import hex12 from '../images/hex-12.svg';
 import hex13 from '../images/hex-13.svg';

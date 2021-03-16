@@ -16,6 +16,7 @@ const Blog = ({ data, pageContext }) => {
     ...node.frontmatter,
     path: '/news/' + node.fields.name,
   }));
+  
   const pgVar = 'style-3'
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
   return (
@@ -31,13 +32,13 @@ const Blog = ({ data, pageContext }) => {
                         <select className="filter" data-filter-group="0">
                             <option value="title">Category</option>
                             {Tags.tags.map((tag,index) => (
-                              <option value={`.${tag.slug}`} key={tag.slug}>{tag.name}</option>
+                              <option value={`.${tag.slug}`} key={tag.slug} data-name={tag.name}>{tag.name}</option>
                               ))}
                         </select>
                         <select className="filter" data-filter-group="1">
                             <option value="title">Collection</option>
                             {Collections.collections.map((tag,index) => (
-                              <option value={`.${tag.slug}`} key={tag.slug}>{tag.name}</option>
+                              <option value={`.${tag.slug}`} key={tag.slug} data-name={tag.name}>{tag.name}</option>
                               ))}
                         </select>
                         
@@ -54,7 +55,7 @@ const Blog = ({ data, pageContext }) => {
                 {posts.map((post,index) => (
                 <div
                   key={`news${index}`}
-                  className={`col col-4 filter-item ${posts.tags ? post.tags.join(' ') : ''} ${post.collections ? post.collections.join(' '): ''}`}
+                  className={`col col-4 filter-item ${post.tags ? post.tags.join(' ') : ''} ${post.collections ? post.collections.join(' '): ''}`}
                   
                 >
                   <div className="card">

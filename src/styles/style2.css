@@ -1131,6 +1131,9 @@ svg .a {
   align-items: center;
   justify-content: space-between;
 }
+.hive-partners-2 .img-container.logos a img{
+   max-width: 133px;
+}
 
 .hive-ideas-2 {
   position: relative;

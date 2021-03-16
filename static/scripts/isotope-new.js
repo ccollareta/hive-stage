@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
 	var filters = {};
+	var filterL = {};
+	var testNameA;
 	var filterValue;
 	var defaultFilterValue = "*";
 	var itemSelector = '.filter-item';
@@ -19,12 +21,18 @@ $(document).ready(function () {
 
 		if ($this.val() != 'title') {
 			var filterGroup = 'filter-' + $this.attr('data-filter-group');
+			var labelGroup = 'amilc-' + $this.attr('data-filter-group');
 			filters[filterGroup] = $this.val();
+			filterL[labelGroup] = $(this).find('option:selected').text();
+
+
 			filterValue = concatValues(filters);
+
 			$this.val();
-			filters = sortObjectByKeys(filters);
-			//console.log(filterGroup, filterValue);
-			console.log(filters);
+			
+			filterL = sortObjectByKeys(filterL);
+			console.log(filterValue);
+			console.log(filterL);
 		}
 	});
 
@@ -32,14 +40,22 @@ $(document).ready(function () {
 		$container.isotope({
 			filter: filterValue
 		});
-
-		if ($.isEmptyObject(filters)) {
+		
+		if ($.isEmptyObject(filterL)) {
 			filtersContainer.append(noFilters);
 		} else {
 			filtersContainer.empty();
-			$.each(filters, function (key, val) {
+			$.each(filterL, function (key, val) {
 				var activeFilter = filterName(val);
-				var appliedFilter = '<span data-key="' + key + '">' + activeFilter + '<span class="close">&times;</span></span>';
+				
+				if(~key.indexOf("amilc")){
+					testNameA = val;
+					key2 = key.replace('amilc','filter');
+				}else{
+				}
+				
+				var appliedFilter = '<span data-key="' + key2 + '">' + testNameA + '<span class="close">&times;</span></span>';
+				
 				filtersContainer.append(appliedFilter);
 			});
 			filtersContainer.append(clearFiltersLink);
@@ -61,10 +77,13 @@ $(document).ready(function () {
 		var key = $(this).parent().attr('data-key');
 		delete filters[key];
 		filterValue = concatValues(filters);
+		console.log(filterValue);
 		$(this).parent().remove();
 		if ($.isEmptyObject(filters)) {
 			filtersContainer.empty();
 			filterValue = defaultFilterValue;
+			$('.filter').val('title');
+			filterL=[];
 		}
 		$container.isotope({
 			filter: filterValue

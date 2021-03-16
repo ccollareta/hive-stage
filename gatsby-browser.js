@@ -91,7 +91,7 @@ export const onInitialClientRender = () => {
   const isotope3 = '/scripts/isotope-new.js';
   const isotope4 = '/vendor/isotope/imagesloaded.pkgd.min.js';
   const cust = '/scripts/custom.js';
-  const cust2 = '/scripts/custom-scroll.js';
+  //const cust2 = '/scripts/custom-scroll.js';
 
   scripts.push(loadScripts(lity));
   scripts.push(loadScripts(slick));
@@ -101,7 +101,7 @@ export const onInitialClientRender = () => {
   scripts.push(loadScripts(isotope3));
  
   scripts.push(loadScripts(cust));
-  scripts.push(loadScripts(cust2));
+  //scripts.push(loadScripts(cust2));
   
 
 

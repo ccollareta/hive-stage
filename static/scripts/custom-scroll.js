@@ -1,4 +1,6 @@
+if(window.location.pathname == '/'){
 $(function () {
+
 
 	stepScroller();
 	stopSectionAddState();
@@ -206,6 +208,7 @@ $(function () {
 	// init scroll section
 	// stopSectionInit();
 });
+}
 
 var animatingElement;
 var eBottom;
@@ -437,3 +440,4 @@ function isTouchDevice() {
 		(navigator.maxTouchPoints > 0) ||
 		(navigator.msMaxTouchPoints > 0));
 }
+

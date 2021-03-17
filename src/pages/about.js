@@ -122,7 +122,7 @@ const AboutPage = ({data}) => {
                     </div>
                     <div className="col col-12">
                         <div className="img-container logos">
-                            <a href="https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency/Defense-Healthcare-Management-SystemsSeal"><img src={c1} /></a>
+                            <a href="https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency/Defense-Healthcare-Management-Systems"><img src={c1} /></a>
                             <a href="https://health.mil/About-MHS/OASDHA/Defense-Health-Agency"><img src={c2} /></a>
                             <a href="https://www.va.gov/"><img src={c3} /></a>
                             <a href="https://www.defense.gov/"><img src={c4} /></a>

@@ -11,6 +11,8 @@ In order to do that, our goals are to:
 * Enhance patient experience through seamless transition of care.
 * Accelerate healthcare IT improvements.
 
+![PEO DHMS & PMOs](/images/slide5newb.png "PEO DHMS & PMOs")
+
 Established in 2014, PEO DHMS oversees three program offices:
 
 1. The **Joint Operational Medicine Information Systems (JOMIS)** program office provides health information technology capabilities to meet existing and emerging operational medicine requirements. JOMIS develops and deploys modernized and enhanced capabilities across the full breadth of operational medicine health care functions, including health care delivery, patient movement, medical command and control, medical situational awareness and medical logistics.

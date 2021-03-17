@@ -246,7 +246,7 @@ const AboutPage = ({data}) => {
       }
     news: allMarkdownRemark(
         filter: { fields: { sourceName: { eq: "blog-posts" } } }
-        sort: { fields: frontmatter___date, order: ASC }
+        sort: { fields: frontmatter___date, order: DESC }
         limit: 4
       ) {
         edges {
@@ -270,7 +270,7 @@ const AboutPage = ({data}) => {
       }
       events: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "events" } } }
-      sort: { fields: frontmatter___date, order: ASC }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 5
     ) {
       edges {

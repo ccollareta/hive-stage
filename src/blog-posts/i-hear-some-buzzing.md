@@ -1,7 +1,7 @@
 ---
 title: I hear some buzzing!!
 date: 2021-01-14
-author: Matt Hudson
+author: Malissa Smith
 featured: Yes
 thumbnail: /images/01-i-hear-some-buzzing-thumbnail.jpg
 featured_image: /images/01-i-hear-some-buzzing-fullpage.png
@@ -9,21 +9,21 @@ excerpt: We're Buzzing with Excitement! I’ve barely slept a wink over the pas
   two days as my mind continues to swirl on how this could fundamentally change
   the way our business is conducted. HIVE is the first step in our digital
   transformation and we look forward to partnering with you on our journey!
-subtitle: ""
-pre_title: ""
 pre_text: ""
 information:
   value: ""
   type: ""
   release: ""
-changelog: []
 impLinks: []
+changelog: []
+subtitle: ""
+pre_title: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43511/lounge/posts/584843?tab=comment
-file: ""
 tags:
   - workforce
 collections:
   - workforce
+file: ""
 ---
 **We're Buzzing with Excitement!** I’ve barely slept a wink over the past two days as my mind continues to swirl on how this could fundamentally change the way our business is conducted. HIVE is the first step in our digital transformation and we look forward to partnering with you on our journey!
 

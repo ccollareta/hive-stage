@@ -1,5 +1,8 @@
 $(function () {
 
+
+
+	
 	// Sticky header
 	if ($(window).scrollTop() > 80) {
 		$('.header').addClass('fixed-header');
@@ -20,6 +23,11 @@ $(function () {
 		var selector = $(".header");
 		$(selector).toggleClass('show').find('.search-input').focus();
 		e.preventDefault();
+	});
+	
+	$(document).on('click', '.go-down', function(e){
+		e.preventDefault();
+		$('body, html').animate({scrollTop: $('#about-hive').offset().top - $('.header').height()}, 'slow');
 	});
 
 	$(document).on('click', function (e) {

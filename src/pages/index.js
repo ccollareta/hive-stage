@@ -253,7 +253,7 @@ const IndexPage = ({data}) => {
     }
     exchanges: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "events" } } }
-      sort: { fields: frontmatter___event_date, order: DESC }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 5
     ) {
       edges {
@@ -275,7 +275,7 @@ const IndexPage = ({data}) => {
     }
     res: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "blog-posts" } } }
-      sort: { fields: frontmatter___event_date, order: DESC }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 5
     ) {
       edges {
@@ -299,7 +299,7 @@ const IndexPage = ({data}) => {
     }
     exchangesF: allMarkdownRemark(
       filter: {fields: {sourceName: {eq: "events"}}, frontmatter: {featured: {eq: "Yes"}}}
-      sort: { fields: frontmatter___event_date, order: DESC }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 5
     ) {
       edges {
@@ -321,7 +321,7 @@ const IndexPage = ({data}) => {
     }
     resF: allMarkdownRemark(
       filter: {fields: {sourceName: {eq: "blog-posts"}}, frontmatter: {featured: {eq: "Yes"}}}
-      sort: { fields: frontmatter___event_date, order: DESC }
+      sort: { fields: frontmatter___date, order: DESC }
       limit: 5
     ) {
       edges {

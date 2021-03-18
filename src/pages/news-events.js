@@ -313,7 +313,7 @@ export const pageQuery = graphql`
     }
     events: allMarkdownRemark(
         filter: { fields: { sourceName: { eq: "events" } } }
-        sort: { fields: frontmatter___event_date, order: DESC }
+        sort: { fields: frontmatter___date, order: DESC }
         limit: 6
       ) {
         edges {
@@ -358,16 +358,7 @@ export const pageQuery = graphql`
           }
         }
       }
-      abouts: markdownRemark(fileAbsolutePath: { regex: "./content/viday.md/" }) {
-        html
-        frontmatter {
-          title
-          vimeo_code
-          event_date
-          sub_title
-          text
-          }
-        }
+      
   }
 `;
 

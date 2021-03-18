@@ -225,27 +225,6 @@ collections:
       file: "src/pages/content/peo-dhms.md"
       fields:
         - { label: "Body", name: "body", widget: markdown}
-    - label: "Virtual Industry Day"
-      name: "vi_day"
-      slug: '/virtual-industry-day'
-      editor:
-        preview: false
-      file: "src/pages/content/viday.md"
-      fields:
-        - { label: "Title", name: 'title', widget: string}
-        - {
-          label: 'Event Date',
-          name: 'date',
-          widget: 'datetime',
-          format: 'ddd MMM D, YYYY LT',
-          date_format: 'ddd MMM D, YYYY',
-          dateFormat: 'ddd MMM D, YYYY',
-          time_format: 'hh:mm A',
-          timeFormat: 'hh:mm A',
-        }
-        - { label: "Vimeo Code", name: "vimeo_code", widget: string}
-        - { label: "Sub Title", name: "sub_title", widget: string}
-        - { label: "Text", name: "text", widget: text}
   - name: blog
     label: News
     label_singular: News Article

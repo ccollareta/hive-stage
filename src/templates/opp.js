@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 import SocialShare from '../components/social-share';
 import Tagline from '../components/tagline';
 import SimilarOppComponent from '../components/similaropps'
-import FeaturedOppComponent from '../components/featuredopp'
+import FeaturedBlogComponent from '../components/featuredblog'
 import SEO from '../components/seo';
 import usr_img from '../images/user.svg';
 import up_img from '../images/up.png';
@@ -101,7 +101,7 @@ const BlogPost = ({ data }) => {
                             } 
                         </div>
                     </div>
-                    <FeaturedOppComponent currentArticleSlug={`/opportunity/${fields.name}`} />
+                    <FeaturedBlogComponent currentArticleSlug={`/opportunity/${fields.name}`} />
                 </div>
             </div>
         </section>

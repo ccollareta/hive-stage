@@ -24,7 +24,7 @@ $(function () {
 		$(selector).toggleClass('show').find('.search-input').focus();
 		e.preventDefault();
 	});
-	
+
 	$(document).on('click', '.go-down', function(e){
 		e.preventDefault();
 		$('body, html').animate({scrollTop: $('#about-hive').offset().top - $('.header').height()}, 'slow');
@@ -188,11 +188,7 @@ $(function () {
 			autoplaySpeed: 1000,
 			responsive: [{
 				breakpoint: 768,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					autoplay:false,
-				}
+				settings: "unslick",
 			}]
 		});
 	};

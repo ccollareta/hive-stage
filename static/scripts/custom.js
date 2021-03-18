@@ -177,7 +177,15 @@ $(function () {
 			vertical: true,
 			verticalSwiping: true,
 			autoplay: true,
-			autoplaySpeed: 2000
+			autoplaySpeed: 1000,
+			responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					autoplay:false,
+				}
+			}]
 		});
 	};
 

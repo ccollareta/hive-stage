@@ -559,6 +559,10 @@ svg .a {
   line-height: 33px;
 }
 
+.post-detail img{
+  max-width: 100%; height: auto;
+}
+
 .hive-submission-details .post-content .post-detail p {
   margin-bottom: 24px;
 }
@@ -1226,6 +1230,18 @@ svg .a {
   right: -240px;
   z-index: -1;
 }
+@media (max-width:768px){
+.hive-news-events-2:not(.style-2) .art {
+  position: absolute;
+  top: 0;
+  right: -240px;
+  z-index: -1;
+}
+.hive-partners-2 .art {
+  position: absolute;
+  bottom: -21px;
+  left: -163px;
+}
 
 .hive-news-events-2 .section-head {
   margin-bottom: 46px;
@@ -1436,6 +1452,8 @@ svg .a {
   width: 100%;
   margin: 0 auto;
 }
+
+.pp-section img{ max-width: 100%; height: auto;}
 
 .pp-section h5 {
   font-size: 24px;
@@ -2719,7 +2737,7 @@ svg .a {
   }
 
   .hive-partners-2 {
-    padding: 72px 0;
+    padding: 96px 0;
   }
 
   .hive-partners-2 .row .col p:not(.sub-title) {

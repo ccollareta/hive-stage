@@ -47,7 +47,7 @@ const Blog = ({ data, pageContext }) => {
   const test = late.concat(events);
   test.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   console.log(test);
-  const abouts = data.abouts.frontmatter;
+  
   const pgVar = 'style-3';
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
   return (

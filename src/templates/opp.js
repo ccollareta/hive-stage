@@ -128,7 +128,7 @@ const BlogPost = ({ data }) => {
                     </div>
                     <div className="col col-7">
                         <div className="hex-img">
-                            <div data-depth="0.05" src={subhex} className=" hexagon sub-hex"/>
+
                             <svg xmlns="http://www.w3.org/2000/svg" width="327.846" height="318.144"
                                 viewBox="0 0 327.846 318.144">
                                 <defs>

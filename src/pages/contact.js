@@ -43,9 +43,7 @@ const ContactPage = ({data}) => {
             <img src={art5} className="art art-1"/>
             <img src={art2} className="art art-2"/>
             <div className="hero-hex">
-                <div data-depth="0.05" className="hexagon hex-img img-1"/>
-                <div data-depth="0.05" className="hexagon hex-img img-2"/>
-                <div data-depth="0.05" className="hexagon hex-img img-3"/>
+                
                 <img src={hero4}/>
             </div>
             <div className="container">
@@ -57,14 +55,14 @@ const ContactPage = ({data}) => {
                             <div className="contact-details">
                                 <h4>We’re Looking For Your Innovative Ideas!</h4>
                                 <ul className="list-unstyled">
-                                    <li>
-                                        <img src={li_hexa} />
-                                        <span>{frontmatter.address}</span>
-                                    </li>
                                     
                                     <li>
                                         <img src={li_hexa} />
                                         <a href={`mailto:${frontmatter.email}`} className="text-dark">{frontmatter.email}</a>
+                                    </li>
+                                    <li>
+                                        <img src={li_hexa} />
+                                        <a href="https://hivegov.mobilize.io/main/groups/43511/lounge" className="text-dark">Mobilize</a>
                                     </li>
                                 </ul>
                             </div>

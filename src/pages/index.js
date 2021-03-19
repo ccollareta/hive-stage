@@ -81,8 +81,7 @@ const IndexPage = ({data}) => {
                         <div className="step-hexes-inner">
                             {posts.slider.map((slide,index) => (
                                 <div className="step-hex hex-img step-link" data-step={index + 1} key={`part${index}`}>
-                                <div className="sub-hex hexagon" data-depth="0.05">
-                                </div>
+                                
                                 <svg xmlns="http://www.w3.org/2000/svg" width="327.846" height="318.144"
                                     viewBox="0 0 327.846 318.144">
                                     <defs>
@@ -104,7 +103,7 @@ const IndexPage = ({data}) => {
                         <div className="step-item step-highlight" data-step={index + 1} key={`part2${index}`}>
                             <div className="step-text">
                                 <div className="step-hex-mobile hex-img">
-                                    <img data-depth="0.05" src={subhex} className="sub-hex" />
+                                   
                                     <svg xmlns="http://www.w3.org/2000/svg" width="327.846" height="318.144"
                                         viewBox="0 0 327.846 318.144">
                                         <defs>

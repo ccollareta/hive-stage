@@ -2,7 +2,7 @@
 title: DevMac
 date: 2020-10-28
 author: HIVE Staff
-featured: Yes
+featured: No
 thumbnail: /images/07-devmac.jpg
 featured_image: /images/07-devmac.jpg
 excerpt: The DevMAC initiative is Intended to maintain a base (multiple

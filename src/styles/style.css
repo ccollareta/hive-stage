@@ -997,6 +997,11 @@ h6 {
   text-transform: uppercase;
   position: relative;
 }
+@media (max-width:1400px){
+  .header .navbar .navbar-nav>.nav-item>.nav-link{
+    padding: 25px 9px 15px;
+  }
+}
 
 .header .navbar .navbar-nav>.nav-item>.nav-link:hover {
   background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);

@@ -51,7 +51,7 @@ const Blog = ({ data, pageContext }) => {
                         </div>
                         <div class="col col-6">
                             <div class="image" style={{
-                              backgroundImage: `url(${feat_post.featured_image})`
+                              backgroundImage: `url(${feat_post.thumbnail})`
                               }}></div>
                         </div>
                 </>
@@ -164,6 +164,7 @@ export const pageQuery = graphql`
             title
             tags
             featured_image
+            thumbnail
             excerpt
           }
           fields {

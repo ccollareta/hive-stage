@@ -8,7 +8,7 @@ CMS.registerEditorComponent({
     // Fields the user need to fill out when adding an instance of the component
     fields: [{name: 'link', label: 'Button Link', widget: 'string'},{name: 'text', label: 'Button Text', widget: 'string'},{name: 'target', label: 'Target', widget: 'select', options: [{label: "Same Window", value: ''}, {label: "New Window", value: '_blank'}]}],
     // Pattern to identify a block as being an instance of this component
-    pattern: `<a[^>]+href=\"(.*?)\"[^>]+target=\"(.*?)\"[^>]*>(.*?)</a>`,
+    pattern: `<a[^>]+href=\"(.*?)\"[^>]+target=\"(.*?)\"[^>]*><span>(.*?)</span></a>`,
     // Function to extract data elements from the regexp match
     fromBlock: function(match) {
       return {
@@ -19,13 +19,13 @@ CMS.registerEditorComponent({
     },
     // Function to create a text block from an instance of this component
     toBlock: function(obj) {
-      return '<a class="btn rounded" href="' + obj.link +'" target="'+ obj.target +'">'+ obj.text + '</a>';
+      return '<a class="btn rounded" href="' + obj.link +'" target="'+ obj.target +'"><span>'+ obj.text + '</span></a>';
     },
     // Preview output for this component. Can either be a string or a React component
     // (component gives better render performance)
     toPreview: function(obj) {
       return (
-        '<a href="' + obj.link + '" target="'+ obj.target +'" class="btn rounded">' + obj.text +' </a>'
+        '<a href="' + obj.link + '" target="'+ obj.target +'" class="btn rounded"><span>' + obj.text +' </span></a>'
       );
     }
   });

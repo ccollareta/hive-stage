@@ -13,9 +13,7 @@ const Footer = () => (
     <footer className="footer-2 animated-hex">
     <div className="footer-hex">
         <img src={footer_hex} className="big-hex-img" />
-        <div data-depth="0.05"  className="hex-img img-1 hexagon" />
-        <div data-depth="0.05"  className="hex-img img-2 hexagon" />
-        <div data-depth="0.05"  className="hex-img img-3 hexagon" />
+        
     </div>
     <div className="footer-inner" style={{
         backgroundImage: `url(${col_bg})` }}>
@@ -70,9 +68,7 @@ const Footer = () => (
                 </ul>
                 <div className="address">
                     <img src={dhms} />
-                    <p>
-                        DHMS Address: <span>770 Arlington Boulevard, Suite 5101, Fall Church, VA 22042-5101</span>
-                    </p>
+                    
                 </div>
             </div>
         </div>

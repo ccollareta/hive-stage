@@ -2,7 +2,7 @@
 title: Federal XaaS
 date: 2020-10-28
 author: HIVE Staff
-featured: Yes
+featured: No
 thumbnail: /images/08-xaas.png
 featured_image: /images/08-xaas.png
 excerpt: The Federal XaaS initiative envisions a managed solution that enables

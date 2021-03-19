@@ -53,7 +53,7 @@ const AboutPage = ({data}) => {
   }}>
             <img src={art1} className="art" />
             <div className="hero-hex">
-                <div data-depth="0.05"  className="hexagon hex-img" />
+                
                 <img src={hex2} />
                
             </div>
@@ -124,9 +124,9 @@ const AboutPage = ({data}) => {
                         <div className="img-container logos">
                             <a href="https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency/Defense-Healthcare-Management-Systems"><img src={c1} /></a>
                             <a href="https://health.mil/About-MHS/OASDHA/Defense-Health-Agency"><img src={c2} /></a>
-                            <a href="https://www.va.gov/"><img src={c3} /></a>
-                            <a href="https://www.defense.gov/"><img src={c4} /></a>
                             <a href="https://www.health.mil/Military-Health-Topics/Technology/Military-Electronic-Health-Record"><img src={c5} /></a>
+                            <a href="https://www.defense.gov/"><img src={c4} /></a>
+                            <a href="https://www.va.gov/"><img src={c3} /></a>
                             <a href="https://www.hhs.gov/"><img src={c6} /></a>
                         </div>
                     </div>

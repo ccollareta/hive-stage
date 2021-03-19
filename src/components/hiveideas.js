@@ -14,8 +14,7 @@ const HiveIdeas = () => (
     <section className="hive-ideas-2 animated-hex" style={{
         backgroundImage: `url(${colbg})`
     }}>
-            <div data-depth="0.05"  className="hexagon hex-img img-1" />
-            <div data-depth="0.05"  className="hexagon hex-img img-2" />
+            
             <div className="inner-container">
                 <div className="row">
                     <div className="col col-5">

@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    author: 'PEO-DHMS',
+    author: 'PEO DHMS',
     title: `HIVE`,
-    description: `HIVE PEO-DHMS`,
+    description: `HIVE PEO DHMS`,
+    siteUrl: `https://www.hive.gov`,
     navigation: [
       {
         items: [{ text: 'News & Events', link: '/news-events/' }],
@@ -79,10 +80,10 @@ module.exports = {
      * SSA     - Social Security Administration
      */
     dap: {
-       //agency: 'DOD',
+       agency: 'DOD',
 
       // Optional
-       //subagency: 'PEO DHMS',
+       subagency: 'PEO DHMS',
     },
 
     /**
@@ -96,6 +97,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -106,6 +108,7 @@ module.exports = {
         display: 'swap'
       }
     },
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {

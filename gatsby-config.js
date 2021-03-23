@@ -39,10 +39,10 @@ module.exports = {
       endpoint: 'https://search.usa.gov',
       
       // replace this with your search.gov account
-      affiliate: 'federalist-uswds-example',
+      affiliate: 'hive',
       
       // replace with your access key
-      access_key: 'xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=',
+      access_key: 'EUeb0RfUzMmiGl7uZEDIE8jiA9XBgeqsnI6EVf0oRjc=',
       
       // this renders the results within the page instead of sending to user to search.gov
       inline: true, 

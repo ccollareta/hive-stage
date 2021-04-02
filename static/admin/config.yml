@@ -1,6 +1,11 @@
 backend:
-  name: git-gateway
-local_backend: true
+  name: github
+  repo: HiveGovTeam/hive-prod
+  base_url: https://hive.gov
+  auth_endpoint: external/auth/github
+  branch: main
+  preview_context: federalist/build
+
 
 media_folder: static/images
 public_folder: /images

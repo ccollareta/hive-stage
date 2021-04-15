@@ -9,6 +9,7 @@ import foo_hex_2 from '../images/foo-hex-2.svg';
 import foo_hex_3 from '../images/foo-hex-3.svg';
 import col_bg from '../images/col-bg.jpg';
 
+
 const Footer = () => (
     <footer className="footer-2 animated-hex">
     <div className="footer-hex">
@@ -56,7 +57,7 @@ const Footer = () => (
             </div>
             <div className="footer-secondary">
                 <ul className="footer-links list-unstyled">
-                    <li>© <script>document.write(new Date().getFullYear())</script> Hive. All Rights Reserved</li>
+                    <li>©  {new Date().getFullYear()} Hive. All Rights Reserved</li>
                     <li><a href="/privacy-policy">Privacy Policy</a></li>
                     <li><a href="https://www.section508.gov/" target="_blank">Accessibility/508 Compliance</a></li>
                 </ul>

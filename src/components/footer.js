@@ -44,7 +44,7 @@ const Footer = () => (
                             </ul>
                         </div>
                         <div className="col col-2">
-                            <h6 className="col-title">Contact Us</h6>
+                            <h6 className="col-title mHide">Contact Us</h6>
                             <ul className="list-unstyled">
                                 <li><a style={{
                                     fontSize: '13px'
@@ -56,7 +56,7 @@ const Footer = () => (
             </div>
             <div className="footer-secondary">
                 <ul className="footer-links list-unstyled">
-                    <li>© 2020 Hive. All Rights Reserved</li>
+                    <li>© <script>document.write(new Date().getFullYear())</script> Hive. All Rights Reserved</li>
                     <li><a href="/privacy-policy">Privacy Policy</a></li>
                     <li><a href="https://www.section508.gov/" target="_blank">Accessibility/508 Compliance</a></li>
                 </ul>

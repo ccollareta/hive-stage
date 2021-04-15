@@ -45,7 +45,7 @@ const Footer = () => (
                             </ul>
                         </div>
                         <div className="col col-2">
-                            <h6 className="col-title mHide">Contact Us</h6>
+                            <h6 className="col-title d-link">Contact Us</h6>
                             <ul className="list-unstyled">
                                 <li><a style={{
                                     fontSize: '13px'

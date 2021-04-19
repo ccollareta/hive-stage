@@ -27,7 +27,7 @@ const FeatOpp = ({title, description, thumbnail,link, author, date }) => {
                                     {description}
                                 </p>
                                 <div className="post-details">
-                                    <a href="#" className="author">Submitted by {author}</a>
+                                    <span className="author">Submitted by {author}</span>
                                     <span className="date">{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>

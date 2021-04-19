@@ -20,7 +20,7 @@ const FeaturedPost = ({title, slug, description, thumb, date, author }) => {
                 <a href={slug} className="btn rounded">Read More</a>
             </div>
             <div className="col-6">
-                <img src={thumb} className="featured-img" alt="img" />
+            <a href={slug}><img src={thumb} className="featured-img" alt="img" /></a>
             </div>
     </div>
     );

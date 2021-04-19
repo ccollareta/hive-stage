@@ -17,7 +17,7 @@ const FeatArticle = ({path, title, author,date}) => {
                     <h6>{title}</h6>
                 </a>
                 <div className="post-details">
-                    <a href={path} className="author">Submitted by {author}</a>
+                    <span className="author">Submitted by {author}</span>
                     <span className="date">{date2.toLocaleDateString('en-US',options)}</span>
                 </div>
             </div>

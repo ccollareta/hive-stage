@@ -181,7 +181,9 @@ const IndexPage = ({data}) => {
       <div className="card" key={exchange.title}>
       <div className="row secondary-row">
           <div className="col col-3">
+          <a href={exchange.path}>
               <img src={exchange.thumbnail} alt="item1" />
+              </a>
           </div>
           <div className="col col-9">
               <div className="card-body">
@@ -192,7 +194,7 @@ const IndexPage = ({data}) => {
                   {exchange.description}
                   </p>
                   <div className="post-details">
-                      <a href="#" className="author">Submitted by {exchange.author}</a>
+                      <span className="author">Submitted by {exchange.author}</span>
                       <span className="date">{exchange.date ? new Date(exchange.date).toLocaleDateString('en-US',options) : ''}</span>
                   </div>
               </div>
@@ -219,7 +221,7 @@ const IndexPage = ({data}) => {
                                     <h6>{res.title}</h6>
                                 </a>
                                 <div className="post-details">
-                                    <a href={res.path} className="author">Submitted by {res.author}</a>
+                                    <span className="author">Submitted by {res.author}</span>
                                     <span className="date">{res.date ? new Date(res.date).toLocaleDateString('en-US',options) : ''}</span>
                                 </div>
                             </div>

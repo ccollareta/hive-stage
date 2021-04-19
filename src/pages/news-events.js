@@ -183,7 +183,9 @@ const Blog = ({ data, pageContext }) => {
       <div className="card" key={exchange.title}>
       <div className="row secondary-row">
           <div className="col col-3">
+              <a href={exchange.path}>
               <img src={exchange.thumbnail} alt="item1" />
+              </a>
           </div>
           <div className="col col-9">
               <div className="card-body">

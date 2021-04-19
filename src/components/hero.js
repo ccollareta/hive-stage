@@ -28,7 +28,7 @@ const Hero = () => (
         <div className="hero-action">
             <div className="row">
                 <div className="col-6">
-                    <h1 className="hero-title text-white">Welcome to the <span className="text-uppercase">HIVE</span>.
+                    <h1 className="hero-title text-white">Welcome to the <span className="text-uppercase">HIVE</span>
                     </h1>
                     <h6 className="hero-subtitle text-white">HEALTH INFORMATION VISION EXCHANGE</h6>
                     <div className="hero-ctas">

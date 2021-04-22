@@ -34,7 +34,9 @@ const ContactPage = ({data}) => {
 
   return (
   <Layout pgVar={pgVar}>
-    <SEO title="Contact" />
+    <SEO title="Healthcare Technology Management – Contact Us Today"
+    keywords="healthcare technology management (MSV 210)"
+    description="Looking for innovative and impactful collaboration in the healthcare technology management field? The HIVE brings together like-minded people & ideas." />
     <section className="hero-section-2 style-3 animated-hex"
             style={{
                 '--bg-img': `url(${hero3})`,

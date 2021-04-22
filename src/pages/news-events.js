@@ -53,7 +53,9 @@ const Blog = ({ data, pageContext }) => {
   return (
     <Layout pgVar={pgVar}>
      
-      <SEO title="News & Events" />
+      <SEO title="Digital Transformation in Healthcare-News & Events" 
+      keywords="digital transformation in healthcare (MSV 590)"
+      description="News and events centered on digital transformation in healthcare with a group of innovative IT pros open to partnering with PEO DHMS. Join us for more." />
       <section class="hive-news-events-2 style-2">
             <div class="inner-container">
                 <div class="featured-news">

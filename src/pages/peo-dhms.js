@@ -12,7 +12,9 @@ const PeoPage = ({data}) => {
   const pgVar = 'style-3';
   return (
   <Layout pgVar={pgVar}>
-    <SEO title="About PEO DHMS" />
+    <SEO title="Healthcare Technology Trends & Opportunities 2021"
+    keywords="healthcare technology trends (MSV 480)"
+    description="In partnership with the PEO DHMS, the HIVE was created to facilitate community and potential collaboration in the healthcare technology trends arena. " />
     <section className="pp-section">
             <img src={art2} className="art art-1"/>
             <img src={art5} className="art art-2"/>

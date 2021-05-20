@@ -12,6 +12,8 @@ const FeatOpp = ({title, description, thumbnail,link, author, date }) => {
     
     
     return (
+
+                        
                         <div className="card">
                             <div className="card-img">
                                 <img src={thumbnail} className="img-fluid" />
@@ -24,14 +26,15 @@ const FeatOpp = ({title, description, thumbnail,link, author, date }) => {
                                     <h4 className="text-white">{title}</h4>
                                 </a>
                                 <p className="text-white">
-                                    {description}
+                                {description}
                                 </p>
                                 <div className="post-details">
-                                    <span className="author">Submitted by {author}</span>
+                                    <a href="#" className="author">Submitted by {author}</a>
                                     <span className="date">{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
                         </div>
+                    
     );
 };
 

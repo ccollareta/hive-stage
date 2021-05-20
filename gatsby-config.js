@@ -6,24 +6,26 @@ module.exports = {
     siteUrl: `https://www.hive.gov`,
     navigation: [
       {
-        items: [{ text: 'News & Events', link: '/news-events/' }],
-      },
-      {
-        items: [{ text: 'Opportunities', link: '/opportunities/' }],
+        items: [{ text: 'PEO DHMS', link: '/peo-dhms/' }],
       },
       {
         items: [{ text: 'Our Community', link: '/our-community/' }],
       },
+      
+      {
+        items: [{ text: 'Opportunities', link: '/opportunities/' }],
+      },
+      {
+        items: [{ text: 'News & Events', link: '/news-events/' }],
+      },
       {
         items: [{ text: 'About', link: '/about/' }],
       },
-      {
-        items: [{ text: 'PEO DHMS', link: '/peo-dhms/' }],
-      },
+      
       
     ],
     secondaryLinks: [
-      { text: 'Contact Us', link: '/contact/' },
+      { text: 'Rnter The Hive', link: 'https://hivegov.mobilize.io' },
     ],
 
     /**

@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
 	var filters = {};
-	var filterL = {};
-	var testNameA;
 	var filterValue;
 	var defaultFilterValue = "*";
 	var itemSelector = '.filter-item';
@@ -21,18 +19,12 @@ $(document).ready(function () {
 
 		if ($this.val() != 'title') {
 			var filterGroup = 'filter-' + $this.attr('data-filter-group');
-			var labelGroup = 'amilc-' + $this.attr('data-filter-group');
 			filters[filterGroup] = $this.val();
-			filterL[labelGroup] = $(this).find('option:selected').text();
-
-
 			filterValue = concatValues(filters);
-
-			$this.val();
-			
-			filterL = sortObjectByKeys(filterL);
-			console.log(filterValue);
-			console.log(filterL);
+			$this.val('title');
+			filters = sortObjectByKeys(filters);
+			//console.log(filterGroup, filterValue);
+			console.log(filters);
 		}
 	});
 
@@ -40,22 +32,14 @@ $(document).ready(function () {
 		$container.isotope({
 			filter: filterValue
 		});
-		
-		if ($.isEmptyObject(filterL)) {
+
+		if ($.isEmptyObject(filters)) {
 			filtersContainer.append(noFilters);
 		} else {
 			filtersContainer.empty();
-			$.each(filterL, function (key, val) {
+			$.each(filters, function (key, val) {
 				var activeFilter = filterName(val);
-				
-				if(~key.indexOf("amilc")){
-					testNameA = val;
-					key2 = key.replace('amilc','filter');
-				}else{
-				}
-				
-				var appliedFilter = '<span data-key="' + key2 + '">' + testNameA + '<span class="close">&times;</span></span>';
-				
+				var appliedFilter = '<span data-key="' + key + '">' + activeFilter + '<span class="close">&times;</span></span>';
 				filtersContainer.append(appliedFilter);
 			});
 			filtersContainer.append(clearFiltersLink);
@@ -65,8 +49,6 @@ $(document).ready(function () {
 	$(document).on('click', '.clear-filter', function () {
 		filtersContainer.empty();
 		filters = {};
-		filterL = {};
-		$('.filter').val('title');
 		filterValue = defaultFilterValue;
 		$container.isotope({
 			filter: filterValue
@@ -78,13 +60,10 @@ $(document).ready(function () {
 		var key = $(this).parent().attr('data-key');
 		delete filters[key];
 		filterValue = concatValues(filters);
-		console.log(filterValue);
 		$(this).parent().remove();
 		if ($.isEmptyObject(filters)) {
 			filtersContainer.empty();
 			filterValue = defaultFilterValue;
-			$('.filter').val('title');
-			filterL=[];
 		}
 		$container.isotope({
 			filter: filterValue

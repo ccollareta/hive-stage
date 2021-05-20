@@ -53,7 +53,53 @@ collections:
                     name: "link"
                     widget: "string"
                     hint: "Button Link"
-              
+            
+      - name: "authors"
+        label: "Team Members"
+        file: "meta/authors.yml"
+        description: "List of Team Members"
+        fields:
+          - name: team_member
+            label: Team Member
+            label_singular: "Team Member"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                hint: "Name"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                hint: "Title"
+              - label: "Division"
+                name: "division"
+                widget: "string"
+              - label: "Description"
+                name: "description"
+                widget: "text"
+              - label: "Years In Government"
+                name: "years"
+                widget: "string"
+              - label: "States Visited"
+                name: "states"
+                widget: "string"
+              - label: "Coffee"
+                name: "coffee"
+                widget: "string"
+              - label: "Personal"
+                name: "personal"
+                widget: "object"
+                fields:
+                  - {label: "Book", name: "book", widget: "string"}
+                  - {label: "Team", name: "team", widget: "string"}
+                  - {label: "Flower/Plant", name: "plant", widget: "string"}
+                  - {label: "Food", name: "food", widget: "string"}
+                  - {label: "Movie", name: "movie", widget: "string"}
+                  - {label: "Song", name: "song", widget: "string"}
+              - label: "Image"
+                name: "team_image"
+                widget: "image"  
       - name: "tags"
         label: "Categories"
         file: "meta/tags.yml"
@@ -111,6 +157,52 @@ collections:
       fields:
         - { label: "Slug", name: slug, widget: hidden, default: "/"}
         - { label: "Body", name: "body", widget: markdown}
+        - label: "Four Blocks"
+          name: "four_blocks"
+          widget: "object"
+          fields: 
+            - { label: "Small Text", name: "small_text", widget: "string"}
+            - { label: "Headline", name: "headline", widget: "string"}
+            - { label: "Description", name: "description", widget: "string"}
+            - label: "Block One"
+              name: "block_one"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
+            - label: "Block Two"
+              name: "block_two"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
+            - label: "Block Three"
+              name: "block_three"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
+            - label: "Block Four"
+              name: "block_four"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
+        - label: "Video Block"
+          name: "video_block"
+          widget: "object"
+          fields:
+            - { label: "Title", name: "title", widget: "string"}
+            - { label: "Description", name: "description", widget: "text"}
+            - { label: "Video", name: "video", widget: "string"}
         - label: 'Slider Block'
           name: "slider"
           widget: list
@@ -148,16 +240,58 @@ collections:
               fields:
                 - {label: "Button Text", name: "button_text", widget: string}
                 - {label: "Button Link", name: "button_link", widget: string}
-        - label: "Blocks"
-          name: "blocks"
-          widget: list
+        - label: "Four Blocks"
+          name: "four_blocks"
+          widget: "object"
+          fields: 
+            - { label: "Small Text", name: "small_text", widget: "string"}
+            - { label: "Headline", name: "headline", widget: "string"}
+            - { label: "Description", name: "description", widget: "string"}
+            - label: "Block One"
+              name: "block_one"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
+            - label: "Block Two"
+              name: "block_two"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
+            - label: "Block Three"
+              name: "block_three"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
+            - label: "Block Four"
+              name: "block_four"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
+        - label: "Logo Section"
+          name: "logo_section"
+          widget: object
           fields:
-              - label: "Block"
-                name: "block"
-                widget: object
-                fields:
-                  - { label: "Icon", name: "icon", widget: image}
-                  - { label: "Text", name: "text", widget: text}
+              - { label: "Subtitle", name: "subtitle", widget: "string"}
+              - { label: "Title", name: "title", widget: "string"}
+              - { label: "Description", name: "description", widget: "text"}
+              -   label: "Logos"
+                  name: "logos"
+                  widget: "list"
+                  fields:
+                    - { label: "Logo", name: "logo", widget: "image"}
+                    - { label: "Link", name: "link", widget: "string"}
 
         - { label: "Body", name: "body", widget: markdown}
     - label: "Our Community"

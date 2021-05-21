@@ -292,12 +292,12 @@ p {
   position: relative;
   font-family: 'Exo', sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
-  padding: 15px 36px;
+  padding: 16px 40px;
   background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);
   color: #fff;
   border-radius: 4px;
@@ -1056,6 +1056,7 @@ h6 {
 .header .navbar .navbar-nav.right-menu .btn {
   height: 46px;
   line-height: 17px;
+  padding:15px 34px;
 }
 
 .header .navbar .navbar-nav.right-menu .btn:hover {

@@ -278,6 +278,9 @@ svg .a {
       margin-bottom: 0;
       padding-right: 30px;
       transition: all .3s; }
+      .hive-news-events-2 .ne-card.fixed-h h3{
+        font-size: 24px;
+      }
       .hive-news-events-2 .ne-card h3 img {
         margin-left: 15px;
         transition: all .3s; }
@@ -325,6 +328,9 @@ svg .a {
   .hive-news-events-2 .ne-card.fixed-h {
     height: 334px;
     width: 100%; }
+    .hive-news-events-2 .ne-card.fixed-h:hover h3 img{
+      margin-left: 30px !important;
+    }
   .hive-news-events-2 .ne-card.main {
     padding: 0 130px 36px 55px; }
     .hive-news-events-2 .ne-card.main:after {
@@ -492,7 +498,8 @@ svg .a {
         column-gap: 110px; }
         .footer .footer-primary .primary-container ul.footer-menu li a {
           font-size: 24px;
-          font-family: 'Exo', sans-serif;
+          font-family: 'Exo',
+ sans-serif;
           font-weight: 500;
           color: black;
           line-height: 65px;

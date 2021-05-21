@@ -1,15 +1,17 @@
 ---
 title: The 4 Cornerstones of PEO 3.0
-date: 2021-03-14
+date: 2021-01-14
 author: Malissa Smith
 featured: Yes
-thumbnail: /images/peo3.png
+order: 2
+thumbnail: /images/cornerstones-of-peo3.png
 featured_image: /images/peo3.png
 excerpt: Over the last 50 years, one thing has been evident – organizations that
   are unable to adapt to changing technology lose value and collapse. This has
   been shown in industry with businesses such as Sears and Blockbuster. This has
   led industry to use the phrase “agility” to describe an organization’s ability
   to adapt to new technologies.
+pre_title: ""
 pre_text: ""
 information:
   value: ""
@@ -18,7 +20,6 @@ information:
 impLinks: []
 changelog: []
 subtitle: ""
-pre_title: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43511/lounge/posts/625464?tab=comment
 tags:
   - workforce

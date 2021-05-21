@@ -1,22 +1,24 @@
 ---
 title: DevMac
-date: 2020-10-28
+date: 2021-05-20
 author: HIVE Staff
 featured: No
-thumbnail: /images/07-devmac.jpg
+thumbnail: /images/devmac.png
 featured_image: /images/07-devmac.jpg
-excerpt: The DevMAC initiative is Intended to maintain a base (multiple
-  awardees) of industry partners that can bring cutting edge software
-  development, UI/UX, and human-centered design skills. This contract is
-  intended to be a vehicle with dedicated small business and non-traditional
-  pools. DevMAC will support a complex ecosystem of health technology and will
-  be utilized to rapidly respond to calls for new capabilities by programs
+excerpt: |-
+  The DevMAC initiative is Intended to maintain a base (multiple 
+  awardees) of industry partners that can bring cutting edge 
+  software development, UI/UX, and human-centered design 
+  skills. This contract is intended to be a vehicle with dedicated 
+  small business and non-traditional pools. DevMAC will support 
+  a complex ecosystem of health technology and will be utilized 
+  to rapidly respond to calls for new capabilities by programs 
   within the PEO DHMS portfolio.
 information:
   value: ">$100MM"
   type: Prime Product Capabilities
-  release: Estimated FY21Q2 RFP
-mobLink: https://hivegov.mobilize.io/main/groups/44056/lounge
+  release: Estimated FY21Q4 RFP
+mobLink: https://community.hive.gov/main/groups/44056/lounge
 tags:
   - workforce
 collections:

@@ -2,27 +2,27 @@
 title: "Workforce 3.0: Industry Day 1 Recap"
 date: 2020-11-23
 author: Amy Chase
-featured: Yes
+featured: No
 thumbnail: /images/12-wf3-industryday1recap.png
 featured_image: /images/12-wf3-industryday1recap.png
 excerpt: We have put together 4 video answers to some of the top poll responses.
   Each video covers a topic and will allow you to understand our thought process
   and direction for Workforce 3.0. We then hosted a livestream!
-subtitle: ""
-pre_title: ""
 pre_text: ""
 information:
   value: ""
   type: ""
   release: ""
-changelog: []
 impLinks: []
+changelog: []
+subtitle: ""
+pre_title: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge/posts/612153?tab=comment
-file: ""
 tags:
   - workforce
 collections:
   - workforce
+file: ""
 ---
 We have put together 4 video answers to some of the top poll responses. Each video covers a topic and will allow you to understand our thought process and direction for Workforce 3.0. We then hosted a livestream!
 

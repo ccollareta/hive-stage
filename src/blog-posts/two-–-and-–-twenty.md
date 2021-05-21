@@ -2,25 +2,25 @@
 title: Two – and – Twenty
 date: 2021-01-12
 author: Matt Hudson
-featured: Yes
+featured: No
 thumbnail: /images/03-2-and-20.png
 featured_image: /images/03-2-and-20.png
-excerpt: Good afternoon HIVE community! 
-subtitle: ""
-pre_title: ""
+excerpt: Good afternoon HIVE community!
 pre_text: ""
 information:
   value: ""
   type: ""
   release: ""
-changelog: []
 impLinks: []
+changelog: []
+subtitle: ""
+pre_title: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge/posts/624598?tab=comment
-file: ""
 tags:
   - workforce
 collections:
   - workforce
+file: ""
 ---
 Good afternoon HIVE community! Here is a video of Tony Kwag where he takes us through the 2-and-20 concept, the DHMS pain-points that led to the concept, the inspiration from Industry, and what this means for Offerors.
 

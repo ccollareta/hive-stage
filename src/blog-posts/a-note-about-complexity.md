@@ -2,25 +2,25 @@
 title: A Note About Complexity
 date: 2021-01-13
 author: Matt Hudson
-featured: Yes
+featured: No
 thumbnail: /images/06-a-note-about-complexity.jpg
 featured_image: /images/06-a-note-about-complexity.jpg
 excerpt: I wanted to stimulate some conversation here.
-subtitle: ""
-pre_title: ""
 pre_text: ""
 information:
   value: ""
   type: ""
   release: ""
-changelog: []
 impLinks: []
+changelog: []
+subtitle: ""
+pre_title: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge/posts/583773?tab=comment
-file: ""
 tags:
   - workforce
 collections:
   - workforce
+file: ""
 ---
 I wanted to stimulate some conversation here.
 

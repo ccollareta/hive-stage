@@ -1,8 +1,8 @@
 ---
 title: I hear some buzzing!!
-date: 2021-01-14
+date: 2020-11-04
 author: Malissa Smith
-featured: Yes
+featured: No
 thumbnail: /images/01-i-hear-some-buzzing-thumbnail.jpg
 featured_image: /images/01-i-hear-some-buzzing-fullpage.png
 excerpt: We're Buzzing with Excitement!

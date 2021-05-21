@@ -60,7 +60,7 @@ const IndexPage = ({data}) => {
     path: '/opportunity/' + node.fields.name,
   }));
   const test = exchanges.concat(res);
-  test.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  test.sort();
   const testf = exchangesf.concat(resf);
   testf.sort((a,b) => new Date(b.date).getTime() - new Date(a.date).getTime());
   console.log(test);
@@ -208,7 +208,7 @@ const IndexPage = ({data}) => {
                     <>
              {index == 0 &&
              <>
-             <div className={`col col-12 ${index}`} key={`Second${index}`}>
+             <div className={`col col-12 ${post.order}`} key={`Second${index}`}>
              <div className="ne-card fixed-h" style={{
                  backgroundImage: `url(${post.thumbnail})`
                  }}>
@@ -225,7 +225,7 @@ const IndexPage = ({data}) => {
             </>
              }
              {index == 1 &&
-                <div className={`col col-6  ${index}`} key={`Third${index}`}>
+                <div className={`col col-6  ${post.order}`} key={`Third${index}`}>
                                 <div className="ne-card fixed-h" style={{
                  backgroundImage: `url(${post.thumbnail})`
                  }}>
@@ -243,7 +243,7 @@ const IndexPage = ({data}) => {
 
              } 
              {index == 2 &&
-                <div className={`col col-6  ${index}`} key={`Fourth${index}`}>
+                <div className={`col col-6  ${post.order}`} key={`Fourth${index}`}>
                                 <div className="ne-card fixed-h" style={{
                  backgroundImage: `url(${post.thumbnail})`
                  }}>
@@ -325,8 +325,8 @@ const IndexPage = ({data}) => {
       }
     }
     exchanges: allMarkdownRemark(
-      filter: { fields: { sourceName: { eq: "events" } } }
-      sort: { fields: frontmatter___date, order: DESC }
+      filter: {fields: {sourceName: {eq: "events"}}, frontmatter: {featured: {eq: "Yes"}}}
+      sort: {fields: frontmatter___date, order: ASC}
       limit: 4
     ) {
       edges {
@@ -347,14 +347,15 @@ const IndexPage = ({data}) => {
       }
     }
     res: allMarkdownRemark(
-      filter: { fields: { sourceName: { eq: "blog-posts" } } }
-      sort: { fields: frontmatter___date, order: DESC }
+      filter: {fields: {sourceName: {eq: "blog-posts"}}, frontmatter: {featured: {eq: "Yes"}}}
+      sort: {fields: frontmatter___order, order: ASC}
       limit: 4
     ) {
       edges {
         node {
           html
           frontmatter {
+            order
             author
             date
             title
@@ -372,7 +373,7 @@ const IndexPage = ({data}) => {
     }
     exchangesF: allMarkdownRemark(
       filter: {fields: {sourceName: {eq: "events"}}, frontmatter: {featured: {eq: "Yes"}}}
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: {fields: frontmatter___date, order: ASC}
       limit: 5
     ) {
       edges {
@@ -394,7 +395,7 @@ const IndexPage = ({data}) => {
     }
     resF: allMarkdownRemark(
       filter: {fields: {sourceName: {eq: "blog-posts"}}, frontmatter: {featured: {eq: "Yes"}}}
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: {fields: frontmatter___order, order: ASC}
       limit: 5
     ) {
       edges {

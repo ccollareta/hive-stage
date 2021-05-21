@@ -2,27 +2,27 @@
 title: "Workforce 3.0: Industry Day 2 Recap"
 date: 2020-12-18
 author: Matt Hudson
-featured: Yes
+featured: No
 thumbnail: /images/11-wf3-industryday2recap.png
 featured_image: /images/11-wf3-industryday2recap.png
 excerpt: Good evening, happy Friday, and thanks for your patience!
-subtitle: ""
-pre_title: ""
 pre_text: ""
 information:
   value: ""
   type: ""
   release: ""
-changelog: []
 impLinks:
   - text: " "
     url: " "
+changelog: []
+subtitle: ""
+pre_title: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge/posts/612153?tab=comment
-file: ""
 tags:
   - workforce
 collections:
   - workforce
+file: ""
 ---
 Good evening, happy Friday, and thanks for your patience!
 

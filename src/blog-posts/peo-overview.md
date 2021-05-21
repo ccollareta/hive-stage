@@ -1,32 +1,33 @@
 ---
 title: PEO Overview
-date: 2021-01-16
+date: 2020-12-16
 author: Holly Joers
 featured: Yes
-thumbnail: /images/04-peo-overview.png
+order: 3
+thumbnail: /images/peo-overview.png
 featured_image: /images/04-peo-overview.png
 excerpt: >-
   I really appreciate all of the engagement in the HIVE!
 
 
   I thought it would be helpful to provide an overview of our portfolio.  For those that may not know, the PEO includes programs in DHMSM, JOMIS, DMIX and EIDS
-subtitle: ""
 pre_title: ""
 pre_text: ""
 information:
   value: ""
   type: ""
   release: ""
-changelog: []
 impLinks:
   - text: " "
     url: " "
+changelog: []
+subtitle: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge/posts/608341?tab=comment
-file: ""
 tags:
   - workforce
 collections:
   - peo-3
+file: ""
 ---
 I really appreciate all of the engagement in the HIVE!\
 \

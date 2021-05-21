@@ -1,35 +1,39 @@
 ---
 title: Workforce 3.0
-date: 2020-10-02
+date: 2021-05-21
 author: HIVE Staff
 featured: Yes
-thumbnail: /images/09-wf3-thumbnail.jpg
+thumbnail: /images/feet-first.png
 featured_image: /images/09-wf3-fullpage.png
-excerpt: Workforce 3.0 (WF3) is a different way for government to get work done.
-  Rather than focusing on the quantity of labor, WF3 leaves the offeror
-  responsible for mission outcomes and incentivizes best practices. new
-  processes, methods, and/or best-in-class methodologies from private sector to
-  enable the entire PEO DHMS workforce to deliver world-class technology.
-pre_text: Workforce 3.0 (WF3) is a different way for government to get work
-  done. Rather than focusing on the quantity of labor, WF3 leaves the offeror
-  responsible for mission outcomes and incentivizes best practices. new
-  processes, methods, and/or best-in-class methodologies from private sector to
-  enable the entire PEO DHMS workforce to deliver world-class technology.
+excerpt: >-
+  For latest information, visit the Beta.SAM posting. Please follow 
+
+  the directions contained in the RFP to submit official questions through our vendor 
+
+  portal
+pre_text: >-
+  For latest information, visit the Beta.SAM posting located at 
+
+  https://beta.sam.gov/opp/c5e644623b1141c396a43046592ff45f/view . Please follow 
+
+  the directions contained in the RFP to submit official questions through our vendor 
+
+  portal
 information:
-  value: $>500MM
+  value: $>1,000MM
   type: Enabling Services
-  release: Estimated FY21Q1 RFP
+  release: " Released (FY21 Q3)"
 changelog:
   - value: "January 19th: Schedule Updated"
   - value: "December 21st: Draft 1.75, Price Worksheet (Lot 1) Posted"
   - value: "December 16th: Draft RFP 1.75 Posted"
   - value: "December 2nd: AcqServe Portal Directions Added"
   - value: "November 2nd: RFP Draft 1 released"
-mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge
+mobLink: https://community.hive.gov/main/groups/43575/lounge
 file: https://beta.sam.gov/api/prod/opps/v3/opportunities/8593b4f9248048e58c50428be58e1ed5/resources/download/zip?api_key=null&token=
 tags:
-  - federal-xaas
+  - workforce
 collections:
   - peo-3
 ---
-For all WF3 official questions please submit them using the questionnaire spreadsheet, which can be found in the zip package below, to [dha.ncr.peo-ipo.mbx.dhms-enablers@mail.mil](mailto:dha.ncr.peo-ipo.mbx.dhms-enablers@mail.mil).
+Workforce 3.0 (WF3) is a different way for government to get work done. Rather than focusing on the quantity of labor, WF3 leaves the offeror responsible for mission outcomes and incentivizes best practices. new processes, methods, and/or best-in-class methodologies from private sector to enable the entire PEO DHMS workforce to deliver world-class technology.

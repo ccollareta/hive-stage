@@ -1,16 +1,13 @@
 ---
 title: JOMIS Overview
 date: 2021-05-21
-author: David Norley
+author: Community Admin
 featured: Yes
 order: 4
 thumbnail: /images/jomis.png
 featured_image: /images/jomis.png
-excerpt: >-
-  Hi, I'm David Norley, Program Manager of Joint Operational Medicine
-  Information Systems 
-
-  (JOMIS
+excerpt: On behalf of JOMIS, I am excited about the engagement opportunities in
+  the HIVE!
 subtitle: ""
 pre_title: ""
 pre_text: ""

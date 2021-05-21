@@ -2,7 +2,7 @@ import React from 'react';
 import circle from '../../node_modules/uswds/dist/img/circle-124.png';
 import idea_bg from '../images/new/col-bg.jpg';
 import idea from '../images/idea.png';
-import idea_mob from '../images/new/idea-mobile.jpg';
+import idea_mob from '../images/new/opps-detailed.jpg';
 import sect_9 from '../images/art4.png';
 import sect_8 from '../images/section-art-8.png';
 import multi_hex from '../images/multi-hex.svg';
@@ -26,9 +26,7 @@ const Highlights = () => (
                         </div>
                         <div className="text-container">
                             <p>
-                                Be a part of our community to help drive the direction of PEO DHMS in Federal Health IT.
-                                HIVE will be host to virtual events, news & announcements, resource libraries, community
-                                engagement portals, and other strategic communications.
+                            Be a part of our community to help drive the direction of PEO DHMS in Federal Health IT. HIVE will be host to virtual events, news & announcements, resource libraries, community engagement portals, and other strategic communications.
                             </p>
                             <a className="btn rounded" href="#"><span>Learn More</span></a>
                         </div>

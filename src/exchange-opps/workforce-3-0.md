@@ -1,9 +1,10 @@
 ---
 title: Workforce 3.0
 date: 2021-05-21
-author: HIVE Staff
+author: " Community Admin"
 featured: Yes
-thumbnail: /images/feet-first.png
+order: 1
+thumbnail: /images/wf3e.png
 featured_image: /images/09-wf3-fullpage.png
 excerpt: >-
   For latest information, visit the Beta.SAM posting. Please follow 

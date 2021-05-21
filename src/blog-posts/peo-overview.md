@@ -1,16 +1,13 @@
 ---
 title: PEO Overview
-date: 2020-12-16
-author: Holly Joers
+date: 2021-06-08
+author: Community Admin
 featured: Yes
 order: 3
 thumbnail: /images/peo-overview.png
 featured_image: /images/04-peo-overview.png
-excerpt: >-
-  I really appreciate all of the engagement in the HIVE!
-
-
-  I thought it would be helpful to provide an overview of our portfolio.  For those that may not know, the PEO includes programs in DHMSM, JOMIS, DMIX and EIDS
+excerpt: For those that may not know, the PEO includes programs in DHMSM, JOMIS,
+  DMIX and EIDS.
 pre_title: ""
 pre_text: ""
 information:

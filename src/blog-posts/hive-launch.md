@@ -1,12 +1,13 @@
 ---
 title: HIVE Launch
-date: 2021-05-21
-author: Malissa Smith
+date: 2021-06-08
+author: Community Admin
 featured: Yes
 order: 1
-thumbnail: /images/hive-comm.png
+thumbnail: /images/hive-square.png
 featured_image: /images/01-i-hear-some-buzzing-thumbnail.jpg
-excerpt: Hive Launch
+excerpt: After months of hard work, we are incredibly excited to announce the
+  official launch of HIVE.gov on June 8th, 2021.
 subtitle: ""
 pre_title: ""
 pre_text: ""

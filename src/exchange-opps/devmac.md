@@ -1,8 +1,9 @@
 ---
 title: DevMac
 date: 2021-05-20
-author: HIVE Staff
+author: " Community Admin"
 featured: No
+order: 3
 thumbnail: /images/devmac.png
 featured_image: /images/07-devmac.jpg
 excerpt: |-

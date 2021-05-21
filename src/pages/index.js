@@ -419,7 +419,7 @@ const IndexPage = ({data}) => {
     }
     opps: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "opps" } } }
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { fields: frontmatter___order, order: ASC }
       limit: 5
     ) {
       edges {
@@ -427,6 +427,7 @@ const IndexPage = ({data}) => {
           html
           frontmatter {
             author
+            order
             date
             title
             featured_image

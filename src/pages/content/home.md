@@ -41,12 +41,11 @@ four_blocks:
 video_block:
   video: https://player.vimeo.com/video/549412486
   title: You Gotta See This To Bee-lieve It!
-  description: >-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis.
-                                Iaculis
-                                urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor
-                                orci
-                                dapibus ultrices in. Egestas diam in arcu
+  description: The Health Information Vision Exchange (HIVE) is an innovative
+    platform for matching Federal Health sector needs and aspirations with the
+    capabilities of both traditional and non-traditional industry partners. HIVE
+    actively promotes and encourages vendor partnerships, provides an inclusive
+    environment for sharing and shaping opportunities, and delivers direct
+    insight into the government’s thoughts.
 ---
 111

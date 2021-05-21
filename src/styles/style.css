@@ -297,6 +297,7 @@ p {
   text-align: center;
   vertical-align: middle;
   padding: 16px 40px;
+  max-height: 63px;
   background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);
   color: #fff;
   border-radius: 4px;

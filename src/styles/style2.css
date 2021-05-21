@@ -217,7 +217,8 @@ svg .a {
   .hive-3-col-section-2 .card .card-img {
     position: relative;
     overflow: hidden;
-    border-radius: 16px; }
+    border-radius: 16px;
+  max-height: 271px; }
     .hive-3-col-section-2 .card .card-img img {
       transition: all .3s ease; }
   .hive-3-col-section-2 .card:hover .card-img img {

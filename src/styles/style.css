@@ -335,7 +335,7 @@ p {
 .btn.outline {
   
   background: transparent;
-  border: solid 2px #F15A29;
+  border: solid 3px #E97300;
 }
 
 .btn.outline:after {

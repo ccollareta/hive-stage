@@ -1,7 +1,7 @@
 ---
 four_blocks:
   small_text: Let’s make some honey
-  headline: Engage with us
+  headline: "Engage With Us "
   description: "Explore the HIVE through the following areas:"
   block_one:
     icon: /images/dhms.svg
@@ -40,7 +40,7 @@ four_blocks:
     link: "#"
 video_block:
   video: https://player.vimeo.com/video/549412486
-  title: You gotta see this to bee-lieve it!
+  title: You Gotta See This To Bee-lieve It!
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis.

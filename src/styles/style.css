@@ -1028,10 +1028,16 @@ h6 {
 }
 
 .header .navbar .navbar-nav>.nav-item>.nav-link:hover {
+  
+}
+.header .navbar .navbar-nav>.nav-item>.nav-link:hover:after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 25px;
+  right: 25px;
+  height: 2px;
   background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .header .navbar .navbar-nav>.nav-item>.nav-link.active:after {

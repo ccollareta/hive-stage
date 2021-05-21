@@ -149,7 +149,7 @@ const IndexPage = ({data}) => {
                 <div className="section-head">
                     <div className="section-title">
                         <p className="sub-title text-orange">The pollination platform</p>
-                        <h2 className="title text-white">HIVE opportunity buzz</h2>
+                        <h2 className="title text-white">HIVE Opportunity Buzz</h2>
                     </div>
                     <div className="link d-link">
                         <a href="/opportunities" className="font-exo text-white"><span>See all opportunities</span> <img
@@ -180,7 +180,7 @@ const IndexPage = ({data}) => {
                 <div className="section-head">
                     <div className="section-title">
                         <p className="sub-title text-blue">Whats the buzz?</p>
-                        <h2 className="title">News & events</h2>
+                        <h2 className="title">News & Events</h2>
                     </div>
                     <div className="link d-link">
                         <a href="/news-events" className="font-exo text-dark"><span>View all</span> <img src={link_arrow} /></a>

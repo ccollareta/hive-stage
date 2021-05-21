@@ -293,7 +293,6 @@ p {
   font-family: 'Exo', sans-serif;
   font-size: 16px;
   font-weight: bold;
-  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -311,7 +310,7 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  border-radius: 25px;
+  border-radius: 50px;
   background: #F15A29;
   z-index: 2;
   opacity: 0;
@@ -334,7 +333,7 @@ p {
 }
 
 .btn.outline {
-  height: 50px;
+  
   background: transparent;
   border: solid 2px #F15A29;
 }
@@ -1054,8 +1053,7 @@ h6 {
 }
 
 .header .navbar .navbar-nav.right-menu .btn {
-  height: 46px;
-  line-height: 17px;
+  
   padding:15px 34px;
 }
 

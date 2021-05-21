@@ -28,8 +28,8 @@ const Footer = () => (
                                     <li><a href="/peo-dhms">PEO DHMS</a></li>
                                     <li><a href="/news-events">News & Events</a></li>
                                     <li><a href="/opportunities">Opportunities</a></li>
-                                    <li><a href="/community">Our Community</a></li>
-                                    <li><a href="/about">About Us</a></li>
+                                    <li><a href="/our-community">Our Community</a></li>
+                                    <li><a href="/about">About</a></li>
                                 </ul>
                             </div>
                             <div className="col col-3">

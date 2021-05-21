@@ -152,7 +152,7 @@ const IndexPage = ({data}) => {
                         <h2 className="title text-white">HIVE opportunity buzz.</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="/opportunities" className="font-exo text-white">See all opportunities <img
+                        <a href="/opportunities" className="font-exo text-white"><span>See all opportunities</span> <img
                                 src={link_arrow} /></a>
                     </div>
                 </div>
@@ -183,16 +183,16 @@ const IndexPage = ({data}) => {
                         <h2 className="title">News & Events.</h2>
                     </div>
                     <div className="link d-link">
-                        <a href="/news-events" className="font-exo text-dark">View all <img src={link_arrow} /></a>
+                        <a href="/news-events" className="font-exo text-dark"><span>View all</span> <img src={link_arrow} /></a>
                     </div>
                 </div>
                 <div className="row">
                     {test.slice(0,1).map((post,index) => (
-            <div className={`col col-6 ${index}`} key={`First${index}`}>
+                    <div className={`col col-6 ${index}`} key={`First${index}`}>
                         <div className="ne-card main" style={{
                             backgroundImage: `url(${post.thumbnail})`
                             }}>
-                            <h3 className="text-white">{post.title} <img src={arrow_r} /></h3>
+                            <h3 className="text-white">{post.title}<img src={arrow_r} /></h3>
                             <div className="details">
                                 <p className="mb-0">{post.excerpt}</p>
                                 <span className="by">Submitted by {post.author}</span>
@@ -200,7 +200,7 @@ const IndexPage = ({data}) => {
                             </div>
                             <a href={post.path} className="ne-overlay stretched-link"></a>
                         </div>
-                    </div>
+                      </div>
 ))}
                     <div className="col col-6">
                 <div className="row">

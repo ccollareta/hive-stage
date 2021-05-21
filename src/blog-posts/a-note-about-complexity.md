@@ -1,15 +1,11 @@
 ---
 title: A Note About Complexity
-date: 2020-11-02
+date: 2021-01-13
 author: Matt Hudson
 featured: Yes
 thumbnail: /images/06-a-note-about-complexity.jpg
 featured_image: /images/06-a-note-about-complexity.jpg
-excerpt: >-
-  I wanted to stimulate some conversation here.
-
-
-  Every time we introduce someone new to this WF3 approach, one of the first things we hear is, "Man, this is complicated." 
+excerpt: I wanted to stimulate some conversation here.
 subtitle: ""
 pre_title: ""
 pre_text: ""

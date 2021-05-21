@@ -291,7 +291,7 @@ p {
   display: inline-block;
   position: relative;
   font-family: 'Exo', sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
@@ -340,6 +340,10 @@ p {
 }
 
 .btn.outline:after {
+  background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);
+}
+
+.btn.outline:hover{
   background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);
 }
 

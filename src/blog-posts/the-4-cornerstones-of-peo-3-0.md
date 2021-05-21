@@ -1,6 +1,6 @@
 ---
 title: The 4 Cornerstones of PEO 3.0
-date: 2021-01-14
+date: 2021-03-14
 author: Malissa Smith
 featured: Yes
 thumbnail: /images/peo3.png

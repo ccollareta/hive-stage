@@ -5,10 +5,7 @@ author: Matt Hudson
 featured: Yes
 thumbnail: /images/11-wf3-industryday2recap.png
 featured_image: /images/11-wf3-industryday2recap.png
-excerpt: >-
-  Good evening, happy Friday, and thanks for your patience!
-
-  The Industry Day Event #2 (Video) is now live! In this video, Matt introduces the structure behind WF3 Lot 1 and Lot 2. The video also features a guest appearance from Chris Metz, the PEO DHMS Cost Analysis Lead. He provides a detailed walkthrough of the upcoming WF3 Price Worksheet, scheduled for release next week.
+excerpt: Good evening, happy Friday, and thanks for your patience!
 subtitle: ""
 pre_title: ""
 pre_text: ""

@@ -2,7 +2,7 @@
 title: JOMIS Overview
 date: 2021-03-02
 author: David Norley
-featured: No
+featured: Yes
 order: 4
 thumbnail: /images/jomis.png
 featured_image: /images/jomis.png

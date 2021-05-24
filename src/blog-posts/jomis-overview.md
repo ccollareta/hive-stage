@@ -1,8 +1,8 @@
 ---
 title: JOMIS Overview
-date: 2021-05-21
-author: Community Admin
-featured: Yes
+date: 2021-03-02
+author: David Norley
+featured: No
 order: 4
 thumbnail: /images/jomis.png
 featured_image: /images/jomis.png

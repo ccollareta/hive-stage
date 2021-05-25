@@ -80,10 +80,10 @@ collections:
                 widget: "text"
               - label: "Years In Government"
                 name: "years"
-                widget: "string"
+                widget: string
               - label: "States Visited"
                 name: "states"
-                widget: "string"
+                widget: number
               - label: "Coffee"
                 name: "coffee"
                 widget: "string"
@@ -254,7 +254,7 @@ collections:
                 - { label: "Icon", name: "icon", widget: "image"}
                 - { label: "Title", name: "title", widget: "string"}
                 - { label: "Description", name: "description", widget: "text"}
-                - { label: "Link", name: "link", widget: "string"}
+                
             - label: "Block Two"
               name: "block_two"
               widget: "object"
@@ -262,7 +262,7 @@ collections:
                 - { label: "Icon", name: "icon", widget: "image"}
                 - { label: "Title", name: "title", widget: "string"}
                 - { label: "Description", name: "description", widget: "text"}
-                - { label: "Link", name: "link", widget: "string"}
+                
             - label: "Block Three"
               name: "block_three"
               widget: "object"
@@ -270,7 +270,7 @@ collections:
                 - { label: "Icon", name: "icon", widget: "image"}
                 - { label: "Title", name: "title", widget: "string"}
                 - { label: "Description", name: "description", widget: "text"}
-                - { label: "Link", name: "link", widget: "string"}
+                
             - label: "Block Four"
               name: "block_four"
               widget: "object"
@@ -278,7 +278,7 @@ collections:
                 - { label: "Icon", name: "icon", widget: "image"}
                 - { label: "Title", name: "title", widget: "string"}
                 - { label: "Description", name: "description", widget: "text"}
-                - { label: "Link", name: "link", widget: "string"}
+               
         - label: "Logo Section"
           name: "logo_section"
           widget: object
@@ -291,7 +291,7 @@ collections:
                   widget: "list"
                   fields:
                     - { label: "Logo", name: "logo", widget: "image"}
-                    - { label: "Link", name: "link", widget: "string"}
+                    - { label: "Link", name: "link", widget: "string", required: false}
 
         - { label: "Body", name: "body", widget: markdown}
     - label: "Our Community"

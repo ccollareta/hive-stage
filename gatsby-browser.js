@@ -7,7 +7,8 @@
 import './src/styles/style.css';
 import './src/styles/style2.css';
 import './src/styles/style3.css';
-import './static/vendor/lity/lity.min.css';
+import './src/styles/comb.scss';
+//import './static/vendor/lity/lity.min.css';
 import './static/vendor/slick/slick.css';
 import 'uswds';
 import React from 'react';

@@ -37,7 +37,7 @@ const Footer = () => (
                                     <h5 className="mb-0">Connect With Us</h5>
                                     <a href="mailto:hive-team@groups.mobilize.io"
                                         className="email">hive-team@groups.mobilize.io</a>
-                                    <a className="btn rounded" href="#"><span>JOIN OUR COMMUNITY</span></a>
+                                    <a className="btn rounded" href="https://community.hive.gov"><span>JOIN OUR COMMUNITY</span></a>
                                 </div>
                             </div>
                         </div>
@@ -61,8 +61,7 @@ const Footer = () => (
                         <div className="address">
                             <img src={dhms} />
                             <p>
-                                DHMS Address: <span>770 Arlington Boulevard, Suite 5101, Fall Church, VA
-                                    22042-5101</span>
+                                DHMS Address: <span>1700 N. Moore Street, Suite 2300 Rosslyn, VA 22209</span>
                             </p>
                         </div>
                     </div>

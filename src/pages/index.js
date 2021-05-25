@@ -151,7 +151,9 @@ const IndexPage = ({data}) => {
                         <p className="sub-title text-orange">The pollination platform</p>
                         <h2 className="title text-white">HIVE Opportunity Buzz</h2>
                     </div>
-                    <div className="link d-link">
+                    <div className="link d-link" style={{
+                      '--width':'260.25px',
+                    }}>
                         <a href="/opportunities" className="font-exo text-white"><span>See all opportunities</span> <img
                                 src={link_arrow} /></a>
                     </div>
@@ -182,7 +184,9 @@ const IndexPage = ({data}) => {
                         <p className="sub-title text-blue">Whats the buzz?</p>
                         <h2 className="title">News & Events</h2>
                     </div>
-                    <div className="link d-link">
+                    <div className="link d-link" style={{
+                      '--width':'134px',
+                    }}>
                         <a href="/news-events" className="font-exo text-dark"><span>View all</span> <img src={link_arrow} /></a>
                     </div>
                 </div>
@@ -192,7 +196,7 @@ const IndexPage = ({data}) => {
                         <div className="ne-card main" style={{
                             backgroundImage: `url(${post.thumbnail})`
                             }}>
-                            <h3 className="text-white">{post.title}<img src={arrow_r} /></h3>
+                            <h3 className="text-white"><a href={post.path}>{post.title} <img src={arrow_r} /></a></h3>
                             <div className="details">
                                 <p className="mb-0">{post.excerpt}</p>
                                 <span className="by">Submitted by {post.author}</span>
@@ -212,7 +216,7 @@ const IndexPage = ({data}) => {
              <div className="ne-card fixed-h" style={{
                  backgroundImage: `url(${post.thumbnail})`
                  }}>
-                 <h3 className="text-white">{post.title} <img src={arrow_r} /></h3>
+                 <h3 className="text-white"><a href={post.path}>{post.title} <img src={arrow_r} /></a></h3>
                  <div className="details">
                                 <p className="mb-0">{post.excerpt}</p>
                                 <span className="by">Submitted by {post.author}</span>
@@ -229,7 +233,7 @@ const IndexPage = ({data}) => {
                                 <div className="ne-card fixed-h" style={{
                  backgroundImage: `url(${post.thumbnail})`
                  }}>
-                                    <h3 className="text-white">{post.title} <img src={arrow_r} /></h3>
+                                    <h3 className="text-white"><a href={post.path}>{post.title} <img src={arrow_r} /></a></h3>
                                     <div className="details">
                                 <p className="mb-0">{post.excerpt}</p>
                                 <span className="by">Submitted by {post.author}</span>
@@ -247,7 +251,7 @@ const IndexPage = ({data}) => {
                                 <div className="ne-card fixed-h" style={{
                  backgroundImage: `url(${post.thumbnail})`
                  }}>
-                                    <h3 className="text-white">{post.title} <img src={arrow_r} /></h3>
+                                    <h3 className="text-white"><a href={post.path}>{post.title} <img src={arrow_r} /></a></h3>
                                     <div className="details">
                                 <p className="mb-0">{post.excerpt}</p>
                                 <span className="by">Submitted by {post.author}</span>

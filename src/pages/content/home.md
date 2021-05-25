@@ -11,7 +11,7 @@ four_blocks:
       DHMS) has
                                       embarked on its journey to transform Federal Health IT across the board. Learn more
                                       about PEO DHMS’s goals, program offices, and values.
-    link: "#"
+    link: /peo-dhms
   block_two:
     icon: /images/conversation.svg
     title: Join The Conversation
@@ -20,7 +20,7 @@ four_blocks:
       government and
                                       industry. Join us as we revolutionize Federal Health IT through collaborative vision and
                                       innovation.
-    link: "#"
+    link: /our-community
   block_three:
     icon: /images/explore.svg
     title: Explore Our Needs
@@ -30,14 +30,14 @@ four_blocks:
                                       of PEO DHMS and its partners. It all starts with understanding what people, process,
                                       transformations, and technologies are needed to create a cutting-edge Federal Health IT
                                       ecosystem of the future.
-    link: "#"
+    link: /opportunities
   block_four:
     icon: /images/buzz.svg
     title: What’s The Buzz?
     description: >-
       Find out all the latest news and events across the HIVE such as the latest
                                       announcements, upcoming industry days, and more.
-    link: "#"
+    link: /news-events
 video_block:
   video: https://player.vimeo.com/video/549412486
   title: You Gotta See This To Bee-lieve It!

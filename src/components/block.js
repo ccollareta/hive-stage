@@ -17,11 +17,13 @@ const Block = ({title,description, link_text, icon}) => {
                             <p className="card-body">
                                 {description}
                             </p>
+                            {link_text  && 
                             <div className="link">
                                 <a href={link_text} className="font-exo text-dark">
                                     Learn More <img src={link_arrow} />
                                 </a>
                             </div>
+                            }
                         </div>
                     </div>
     );

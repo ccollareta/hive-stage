@@ -913,3 +913,141 @@ svg .a {
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
   .home .header.style-1:not(.fixed-header) .navbar-brand {
     background: transparent !important; } }
+
+    .lity {
+      background: rgba(0, 0, 0, 0.6);
+    }
+    
+    .lity-close,
+    .lity-close:hover,
+    .lity-close:focus,
+    .lity-close:active,
+    .lity-close:visited {
+      position: absolute !important;
+      color: #23282B !important;
+      text-shadow: none;
+      top: 20px !important;
+      right: 20px !important;
+      width: 23.5px !important;
+      height: 23.5px !important;
+      font-size: 40px !important;
+      line-height: 23.5px !important;
+      font-family: 'Open Sans',
+        sans-serif;
+      font-weight: 700;
+    }
+    
+    .member-profile {
+      position: relative;
+      border-radius: 16px;
+    }
+    
+    .member-profile .pop-hex {
+      position: absolute;
+      top: -180px;
+      left: 215px;
+      z-index: -1;
+    }
+    
+    .member-profile .popup-body {
+      position: relative;
+      background-color: #F0F0F0;
+      border-radius: 250px 16px 16px 16px;
+      width: 100%;
+      padding: 97px 75px 174px 0;
+      z-index: 1;
+    }
+    
+    .member-profile .popup-body .pop-art {
+      position: absolute;
+      right: 60.5px;
+      bottom: 25.5px;
+      z-index: -1;
+    }
+    
+    @media (min-width: 1600px) {
+      .member-profile .popup-body {
+        max-width: 1574px;
+        min-width: 1574px;
+      }
+    }
+    
+    .member-profile .popup-body .hexagon-img {
+      position: absolute;
+      top: -250px;
+      left: -250px;
+    }
+    
+    .member-profile .popup-body .hexagon-img .hex-img {
+      position: absolute;
+      bottom: 0;
+      left: 100px;
+    }
+    
+    .member-profile .popup-body .hexagon-img svg {
+      height: 800px;
+      width: 800px;
+    }
+    
+    .member-profile .popup-body .numbers {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 90px;
+    }
+    
+    .member-profile .popup-body .numbers .number {
+      text-align: center;
+      padding: 0 10px;
+    }
+    
+    .member-profile .popup-body .numbers .number .num {
+      height: 138px;
+      width: 154px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url(../images/new/hex-border.svg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-size: 72px;
+      line-height: 60px;
+      font-weight: normal;
+      font-family: 'Exo',
+        sans-serif;
+      margin: 0 auto 13px;
+    }
+    
+    .member-profile .popup-body .numbers .number .text {
+      font-weight: 700;
+      font-family: 'Exo',
+        sans-serif;
+    }
+    
+    .member-profile .popup-body .personal-details li {
+      display: flex;
+      margin-bottom: 15px;
+    }
+    
+    .member-profile .popup-body .personal-details li:last-child {
+      margin-bottom: 0;
+    }
+    
+    .member-profile .popup-body .personal-details .detail {
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    
+    .member-profile .popup-body .personal-details .answer {
+      margin-left: 5px;
+    }
+    
+    .member-profile .popup-body .col-3 {
+      padding-left: 58px;
+    }
+    
+    .member-profile .popup-body .col-3 h5 {
+      margin: 50px 0 14px;
+      font-weight: 600;
+    }

@@ -1,7 +1,7 @@
 ---
 title: The Four Corner Stones of PEO 3.0
-date: 2021-06-08
-author: Community Admin
+date: 2021-01-14
+author: Malissa Smith
 featured: Yes
 order: 2
 thumbnail: /images/cornerstones-of-peo3.png

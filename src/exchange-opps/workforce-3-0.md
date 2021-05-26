@@ -6,12 +6,13 @@ featured: Yes
 order: 1
 thumbnail: /images/wf3e.png
 featured_image: /images/09-wf3-fullpage.png
-excerpt: >-
-  For latest information, visit the Beta.SAM posting. Please follow 
-
-  the directions contained in the RFP to submit official questions through our vendor 
-
-  portal
+excerpt: >
+  Workforce 3.0 (WF3) represents a paradigm shift in how PEO DHMS achieves
+  success in middle- and back-office operations. Rather than focusing on the
+  quantity of labor, WF3 leaves the offeror responsible for mission outcomes and
+  incentivizes best practices. new processes, methods, and/or best-in-class
+  methodologies from private sector to enable the entire PEO DHMS workforce to
+  deliver world-class technology.
 pre_text: >-
   For latest information, visit the Beta.SAM posting located at 
 

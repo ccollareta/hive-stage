@@ -24,6 +24,7 @@ const PeoPage = ({data}) => {
 
      </div>
      </section>
+     
   </Layout>
 );
     };

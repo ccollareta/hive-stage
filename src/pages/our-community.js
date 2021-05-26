@@ -146,7 +146,7 @@ const OverviewPage = ({data}) => {
                             <div className="card-img">
                                 <img src={posts.com_blocks.block_one.icon} className="img-fluid" />
                                 <a href="#" className="card-overlay">
-                                    <img src={hover_icon} />
+                                    
                                 </a>
                             </div>
                             <div className="card-body">
@@ -169,7 +169,7 @@ const OverviewPage = ({data}) => {
                             <div className="card-img">
                                 <img src={posts.com_blocks.block_two.icon} className="img-fluid" />
                                 <a href="#" className="card-overlay">
-                                    <img src={hover_icon} />
+                                    
                                 </a>
                             </div>
                             <div className="card-body">

@@ -1030,18 +1030,18 @@ svg .a {
 .lity-close:focus,
 .lity-close:active,
 .lity-close:visited {
-  position: absolute;
-  color: #23282B;
+  position: absolute !important;
+  color: #23282B ;
   text-shadow: none;
-  top: 20px;
-  right: 20px;
-  width: 23.5px;
-  height: 23.5px;
-  font-size: 40px;
-  line-height: 23.5px;
+  top: 20px !important;
+  right: 20px !important;
+  width: 23.5px !important;
+  height: 23.5px !important;
+  font-size: 40px !important;
+  line-height: 23.5px !important;
   font-family: 'Open Sans',
-    sans-serif;
-  font-weight: 700;
+    sans-serif !important;
+  font-weight: 700 !important;
 }
 
 .member-profile {

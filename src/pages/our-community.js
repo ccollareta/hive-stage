@@ -189,7 +189,7 @@ const OverviewPage = ({data}) => {
                     </div>
                 </div>
                 <div className="link m-link">
-                    <a href="https://community.hive.gov" className="font-exo text-white">ENTER THE HIVE <img src={link_arrow} /></a>
+                    <a href="https://community.hive.gov" className="btn rounded"><span>ENTER THE HIVE</span></a>
                 </div>
             </div>
         </section>

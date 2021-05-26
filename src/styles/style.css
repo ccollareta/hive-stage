@@ -1318,7 +1318,6 @@ h6 {
 
   .header .navbar .navbar-nav.right-menu .nav-item .btn {
     border: none;
-    border-radius: 0;
     background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);
     margin: 25px 0;
   }

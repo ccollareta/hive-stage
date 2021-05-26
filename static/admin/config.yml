@@ -368,20 +368,60 @@ collections:
               fields:
                 - {label: "Button Text", name: "button_text", widget: string}
                 - {label: "Button Link", name: "button_link", widget: string}
-        - label: "Blocks"
-          name: "blocks"
-          widget: list
-          limit: 3
-          fields:
-              - label: "Block"
-                name: "block"
-                widget: object
-                fields:
-                  - { label: "Icon", name: "icon", widget: image}
-                  - { label: "Title", name: "title", widget: string}
-                  - { label: "Sub Title", name: "subtitle", widget: string}
-                  - { label: "Text", name: "text", widget: text}
-                  - { label: "URL", name: "url", widget: string}
+        - label: "Three Blocks"
+          name: "three_blocks"
+          widget: "object"
+          fields: 
+            - { label: "Small Text", name: "small_text", widget: "string"}
+            - { label: "Headline", name: "headline", widget: "string"}
+            - { label: "Description", name: "description", widget: "string"}
+            - label: "Block One"
+              name: "block_one"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+               
+            - label: "Block Two"
+              name: "block_two"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                
+            - label: "Block Three"
+              name: "block_three"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                
+        - label: "Community Blocks"
+          name: "com_blocks"
+          widget: "object"
+          fields: 
+            - { label: "Small Text", name: "small_text", widget: "string"}
+            - { label: "Headline", name: "headline", widget: "string"}
+            - { label: "Description", name: "description", widget: "string"}
+            - label: "Block One"
+              name: "block_one"
+              widget: "object"
+              fields:
+                - { label: "Image", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
+            - label: "Block Two"
+              name: "block_two"
+              widget: "object"
+              fields:
+                - { label: "Image", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                - { label: "Link", name: "link", widget: "string"}
     - label: "Contact"
       name: "contact"
       editor:

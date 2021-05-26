@@ -360,7 +360,7 @@ svg .a {
     right: 180px;
     transform: scale(1.9); }
     .hive-idea-section-2 .hex-img svg {
-      height: 700px;
+      
       width: 500px; }
   .hive-idea-section-2 .row {
     align-items: center; }
@@ -448,11 +448,11 @@ svg .a {
     position: initial; }
   .hive-ideas-2 .hexagon-img {
     position: absolute;
-    top: 20px;
+    top: 140px;
     right: 230px;
     transform: scale(2.1); }
     .hive-ideas-2 .hexagon-img svg {
-      height: 700px;
+ 
       width: 500px; }
   .hive-ideas-2 .section-head {
     padding-right: 25px; }

@@ -59,10 +59,9 @@ collections:
         file: "meta/authors.yml"
         description: "List of Team Members"
         fields:
-          - name: team_member
-            label: Team Member
-            label_singular: "Team Member"
-            widget: list
+          - name: leader
+            label: Boss
+            widget: object
             fields:
               - label: "Name"
                 name: "name"
@@ -77,7 +76,13 @@ collections:
                 widget: "string"
               - label: "Description"
                 name: "description"
+                required: false
                 widget: "text"
+              - label: "Featured"
+                name: "featured"
+                widget: 'select'
+                options: ["Yes", "No"]
+                default: "No"
               - label: "Years In Government"
                 name: "years"
                 widget: string
@@ -99,7 +104,56 @@ collections:
                   - {label: "Song", name: "song", widget: "string"}
               - label: "Image"
                 name: "team_image"
-                widget: "image"  
+                widget: "image" 
+                required: false 
+          - name: team_member
+            label: Team Member
+            label_singular: "Team Member"
+            widget: list
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                hint: "Name"
+              - label: "Title"
+                name: "title"
+                widget: "string"
+                hint: "Title"
+              - label: "Division"
+                name: "division"
+                widget: "string"
+              - label: "Description"
+                name: "description"
+                required: false
+                widget: "text"
+              - label: "Featured"
+                name: "featured"
+                widget: 'select'
+                options: ["Yes", "No"]
+                default: "No"
+              - label: "Years In Government"
+                name: "years"
+                widget: string
+              - label: "States Visited"
+                name: "states"
+                widget: number
+              - label: "Coffee"
+                name: "coffee"
+                widget: "string"
+              - label: "Personal"
+                name: "personal"
+                widget: "object"
+                fields:
+                  - {label: "Book", name: "book", widget: "string"}
+                  - {label: "Team", name: "team", widget: "string"}
+                  - {label: "Flower/Plant", name: "plant", widget: "string"}
+                  - {label: "Food", name: "food", widget: "string"}
+                  - {label: "Movie", name: "movie", widget: "string"}
+                  - {label: "Song", name: "song", widget: "string"}
+              - label: "Image"
+                name: "team_image"
+                widget: "image" 
+                required: false 
       - name: "tags"
         label: "Categories"
         file: "meta/tags.yml"

@@ -2274,14 +2274,14 @@ svg .a {
   #hexGrid.small-row,
   #hexGrid.medium-row,
   #hexGrid.large-row {
-    padding: 0;
+    padding: 0 !important;
   }
 
   #hexGrid.small-row .hex,
   #hexGrid.medium-row .hex,
   #hexGrid.large-row .hex {
-    width: 50%;
-    margin-bottom: 70px;
+    width: 50% !important;
+    margin-bottom: 70px !important;
   }
 
   /* #hexGrid.large-row,
@@ -2298,6 +2298,9 @@ svg .a {
     } */
   #hexGrid .hex .hexIn2:not(.empty):hover {
     transform: scale(1);
+  }
+  #hexGrid .hex.empty {
+    display: none !important;
   }
 
   .hive-members {
@@ -2426,11 +2429,13 @@ svg .a {
   .lity-close:visited {
     right: 35px;
   }
+
+  
 }
 
 @media (max-width: 399.98px) {
-  .honeycomb-cell.empty {
-    display: none;
+  .hexGrid .hex.empty {
+    display: none !important;
   }
 
   /* #hexGrid.large-row .hex:first-child,

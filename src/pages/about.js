@@ -166,7 +166,7 @@ const AboutPage = ({data}) => {
                 </div>
                 <div className="hexagonal-grid">
                 <ul id="hexGrid" className="small-row">
-                        <li className="hex">
+                        <li className="hex  empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty"></div>
                             </div>
@@ -190,7 +190,7 @@ const AboutPage = ({data}) => {
                     ))}
                         
                         
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty op"></div>
                             </div>
@@ -215,7 +215,7 @@ const AboutPage = ({data}) => {
                </>
                     ))}
                         
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty op">
 
@@ -252,7 +252,7 @@ const AboutPage = ({data}) => {
                                 </div>
                             </div>
                         </li>
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty op">
 
@@ -278,7 +278,7 @@ const AboutPage = ({data}) => {
                     ))}
                     </ul>
                     <ul id="hexGrid" className="large-row">
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty"></div>
                             </div>
@@ -300,7 +300,7 @@ const AboutPage = ({data}) => {
                         </li>
                </>
                     ))}
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty op"></div>
                             </div>
@@ -324,7 +324,7 @@ const AboutPage = ({data}) => {
                     ))}
                     </ul>
                     <ul id="hexGrid" className="medium-row">
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty"></div>
                             </div>
@@ -346,7 +346,7 @@ const AboutPage = ({data}) => {
                         </li>
                </>
                     ))}
-                        <li className="hex">
+                        <li className="hex  empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty op"></div>
                             </div>
@@ -370,12 +370,12 @@ const AboutPage = ({data}) => {
                     ))}
                     </ul>
                     <ul id="hexGrid" className="small-row">
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty"></div>
                             </div>
                         </li>
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty op"></div>
                             </div>
@@ -397,17 +397,17 @@ const AboutPage = ({data}) => {
                         </li>
                </>
                     ))}
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty op"></div>
                             </div>
                         </li>
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty op"></div>
                             </div>
                         </li>
-                        <li className="hex">
+                        <li className="hex empty">
                             <div className="hexIn">
                                 <div className="hexIn2 empty op"></div>
                             </div>

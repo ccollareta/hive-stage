@@ -1,3 +1,13 @@
+---
+top_section:
+  title: PEO DHMS
+  hero_image: /images/hero-bg2.png
+  text_block: Program Executive Office Defense Healthcare Management System (PEO
+    DHMS) drives patient-centered healthcare through modern solutions.
+  button:
+    button_text: Learn More
+    button_link: "#"
+---
 # About PEO DHMS
 
 The Program Executive Office, Defense Healthcare Management Systems (PEO DHMS) is an acquisition organization with a direct reporting relationship to the Office of the Under Secretary of Defense for Acquisition and Sustainment (OUSD(A&S)), and administratively attached to the Defense Health Agency. The purpose of the organization is to drive patient-centered healthcare through modern solutions.

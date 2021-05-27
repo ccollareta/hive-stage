@@ -1022,7 +1022,7 @@ svg .a {
 }
 
 .lity {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 .lity-close,
@@ -1031,7 +1031,7 @@ svg .a {
 .lity-close:active,
 .lity-close:visited {
   position: absolute !important;
-  color: #23282B ;
+  color: #23282B !important;
   text-shadow: none;
   top: 20px !important;
   right: 20px !important;
@@ -1701,7 +1701,7 @@ svg .a {
   .lity-close:focus,
   .lity-close:active,
   .lity-close:visited {
-    right: 100px;
+    right: 100px !important;
   }
 }
 
@@ -1819,7 +1819,7 @@ svg .a {
   .lity-close:focus,
   .lity-close:active,
   .lity-close:visited {
-    right: 85px;
+    right: 85px !important;
   }
 }
 
@@ -2187,7 +2187,7 @@ svg .a {
   .lity-close:focus,
   .lity-close:active,
   .lity-close:visited {
-    right: 60px;
+    right: 60px !important;
   }
 
   .footer {
@@ -2427,7 +2427,7 @@ svg .a {
   .lity-close:focus,
   .lity-close:active,
   .lity-close:visited {
-    right: 35px;
+    right: 35px !important;
   }
 
   

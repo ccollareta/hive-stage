@@ -1133,7 +1133,7 @@ svg .a {
 }
 
 .member-profile .popup-body .personal-details li {
-  display: flex;
+  
   margin-bottom: 15px;
 }
 
@@ -1147,7 +1147,7 @@ svg .a {
 }
 
 .member-profile .popup-body .personal-details .answer {
-  margin-left: 5px;
+ 
 }
 
 .member-profile .popup-body .col-3 {

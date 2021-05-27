@@ -145,12 +145,12 @@ const OverviewPage = ({data}) => {
                         <div className="card">
                             <div className="card-img">
                                 <img src={posts.com_blocks.block_one.icon} className="img-fluid" />
-                                <a href="#" className="card-overlay">
+                                <a href={posts.com_blocks.block_one.link} className="card-overlay">
                                     
                                 </a>
                             </div>
                             <div className="card-body">
-                                <a href="javascript:void(0)">
+                                <a href={posts.com_blocks.block_one.link}>
                                     <h4 className="text-white">{posts.com_blocks.block_one.title}</h4>
                                 </a>
                                 <p className="text-white">
@@ -168,12 +168,12 @@ const OverviewPage = ({data}) => {
                         <div className="card">
                             <div className="card-img">
                                 <img src={posts.com_blocks.block_two.icon} className="img-fluid" />
-                                <a href="#" className="card-overlay">
+                                <a href={posts.com_blocks.block_two.link} className="card-overlay">
                                     
                                 </a>
                             </div>
                             <div className="card-body">
-                                <a href="javascript:void(0)">
+                                <a href={posts.com_blocks.block_two.link}>
                                     <h4 className="text-white">{posts.com_blocks.block_two.title}</h4>
                                 </a>
                                 <p className="text-white">

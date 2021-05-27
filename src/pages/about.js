@@ -444,7 +444,7 @@ const AboutPage = ({data}) => {
                            <div className="col col-5">
                                <h2 className="mb-0">{post.name}</h2>
                                <h5 className="text-blue">{post.title}</h5>
-                               <p>{post.description}.</p>
+                               <p>{post.description}</p>
                                <div className="numbers">
                                    <div className="number">
                                        <span className="num">{post.years}</span>
@@ -521,7 +521,7 @@ const AboutPage = ({data}) => {
                            <div className="col col-5">
                                <h2 className="mb-0">{Team.leader.name}</h2>
                                <h5 className="text-blue">{Team.leader.title}</h5>
-                               <p>{Team.leader.description}.</p>
+                               <p>{Team.leader.description}</p>
                                <div className="numbers">
                                    <div className="number">
                                        <span className="num">{Team.leader.years}</span>

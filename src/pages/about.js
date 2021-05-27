@@ -465,27 +465,27 @@ const AboutPage = ({data}) => {
                                <h5>Personal</h5>
                                <ul className="list-unstyled personal-details">
                                    <li>
-                                       <span className="detail">Book:</span>
+                                       <span className="detail">Book:</span><br />
                                        <span className="answer">{post.personal.book}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Sports Team:</span>
+                                       <span className="detail">Sports Team:</span><br />
                                        <span className="answer">{post.personal.team}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Flower/Plant:</span>
+                                       <span className="detail">Favorite Flower/Plant:</span><br />
                                        <span className="answer">{post.personal.plant}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Food:</span>
+                                       <span className="detail">Food:</span><br />
                                        <span className="answer">{post.personal.food}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Movie:</span>
+                                       <span className="detail">Movie:</span><br />
                                        <span className="answer">{post.personal.movie}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Song:</span>
+                                       <span className="detail">Walk Up Song:</span><br />
                                        <span className="answer">{post.personal.song}</span>
                                    </li>
                                </ul>
@@ -542,27 +542,27 @@ const AboutPage = ({data}) => {
                                <h5>Personal</h5>
                                <ul className="list-unstyled personal-details">
                                    <li>
-                                       <span className="detail">Book:</span>
+                                       <span className="detail">Book:</span><br />
                                        <span className="answer">{Team.leader.personal.book}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Sports Team:</span>
+                                       <span className="detail">Sports Team:</span><br />
                                        <span className="answer">{Team.leader.personal.team}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Flower/Plant:</span>
+                                       <span className="detail">Favorite Flower/Plant:</span><br />
                                        <span className="answer">{Team.leader.personal.plant}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Food:</span>
+                                       <span className="detail">Food:</span><br />
                                        <span className="answer">{Team.leader.personal.food}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Movie:</span>
+                                       <span className="detail">Movie:</span><br />
                                        <span className="answer">{Team.leader.personal.movie}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Song:</span>
+                                       <span className="detail">Walk Up Song:</span><br />
                                        <span className="answer">{Team.leader.personal.song}</span>
                                    </li>
                                </ul>

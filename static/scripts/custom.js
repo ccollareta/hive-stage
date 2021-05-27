@@ -112,4 +112,30 @@ $(function () {
 			});
 		});
 	};
+
+	dLink();
+
+	$(window).resize(function () {
+		dLink();
+	});
+
+	function dLink() {
+		$('.link.d-link').each(function () {
+			var w = $(this).innerWidth();
+			$(this).css({
+				"--width": w
+			});
+		});
+	}
+
+	// accordion
+	jQuery(".faq-accordion .collapse.show").each(function () {
+		jQuery(this).prev(".acc-title").parent().addClass("active");
+	});
+
+	jQuery(".faq-accordion .collapse").on('show.bs.collapse', function () {
+		jQuery(this).prev(".acc-title").parent().addClass("active");
+	}).on('hide.bs.collapse', function () {
+		jQuery(this).prev(".acc-title").parent().removeClass("active");
+	});
 });

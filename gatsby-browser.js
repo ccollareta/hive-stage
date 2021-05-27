@@ -6,10 +6,12 @@
 
 import './src/styles/style.css';
 import './src/styles/style2.css';
-import './src/styles/style3.css';
+import './src/styles/style4.css';
 import './src/styles/comb.scss';
+import './src/styles/svg.scss';
 //import './static/vendor/lity/lity.min.css';
 import './static/vendor/slick/slick.css';
+import './static/vendor/collapse/css/collapse.min.css';
 import 'uswds';
 import React from 'react';
 
@@ -92,6 +94,8 @@ export const onInitialClientRender = () => {
   const isotope3 = '/scripts/isotope-new.js';
   const isotope4 = '/vendor/isotope/imagesloaded.pkgd.min.js';
   const cust = '/scripts/custom.js';
+  const collapse = '/vendor/collapse/js/collapse.min.js'
+  const tabs = '/vendor/tabs/tab.js'
 
   scripts.push(loadScripts(lity));
   scripts.push(loadScripts(slick));
@@ -99,6 +103,8 @@ export const onInitialClientRender = () => {
   scripts.push(loadScripts(isotope4));
   scripts.push(loadScripts(isotope2));
   scripts.push(loadScripts(isotope3));
+  scripts.push(loadScripts(collapse));
+  scripts.push(loadScripts(tabs));
  
   scripts.push(loadScripts(cust));
   //scripts.push(loadScripts(cust2));

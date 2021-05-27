@@ -96,6 +96,7 @@ module.exports = {
     },
   },
   pathPrefix: process.env.BASEURL || '/',
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,

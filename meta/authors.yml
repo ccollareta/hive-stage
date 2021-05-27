@@ -97,7 +97,7 @@ team_member:
 
       MHS GENESIS. Additionally, he oversees cost estimating, planning, programming,
 
-      budgeting, program integration and interoperability
+      budgeting, program integration and interoperability.
   - personal:
       book: Americanah by Chimamanda Ngozi Adichie
       team: 2000 Lakers
@@ -288,7 +288,7 @@ team_member:
       song: Sea Shanty Tik Tok
     states: 10
     name: Matt Hudson
-    coffee: "10"
+    coffee: 10+
     division: DHMS
     featured: No
     years: "11"
@@ -505,12 +505,12 @@ team_member:
       food: Grapes
       movie: None
       song: " Jenifer Hudson – I’m here"
-    states: 666
+    states: 1
     name: Cheryl Harper-Parham
-    coffee: "666"
+    coffee: "?"
     division: PEO DHMS
     featured: No
-    years: "666"
+    years: "?"
     title: Chief, Administration and Facilities Operations
     team_image: /images/cheryl.jpg
     description: >-

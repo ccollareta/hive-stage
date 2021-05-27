@@ -88,7 +88,7 @@ collections:
                 widget: string
               - label: "States Visited"
                 name: "states"
-                widget: number
+                widget: string
               - label: "Coffee"
                 name: "coffee"
                 widget: "string"

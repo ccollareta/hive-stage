@@ -2,7 +2,7 @@
 top_section:
   button:
     button_text: Get Started
-    button_link: /our-community
+    button_link: "#hive"
   title: Innovating Federal Health IT
   text_block: HIVE fosters open communication through modern channels to pursue
     the best healthcare outcomes for service members, veterans, and their

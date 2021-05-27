@@ -138,4 +138,14 @@ $(function () {
 	}).on('hide.bs.collapse', function () {
 		jQuery(this).prev(".acc-title").parent().removeClass("active");
 	});
+
+	jQuery('.go-down').on('click',function(e){
+		e.preventDefault();
+		var target = $(this).attr('href');
+        if ($(target).length) {
+	        $('html, body').animate({ scrollTop: $(target).offset().top - 100 }, 'slow');
+	    }
+        return false;
+	})
+
 });

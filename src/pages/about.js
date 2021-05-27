@@ -75,14 +75,14 @@ const AboutPage = ({data}) => {
                             {posts.top_section.text_block}
                             </p>
                             <div className="hero-ctas">
-                                <a className="btn rounded" href={posts.top_section.button.button_link}><span>{posts.top_section.button.button_text}</span></a>
+                                <a className="btn rounded go-down" href={posts.top_section.button.button_link}><span>{posts.top_section.button.button_text}</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section className="hive-cards-section style-2">
+        <section className="hive-cards-section style-2" id="hive">
             <img src={art6} className="art art-1" />
             <img src={art5} className="art art-2" />
             <div className="container">

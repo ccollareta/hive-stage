@@ -466,7 +466,120 @@ collections:
               fields:
                 - {label: "Button Text", name: "button_text", widget: string}
                 - {label: "Button Link", name: "button_link", widget: string}
-        - { label: "Body", name: "body", widget: markdown}
+        - label: "Text W/Image and Icons"
+          name: "text_section"
+          widget: object
+          fields:
+            - {label: "Subtitle", name: "subtitle", widget: string}
+            - {label: "Title", name: "title", widget: string}
+            - {label: "Image", name: "image", widget: image}
+            - {label: "Text Block", name: "text_block", widget: text}
+            - label: "Icons"
+              name: "icons" 
+              widget: list
+              max: 4
+              fields:
+                - {label: "Icon", name: "icon", widget: image}
+                - {label: "Text", name: "text", widget: string}
+        - label: "Accordion Section"
+          name: "accordion_section"
+          widget: object
+          fields:
+            - {label: "Subtitle", name: "subtitle", widget: string}
+            - {label: "Title", name: "title", widget: string}
+            - {label: "Image", name: "image", widget: image}
+            - label: "Accordion"
+              name: "accordion" 
+              widget: list
+              max: 3
+              fields:
+                - {label: "Title", name: "title", widget: string}
+                - {label: "Text", name: "text", widget: text}
+        - label: "Four Blocks"
+          name: "four_blocks"
+          widget: "object"
+          fields: 
+            - { label: "Small Text", name: "small_text", widget: "string"}
+            - { label: "Headline", name: "headline", widget: "string"}
+            - { label: "Description", name: "description", widget: "string"}
+            - label: "Block One"
+              name: "block_one"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                
+            - label: "Block Two"
+              name: "block_two"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                
+            - label: "Block Three"
+              name: "block_three"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+                
+            - label: "Block Four"
+              name: "block_four"
+              widget: "object"
+              fields:
+                - { label: "Icon", name: "icon", widget: "image"}
+                - { label: "Title", name: "title", widget: "string"}
+                - { label: "Description", name: "description", widget: "text"}
+        - label: "Tab Section"
+          name: "tab_section"
+          widget: object
+          fields:
+            - {label: "Title", name: "title", widget: string}
+            - {label: "Text", name: "text", widget: text}
+            - {label: "Image", name: "image", widget: image}
+            
+            - label: "Tabs"
+              name: "tabs" 
+              widget: list
+              max: 3
+              fields:
+                - {label: Title, name: title, widget: string}
+                - label: "Content"
+                  name: "content"
+                  widget: object
+                  fields:
+                    - {label: "Column 1 Title", widget: string, name: col_1_title}
+                    - label: "Column 1 List" 
+                      widget: list
+                      name: "col_1_list" 
+                      fields:  
+                        - {name: 'list_item', label: List Item, widget: string}
+                    - {label: "Column 2 Title", widget: string, name: col_2_title}
+                    - label: "Column 2 List" 
+                      widget: list
+                      name: "col_2_list" 
+                      fields:  
+                        - {name: 'list_item', label: List Item, widget: string}
+                    - {label: "Column 3 Title", widget: string, name: col_3_title}
+                    - label: "Column 3 List" 
+                      widget: list
+                      name: "col_3_list" 
+                      fields:  
+                        - {name: 'list_item', label: List Item, widget: string}
+        - label: "Social"
+          name: "social_section"
+          widget: object
+          fields:
+              - {label: "Title", name: "title", widget: string}
+              - label: "Social Icons"
+                name: "social"
+                widget: list
+                fields:
+                  - {label: "Icon", name: icon, widget: image}
+                  - {label: "Link", name: link, widget: string}  
   - name: blog
     label: News
     label_singular: News Article

@@ -1032,7 +1032,7 @@ svg .a {
 .lity-close:visited {
   position: absolute !important;
   color: #23282B !important;
-  text-shadow: none;
+  text-shadow: none !important;
   top: 20px !important;
   right: 20px !important;
   width: 23.5px !important;

@@ -36,7 +36,7 @@ team_member:
       plant: Orchid
       food: Ice cream, Hershey White House Cherry is my favorite
       movie: Steel Magnolias
-      song: Carolina In My Mind
+      song: '"Carolina In My Mind" by James Taylor'
     states: 26
     name: Cori Hughes
     coffee: "2"
@@ -69,12 +69,12 @@ team_member:
 
       activities.
   - personal:
-      book: Marine! The Life of Chesty Puller
+      book: Marine! The Life of Chesty Puller by Burke Davis
       team: Seattle Seahawks
       plant: Orchid
       food: Raspberry O's Hostess Donuts
       movie: Grease
-      song: Lose Yourself - Eminem
+      song: '"Lose Yourself" by Eminem'
     states: 33
     name: James A. Perkins
     coffee: "7"
@@ -104,7 +104,7 @@ team_member:
       plant: Calla Lily
       food: Pizza Margherita
       movie: Beauty and the Beast
-      song: September by Earth, Wind, and Fire
+      song: '"September" by Earth, Wind, and Fire'
     states: 40
     name: Indy Toliver
     coffee: "20"
@@ -123,12 +123,12 @@ team_member:
 
       the needs of their requirements and adhere to their acquisition strategies.
   - personal:
-      book: Charlotte's Web
+      book: Charlotte's Web by E. B. White
       team: Washington Nationals
       plant: Daisy
       food: Chips and Guacamole
       movie: Pretty Woman
-      song: Brown Eyed Girl
+      song: '"Brown Eyed Girl" by Van Morrison'
     states: 38
     name: Sandy McIntyre
     coffee: "0"
@@ -154,7 +154,7 @@ team_member:
 
       to the user.
   - personal:
-      book: Ender's Game
+      book: Ender's Game by Orson Scott Card
       team: Hajime No Ippo
       plant: Tasty Ones
       food: Pizza!!!
@@ -208,7 +208,7 @@ team_member:
         guilty"
       food: Pork Chops
       movie: Sound of Music
-      song: Hero by Skillet
+      song: '"Hero" by Skillet'
     states: 31
     name: Elaine Reed
     coffee: "0"
@@ -234,7 +234,7 @@ team_member:
       plant: Giant Redwood
       food: Mexican and Italian
       movie: " I love a good revenge/settling the score movie"
-      song: “Live Like you Were Dying” Tim McGraw
+      song: “Live Like you Were Dying” by Tim McGraw
     states: 34
     name: Ken Johns
     coffee: "0"
@@ -251,12 +251,12 @@ team_member:
       DHMS acting Chief Engineer, the PEO DHMS Deputy Chief Engineer and the 
       DMIX Chief Engineering. Ken joined PEO DHMS in December of 2014.
   - personal:
-      book: Ready Player One
+      book: Ready Player One by Ernest Cline
       team: Minnesota Vikings
       plant: Gorgenzaleas
       food: Pizza
       movie: Matrix
-      song: Pressure by Muse
+      song: '"Pressure" by Muse'
     states: 41
     name: David Sohl
     coffee: 3+
@@ -280,12 +280,12 @@ team_member:
 
       families.
   - personal:
-      book: The Amber Spyglass
+      book: The Amber Spyglass by Philip Pullman
       team: Arsenal
       plant: No
       food: No
       movie: A Few Good Men
-      song: Sea Shanty Tik Tok
+      song: '"Wellerman" by Unknown / TikTok'
     states: 10
     name: Matt Hudson
     coffee: 10+
@@ -314,12 +314,12 @@ team_member:
 
       Contracting Professionals, and other leaders.
   - personal:
-      book: Tom Clancy Series
+      book: Anything Tom Clancy
       team: Tar Heels, Celtics & Raiders
       plant: Azalea
       food: Seafood
-      movie: Non
-      song: Rosalita - Springsteen
+      movie: None
+      song: '"Rosalita" by Bruce Springsteen'
     states: 37
     name: Terry Rowles
     coffee: "4"
@@ -336,12 +336,12 @@ team_member:
       scalable for potential future disease and made available for future
       employment considerations.
   - personal:
-      book: Herman Hess - Siddhartha
+      book: Herman Hess by Siddhartha
       team: Marquette Golden Eagles Basketball and Seattle Seahawks
       plant: Tulip
       food: Alder Plank Salmon
       movie: Monty Python & the Holy Grail and Almost Famous 
-      song: Beastie Boys - Sabotage
+      song: '"Sabotage" by Beastie Boys'
     states: 48
     name: Chris Nichols
     coffee: "0"
@@ -358,12 +358,12 @@ team_member:
       readiness reporting, research, ‘big data’ techniques, and dashboards for
       the entire MHS and other federal partners.
   - personal:
-      book: A Confederacy of Dunces
+      book: A Confederacy of Dunces by John Kennedy Toole
       team: Liverpool
       plant: Rose
       food: Sushi
       movie: Last of the Mohicans
-      song: Can You Feel It
+      song: '"Can You Feel It" by The Jacksons'
     states: 49
     name: Roy Smith
     coffee: "1"
@@ -387,7 +387,7 @@ team_member:
       plant: Cherry Blossom
       food: The Crown Prime Beef Rib from Jack Stack in KCMO
       movie: LOTR Trilogy
-      song: "'Don't Stop Me Now' by Queen or 'Hair' by Lady Gaga"
+      song: "\"Don't Stop Me Now\" by Queen or \"Hair\" by Lady Gaga"
     states: 26
     name: Christopher (Chris) Metz
     coffee: "8"
@@ -405,7 +405,7 @@ team_member:
       analyses, and cost estimates that support prioritization of efforts and
       ensure the portfolio is properly funded to execute.
   - personal:
-      book: Chesapeake
+      book: Chesapeake by James A. Michener
       team: Capitals
       plant: Gerber Daises
       food: Crabs
@@ -433,12 +433,12 @@ team_member:
       budgeting, procurement and contracts, human resources, and administration
       management. "
   - personal:
-      book: The Richest Man in Babylon – George S. Clason
+      book: The Richest Man in Babylon by George S. Clason
       team: Washington Nationals
       plant: Peony
       food: Steak with Mushrooms, Onions, and Garlic
       movie: Lord of the Rings - the Trilogy
-      song: Ride of the Valkyries – Richard Wagner
+      song: '"Ride of the Valkyries" by Richard Wagner'
     states: 44
     name: Ken Slaughter
     coffee: "4"
@@ -455,8 +455,9 @@ team_member:
       MHS GENESIS, the Department of Defense’s modernized electronic health
       record.
   - personal:
-      book: "Influenza: the Hundred-Year Hunt to Cure the 1918 Spanish Flu Pandemic"
-      song: Freebird by Lynyrd Skynyrd
+      book: "Influenza: the Hundred-Year Hunt to Cure the 1918 Spanish Flu Pandemic by
+        Jeremy Brown"
+      song: '"Freebird" by Lynyrd Skynyrd'
       movie: Top Gun
       food: All foods Mexican/Tex Mex
       plant: Lilac Bush
@@ -478,12 +479,12 @@ team_member:
       transform the delivery of healthcare and advancement of data sharing
       through a modernized electronic health record. 
   - personal:
-      book: How the Grinch Stole Christmas – Dr Seuss
+      book: How the Grinch Stole Christmas by Dr. Seuss
       team: Washington Capitals
       plant: Alstroemeria (flower)/  Jade (plant)
       food: Huckleberries
       movie: Secretariat
-      song: " Copperhead Road (Steve Earle) "
+      song: ' "Copperhead Road" by Steve Earle'
     states: 44
     name: Sonya Edom
     coffee: "3"
@@ -499,12 +500,12 @@ team_member:
       agencies (i.e USCG) that enter into agreements with PEO DHMS for the use
       of MHS GENESIS as their EHR system of record.
   - personal:
-      book: Celestine Prophecy
+      book: Celestine Prophecy by James Redfield
       team: Baltimore Ravens
       plant: Bonsai
       food: Grapes
       movie: None
-      song: " Jenifer Hudson – I’m here"
+      song: '"I’m here" by Jenifer Hudson'
     states: 1
     name: Cheryl Harper-Parham
     coffee: "?"
@@ -530,7 +531,7 @@ team_member:
       food: I can’t pick one, follow my Google Local Guide profile to see my current
         favorites
       movie: Shawshank Redemption
-      song: " Thunder by Imagine Dragons"
+      song: '"Thunder" by Imagine Dragons'
     states: 17
     name: " Alexander Holston"
     coffee: "2"
@@ -546,12 +547,12 @@ team_member:
       is board certified in Neonatology and Clinical Informatics, and currently
       practices at Walter Reed National Military Medical Center.
   - personal:
-      book: Spencer Johnson, M.D. Who Moved My Cheese
+      book: Who Moved My Cheese by Spencer Johnson, M.D.
       team: Prefer Movies
       plant: Sunflowers but all of nature is my happy place
       food: Pizza
       movie: Trading Places and Coming To America
-      song: " Funky Town, Lipps, Inc"
+      song: ' "Funky Town" by Lipps, Inc'
     states: 41
     name: Malissa Smith
     coffee: "6"

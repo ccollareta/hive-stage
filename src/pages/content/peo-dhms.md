@@ -28,7 +28,7 @@ text_section:
 accordion_section:
   subtitle: ESTABLISHED IN 2014
   title: "PEO DHMS Oversees Three Program Offices:"
-  image: /images/man.jpg
+  image: /images/peo-dhms.jpg
   accordion:
     - title: Joint Operational Medicine Information System (JOMIS)
       text: The Joint Operational Medicine Information Systems (JOMIS) program office

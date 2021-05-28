@@ -465,11 +465,11 @@ const AboutPage = ({data}) => {
                                <h5>Personal</h5>
                                <ul className="list-unstyled personal-details">
                                    <li>
-                                       <span className="detail">Book:<br /></span>
+                                       <span className="detail">Favorite Book:<br /></span>
                                        <span className="answer">{post.personal.book}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Sports Team:<br /></span>
+                                       <span className="detail">Favorite Sports Team:<br /></span>
                                        <span className="answer">{post.personal.team}</span>
                                    </li>
                                    <li>
@@ -477,11 +477,11 @@ const AboutPage = ({data}) => {
                                        <span className="answer">{post.personal.plant}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Food:<br /></span>
+                                       <span className="detail">Favorite Food:<br /></span>
                                        <span className="answer">{post.personal.food}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Movie:<br /></span>
+                                       <span className="detail">Favorite Movie:<br /></span>
                                        <span className="answer">{post.personal.movie}</span>
                                    </li>
                                    <li>
@@ -542,11 +542,11 @@ const AboutPage = ({data}) => {
                                <h5>Personal</h5>
                                <ul className="list-unstyled personal-details">
                                    <li>
-                                       <span className="detail">Book:<br /></span>
+                                       <span className="detail">Favorite Book:<br /></span>
                                        <span className="answer">{Team.leader.personal.book}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Sports Team:<br /></span>
+                                       <span className="detail">Favorite Sports Team:<br /></span>
                                        <span className="answer">{Team.leader.personal.team}</span>
                                    </li>
                                    <li>
@@ -554,11 +554,11 @@ const AboutPage = ({data}) => {
                                        <span className="answer">{Team.leader.personal.plant}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Food:<br /></span>
+                                       <span className="detail">Favorite Food:<br /></span>
                                        <span className="answer">{Team.leader.personal.food}</span>
                                    </li>
                                    <li>
-                                       <span className="detail">Movie:<br /></span>
+                                       <span className="detail">Favorite Movie:<br /></span>
                                        <span className="answer">{Team.leader.personal.movie}</span>
                                    </li>
                                    <li>

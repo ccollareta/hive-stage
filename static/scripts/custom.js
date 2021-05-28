@@ -121,7 +121,7 @@ $(function () {
 
 	function dLink() {
 		$('.link.d-link').each(function () {
-			var w = $(this).innerWidth();
+			var w = $(this).innerWidth() + 'px';
 			$(this).css({
 				"--width": w
 			});

@@ -422,27 +422,6 @@ collections:
                 - { label: "Title", name: "title", widget: "string"}
                 - { label: "Description", name: "description", widget: "text"}
                 - { label: "Link", name: "link", widget: "string"}
-    - label: "Contact"
-      name: "contact"
-      editor:
-        preview: false
-      file: "src/pages/content/contact.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { 
-            label: "Publish Date", 
-            name: "date", 
-            widget: 'datetime',
-            format: 'ddd MMM D, YYYY LT',
-            date_format: 'ddd MMM D, YYYY',
-            dateFormat: 'ddd MMM D, YYYY',
-            time_format: 'hh:mm A',
-            timeFormat: 'hh:mm A', 
-            }
-        - { label: "Body", name: "body", widget: "markdown"}
-        - { label: "Address", name: "address", widget: "text"}
-        - { label: "E-Mail", name: "email", widget: "string"}
-        - { label: "Phone", name: "phone", widget: "string"}
     - label: "Privacy Policy"
       name: "privacy"
       file: "src/pages/content/privacy.md"
@@ -729,7 +708,21 @@ collections:
       - { label: "Thumbnail", name: "thumbnail", widget: image}
       
       - { label: "Featured Image", name: "featured_image", widget: image}
-      
+      - label: "Related Posts"
+        name: "related"
+        widget: list
+        fields: 
+          - {label: "Title", name: "title", widget: string}
+          - {label: "Author", name: "author", widget: string}
+          - {label: "Link", name: "link", widget: string}
+          - {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'YYYY-MM-DD',
+          dateFormat: 'MMMM D, YYYY',
+          timeFormat: false
+        }
       - { label: "Excerpt", name: "excerpt", widget: text}
       - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false, default: ''}
       - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false, default: ''}

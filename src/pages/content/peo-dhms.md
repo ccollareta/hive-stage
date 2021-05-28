@@ -19,7 +19,7 @@ text_section:
   icons:
     - icon: /images/info8.svg
       text: Become A World-Class Technology Organization
-    - icon: /images/info9.svg
+    - icon: /images/hive-continuous-icon.svg
       text: Continuously Deliver Capabilities
     - icon: /images/info10.svg
       text: Accelerate Healthcare IT Improvements

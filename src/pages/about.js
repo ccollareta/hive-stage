@@ -165,254 +165,160 @@ const AboutPage = ({data}) => {
                     </div>
                 </div>
                 <div className="hexagonal-grid">
-                <ul id="hexGrid" className="small-row">
-                        <li className="hex  empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty"></div>
-                            </div>
-                        </li>
+                <div className="hex-grid small-row">
+                <div className="round-hex empty"></div>
                         {Team.team_member.slice(0,4).map((post,index) => (
                         <>
-                        <li className="hex">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(post.name)}`} data-lity>
-                                        <img src={post.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{post.name}</h5>
-                                            <span>{post.title}</span>
-                                        </div>
-                                    </a>
+            
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                </>
                     ))}
                         
-                        
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty op"></div>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul id="hexGrid" className="medium-row">
+            
+                        <div className="round-hex empty"></div>
+                    </div>
+                    <div className="hex-grid medium-row">
                     {Team.team_member.slice(4,5).map((post,index) => (
                         <>
-                        <li className="hex">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(post.name)}`} data-lity>
-                                        <img src={post.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{post.name}</h5>
-                                            <span>{post.title}</span>
-                                        </div>
-                                    </a>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                </>
                     ))}
                         
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty op">
-
-                                </div>
-                            </div>
-                        </li>
+                        <div className="round-hex empty"></div>
                         {Team.team_member.slice(5,6).map((post,index) => (
                         <>
-                        <li className="hex">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(post.name)}`} data-lity>
-                                        <img src={post.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{post.name}</h5>
-                                            <span>{post.title}</span>
-                                        </div>
-                                    </a>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                </>
                     ))}
-                        <li className="hex bordered">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(Team.leader.name)}`} data-lity>
-                                        <img src={Team.leader.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{Team.leader.name}</h5>
-                                            <span>{Team.leader.title}</span>
-                                        </div>
-                                    </a>
+                        
+                        <div className="round-hex bordered" data-lity-target={`#${slugify(Team.leader.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={Team.leader.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{Team.leader.name}</h5>
+                                    <span>{Team.leader.title}</span>
                                 </div>
                             </div>
-                        </li>
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty op">
-
-                                </div>
-                            </div>
-                        </li>
+                        </div>
+                        <div className="round-hex empty"></div>
                         {Team.team_member.slice(6,8).map((post,index) => (
                         <>
-                        <li className="hex">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(post.name)}`} data-lity>
-                                        <img src={post.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{post.name}</h5>
-                                            <span>{post.title}</span>
-                                        </div>
-                                    </a>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                </>
                     ))}
-                    </ul>
-                    <ul id="hexGrid" className="large-row">
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty"></div>
-                            </div>
-                        </li>
+                    </div>
+                    <div className="hex-grid large-row">
+                    <div className="round-hex empty"></div>
                         {Team.team_member.slice(8,12).map((post,index) => (
                         <>
-                        <li className="hex">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(post.name)}`} data-lity>
-                                        <img src={post.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{post.name}</h5>
-                                            <span>{post.title}</span>
-                                        </div>
-                                    </a>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                </>
                     ))}
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty op"></div>
-                            </div>
-                        </li>
+                        <div className="round-hex empty"></div>
                         {Team.team_member.slice(12,14).map((post,index) => (
                         <>
-                        <li className="hex">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(post.name)}`} data-lity>
-                                        <img src={post.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{post.name}</h5>
-                                            <span>{post.title}</span>
-                                        </div>
-                                    </a>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                </>
                     ))}
-                    </ul>
-                    <ul id="hexGrid" className="medium-row">
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty"></div>
-                            </div>
-                        </li>
+                    </div>
+                    <div className="hex-grid medium-row">
+                    <div className="round-hex empty"></div>
                         {Team.team_member.slice(14,18).map((post,index) => (
                         <>
-                        <li className="hex">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(post.name)}`} data-lity>
-                                        <img src={post.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{post.name}</h5>
-                                            <span>{post.title}</span>
-                                        </div>
-                                    </a>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                </>
                     ))}
-                        <li className="hex  empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty op"></div>
-                            </div>
-                        </li>
+                        <div className="round-hex empty"></div>
                         {Team.team_member.slice(18,19).map((post,index) => (
                         <>
-                        <li className="hex">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(post.name)}`} data-lity>
-                                        <img src={post.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{post.name}</h5>
-                                            <span>{post.title}</span>
-                                        </div>
-                                    </a>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                </>
                     ))}
-                    </ul>
-                    <ul id="hexGrid" className="small-row">
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty"></div>
-                            </div>
-                        </li>
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty op"></div>
-                            </div>
-                        </li>
+                    </div>
+                    <div className="hex-grid small-row">
+                    <div className="round-hex empty"></div>
+                    <div className="round-hex empty"></div>
                         {Team.team_member.slice(19,20).map((post,index) => (
                         <>
-                        <li className="hex">
-                            <div className="hexIn">
-                                <div className="hexIn2">
-                                    <a className="hexLink" href={`#${slugify(post.name)}`} data-lity>
-                                        <img src={post.team_image} alt="" />
-                                        <div className="hex-title">
-                                            <h5 className="mb-0">{post.name}</h5>
-                                            <span>{post.title}</span>
-                                        </div>
-                                    </a>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
                                 </div>
                             </div>
-                        </li>
+                        </div>
                </>
                     ))}
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty op"></div>
-                            </div>
-                        </li>
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty op"></div>
-                            </div>
-                        </li>
-                        <li className="hex empty">
-                            <div className="hexIn">
-                                <div className="hexIn2 empty op"></div>
-                            </div>
-                        </li>
-                    </ul>
+                        <div className="round-hex empty"></div>
+                        <div className="round-hex empty"></div>
+                        <div className="round-hex empty"></div>
+                    </div>
 
                 </div>
             </div>

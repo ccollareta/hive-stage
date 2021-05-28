@@ -3,22 +3,27 @@ import React from 'react';
 import hexa from '../images/new/li-hexa.svg';
 import idea from '../images/new/AboutPage.jpg';
 import colbg from '../images/col-bg.jpg'
-import hex7 from '../images/new/hex-7.svg'
-import hex8 from '../images/new/hex-8.svg'
-import hex9 from '../images/new/hex-9.svg'
+import hex1 from '../images/new/hex-1.svg'
+import hex2 from '../images/new/hex-2.svg'
+import hex12 from '../images/new/hex-12.svg'
 import herohex from '../images/hero-hex-3.svg'
 /*
   Use this section to highlight key elements of your site. Some sites will only have two while others may have six to eight. 
 */
 
-const HiveIdeas = () => (
-    <section className="hive-ideas-2 animated-hex">
+const HiveIdeas2 = () => (
+    <section className="hive-ideas-2 style-2 animated-hex" style={{
+        backgroundImage: `url(${colbg})`
+        }}>
+            <img data-depth="0.05" src={hex1} className="hex-img img-1" />
+                        <img data-depth="0.05" src={hex1} className="hex-img img-2" />
+                        <img data-depth="0.05" src={hex12} className="hex-img img-3" />
             <div className="inner-container">
                 <div className="row">
                     <div className="col col-5 text">
                         <div className="section-head">
                             <div className="section-title">
-                                <p className="sub-title text-blue">DON’T BEE AFRAID</p>
+                                <p className="sub-title text-orange">DON’T BEE AFRAID</p>
                                 <h2 className="title">We Want To Hear From You!</h2>
                             </div>
                         </div>
@@ -43,9 +48,7 @@ const HiveIdeas = () => (
                         <a href="https://community.hive.gov" className="btn rounded"><span>Tap Into the Hive</span></a>
                     </div>
                     <div className="col col-7 image">
-                        <img data-depth="0.05" src={hex7} className="hex-img img-1" />
-                        <img data-depth="0.05" src={hex8} className="hex-img img-2" />
-                        <img data-depth="0.05" src={hex9} className="hex-img img-3" />
+                        
                         <div className="hexagon-img">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                  viewBox="0 0 1043.739 964.99">
@@ -91,4 +94,4 @@ const HiveIdeas = () => (
         </section>
 );
 
-export default HiveIdeas;
+export default HiveIdeas2;

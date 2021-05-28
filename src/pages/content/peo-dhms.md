@@ -6,7 +6,7 @@ top_section:
     DHMS) drives patient-centered healthcare through modern solutions.
   button:
     button_text: Learn More
-    button_link: "#"
+    button_link: "#hive"
 text_section:
   subtitle: A FORCE TO BE RECKONED WITH
   title: Transforming The Delivery Of Healthcare
@@ -180,9 +180,9 @@ social_section:
     To                                     Date On The Latest Information!
   social:
     - icon: /images/fb.png
-      link: https://facebook.com
+      link: https://www.facebook.com/DefenseHealthcareManagementSystems/
     - icon: /images/twitter.png
-      link: https://twitter.com
+      link: https://twitter.com/DoD_EHR
 ---
 # About PEO DHMS
 

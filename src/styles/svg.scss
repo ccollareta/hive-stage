@@ -108,3 +108,31 @@
     width: 160%;
     height: 85%;
 }
+
+.clso-1 {
+    opacity: 0.867;
+    fill: url(#linear-gradient);
+}
+
+.clso-2 {
+    fill: #707070;
+    opacity: 0.202;
+}
+
+.clso-3 {
+    fill: #f0f0f0;
+}
+
+.clso-4 {
+    opacity: 0.601;
+    clip-path: url(#clip-path);
+}
+
+.clso-5 {
+    clip-path: url(#clip-path-2);
+}
+
+#imageOpp {
+    width: 160%;
+    height: 100%;
+}

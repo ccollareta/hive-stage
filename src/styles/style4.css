@@ -1183,7 +1183,8 @@ svg .a {
   .accordion .acc-body .acc-title p {
     padding-right: 30px; }
   .hive-faqs {
-    padding: 73px 0 70px; }
+    padding: 73px 0 70px;
+  min-height: 600px; }
   .hive-cards-section.style-4 .row:not(.cards-row) .col {
     flex: 0 0 80%;
     max-width: 80%; }

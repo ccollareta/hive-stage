@@ -821,6 +821,12 @@ svg .a {
   .hive-products .tab-content {
     background-color: rgba(109, 60, 133, 0.12);
     border-radius: 0 0 16px 16px; }
+    .hive-products .tab-content #JOMIS {
+      background-color: rgba(106, 164, 67, 0.12);
+      border-radius: 0 0 16px 16px; }
+      .hive-products .tab-content #EIDS {
+        background-color: rgba(48, 165, 209, 0.12);
+        border-radius: 0 0 16px 16px; }
     .hive-products .tab-content .tab-pane {
       display: flex;
       flex-wrap: wrap; }

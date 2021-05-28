@@ -716,13 +716,13 @@ collections:
           - {label: "Author", name: "author", widget: string}
           - {label: "Link", name: "link", widget: string}
           - {
-          label: 'Date',
-          name: 'date',
-          widget: 'datetime',
-          format: 'YYYY-MM-DD',
-          dateFormat: 'MMMM D, YYYY',
-          timeFormat: false
-        }
+              label: 'Date',
+              name: 'date',
+              widget: 'datetime',
+              format: 'YYYY-MM-DD',
+              dateFormat: 'MMMM D, YYYY',
+              timeFormat: false
+            }
       - { label: "Excerpt", name: "excerpt", widget: text}
       - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false, default: ''}
       - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false, default: ''}

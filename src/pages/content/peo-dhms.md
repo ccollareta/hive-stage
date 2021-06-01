@@ -12,7 +12,7 @@ top_section:
     button_text: Learn More
     button_link: "#hive"
 text_section:
-  subtitle: A FORCE TO BE RECKONED WITH
+  subtitle: A FORCE TO BEE RECKONED WITH
   title: Transforming The Delivery Of Healthcare
   image: /images/girls.jpg
   text_block: "PEO DHMS is an acquisition organization with a direct reporting

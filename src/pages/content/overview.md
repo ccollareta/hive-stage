@@ -2,10 +2,8 @@
 top_section:
   title: Shape Our Future
   hero_image: /images/hero-bg2.png
-  text_block: >-
-    Enrich your network, connect with government stakeholders and industry
-    partners, and
-                                    become a part of the solution.
+  text_block: Join our communities to enrich your network, connect with government
+    stakeholder and industry partners, and become a part of the solution.
   button:
     button_text: Join the Conversation
     button_link: https://hivegov.mobilize.io/main/groups/43575/lounge
@@ -53,8 +51,10 @@ three_blocks:
   block_two:
     icon: /images/info6.svg
     title: Get Involved
-    description: Post on the HIVE Community and provide information about yourself
-      and your organization.
+    description: >
+      Be an active member by asking questions about the latest opportunities,
+      engaging with government partner participants, posting about your own
+      unique solutions, and discussing the latest articles and blog posts.
     link: "#"
   block_three:
     icon: /images/info7.svg

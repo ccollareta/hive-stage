@@ -53,8 +53,10 @@ three_blocks:
   block_two:
     icon: /images/info6.svg
     title: Get Involved
-    description: Post on the HIVE Community and provide information about yourself
-      and your organization.
+    description: >
+      Be an active member by asking questions about the latest opportunities,
+      engaging with government partner participants, posting about your own
+      unique solutions, and discussing the latest articles and blog posts.
     link: "#"
   block_three:
     icon: /images/info7.svg

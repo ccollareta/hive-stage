@@ -2,8 +2,12 @@
 top_section:
   title: PEO DHMS
   hero_image: /images/hero-bg2.png
-  text_block: Program Executive Office Defense Healthcare Management System (PEO
-    DHMS) drives patient-centered healthcare through modern solutions.
+  text_block: Program Executive Office Defense Healthcare Management Systems (PEO
+    DHMS) transforms and accelerates the delivery of healthcare and advanced
+    data sharing through modernized electronic health records for service
+    members, veterans and their families. As a sponsor for HIVE, PEO DHMS
+    believes in creating a transparent environment to achieve the best Federal
+    Health IT Solutions.
   button:
     button_text: Learn More
     button_link: "#hive"

@@ -1,6 +1,6 @@
 ---
 top_section:
-  title: Our Community                                 Handbook
+  title: Shape Our Future
   hero_image: /images/hero-bg2.png
   text_block: >-
     Enrich your network, connect with government stakeholders and industry

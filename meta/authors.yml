@@ -44,7 +44,7 @@ team_member:
     featured: No
     years: "1.5"
     title: Director, Program Integration
-    team_image: /images/cori.png
+    team_image: /images/cori-hughes.jpg
     description: >
       Ms. Cori Hughes is the Program Integration Director for the Federal
       Electronic Health Record
@@ -84,7 +84,7 @@ team_member:
     years: "23"
     title: Acting Deputy Program Manager / Assistant Program Manager, Business
       Operations
-    team_image: /images/jamesperkins.png
+    team_image: /images/james-perkins.jpg
     description: >-
       Mr. Perkins serves as the acting deputy program manager for the DoD
       Healthcare
@@ -112,7 +112,7 @@ team_member:
     featured: No
     years: "8"
     title: Contracting Officer
-    team_image: /images/indy.png
+    team_image: /images/indy_toliver_selfie.jpg
     description: >-
       Indy Toliver is a Contracting Officer within PEO-DHMS’ Contracting
       Division. She primarily
@@ -167,7 +167,7 @@ team_member:
     featured: No
     years: "21"
     title: Chief Medical Informatics Officer
-    team_image: /images/darshan.png
+    team_image: /images/darshan-thota.jpg
     description: >-
       LCDR Thota grew up on St. Simons Island, GA. He graduated from Glynn
       Academy in Brunswick, GA (2000)
@@ -418,7 +418,7 @@ team_member:
     featured: No
     years: "22"
     title: Director, Business Operations
-    team_image: /images/tina-beletsky.png
+    team_image: /images/tina-beletsky.jpg
     description: "Tina Beletsky is the director of business operations for the
       Program Executive Office, Defense Healthcare Management Systems (PEO
       DHMS), serving as a key advisor on all business operation matters. This
@@ -469,7 +469,7 @@ team_member:
     featured: No
     years: "4"
     title: Clinical Informatics Officer
-    team_image: /images/diane-k.-struck.jpg
+    team_image: /images/diane-k.jpg
     description: Ms. Diane Struck serves as a clinical and health innovation advisor
       in support of Military Health System electronic health record
       modernization efforts as a clinical subject matter expert in the complex
@@ -560,7 +560,7 @@ team_member:
     featured: No
     years: "17"
     title: Chief Acquisition & Transformation Officer
-    team_image: /images/malissa-smith.png
+    team_image: /images/malissa-smith.jpg
     description: More than 17 years’ experience successfully leading fundamental
       enterprise transformation across myriad domains.  Repeatedly overcame
       cultural, technical, and political inertia to achieve profound improvement
@@ -570,3 +570,24 @@ team_member:
       for the mission and ruthlessly focused on results. Serving as an advisor
       to the Program Executive Officer on PEO transformation and acquisition
       initiatives.
+  - personal:
+      book: One Second After
+      team: NY Giants
+      plant: Holly Tree
+      food: Venison
+      movie: A Bridge Too Far
+      song: Crazy Train
+    states: 24
+    name: Lance E. Scott
+    coffee: "4"
+    division: Federal Electronic Healthcare Record Modernization (FEHRM) office, PEO
+      DHMS, PMO DHMSM
+    featured: No
+    years: "33"
+    title: FEHRM Solutions Integration Director/APM Interop/Data Systems/ PM DMIX
+    team_image: /images/lance.png
+    description: Mr. Scott directs the planning, budgeting, research and
+      development, testing, production, fielding and sustainment efforts.
+      Additionally, Mr. Scott leads information technology acquisition
+      strategies, processes, and procedures to fulfill Defense Acquisition
+      Program requirements for the Defense Medical Information Exchange program.

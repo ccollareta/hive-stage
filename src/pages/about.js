@@ -166,8 +166,8 @@ const AboutPage = ({data}) => {
                 </div>
                 <div className="hexagonal-grid">
                 <div className="hex-grid small-row">
-                <div className="round-hex empty"></div>
-                        {Team.team_member.slice(0,4).map((post,index) => (
+               
+                        {Team.team_member.slice(0,5).map((post,index) => (
                         <>
             
                         <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
@@ -183,10 +183,10 @@ const AboutPage = ({data}) => {
                     ))}
                         
             
-                        <div className="round-hex empty"></div>
+                        
                     </div>
                     <div className="hex-grid medium-row">
-                    {Team.team_member.slice(4,5).map((post,index) => (
+                    {Team.team_member.slice(5,7).map((post,index) => (
                         <>
                         <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
                             <div className="inner-round-hex">
@@ -201,7 +201,8 @@ const AboutPage = ({data}) => {
                     ))}
                         
                         <div className="round-hex empty"></div>
-                        {Team.team_member.slice(5,6).map((post,index) => (
+                        <div className="round-hex empty"></div>
+                        {Team.team_member.slice(7,9).map((post,index) => (
                         <>
                         <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
                             <div className="inner-round-hex">
@@ -215,7 +216,24 @@ const AboutPage = ({data}) => {
                </>
                     ))}
                         
-                        <div className="round-hex bordered" data-lity-target={`#${slugify(Team.leader.name)}`} data-lity>
+                        
+                    </div>
+                    <div className="hex-grid large-row">
+                    {Team.team_member.slice(9,11).map((post,index) => (
+                        <>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
+                                </div>
+                            </div>
+                        </div>
+               </>
+                    ))}
+                    <div className="round-hex empty"></div>
+                    <div className="round-hex bordered" data-lity-target={`#${slugify(Team.leader.name)}`} data-lity>
                             <div className="inner-round-hex">
                                 <img src={Team.leader.team_image} />
                                 <div className="hex-info">
@@ -225,7 +243,8 @@ const AboutPage = ({data}) => {
                             </div>
                         </div>
                         <div className="round-hex empty"></div>
-                        {Team.team_member.slice(6,8).map((post,index) => (
+                        
+                        {Team.team_member.slice(11,13).map((post,index) => (
                         <>
                         <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
                             <div className="inner-round-hex">
@@ -238,40 +257,26 @@ const AboutPage = ({data}) => {
                         </div>
                </>
                     ))}
-                    </div>
-                    <div className="hex-grid large-row">
-                    <div className="round-hex empty"></div>
-                        {Team.team_member.slice(8,12).map((post,index) => (
-                        <>
-                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
-                            <div className="inner-round-hex">
-                                <img src={post.team_image} />
-                                <div className="hex-info">
-                                    <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
-                                </div>
-                            </div>
-                        </div>
-               </>
-                    ))}
-                        <div className="round-hex empty"></div>
-                        {Team.team_member.slice(12,14).map((post,index) => (
-                        <>
-                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
-                            <div className="inner-round-hex">
-                                <img src={post.team_image} />
-                                <div className="hex-info">
-                                    <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
-                                </div>
-                            </div>
-                        </div>
-               </>
-                    ))}
+                        
                     </div>
                     <div className="hex-grid medium-row">
+                    
+                        {Team.team_member.slice(13,15).map((post,index) => (
+                        <>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
+                                </div>
+                            </div>
+                        </div>
+               </>
+                    ))}
                     <div className="round-hex empty"></div>
-                        {Team.team_member.slice(14,18).map((post,index) => (
+                    <div className="round-hex empty"></div>
+                        {Team.team_member.slice(15,17).map((post,index) => (
                         <>
                         <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
                             <div className="inner-round-hex">
@@ -284,25 +289,12 @@ const AboutPage = ({data}) => {
                         </div>
                </>
                     ))}
-                        <div className="round-hex empty"></div>
-                        {Team.team_member.slice(18,19).map((post,index) => (
-                        <>
-                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
-                            <div className="inner-round-hex">
-                                <img src={post.team_image} />
-                                <div className="hex-info">
-                                    <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
-                                </div>
-                            </div>
-                        </div>
-               </>
-                    ))}
+                        
+                        
                     </div>
                     <div className="hex-grid small-row">
-                    <div className="round-hex empty"></div>
-                    <div className="round-hex empty"></div>
-                        {Team.team_member.slice(19,20).map((post,index) => (
+                    
+                        {Team.team_member.slice(17,21).map((post,index) => (
                         <>
                         <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
                             <div className="inner-round-hex">
@@ -315,8 +307,8 @@ const AboutPage = ({data}) => {
                         </div>
                </>
                     ))}
-                        <div className="round-hex empty"></div>
-                        <div className="round-hex empty"></div>
+                        
+                        
                         <div className="round-hex empty"></div>
                     </div>
 

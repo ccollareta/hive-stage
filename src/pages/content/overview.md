@@ -2,10 +2,8 @@
 top_section:
   title: Shape Our Future
   hero_image: /images/hero-bg2.png
-  text_block: >-
-    Enrich your network, connect with government stakeholders and industry
-    partners, and
-                                    become a part of the solution.
+  text_block: Join our communities to enrich your network, connect with government
+    stakeholder and industry partners, and become a part of the solution.
   button:
     button_text: Join the Conversation
     button_link: https://hivegov.mobilize.io/main/groups/43575/lounge

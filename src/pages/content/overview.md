@@ -76,8 +76,9 @@ com_blocks:
   block_two:
     link: https://community.hive.gov/main/groups/43576/lounge
     icon: /images/teaming-landscape.png
-    description: The HIVE Community is a place for general discussion and thought
-      leadership related to HIVE and Federal Health innovation. Join the
-      conversation to apart of the innovation.
+    description: "The Teaming and Partnering community invites industry members to
+      introduce themselves, create teaming opportunities, and announce
+      partnerships. Join the conversation to introduce yourself and connect with
+      other organizations.   "
     title: Teaming & Partnering
 ---

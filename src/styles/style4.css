@@ -1527,3 +1527,31 @@ svg .a {
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
   .home .header.style-1:not(.fixed-header) .navbar-brand {
     background: transparent !important; } }
+
+
+    .ctas {
+      margin-top: 40px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .ctas .btn{
+      padding:16px 30px !important;
+    }
+
+    .ctas .btn.outline{
+      font-size: 14px;
+      padding: 16px 9px !important;
+    }
+    
+    .ctas .btn+.btn {
+      margin-left: 15px;
+    }
+
+    @media (max-width: 767.98px){
+      .ctas .btn+.btn{
+        margin-left: unset !important;
+        margin-top:20px !important;
+      }
+    }

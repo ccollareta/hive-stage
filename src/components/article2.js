@@ -6,11 +6,11 @@ import { Helmet } from 'react-helmet';
 import hovericon from '../images/hover-icon.svg';
 
 
-const Article = ({path, title,tags, author,excerpt,featured_image,date,thumbnail}) => {
+const Article2 = ({path, title,tags, author,excerpt,featured_image,date,thumbnail},color) => {
     const date2 = new Date(date);
     var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
-    var style = 'text-dark';
-    var style2 = 'text-blue';
+    var style = 'text-white';
+    var style2 = 'text-orange';
     
     return (
         <div className="col col-4"> 
@@ -38,7 +38,7 @@ const Article = ({path, title,tags, author,excerpt,featured_image,date,thumbnail
     );
 };
 
-export default Article;
+export default Article2;
 
 
 

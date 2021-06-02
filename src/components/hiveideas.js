@@ -48,7 +48,7 @@ const HiveIdeas = () => (
                         <img data-depth="0.05" src={hex9} className="hex-img img-3" />
                         <div className="hexagon-img">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-                                 viewBox="0 0 1043.739 964.99">
+                                 viewBox="0 0 1043.739 964.99" width="1043.739" height="964.99">
                                 <defs>
                                     
                                     <linearGradient id="linear-gradient" y1="1" x2="1" y2="1"

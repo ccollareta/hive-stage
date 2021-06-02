@@ -583,11 +583,11 @@ h6 {
 }
 
 .text-dark {
-  color: #000;
+  color: #000 !important;
 }
 
 .text-orange {
-  color: #F7941D;
+  color: #F7941D !important; 
 }
 
 .text-orange-alt {
@@ -595,7 +595,7 @@ h6 {
 }
 
 .text-blue {
-  color: #0962CC;
+  color: #0962CC !important;
 }
 
 .text-uppercase {

@@ -122,9 +122,11 @@ const BlogPost = ({ data }) => {
                             <p>
                             Join this opportunity’s dedicated HIVE Community to see the latest information, ask questions, and interact with other HIVE members. Don’t miss your chance to help shape this opportunity with us!
                             </p>
+                            <div className="ctas">
                             {frontmatter.mobLink && <a href={frontmatter.mobLink} className="btn rounded"><span>Join the Conversation</span></a> }
                             {frontmatter.file && <a href={frontmatter.file} className="btn rounded outline" download><span><img src={download} />Download the
                                     latest files</span></a> }
+                                    </div>
                         </div>
                     </div>
                     <div className="col col-6 image">

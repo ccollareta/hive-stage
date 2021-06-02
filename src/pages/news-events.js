@@ -63,7 +63,7 @@ const Blog = ({ data, pageContext }) => {
                }}>
             <img src={art5} className="art art-1" />
             <img src={art2} className="art art-2" />
-            {feat.slice(0,1).map((feat_post,index) => (
+            {feat.slice(1,2).map((feat_post,index) => (
                           <>
             <div className="hero-hex">
                 <img data-depth="0.05" src={hex10} className="hex-img img-1" />
@@ -194,7 +194,7 @@ export const pageQuery = graphql`
   query {
     feat: allMarkdownRemark(
       filter: {fields: {sourceName: {eq: "blog-posts"}}, frontmatter: {featured: {eq: "Yes"}}}
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { fields: frontmatter___order, order: ASC }
       limit: 3
     ) {
       edges {
@@ -202,6 +202,7 @@ export const pageQuery = graphql`
           html
           frontmatter {
             author
+            order
             featured
             date
             title

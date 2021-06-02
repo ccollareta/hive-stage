@@ -26,7 +26,7 @@ const Blog = ({ data, pageContext }) => {
     ...node.frontmatter,
     path: '/opportunity/' + node.fields.name,
   }));
-  const pgVar = 'style-3'
+  const pgVar = 'style-2'
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
   return (
     <Layout pgVar={pgVar}>

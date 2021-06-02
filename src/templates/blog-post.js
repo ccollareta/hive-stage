@@ -88,7 +88,7 @@ const BlogPost = ({ data }) => {
         </section>
         
         <SimilarBlogComponent currentArticleSlug={`/news/${fields.name}`} tags={frontmatter.tags} category={frontmatter.collections} />
-        <Tagline />
+        
     </Layout>
   );
 };

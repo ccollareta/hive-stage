@@ -16,7 +16,9 @@ const SimilarOppComponent = ({ articles }) => (
             <div className="section-title">
                 <h2 className="title">Other Opportunities</h2>
             </div>
-            <div className="link d-link">
+            <div className="link d-link" style={{
+                      '--width':'134px',
+                    }}>
                 <a href="/opportunities" className="font-exo text-dark">View all <img src={link_arrow}/></a>
             </div>
         </div>

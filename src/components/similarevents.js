@@ -17,8 +17,10 @@ const SimilarEventComponent = ({ articles }) => (
             <div className="section-title">
                 <h2 className="title">Other Events</h2>
             </div>
-            <div className="link d-link">
-                <a href="#" className="font-exo text-dark">View all <img src={link_arrow}/></a>
+            <div className="link d-link"style={{
+                      '--width':'134px',
+                    }}>
+                <a href="/news-events" className="font-exo text-dark">View all <img src={link_arrow}/></a>
             </div>
         </div>
         <div className="row ">
@@ -27,7 +29,7 @@ const SimilarEventComponent = ({ articles }) => (
     ))}
      </div>
                 <div className="link m-link">
-                    <a href="#" className="font-exo text-dark">View all <img src={link_arrow} /></a>
+                    <a href="/news-events" className="font-exo text-dark">View all <img src={link_arrow} /></a>
                 </div>
             </div>
         </section>

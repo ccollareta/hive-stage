@@ -87,7 +87,7 @@ const BlogPost = ({ data }) => {
         </section>
         
         <SimilarEventComponent currentArticleSlug={`/event/${fields.name}`} tags={frontmatter.tags} category={frontmatter.collections} />
-        <Tagline />
+       
     </Layout>
   );
 };

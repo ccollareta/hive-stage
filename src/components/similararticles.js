@@ -16,8 +16,10 @@ const SimilarBlogComponent = ({ articles }) => (
             <div className="section-title">
                 <h2 className="title">Other News Articles</h2>
             </div>
-            <div className="link d-link">
-                <a href="/news" className="font-exo text-dark">View all <img src={link_arrow}/></a>
+            <div className="link d-link"style={{
+                      '--width':'134px',
+                    }}>
+                <a href="/news-events" className="font-exo text-dark">View all <img src={link_arrow}/></a>
             </div>
         </div>
         <div className="row ">
@@ -26,7 +28,7 @@ const SimilarBlogComponent = ({ articles }) => (
     ))}
      </div>
                 <div className="link m-link">
-                    <a href="/news" className="font-exo text-dark">View all <img src={link_arrow} /></a>
+                    <a href="/news-events" className="font-exo text-dark">View all <img src={link_arrow} /></a>
                 </div>
             </div>
         </section>

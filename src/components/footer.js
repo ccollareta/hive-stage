@@ -18,7 +18,7 @@ const Footer = () => (
                         <div className="row">
                             <div className="col col-5">
                                 <div className="footer-social">
-                                    <a href="index.html">
+                                    <a href="/">
                                         <img src={logo} className="logo" alt="logo" />
                                     </a>
                                 </div>

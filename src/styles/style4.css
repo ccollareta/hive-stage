@@ -432,8 +432,7 @@ svg .a {
     .hive-idea-section-2 .hex-img svg {
       height: 700px;
       width: 550px; }
-  .hive-idea-section-2 .row {
-    align-items: center; }
+
   .hive-idea-section-2 .text-container {
     margin-top: 16px;
     padding-right: 80px;
@@ -1307,11 +1306,7 @@ svg .a {
   .hive-text-hex .row .col {
     flex: 0 0 100%;
     max-width: 100%; }
-  .hive-text-hex .row .text-container {
-    order: 2;
-    margin-top: 50px; }
-  .hive-text-hex .row .image {
-    order: 1; }
+  
     .hive-text-hex .row .image .hex-img {
       top: 0;
       right: 0; }
@@ -1345,18 +1340,7 @@ svg .a {
   .hive-ideas-2 {
     padding-top: 0;
     padding-bottom: 72px; }
-    .hive-idea-section-2 .row > *,
-    .hive-ideas-2 .row > * {
-      flex-basis: 100%;
-      max-width: 100%; }
-    .hive-idea-section-2 .row .image,
-    .hive-ideas-2 .row .image {
-      order: 1;
-      z-index: 1; }
-    .hive-idea-section-2 .row .text,
-    .hive-ideas-2 .row .text {
-      order: 2;
-      margin-top: 40px; }
+    
     
   .hive-partners-2 .row .col {
     flex-basis: 100%;

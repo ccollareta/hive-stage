@@ -14,7 +14,7 @@ const SimilarOppComponent = ({ articles }) => (
     <div className="inner-container">
         <div className="section-head">
             <div className="section-title">
-                <h2 className="title">Other Opportunities</h2>
+                <h2 className="title">More Submissions</h2>
             </div>
             <div className="link d-link" style={{
                       '--width':'134px',

@@ -2726,6 +2726,7 @@ svg .a {
     background-size: contain;
     background-position: center right -150px;
     max-height: 1125px;
+    min-height: 1125px;
   }
   
   .hero-section-2.style-3 .art-1 {

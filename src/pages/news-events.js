@@ -126,7 +126,7 @@ const Blog = ({ data, pageContext }) => {
         </section>
         <section className="all-news">
             <div className="inner-container">
-                <h1>All Opportunites</h1>
+                <h1>All News & Events</h1>
                 <div className="filter-form">
                     <div className="filters">
                         <select className="filter" data-filter-group="0">

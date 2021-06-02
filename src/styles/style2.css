@@ -349,8 +349,9 @@ svg .a {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
+  max-height: 270px;
 }
-
+.card-img{max-height: 270px;}
 .hive-3-col-section-2 .card .card-img img {
   transition: all .3s ease;
 }
@@ -2741,8 +2742,8 @@ svg .a {
   
   .hero-section-2.style-3 .hero-hex {
     position: absolute;
-    top: 100px;
-    right: 40px;
+    top: 7px;
+    right: -57px;
     z-index: 1;
     /* img:not(.hex-img) {
               width: 850px;

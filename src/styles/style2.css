@@ -2799,6 +2799,9 @@ svg .a {
   .hero-section-2.style-3 .featured-item .btn {
     margin-top: 32px;
   }
+  .hero-section-2.style-3 .featured-item{
+    margin-top: 100px;
+  }
 
   .all-news {
     position: relative;

@@ -294,7 +294,7 @@ const AboutPage = ({data}) => {
                     </div>
                     <div className="hex-grid small-row">
                     
-                        {Team.team_member.slice(17,21).map((post,index) => (
+                        {Team.team_member.slice(17,19).map((post,index) => (
                         <>
                         <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
                             <div className="inner-round-hex">
@@ -310,6 +310,19 @@ const AboutPage = ({data}) => {
                         
                         
                         <div className="round-hex empty"></div>
+                        {Team.team_member.slice(19,21).map((post,index) => (
+                        <>
+                        <div className="round-hex" data-lity-target={`#${slugify(post.name)}`} data-lity>
+                            <div className="inner-round-hex">
+                                <img src={post.team_image} />
+                                <div className="hex-info">
+                                    <h5 className="mb-0">{post.name}</h5>
+                                    <span>{post.title}</span>
+                                </div>
+                            </div>
+                        </div>
+               </>
+                    ))}
                     </div>
 
                 </div>

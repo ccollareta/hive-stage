@@ -99,10 +99,7 @@ export const onInitialClientRender = () => {
 
   scripts.push(loadScripts(lity));
   scripts.push(loadScripts(slick));
-  scripts.push(loadScripts(isoptope));
-  scripts.push(loadScripts(isotope4));
-  scripts.push(loadScripts(isotope2));
-  scripts.push(loadScripts(isotope3));
+ 
   scripts.push(loadScripts(collapse));
   scripts.push(loadScripts(tabs));
  

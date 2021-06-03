@@ -105,24 +105,7 @@ const Blog = ({ data, pageContext }) => {
             <div className="inner-container">
                 <h1>All Opportunites</h1>
                 <div className="filter-form">
-                    <div className="filters">
-                        <select className="filter" data-filter-group="0">
-                            <option value="title">Category</option>
-                            {Tags.tags.map((tag,index) => (
-                              <option value={`.${tag.slug}`} key={tag.slug}>{tag.name}</option>
-                              ))}
-                        </select>
-                        <select className="filter" data-filter-group="1">
-                            <option value="title">Collection</option>
-                            {Collections.collections.map((tag,index) => (
-                              <option value={`.${tag.slug}`} key={tag.slug}>{tag.name}</option>
-                              ))}
-                        </select>
-                        <a href="javascript: void(0);" className="btn rounded outline btn-filter">
-                            <span>Sort & Filter</span>
-                        </a>
-                    </div>
-                    <div className="selected-filters"></div>
+                    
                 </div>
 
       

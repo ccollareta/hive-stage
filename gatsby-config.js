@@ -100,7 +100,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        createLinkInHead: true,
+        
+      }
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

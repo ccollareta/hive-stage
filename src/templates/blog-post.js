@@ -64,7 +64,7 @@ const BlogPost = ({ data }) => {
                                     <span>{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
-                            <SocialShare url={url} title={frontmatter.title}  />
+                            <SocialShare url={`https://hive.gov/news/${fields.name}`} title={frontmatter.title}  />
                         </div>
                         <div className="post-content">
                             <h3>{frontmatter.subtitle}</h3>

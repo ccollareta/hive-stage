@@ -49,7 +49,7 @@ const BlogPost = ({ data }) => {
             <img src={art4} className="art art-2"/>
             <div className="inner-container">
                 <div className="post-category">
-                    <span className="category">{tagT.length > 0 ? tagT.join(', ') : ''}</span>
+                    <span className="category text-blue"><strong>{tagT.length > 0 ? tagT.join(', ') : ''}</strong></span>
                 </div>
                 <h1>{frontmatter.title}</h1>
                 <div className="row">
@@ -63,7 +63,7 @@ const BlogPost = ({ data }) => {
                                     <span>{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
-                          
+                          <SocialShare url={`https://hive.gov/event/${fields.name}`} title={frontmatter.title} />
                         </div>
                         <div className="post-content">
                             <h3>{frontmatter.subtitle}</h3>

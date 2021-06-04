@@ -43,7 +43,7 @@ const BlogPost = ({ data }) => {
       tag != tags.slug ? '' : tagT.push(tags.name) 
     ))
   ))
-  const url = typeof window !== 'undefined' ? window.location.href : '';
+ 
     
   return (
     <Layout pgVar={pgVar}>
@@ -67,7 +67,7 @@ const BlogPost = ({ data }) => {
                                     <span>{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
-                        <SocialShare url={url} title={frontmatter.title} />
+                        <SocialShare url={`https://hive.gov/opportunity/${fields.name}`} title={frontmatter.title} />
                         </div>
                         <div className="post-content">
                             <h3>{frontmatter.subtitle}</h3>

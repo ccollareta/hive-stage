@@ -9,7 +9,7 @@ import SEO from '../components/seo';
 import HiveIdeas2 from '../components/hiveideas2';
 import art2 from '../images/new/art2.png';
 import art5 from '../images/new/art5.png';
-import hovericon from '../images/hover-icon.svg';
+import hover_icon from '../images/new/hover-icon.svg';
 import hex10 from '../images/new/hex-10.svg';
 import hex11 from '../images/new/hex-11.svg';
 import hex12 from '../images/new/hex-12.svg';
@@ -141,7 +141,9 @@ const Blog = ({ data, pageContext }) => {
                 >
                   <div className="card">
                             <div className="card-img">
-                            <a href={post.path}> <img src={post.thumbnail} className="img-fluid" alt="item1" />
+                            <img src={post.thumbnail} className="img-fluid" alt="item1" />
+                            <a href={post.path} className="card-overlay">
+                                <img src={hover_icon} />
                             </a>
                             </div>
                             <div className="card-body">

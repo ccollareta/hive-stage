@@ -233,7 +233,7 @@ svg .a {
     margin-right: -28px; }
     .hive-3-col-section-2 .row .col {
       padding: 0 28px; }
-      .hive-3-col-section-2 .row .col .card .card-img .card-overlay {
+       .card .card-img .card-overlay {
         position: absolute;
         left: 0;
         right: 0;
@@ -245,7 +245,7 @@ svg .a {
         background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);
         opacity: 0;
         transition: all .3s ease; }
-      .hive-3-col-section-2 .row .col .card:hover .card-img .card-overlay {
+       .card:hover .card-img .card-overlay {
         opacity: 0.88; }
   .hive-3-col-section-2 .card h4 {
     margin-top: 15px; }

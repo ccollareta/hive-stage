@@ -185,8 +185,8 @@ social_section:
   social:
     - icon: /images/fb.png
       link: https://www.facebook.com/DefenseHealthcareManagementSystems/
-    - icon: /images/twitter.png
-      link: https://twitter.com/DoD_EHR
+    - icon: /images/li.png
+      link: https://www.linkedin.com/company/peo-dhms
 ---
 # About PEO DHMS
 

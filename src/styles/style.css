@@ -624,7 +624,7 @@ h6 {
     width: 805px;
     height: 539px;
     overflow: hidden;
-    border-radius: 40px;
+    border-radius: 16px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -689,13 +689,13 @@ h6 {
 }
 
 .link a img {
-  margin-left: 28px;
+  margin-left: 20px;
   width: 26px;
   transition: all .2s linear;
 }
 
 .link a:hover img {
-  margin-left: 20px;
+  margin-left: 28px;
 }
 
 .link.type-2 a {

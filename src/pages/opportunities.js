@@ -120,7 +120,7 @@ const Blog = ({ data, pageContext }) => {
                             <div className="card-img">
                              <img src={post.thumbnail} className="img-fluid" alt="item1" />
                              <a href={post.path} className="card-overlay">
-                                <img src={hover_icon} />
+                                <img src={hover_icon} className="hover"/>
                             </a>
                             </div>
                             <div className="card-body">

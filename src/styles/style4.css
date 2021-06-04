@@ -245,7 +245,7 @@ svg .a {
         background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);
         opacity: 0;
         transition: all .3s ease; }
-       .card:hover .card-img .card-overlay {
+       .card .card-img:hover .card-overlay {
         opacity: 0.88; }
   .hive-3-col-section-2 .card h4 {
     margin-top: 15px; }
@@ -730,11 +730,11 @@ svg .a {
       max-width: 1570px; } }
   .hive-faqs .hexagon-img {
     position: absolute;
-    top: 120px;
+    top: 110px;
     left: -140px; }
     .hive-faqs .hexagon-img svg {
-      height: 85%;
-      width: 83%; }
+      height: 100%;
+      width: 100%; }
 
 .hive-products {
   position: relative;

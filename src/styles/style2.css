@@ -3259,6 +3259,11 @@ svg .a {
     overflow: hidden;
     border-radius: 16px;
   }
+
+  .all-news .card .card-img img:not(.hover){
+    position: relative;
+    top:-50px
+  }
   
   .all-news .card .post-details .author {
     color: #0962CC;

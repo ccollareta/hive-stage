@@ -21,4 +21,4 @@ tags:
 collections:
   - peo-3
 ---
-The DevMAC initiative is Intended to maintain a base (multiple awardees) of industry partners that can bring cutting edge software development, UI/UX, and human-centered design skills. This contract is intended to be a vehicle with dedicated small business and non-traditional pools. DevMAC will support a complex ecosystem of health technology and will be utilized to rapidly respond to calls for new capabilities by programs within the PEO DHMS portfolio.
+The DevMAC initiative is Intended to maintain a base (multiple awardees) of industry partners that can bring cutting edge software development, UI/UX, and human-centered design skills. DevMAC will support a complex ecosystem of health technology and will be utilized to rapidly respond to calls for new capabilities by programs within the PEO DHMS portfolio.

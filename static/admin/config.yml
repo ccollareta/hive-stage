@@ -560,7 +560,7 @@ collections:
                   - {label: "Icon", name: icon, widget: image}
                   - {label: "Link", name: link, widget: string}  
   - name: blog
-    label: News
+    label: News & Events
     label_singular: News Article
     folder: src/blog-posts
     create: true
@@ -621,69 +621,7 @@ collections:
           displayFields:
             - "collections.*.name"
           valueField: "collections.*.slug"
-  - name: events
-    label: Events
-    label_singular: Event
-    folder: src/events
-    create: true
-    preview_path: '/event/{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - {
-          label: 'Event Date',
-          name: 'date',
-          widget: 'datetime',
-          format: 'YYYY-MM-DD',
-          dateFormat: 'MMMM D, YYYY',
-          timeFormat: false
-        }
-      
-      - { label: 'Author', name: 'author', widget: 'string', default: '' }
-      - { label: 'Featured', name: 'featured', widget: 'select', options: ["Yes", "No"], default: "No"}
-      - { label: 'Order', name: 'order', widget: number, required: false}
-      - { label: "Thumbnail", name: "thumbnail", widget: image}
-      - { label: "Featured Image", name: "featured_image", widget: image}
-      - { label: "Excerpt", name: "excerpt", widget: text}
-      - { label: 'Subtitle', name: 'subtitle', widget: 'string', required: false, default: ''}
-      - { label: 'Pre Title', name: 'pre_title', widget: 'string', required: false, default: ''}
-      - { label: "Pre Text", name: "pre_text", widget: text, required: false, default: ''}
-      - { label: 'Body', name: 'body', widget: 'markdown', default: '' }
-      - { label: 'Mobilize Link', name: 'mobLink', widget: string, required: false}
-      
-      - label: Categories
-        label_singular: "Category"
-        name: "tags"
-        widget: list
-        summary: "{{fields.tag}}"
-        field:
-          label: Categories
-          name: tag
-          widget: relation
-          collection: "site_info"
-          file: "tags"
-          searchFields:
-            - "tags.*.name"
-          displayFields:
-            - "tags.*.name"
-          valueField: "tags.*.slug"
-      - label: Collections
-        label_singular: "Collection"
-        name: "collections"
-        widget: list
-        summary: "{{fields.collection}}"
-        field:
-          label: Categories
-          name: tag
-          widget: relation
-          collection: "site_info"
-          file: "collections"
-          searchFields:
-            - "collections.*.name"
-          displayFields:
-            - "collections.*.name"
-          valueField: "collections.*.slug"
+  
   - name: exchange-opps
     label: Opportunities
     label_singular: Opportunity

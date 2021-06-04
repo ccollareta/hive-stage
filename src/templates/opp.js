@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, Link, withPrefix } from 'gatsby';
 import { Helmet } from 'react-helmet';
-
+import FeatArticle from '../components/featarticle'
 import Tags from '../../meta/tags.yml'
 import Layout from '../components/layout';
 import SocialShare from '../components/social-share';
@@ -88,19 +88,21 @@ const BlogPost = ({ data }) => {
                             {frontmatter.pre_text}
                             </p>
                             
-                            {frontmatter.impLinks &&
-                            <>
-                            <h5>Important Links</h5>
-                            {frontmatter.impLinks.map((change) =>(
-                              <p>
-                                <a href={change.url}>{change.text}</a>
-                              </p>
-                            ))}
-                            </>
-                            } 
+                            
                         </div>
                     </div>
-                    <FeaturedBlogComponent currentArticleSlug={`/opportunity/${fields.name}`} />
+                    {frontmatter.related &&
+                    <>
+                    <div className="col col-4">
+                      <h4 className="widget-title">Related Posts</h4>
+                        <div className="related-post-container">
+                {frontmatter.related.map((article, i) => (
+                <FeatArticle {...article} key={i}/>
+             ))}
+                
+              </div>
+            </div>
+            </>}
                 </div>
             </div>
         </section>
@@ -210,8 +212,11 @@ export const pageQuery = graphql`
           type 
           release
         }
-        changelog{
-          value
+        related{
+          title
+          author
+          link
+          date
         }
         impLinks {
         text

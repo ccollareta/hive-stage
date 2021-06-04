@@ -2127,6 +2127,12 @@ svg .a {
     right: 0;
     top: 40px !important;
   }
+  .hive-ideas-2 .hexagon-img {
+    position: relative !important;
+    transform: scale(1);
+    right: 0;
+    top: 0px !important;
+  }
   .hive-text-hex .row .image .hex-img {
     top: 0;
     right: 0;

@@ -17,7 +17,7 @@ import art4 from '../images/art4.png';
 import art5 from '../images/art5.png';
 import { post } from 'jquery';
 import colbg from '../images/col-bg.jpg';
-import idea from '../images/idea-mobile.jpg';
+import idea from '../images/new/opps-detailed.jpg';
 import download from '../images/download.svg';
 import subhex from '../images/sub-hex.svg'
 import link_arrow from '../images/link-arrow.png';

@@ -26,7 +26,7 @@ const SimilarBlogComponent = ({ articles }) => (
                 <h2 className="title text-white">Other News Articles</h2>
             </div>
             <div className="link d-link"style={{
-                      '--width':'169px',
+                      '--width':'190px',
                     }}>
                 <a href="/news-events" className="font-exo text-white">View all <img src={link_arrow}/></a>
             </div>

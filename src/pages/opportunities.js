@@ -6,7 +6,7 @@ import HiveIdeas2 from '../components/hiveideas2';
 import { Helmet } from 'react-helmet';
 import art2 from '../images/new/art2.png';
 import art5 from '../images/new/art5.png';
-import hovericon from '../images/hover-icon.svg';
+import hover_icon from '../images/new/hover-icon.svg';
 import hex10 from '../images/new/hex-10.svg';
 import hex11 from '../images/new/hex-11.svg';
 import hex12 from '../images/new/hex-12.svg';

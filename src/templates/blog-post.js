@@ -31,7 +31,7 @@ import link_arrow from '../images/link-arrow.png';
 const BlogPost = ({ data }) => {
   const { markdownRemark } = data;
   const { frontmatter, html, fields } = markdownRemark;
-
+  const url = typeof window !== 'undefined' ? window.location.href : '';
   const html2 = html;
   const pgVar = 'style-3';
   const date2 = new Date(frontmatter.date);
@@ -50,7 +50,7 @@ const BlogPost = ({ data }) => {
             <img src={art4} className="art art-2"/>
             <div className="inner-container">
                 <div className="post-category">
-                    <span className="category">{tagT.length > 0 ? tagT.join(', ') : ''}</span>
+                    <span className="category text-blue"><strong>{tagT.length > 0 ? tagT.join(', ') : ''}</strong></span>
                 </div>
                 <h1>{frontmatter.title}</h1>
                 <div className="row">
@@ -64,7 +64,7 @@ const BlogPost = ({ data }) => {
                                     <span>{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
-
+                            <SocialShare url={url} title={frontmatter.title}  />
                         </div>
                         <div className="post-content">
                             <h3>{frontmatter.subtitle}</h3>

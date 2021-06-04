@@ -5,7 +5,7 @@ author: " Community Admin"
 featured: Yes
 order: 1
 thumbnail: /images/wf3e.png
-featured_image: /images/09-wf3-fullpage.png
+featured_image: /images/wf3e.png
 excerpt: >
   Workforce 3.0 (WF3) represents a paradigm shift in how PEO DHMS achieves
   success in middle- and back-office operations. Rather than focusing on the

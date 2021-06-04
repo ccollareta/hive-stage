@@ -5,7 +5,7 @@ author: Malissa Smith
 featured: Yes
 order: 2
 thumbnail: /images/cornerstones-of-peo3.png
-featured_image: /images/peo3.png
+featured_image: /images/cornerstones-of-peo3.png
 excerpt: Over the last 50 years, one thing has been evident – organizations that
   are unable to adapt to changing technology lose value and collapse.
 pre_title: ""

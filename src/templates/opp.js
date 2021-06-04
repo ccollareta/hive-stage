@@ -21,6 +21,9 @@ import idea from '../images/idea-mobile.jpg';
 import download from '../images/download.svg';
 import subhex from '../images/sub-hex.svg'
 import link_arrow from '../images/link-arrow.png';
+import hex7 from '../images/new/hex-1.svg'
+import hex8 from '../images/new/hex-2.svg'
+import hex9 from '../images/new/hex-3.svg'
 
 
 
@@ -40,6 +43,7 @@ const BlogPost = ({ data }) => {
       tag != tags.slug ? '' : tagT.push(tags.name) 
     ))
   ))
+  const url = typeof window !== 'undefined' ? window.location.href : '';
     
   return (
     <Layout pgVar={pgVar}>
@@ -49,7 +53,7 @@ const BlogPost = ({ data }) => {
             <img src={art4} className="art art-2"/>
             <div className="inner-container">
                 <div className="post-category">
-                    <span className="category">{tagT.length > 0 ? tagT.join(', ') : ''}</span>
+                    <span className="category text-blue"><strong>{tagT.length > 0 ? tagT.join(', ') : ''}</strong></span>
                 </div>
                 <h1>{frontmatter.title}</h1>
                 <div className="row">
@@ -63,7 +67,7 @@ const BlogPost = ({ data }) => {
                                     <span>{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
-                        
+                        <SocialShare url={url} title={frontmatter.title} />
                         </div>
                         <div className="post-content">
                             <h3>{frontmatter.subtitle}</h3>
@@ -106,19 +110,19 @@ const BlogPost = ({ data }) => {
             </div>
         </section>
         
-        <section className="hive-idea-section-2 animated-hex" style={{
+        <section className="hive-ideas-2 style-2 animated-hex" style={{
         backgroundImage: `url(${colbg})`
     }}>
             <div className="inner-container">
                 <div className="row">
-                    <div className="col col-6 text">
+                    <div className="col col-5 text">
                         <div className="section-head">
                             <div className="section-title">
-                                <p className="sub-title text-orange-alt">Let’s make some honey</p>
+                                <p className="sub-title text-orange">Let’s make some honey</p>
                                 <h2 className="title text-white">Have An Idea?</h2>
                             </div>
                         </div>
-                        <div className="text-container">
+                        <div className="text-container text-white">
                             <p>
                             Join this opportunity’s dedicated HIVE Community to see the latest information, ask questions, and interact with other HIVE members. Don’t miss your chance to help shape this opportunity with us!
                             </p>
@@ -129,8 +133,11 @@ const BlogPost = ({ data }) => {
                                     </div>
                         </div>
                     </div>
-                    <div className="col col-6 image">
-                        <div className="hex-img">
+                    <div className="col col-7 image">
+                    <img data-depth="0.05" src={hex7} className="hex-img img-1" />
+                        <img data-depth="0.05" src={hex8} className="hex-img img-2" />
+                        <img data-depth="0.05" src={hex9} className="hex-img img-3" />
+                        <div className="hexagon-img hex-2">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                 width="1043.739" height="964.99" viewBox="0 0 1043.739 964.99">
                                 <defs>

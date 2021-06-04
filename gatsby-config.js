@@ -104,7 +104,7 @@ module.exports = {
       resolve: "gatsby-plugin-sitemap",
       options: {
         createLinkInHead: true,
-        
+
       }
     },
     {
@@ -145,13 +145,6 @@ module.exports = {
       options: {
         name: `opps`,
         path: `${__dirname}/src/exchange-opps`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `events`,
-        path: `${__dirname}/src/events`,
       },
     },
     `gatsby-transformer-remark`,

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link, withPrefix  } from 'gatsby';
 import Tags from '../../meta/tags.yml'
 import Collections from '../../meta/collections.yml';
-import HiveIdeas2 from '../components/hiveideas2';
+import HiveIdeas3 from '../components/hiveideas3';
 import { Helmet } from 'react-helmet';
 import art2 from '../images/new/art2.png';
 import art5 from '../images/new/art5.png';
@@ -146,7 +146,7 @@ const Blog = ({ data, pageContext }) => {
                 </nav>
             </div>
         </section>
-        <HiveIdeas2 />
+        <HiveIdeas3 />
     </Layout>
   );
 };

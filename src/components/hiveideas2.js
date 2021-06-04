@@ -1,7 +1,7 @@
 import React from 'react';
 
 import hexa from '../images/new/li-hexa.svg';
-import idea from '../images/new/AboutPage.jpg';
+import idea from '../images/new/news-and-events.jpg';
 import colbg from '../images/col-bg.jpg'
 import hex1 from '../images/new/hex-1.svg'
 import hex2 from '../images/new/hex-2.svg'
@@ -69,7 +69,7 @@ const HiveIdeas2 = () => (
                                             d="M491.718,522.857,615.769,308.844a61.574,61.574,0,0,0-.03-61.727L489.757,32A62.07,62.07,0,0,0,436.042,1.113L186.014,0a62.072,62.072,0,0,0-53.689,30.842L8.278,244.849a61.563,61.563,0,0,0,.033,61.724L134.292,521.7a62.076,62.076,0,0,0,53.717,30.891L438.038,553.7A62.073,62.073,0,0,0,491.718,522.857Z"
                                             transform="matrix(0.966, 0.259, -0.259, 0.966, 143.307, 0)" />
                                     </clipPath>
-                                    <image id="images2" width="1584.46" height="753.059"
+                                    <image id="images2" width="2084.46" height="853.059"
                                         xlinkHref={idea} />
                                 </defs>
                                 <g transform="translate(57.332 48.932)">

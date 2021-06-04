@@ -6,14 +6,14 @@ import { Helmet } from 'react-helmet';
 import hovericon from '../images/hover-icon.svg';
 
 
-const FeatArticle = ({path, title, author,date}) => {
+const FeatArticle = ({link, title, author,date}) => {
     
  const date2 = new Date(date)
  var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
 
      return (
         <div className="post-item">
-                <a href={path}>
+                <a href={link}>
                     <h6>{title}</h6>
                 </a>
                 <div className="post-details">

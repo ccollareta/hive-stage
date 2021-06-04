@@ -10,6 +10,11 @@ excerpt: For those that may not know, the PEO includes programs in DHMSM, JOMIS,
   DMIX and EIDS.
 pre_title: ""
 pre_text: ""
+related:
+  - date: 2021-01-14
+    title: The 4 Cornerstones of PEO 3.0
+    author: Malissa Smith
+    link: /news/the-4-cornerstones-of-peo-3-0
 information:
   value: ""
   type: ""

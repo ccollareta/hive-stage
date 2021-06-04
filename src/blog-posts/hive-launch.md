@@ -12,6 +12,15 @@ subtitle: ""
 pre_title: ""
 pre_text: ""
 mobLink: ""
+related:
+  - date: 2021-01-14
+    title: The 4 Cornerstones of PEO 3.0
+    author: Malissa Smith
+    link: /news/the-4-cornerstones-of-peo-3-0
+  - date: 2020-12-16
+    title: PEO Overview
+    author: Holly Joers
+    link: /news/peo-overview
 tags:
   - workforce
 collections:

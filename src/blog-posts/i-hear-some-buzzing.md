@@ -6,15 +6,20 @@ featured: No
 thumbnail: /images/i-hear-buzzing.png
 featured_image: /images/image.png
 excerpt: We're Buzzing with Excitement!
+subtitle: ""
+pre_title: ""
 pre_text: ""
+related:
+  - date: 2020-12-16
+    title: PEO Overview
+    author: Holly Joers
+    link: /news/peo-overview
 information:
   value: ""
   type: ""
   release: ""
 impLinks: []
 changelog: []
-subtitle: ""
-pre_title: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43511/lounge/posts/584843?tab=comment
 tags:
   - workforce

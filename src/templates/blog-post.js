@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, Link, withPrefix } from 'gatsby';
 import { Helmet } from 'react-helmet';
-
+import FeatArticle from '../components/featarticle'
 import Tags from '../../meta/tags.yml'
 import Layout from '../components/layout';
 import SocialShare from '../components/social-share';
@@ -86,7 +86,18 @@ const BlogPost = ({ data }) => {
                             {frontmatter.mobLink && <a href={frontmatter.mobLink} className="btn rounded"><span>Join the Conversation</span></a> }
                         </div>
                     </div>
-                    <FeaturedBlogComponent currentArticleSlug={`/news/${fields.name}`} />
+                    {frontmatter.related &&
+                    <>
+                    <div className="col col-4">
+                      <h4 className="widget-title">Related Posts</h4>
+                        <div className="related-post-container">
+                {frontmatter.related.map((article, i) => (
+                <FeatArticle {...article} key={i}/>
+             ))}
+                
+              </div>
+            </div>
+            </>}
                 </div>
             </div>
         </section>
@@ -120,6 +131,12 @@ export const pageQuery = graphql`
         pre_text
         featured_image
         mobLink
+        related{
+          title
+          author
+          link
+          date
+        }
       }
     }
   }

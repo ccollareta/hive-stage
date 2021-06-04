@@ -255,7 +255,7 @@ svg .a {
     border-radius: 16px; }
     .hive-3-col-section-2 .card .card-img img {
       transition: all .3s ease; }
-  .hive-3-col-section-2 .card:hover .card-img img {
+  .hive-3-col-section-2 .card .card-img img {
     transform: scale(1.1); }
   .hive-3-col-section-2 .post-details .author {
     color: #F7941D; }
@@ -302,7 +302,7 @@ svg .a {
         background: linear-gradient(90deg, #F15A29 0%, #F7941D 100%);
         opacity: 0;
         transition: all .3s ease; }
-      .hive-2-col-section .row .col .card:hover .card-img .card-overlay {
+      .hive-2-col-section .row .col .card .card-img:hover .card-overlay {
         opacity: 0.88; }
   .hive-2-col-section .card h4 {
     margin-top: 15px; }
@@ -316,7 +316,7 @@ svg .a {
       height: 100%;
       width: 100%;
       object-fit: cover; }
-  .hive-2-col-section .card:hover .card-img img {
+  .hive-2-col-section .card .card-img:hover img {
     transform: scale(1.1); }
   .hive-2-col-section .post-details .author {
     color: #F7941D; }

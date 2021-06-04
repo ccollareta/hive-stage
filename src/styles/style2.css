@@ -338,7 +338,7 @@ svg .a {
   transition: all .3s ease;
 }
 
-.hive-3-col-section-2 .row .col .card:hover .card-img .card-overlay {
+.hive-3-col-section-2 .row .col .card .card-img:hover .card-overlay {
   opacity: 0.88;
 }
 
@@ -449,7 +449,7 @@ svg .a {
   object-fit: cover;
 }
 
-.hive-2-col-section .card:hover .card-img img {
+.hive-2-col-section .card .card-img:hover img {
   transform: scale(1.1);
 }
 

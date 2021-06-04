@@ -119,7 +119,7 @@ const BlogPost = ({ data }) => {
                         <div className="section-head">
                             <div className="section-title">
                                 <p className="sub-title text-orange">Let’s make some honey</p>
-                                <h2 className="title text-white">Have An Idea?</h2>
+                                <h2 className="title text-white">Want To Weigh In On The Buzz?</h2>
                             </div>
                         </div>
                         <div className="text-container text-white">

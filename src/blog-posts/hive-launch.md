@@ -1,6 +1,6 @@
 ---
 title: HIVE Launch
-date: 2021-06-08
+date: 2021-06-09
 author: Malissa Smith
 featured: Yes
 order: 1

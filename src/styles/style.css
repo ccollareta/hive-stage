@@ -713,6 +713,9 @@ h6 {
 .link.type-2 a:hover img {
   margin-left: 18px;
 }
+.link{
+    margin-left:-20px;
+}
 
 .card {
   position: relative;

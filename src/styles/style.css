@@ -1431,10 +1431,16 @@ h6 {
   margin: 0;
   justify-content: center;
   list-style: none;
+
 }
 
 .social-icons li {
   margin: 0 5px;
+  vertical-align: middle;
+}
+
+.social-icons span{
+  margin-top:2px;
 }
 
 .social-icons li img {

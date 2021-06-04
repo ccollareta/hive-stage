@@ -15,6 +15,9 @@ information:
   value: ">$100MM"
   type: Prime Product Capabilities
   release: Estimated FY21Q4 RFP
+changelog: 
+  value: ''
+impLinks: []
 mobLink: https://community.hive.gov/main/groups/44056/lounge
 tags:
   - workforce

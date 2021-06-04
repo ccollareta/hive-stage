@@ -21,7 +21,7 @@ information:
   value: $>1,000MM
   type: Enabling Services
   release: " Released (FY21 Q3)"
-changelog: []
+changelog: 
 mobLink: https://community.hive.gov/main/groups/43575/lounge
 file: https://beta.sam.gov/api/prod/opps/v3/opportunities/8593b4f9248048e58c50428be58e1ed5/resources/download/zip?api_key=null&token=
 tags:

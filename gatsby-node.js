@@ -36,7 +36,7 @@ exports.createPages = async ({ actions, graphql }) => {
   const { createPage } = actions;
 
   await createBlogPages(createPage, graphql);
-  await createEventPages(createPage, graphql);
+  //await createEventPages(createPage, graphql);
   await createOppPages(createPage, graphql);
  
 };

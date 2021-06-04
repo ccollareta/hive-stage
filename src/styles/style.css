@@ -615,6 +615,21 @@ h6 {
   height: auto;
 }
 
+.post-img{
+  border-radius: 40px;
+
+  width: 805px;
+}
+.img-post{
+    width: 805px;
+    height: 539px;
+    overflow: hidden;
+    border-radius: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .section-art {
   position: absolute;
   z-index: -1;
@@ -1416,6 +1431,11 @@ h6 {
 
 .social-icons li img {
   width: 70px;
+}
+
+.social-icons.small li img{
+  width: unset !important;
+  height: 17px !important;
 }
 
 /* Ipad media queries */

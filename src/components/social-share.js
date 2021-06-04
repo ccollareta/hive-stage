@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import SocialData from '../../meta/social.yml'
-import fb from '../images/fb.png';
-import tw from '../images/twitter.png';
-import li from '../images/li.png';
+import fb from '../images/new/facebook-icon.svg';
+import tw from '../images/new/twitter-icon.svg';
+import li from '../images/new/linkedin-icon.svg';
 import ig from '../images/ig.png';
 
 const SocialShare = ({url,title}) => (
     <>
     
-    <ul className="social-icons">
+    <ul className="social-icons small">
     <span><strong>Share:</strong> </span>
                                 <li>
                                     <a target="_blank" href={`https://www.facebook.com/sharer/sharer.php?u=${url}`}>

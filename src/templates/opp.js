@@ -58,7 +58,11 @@ const BlogPost = ({ data }) => {
                 <h1>{frontmatter.title}</h1>
                 <div className="row">
                     <div className="col col-8">
-                        <img src={frontmatter.featured_image} className="img-fluid post-img" alt="img" />
+                        <div class="img-post" style={{
+                          backgroundImage :  `url(${frontmatter.featured_image})`
+                        }}>
+                        
+                        </div>
                         <div className="post-author">
                             <div className="author">
                                 <img src={usr_img} alt="user" />

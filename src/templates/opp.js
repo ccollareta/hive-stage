@@ -87,16 +87,7 @@ const BlogPost = ({ data }) => {
                             <p>
                             {frontmatter.pre_text}
                             </p>
-                            {frontmatter.changelog &&
-                            <>
-                            <h5>Change Log</h5>
-                            {frontmatter.changelog.map((change) =>(
-                              <p>
-                                {change.value}
-                              </p>
-                            ))}
-                            </>
-                            }
+                            
                             {frontmatter.impLinks &&
                             <>
                             <h5>Important Links</h5>

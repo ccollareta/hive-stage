@@ -5,7 +5,7 @@ author: Holly Joers
 featured: Yes
 order: 3
 thumbnail: /images/peo-overview.png
-featured_image: /images/04-peo-overview.png
+featured_image: /images/peo-overview.png
 excerpt: For those that may not know, the PEO includes programs in DHMSM, JOMIS,
   DMIX and EIDS.
 pre_title: ""

@@ -95,13 +95,13 @@ export const onInitialClientRender = () => {
   const isotope4 = '/vendor/isotope/imagesloaded.pkgd.min.js';
   const cust = '/scripts/custom.js';
   const collapse = '/vendor/collapse/js/collapse.min.js'
-  const tabs = '/vendor/tabs/tab.js'
+  //const tabs = '/vendor/tabs/tab.js'
 
   scripts.push(loadScripts(lity));
   scripts.push(loadScripts(slick));
  
   scripts.push(loadScripts(collapse));
-  scripts.push(loadScripts(tabs));
+  //scripts.push(loadScripts(tabs));
  
   scripts.push(loadScripts(cust));
   //scripts.push(loadScripts(cust2));

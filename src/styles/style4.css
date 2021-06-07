@@ -763,19 +763,19 @@ svg .a {
     .hive-products .pro-tabs .nav-item {
       flex-basis: 33.333333%;
       padding: 0 10px; }
-      .hive-products .pro-tabs .nav-item .nav-link {
+      .hive-products .pro-tabs .nav-item span {
         display: block;
+        cursor: pointer;
         position: relative;
         text-align: center;
-        font-family: 'Exo',
- sans-serif;
+        font-family: 'Exo', sans-serif;
         font-size: 28px;
         line-height: 37px;
         font-weight: 500;
         color: #000;
         padding: 15px 0;
         border-radius: 16px 16px 0 0; }
-        .hive-products .pro-tabs .nav-item .nav-link:after {
+        .hive-products .pro-tabs .nav-item span:after {
           position: absolute;
           content: '';
           height: 8px;
@@ -783,28 +783,28 @@ svg .a {
           background-color: transparent;
           bottom: 0;
           left: 0; }
-        .hive-products .pro-tabs .nav-item .nav-link#DHMSM-tab:after {
+        .hive-products .pro-tabs .nav-item.DHMSM-tab span:after {
           background-color: #6D3C85; }
-        .hive-products .pro-tabs .nav-item .nav-link#DHMSM-tab.active {
+        .hive-products .pro-tabs .nav-item.DHMSM-tab.active span {
           background-color: #6D3C85;
           color: #fff; }
-        .hive-products .pro-tabs .nav-item .nav-link#JOMIS-tab:after {
+        .hive-products .pro-tabs .nav-item.JOMIS-tab span:after {
           background-color: #6AA443; }
-        .hive-products .pro-tabs .nav-item .nav-link#JOMIS-tab.active {
+        .hive-products .pro-tabs .nav-item.JOMIS-tab.active span {
           background-color: #6AA443;
           color: #fff; }
-        .hive-products .pro-tabs .nav-item .nav-link#EIDS-tab:after {
+        .hive-products .pro-tabs .nav-item.EIDS-tab span:after {
           background-color: #30A5D1; }
-        .hive-products .pro-tabs .nav-item .nav-link#EIDS-tab.active {
+        .hive-products .pro-tabs .nav-item.EIDS-tab.active span {
           background-color: #30A5D1;
           color: #fff; }
-  .hive-products .tab-content #DHMSM {
+  .hive-products .tab-content .DHMSM {
     background-color: rgba(109, 60, 133, 0.12);
     border-radius: 0 0 16px 16px; }
-    .hive-products .tab-content #JOMIS {
+    .hive-products .tab-content .JOMIS {
       background-color: rgba(106, 164, 67, 0.12);
       border-radius: 0 0 16px 16px; }
-      .hive-products .tab-content #EIDS {
+      .hive-products .tab-content .EIDS {
         background-color: rgba(48, 165, 209, 0.12);
         border-radius: 0 0 16px 16px; }
     .hive-products .tab-content .tab-pane {

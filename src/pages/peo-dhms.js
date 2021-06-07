@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql, withPrefix } from 'gatsby';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Block from '../components/block';
@@ -262,19 +263,20 @@ const PeoPage = ({data}) => {
                 <div className="pro-img">
                     <img src={posts.tab_section.image} />
                 </div>
-                <ul className="nav nav-tabs pro-tabs" id="pro-tabs" role="tablist">
+                <Tabs >
+                <TabList className="nav nav-tabs pro-tabs" id="pro-tabs" >
                     {posts.tab_section.tabs.map((tab,index)=>(
-                    <li className="nav-item">
-                        <a className={`nav-link ${index == 0 ? 'active' : ''}`} id={`${tab.title}-tab`} data-toggle="tab" href={`#${tab.title}`} role="tab"
-                            aria-controls={`${tab.title}`} aria-selected={index == 0 ? 'true' : 'false'}>{tab.title}</a>
-                    </li>
+                    <Tab className={`nav-item ${tab.title}-tab`} selectedClassName="active">
+                        <span>{tab.title}</span>
+                    </Tab>
                     ))}
                     
                     
-                </ul>
+
+                </TabList>
                 <div className="tab-content" id="pro-tabs-content">
                 {posts.tab_section.tabs.map((tab,index)=>(
-                    <div className={`tab-pane fade ${index == 0 ? 'show active' : ''}`} id={tab.title} role="tabpanel" aria-labelledby={`${tab.title}-tab`}>
+                    <TabPanel className={`tab-pane fade  ${tab.title}`} selectedClassName="show active" >
                         <div className="pro-type">
                             <h3 className="title">{tab.content.col_1_title}</h3>
                             <ul>
@@ -299,9 +301,10 @@ const PeoPage = ({data}) => {
                                 ))}
                             </ul>
                         </div>
-                    </div>
+                    </TabPanel>
                      ))}
                 </div>
+                </Tabs>
             </div>
         </section>
         <section className="hive-cta" style={{

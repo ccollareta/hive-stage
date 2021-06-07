@@ -1713,7 +1713,15 @@ svg .a {
     top: -128px;
     right: -96px;
   }
-
+  .hive-ideas-2 .hexagon-img.hex-2 {
+    position: absolute;
+    top: -191px;
+    right: -110px;
+  }
+  .hive-ideas-2 .hexagon-img.hex-2 svg{
+    width: 900px;
+  }
+  
   .hive-ideas-2 .hexagon-img svg {
     
   }
@@ -1813,6 +1821,14 @@ svg .a {
   .hive-ideas-2 .hexagon-img {
     top: -130px;
     right:-120px !important;
+  }
+  .hive-ideas-2 .hexagon-img.hex-2 {
+    position: absolute;
+    top: -251px;
+    right: -100px !important;
+  }
+  .hive-ideas-2 .hexagon-img.hex-2 svg{
+    width: 700px;
   }
 
   .hive-ideas-2 .hexagon-img svg {
@@ -2128,8 +2144,11 @@ svg .a {
   .hive-ideas-2 .hexagon-img {
     position: relative !important;
     transform: scale(1);
-    right: 0;
+    right: 0 !important;
     top: 0px !important;
+  }
+  .hive-ideas-2 .hexagon-img.hex-2{
+    right: 0px !important;
   }
   .hive-text-hex .row .image .hex-img {
     top: 0;

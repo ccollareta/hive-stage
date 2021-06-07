@@ -241,7 +241,7 @@ team_member:
     division: JOMIS
     featured: No
     years: "22"
-    title: Chief Technology Officer (CTO)
+    title: Chief Technology Officer
     team_image: /images/ken-johns.jpg
     description: |-
       Mr. Ken Johns serves as the Chief Technology Officer (CTO) of the Joint 
@@ -584,7 +584,7 @@ team_member:
       DHMS, PMO DHMSM
     featured: No
     years: "33"
-    title: FEHRM Solutions Integration Director/APM Interop/Data Systems/ PM DMIX
+    title: FEHRM Solutions Integration Director / APM Interop / Data Systems / PM DMIX
     team_image: /images/lance.png
     description: Mr. Scott directs the planning, budgeting, research and
       development, testing, production, fielding and sustainment efforts.

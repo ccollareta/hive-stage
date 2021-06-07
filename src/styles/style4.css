@@ -1440,7 +1440,7 @@ svg .a {
   .hero-section-2 .hero-action .hero-ctas .btn + .btn {
     margin-left: 0;
     margin-top: 15px; }
-  .hive-products .pro-tabs .nav-item .nav-link {
+  .hive-products .pro-tabs .nav-item span {
     font-size: 18px;
     line-height: 25px; }
   .hive-products .tab-content .tab-pane .pro-type {

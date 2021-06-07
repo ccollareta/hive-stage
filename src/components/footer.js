@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 import logo from '../images/new/logo.svg';
 import Social from './social'
-import dhms from '../images/new/dhms.png';
+import dhms from '../images/new/PEO-DHMS-Logo.png';
 import footer_hex from '../images/footer-hex.png';
 import foo_hex_1 from '../images/foo-hex-1.svg';
 import foo_hex_2 from '../images/foo-hex-2.svg';

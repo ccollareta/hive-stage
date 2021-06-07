@@ -105,7 +105,7 @@ tab_section:
                                 right time. To be effective, data must be accessible anytime, anywhere to drive patient
                                 outcomes. Interact with the graphic below by clicking on each tab to see a full list of
                                 products and capabilities for that program.
-  image: /images/dhms-pro.svg
+  image: /images/peo-products-capabilities.png
   tabs:
     - title: DHMSM
       content:
@@ -183,9 +183,9 @@ social_section:
   title: Bee Sure To Follow PEO DHMS On Social Media To Stay Up
     To                                     Date On The Latest Information!
   social:
-    - icon: /images/fb.png
+    - icon: /images/hive-facebook-icon.svg
       link: https://www.facebook.com/DefenseHealthcareManagementSystems/
-    - icon: /images/li.png
+    - icon: /images/hive-linkedin-icon.svg
       link: https://www.linkedin.com/company/peo-dhms
 ---
 # About PEO DHMS

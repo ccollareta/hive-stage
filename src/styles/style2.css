@@ -1710,13 +1710,12 @@ svg .a {
   }
 
   .hive-ideas-2 .hexagon-img {
-    top: 155px;
-    right: 250px;
+    top: -128px;
+    right: -96px;
   }
 
   .hive-ideas-2 .hexagon-img svg {
-    height: 450px;
-    width: 350px;
+    
   }
 
   .member-profile .pop-hex {
@@ -1812,12 +1811,12 @@ svg .a {
   }
 
   .hive-ideas-2 .hexagon-img {
-    top: 130px;
+    top: -130px;
+    right:-120px !important;
   }
 
   .hive-ideas-2 .hexagon-img svg {
-    height: 380px;
-    width: 300px;
+    
   }
 
   .hive-ideas-2 .ideas-list {
@@ -1984,13 +1983,12 @@ svg .a {
   }
 
   .hive-ideas-2 .hexagon-img {
-    right: 170px;
-    top: 190px;
+    right: -150px !important;
+    top: -150px;
   }
 
   .hive-ideas-2 .hexagon-img svg {
-    height: 300px;
-    width: 235px;
+    width: 800px;
   }
 
   .member-profile {
@@ -2230,7 +2228,7 @@ svg .a {
   .hive-ideas-2 .hexagon-img {
     position: relative;
     transform: scale(1);
-    right: 0;
+    right: 0 !important;
     top: 40px;
   }
 
@@ -3026,6 +3024,9 @@ svg .a {
   
   .hive-submission-details .post-content .post-detail iframe {
     margin-top: 56px;
+    width: 100%;
+    border:0;
+    height:400px;
   }
   
   .hive-submission-details .post-content h5 {

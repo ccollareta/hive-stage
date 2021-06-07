@@ -425,12 +425,16 @@ collections:
     - label: "Privacy Policy"
       name: "privacy"
       file: "src/pages/content/privacy.md"
+      editor:
+        preview: false
       fields:
         - { label: "Date Updated", name: "date", widget: "datetime"}
         - { label: "Body", name: "body", widget: markdown}
     - label: "About PEO-DHMS"
       name: "peo-dhms"
       file: "src/pages/content/peo-dhms.md"
+      editor:
+        preview: false
       fields:
         - label: "Top Section"
           name: "top_section"
@@ -566,7 +570,7 @@ collections:
     create: true
     preview_path: 'news/{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - {
@@ -643,7 +647,7 @@ collections:
     create: true
     preview_path: '/opportunity/{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - {

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107.72" height="104.587" viewBox="0 0 107.72 104.587">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.96" x2="0.5" y2="-0.024" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f15a29"/>
+      <stop offset="0.997" stop-color="#f7941d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_4242" data-name="Group 4242" transform="translate(0.33)">
+    <path id="Path_37" data-name="Path 37" d="M56.97,0H25.02a9.049,9.049,0,0,0-7.836,4.524L1.212,32.191a9.049,9.049,0,0,0,0,9.046L17.185,68.906a9.049,9.049,0,0,0,7.836,4.523h31.95A9.044,9.044,0,0,0,64.8,68.906L80.778,41.239a9.043,9.043,0,0,0,0-9.046L64.8,4.524A9.046,9.046,0,0,0,56.97,0Z" transform="translate(107.39 63.592) rotate(150)" fill="url(#linear-gradient)"/>
+    <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M7.051,31.5H.52V10.47H7.051ZM3.782,7.6A3.8,3.8,0,1,1,7.564,3.783,3.814,3.814,0,0,1,3.782,7.6ZM31.493,31.5H24.976V21.263c0-2.44-.049-5.569-3.4-5.569-3.4,0-3.916,2.651-3.916,5.393V31.5H11.142V10.47h6.263v2.869H17.5a6.862,6.862,0,0,1,6.179-3.4c6.609,0,7.824,4.352,7.824,10.005V31.5Z" transform="translate(37.67 37)" fill="#fff"/>
+  </g>
+</svg>

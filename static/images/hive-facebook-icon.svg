@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107.609" height="104.479" viewBox="0 0 107.609 104.479">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.96" x2="0.5" y2="-0.024" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f15a29"/>
+      <stop offset="0.997" stop-color="#f7941d"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3921" data-name="Group 3921" transform="translate(-0.36 0.112)">
+    <path id="Path_36" data-name="Path 36" d="M56.911,0H24.994a9.04,9.04,0,0,0-7.828,4.519L1.21,32.158a9.04,9.04,0,0,0,0,9.037L17.168,68.835A9.039,9.039,0,0,0,25,73.353H56.912a9.035,9.035,0,0,0,7.825-4.519L80.694,41.2a9.033,9.033,0,0,0,0-9.037L64.736,4.52A9.037,9.037,0,0,0,56.911,0Z" transform="translate(107.97 63.415) rotate(150)" fill="url(#linear-gradient)"/>
+    <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f" d="M20.112,20.794l1.027-6.69h-6.42V9.763c0-1.83.9-3.614,3.772-3.614h2.918V.452A35.591,35.591,0,0,0,16.229,0C10.942,0,7.486,3.2,7.486,9.005v5.1H1.609v6.69H7.486V36.968h7.233V20.794Z" transform="translate(42.751 33.888)" fill="#fff"/>
+  </g>
+</svg>

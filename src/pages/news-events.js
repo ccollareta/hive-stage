@@ -14,7 +14,7 @@ import hex10 from '../images/new/hex-10.svg';
 import hex11 from '../images/new/hex-11.svg';
 import hex12 from '../images/new/hex-12.svg';
 import herobg3 from '../images/new/hero-bg3.png';
-import colbg from '../images/col-bg.jpg';
+import colbg from '../images/new/col-bg.jpg';
 
 const Blog = ({ data, pageContext }) => {
     
@@ -52,14 +52,13 @@ const Blog = ({ data, pageContext }) => {
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
   return (
     <Layout pgVar={pgVar}>
-     
       <SEO title="Digital Transformation in Healthcare-News & Events" 
       keywords="digital transformation in healthcare (MSV 590)"
       description="News and events centered on digital transformation in healthcare with a group of innovative IT pros open to partnering with PEO DHMS. Join us for more." />
       <section className="hero-section-2 style-3 animated-hex"
             style={{
-              '--bg-img':`url(${herobg3})`,
-               '--bg-img-mobile': `url(${colbg})`
+              'background-image':`url(${herobg3})`,
+               
                }}>
             <img src={art5} className="art art-1" />
             <img src={art2} className="art art-2" />

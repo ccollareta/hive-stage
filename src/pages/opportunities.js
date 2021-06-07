@@ -35,8 +35,8 @@ const Blog = ({ data, pageContext }) => {
       description="Partner with collaborative, like-minded industry partners to bring cutting-edge software development, UI/UX, and human-centric design to the PEO DHMS." />
       <section className="hero-section-2 style-3 animated-hex"
             style={{
-              '--bg-img':`url(${herobg3})`,
-               '--bg-img-mobile': `url(${colbg})`
+              'background-image':`url(${herobg3})`,
+              
                }}>
             <img src={art5} className="art art-1" />
             <img src={art2} className="art art-2" />

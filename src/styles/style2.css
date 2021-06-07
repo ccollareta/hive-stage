@@ -1794,6 +1794,9 @@ svg .a {
     justify-content: center;
     text-align: center;
   }
+  .hero-section-2.style-3 .row{
+    text-align: left;
+  }
 
   .hero-section-2 .col-5 {
     flex: 0 0 100%;
@@ -2084,7 +2087,7 @@ svg .a {
   }
 
   .hero-section-2.style-3 {
-    background-image: var(--bg-img-mobile) !important;
+    background-image: url('../images/new/col-bg.jpg') !important;
     background-size: cover !important;
     background-position: center !important;
     padding: 150px 0 100px !important;
@@ -3110,7 +3113,6 @@ svg .a {
 
   .hero-section-2.style-3 {
     padding: 240px 0 215px;
-    background-image: var(--bg-img);
     background-size: contain;
     background-position: center right -150px;
     max-height: 1125px;

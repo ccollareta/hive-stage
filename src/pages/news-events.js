@@ -72,7 +72,6 @@ const Blog = ({ data, pageContext }) => {
                 
 				<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1200" height="1100" viewBox="0 0 1043.739 964.99">
 					<defs>
-						
 						<linearGradient id="linear-gradient" y1="1" x2="1" y2="1" gradientUnits="objectBoundingBox">
 							<stop offset="0" stopColor="#f15a29"></stop>
 							<stop offset="1" stopColor="#f7941d"></stop>
@@ -112,7 +111,7 @@ const Blog = ({ data, pageContext }) => {
                                 {feat_post.excerpt}
                                 </p>
                                 <div className="post-details">
-                                    <span href="#" className="author">Submitted by {feat_post.author}</span>
+                                    <span className="author">Submitted by {feat_post.author}</span>
                                     <span className="date">{feat_post.date ? new Date(feat_post.date).toLocaleDateString('en-US',options) : ''}</span>
                                 </div>
                                 <a className="btn rounded" href={feat_post.path}><span>Read More</span></a>
@@ -126,7 +125,7 @@ const Blog = ({ data, pageContext }) => {
         </section>
         <section className="all-news">
             <div className="inner-container">
-                <h1>All News & Events</h1>
+                <h1>All News &amp; Events</h1>
                 <div className="filter-form">
                     
                 </div>

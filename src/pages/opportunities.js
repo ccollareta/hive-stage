@@ -89,7 +89,7 @@ const Blog = ({ data, pageContext }) => {
                                 {feat_post.excerpt}
                                 </p>
                                 <div className="post-details">
-                                    <span href="#" className="author">Submitted by {feat_post.author}</span>
+                                    <span className="author">Submitted by {feat_post.author}</span>
                                     <span className="date">{feat_post.date ? new Date(feat_post.date).toLocaleDateString('en-US',options) : ''}</span>
                                 </div>
                                 <a className="btn rounded" href={feat_post.path}><span>Read More</span></a>

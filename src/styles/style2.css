@@ -2090,6 +2090,7 @@ svg .a {
     padding: 150px 0 100px !important;
     color: #fff !important;
     min-height: unset !important;
+    -webkit-backface-visibility: hidden;
   }
   .hero-section-2.style-3 .featured-item{
     margin-top: unset !important;
@@ -3338,13 +3339,13 @@ svg .a {
     width: 650px;
 }
 }
-@media (max-width: 1599.98px)
+@media (max-width: 1599.98px){
 .hero-section-2.style-3 .hero-hex {
     height: 650px;
     width: 650px;
-}
-@media (max-width: 1799.98px)
+}}
+@media (max-width: 1799.98px){
 .hero-section-2.style-3 .hero-hex {
     height: 800px;
     width: 800px;
-}
+}}

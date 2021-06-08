@@ -19,12 +19,11 @@ information:
   value: <$100MM
   type: Enabling Services
   release: Estimated FY21Q4 RFP
-changelog: 
+changelog: null
 impLinks: []
 mobLink: https://community.hive.gov/main/groups/43702/lounge
 tags:
-  - workforce
-
+  - PEO 3
 collections:
   - peo-3
 ---

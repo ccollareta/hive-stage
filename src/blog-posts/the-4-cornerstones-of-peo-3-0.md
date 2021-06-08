@@ -24,7 +24,7 @@ changelog: []
 subtitle: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43511/lounge/posts/625464?tab=comment
 tags:
-  - workforce
+  - PEO 3
 collections:
   - workforce
 file: ""

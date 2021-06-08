@@ -39,7 +39,7 @@ four_blocks:
                                       announcements, upcoming industry days, and more.
     link: /news-events
 video_block:
-  video: https://vimeo.com/showcase/8547386
+  video: https://vimeo.com/560241882
   title: You Gotta See This To Bee-lieve It!
   description: The Health Information Vision Exchange (HIVE) is an innovative
     platform for matching Federal Health sector needs and aspirations with the

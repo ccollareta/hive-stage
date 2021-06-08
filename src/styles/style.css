@@ -739,6 +739,10 @@ h6 {
     margin-bottom: 40px;
   }
 }
+.card .card-img img:not(.hover){
+  position: relative;
+    top: -50px;
+}
 
 .post-details span {
   display: block;

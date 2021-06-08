@@ -18,7 +18,7 @@ const FeatOpp = ({title, description, thumbnail,link, author, date }) => {
                             <div className="card-img">
                                 <img src={thumbnail} className="img-fluid" />
                                 <a href={`${link}/`} className="card-overlay">
-                                    <img src={one_icon} />
+                                    <img src={one_icon} className="hover"/>
                                 </a>
                             </div>
                             <div className="card-body">

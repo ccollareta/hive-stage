@@ -78,7 +78,7 @@ logo_section:
     Federal Healthcare. HIVE works with government partners across the Federal
     landscape.
   logos:
-    - logo: /images/c1.png
+    - logo: /images/peo-dhms-logo.png
       link: https://www.health.mil/About-MHS/OASDHA/Defense-Health-Agency/Defense-Healthcare-Management-Systems
     - logo: /images/c2.png
       link: https://health.mil/About-MHS/OASDHA/Defense-Health-Agency

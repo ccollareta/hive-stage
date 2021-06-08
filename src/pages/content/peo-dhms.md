@@ -142,20 +142,24 @@ tab_section:
           - list_item: System Integration
           - list_item: Health Information Exchange
           - list_item: Information Capture
-          - list_item: Healthcare Delivery
-          - list_item: Clinical Decision Support Tools
           - list_item: Electronic Health Records
-          - list_item: VirtualHealth Tools
+          - list_item: Medical Logistics
+          - list_item: Medical Command and Control
+          - list_item: Operational Medicine
+          - list_item: Patient Movement
         col_2_list:
-          - list_item: MHS GENESIS
+          - list_item: Business Operations
+          - list_item: Shared Test Services
+          - list_item: Finance
+          - list_item: Contracting J-4
+          - list_item: Acquisition
+          - list_item: CMIO
+        col_3_list:
           - list_item: MHS GENESIS - Theater
           - list_item: Theater Medical Data Store (TMDS)
-          - list_item: Medical Situational Awareness in Theater (MSAT)
+          - list_item: Medical Situational Awareness in the Theater (MSAT)
           - list_item: Theater Medical Information Program - Joint (TMIP-J)
           - list_item: Medical Common Operating Picture (MedCOP)
-        col_3_list:
-          - list_item: MHS GENESIS
-          - list_item: MHS GENESIS - Theater
     - title: EIDS
       content:
         col_1_title: Capabilities

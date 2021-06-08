@@ -163,7 +163,7 @@ team_member:
       plant: Tasty Ones
       food: Pizza!!!
       movie: Gattaca
-      song: None
+      song: ""
     states: 48
     name: LCDR Darshan Thota
     coffee: "0"
@@ -290,8 +290,8 @@ team_member:
   - personal:
       book: The Amber Spyglass by Philip Pullman
       team: Arsenal
-      plant: No
-      food: No
+      plant: ""
+      food: ""
       movie: A Few Good Men
       song: '"Wellerman" by Unknown / TikTok'
     states: 10
@@ -327,7 +327,7 @@ team_member:
       team: Tar Heels, Celtics & Raiders
       plant: Azalea
       food: Seafood
-      movie: None
+      movie: ""
       song: '"Rosalita" by Bruce Springsteen'
     states: 37
     name: Terry Rowles
@@ -422,8 +422,8 @@ team_member:
       team: Capitals
       plant: Gerber Daises
       food: Crabs
-      movie: None
-      song: None
+      movie: ""
+      song: ""
     states: 16
     name: Tina Beletsky
     coffee: "5"
@@ -521,7 +521,7 @@ team_member:
       team: Baltimore Ravens
       plant: Bonsai
       food: Grapes
-      movie: None
+      movie: ""
       song: '"I’m here" by Jenifer Hudson'
     states: 20
     name: Cheryl Harper-Parham

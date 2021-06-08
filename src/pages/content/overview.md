@@ -67,7 +67,7 @@ com_blocks:
   headline: "@"
   description: "@"
   block_one:
-    icon: /images/hive-comm.png
+    icon: /images/community-landscape.png
     description: The HIVE Community is a place for general discussion and thought
       leadership related to HIVE and Federal Health innovation. Join the
       conversation to apart of the innovation.

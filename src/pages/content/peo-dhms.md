@@ -166,15 +166,17 @@ tab_section:
         col_2_title: Shared Services
         col_3_title: Major Products
         col_2_list:
-          - list_item: MHS GENESIS
-          - list_item: MHS GENESIS - Theater
-          - list_item: Theater Medical Data Store (TMDS)
-          - list_item: Medical Situational Awareness in Theater (MSAT)
-          - list_item: Theater Medical Information Program - Joint (TMIP-J)
-          - list_item: Medical Common Operating Picture (MedCOP)
+          - list_item: Business Operation
+          - list_item: "Shared Test Services "
+          - list_item: Finance
+          - list_item: Contracting J-4
+          - list_item: Acquisition
+          - list_item: CMIO
         col_3_list:
-          - list_item: MHS GENESIS
-          - list_item: MHS GENESIS - Theater
+          - list_item: Joint Longitudinal Viewer (JLV)
+          - list_item: Data Exchange Services (DES)
+          - list_item: Joint Health Information Exchange (JHIE)
+          - list_item: Medical Insurance Plan (MIP)
         col_1_list:
           - list_item: Health Reporting
           - list_item: System Integration
@@ -182,8 +184,11 @@ tab_section:
           - list_item: Information Capture
           - list_item: Healthcare Delivery
           - list_item: Clinical Decision Support Tools
-          - list_item: Electronic Health Records
-          - list_item: VirtualHealth Tools
+          - list_item: Medical Logistics
+          - list_item: Data and Analytics
+          - list_item: Data Innovation
+          - list_item: Data Tools
+          - list_item: Population Health
 social_section:
   title: Bee Sure To Follow PEO DHMS On Social Media To Stay Up
     To                                     Date On The Latest Information!

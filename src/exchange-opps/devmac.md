@@ -24,7 +24,7 @@ changelog: {}
 impLinks: []
 mobLink: https://community.hive.gov/main/groups/44056/lounge
 tags:
-  - workforce
+  - PEO 3
 collections:
   - peo-3
 ---

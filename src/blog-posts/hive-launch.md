@@ -51,10 +51,9 @@ While the HIVE groups will change over time with new partners, opportunities, an
 * See community questions and thoughts about the **[Workforce 3.0](https://community.hive.gov/main/groups/43575/lounge)** acquisition.
 * Learn about **[Workplace 3.0](https://community.hive.gov/main/groups/43702/lounge)** requirements and ask questions.
 
- **Learn more about the full HIVE platform below.**
+  **Learn more about the full HIVE platform below.**
 
 **How do I use HIVE.gov?**
-
 
 Simply access the site and begin browsing. We will be constantly updating our content with helpful information, PEO DHMS announcements, events, and engagement opportunities. You will be able to contact us directly through the site through submission forms.
 
@@ -66,7 +65,7 @@ It’s staying! We plan to continue to integrate this HIVE Community with the HI
 
 This site will represent a shift in the paradigm in how government typically works with its partner organizations. We want all of you to use this platform to be heard, learn more, and get involved.
 
-Finally i want to thank Lounge Lizard Worldwide and CloudPareto for making this vision a reality. 
+#### Finally, I want to thank Lounge Lizard Worldwide and CloudPareto for making this vision a reality. 
 
 Thank you,
 

@@ -55,7 +55,7 @@ changelog: null
 mobLink: https://community.hive.gov/main/groups/43575/lounge
 file: https://sam.gov/api/prod/opps/v3/opportunities/c5e644623b1141c396a43046592ff45f/resources/download/zip?api_key=null&token=
 tags:
-  - PEO 3
+  - peo-3
 collections:
   - peo-3
 ---

@@ -442,13 +442,22 @@ svg .a {
   height: 270px;
 }
 
-.hive-2-col-section .card .card-img img {
+.hive-2-col-section .card .card-img img:not(.hover) {
   transition: all .3s ease;
   height: 100%;
   width: 100%;
   object-fit: cover;
   top: 0 !important;
 }
+.hive-2-col-section .card .card-img img.hover{
+  transition: all .3s ease;
+  height: 100%;
+  width: 100%;
+  object-fit: contain !important;
+  top: 0 !important;
+}
+
+
 
 .hive-2-col-section .card .link{
 margin-left: 0 !important;

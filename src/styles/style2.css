@@ -450,6 +450,11 @@ svg .a {
   top: 0 !important;
 }
 
+.hive-2-col-section .card .link{
+margin-left: 0 !important;
+}
+
+
 .hive-2-col-section .card .card-img:hover img {
   transform: scale(1.1);
 }

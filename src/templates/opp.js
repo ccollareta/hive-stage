@@ -117,12 +117,12 @@ const BlogPost = ({ data }) => {
                         <div className="section-head">
                             <div className="section-title">
                                 <p className="sub-title text-orange">Let’s make some honey</p>
-                                <h2 className="title text-white">Bee A Part of the Solution</h2>
+                                <h2 className="title text-white">Bee a Part of the Solution</h2>
                             </div>
                         </div>
                         <div className="text-container text-white">
                             <p>
-                            Join this opportunity’s dedicated HIVE Community to see the latest information, <br />ask questions, and interact with other HIVE members. <br />Don’t miss your chance to help shape this opportunity with us!
+                            Join this opportunity’s dedicated HIVE Community to see the latest information, <br />ask questions, and interact with other HIVE members. Don’t miss your chance to<br /> help shape this opportunity with us!
                             </p>
                             <div className="ctas">
                             {frontmatter.mobLink && <a href={frontmatter.mobLink} className="btn rounded"><span>Join the Conversation</span></a> }

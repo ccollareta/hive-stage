@@ -375,30 +375,55 @@ const AboutPage = ({data}) => {
                            <div className="col col-3">
                                <h5>Personal</h5>
                                <ul className="list-unstyled personal-details">
+                               {post.personal.book && 
+                               <>
                                    <li>
                                        <span className="detail">Favorite Book:<br /></span>
                                        <span className="answer">{post.personal.book}</span>
                                    </li>
+                                   </>
+                               }
+                               {post.personal.team &&
+                               <>
                                    <li>
+                                  
                                        <span className="detail">Favorite Sports Team:<br /></span>
                                        <span className="answer">{post.personal.team}</span>
                                    </li>
+                                   </>
+                                }
+                                {post.personal.plant &&
+                                <>
                                    <li>
                                        <span className="detail">Favorite Flower/Plant:<br /></span>
                                        <span className="answer">{post.personal.plant}</span>
                                    </li>
+                                </>
+                                }
+                                {post.personal.food &&
+                                <>
                                    <li>
                                        <span className="detail">Favorite Food:<br /></span>
                                        <span className="answer">{post.personal.food}</span>
                                    </li>
+                                </>
+                                }
+                                {post.personal.movie &&
+                                <>
                                    <li>
                                        <span className="detail">Favorite Movie:<br /></span>
                                        <span className="answer">{post.personal.movie}</span>
                                    </li>
-                                   <li>
+                                </>
+                                }
+                                {post.personal.song &&
+                                <>
+                                    <li>
                                        <span className="detail">Walk Up Song:<br /></span>
                                        <span className="answer">{post.personal.song}</span>
                                    </li>
+                                </>
+                                }
                                </ul>
                            </div>
                        </div>

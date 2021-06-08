@@ -147,12 +147,12 @@ collections:
                 name: "personal"
                 widget: "object"
                 fields:
-                  - {label: "Book", name: "book", widget: "string"}
-                  - {label: "Team", name: "team", widget: "string"}
-                  - {label: "Flower/Plant", name: "plant", widget: "string"}
-                  - {label: "Food", name: "food", widget: "string"}
-                  - {label: "Movie", name: "movie", widget: "string"}
-                  - {label: "Song", name: "song", widget: "string"}
+                  - {label: "Book", name: "book", widget: "string", required: false}
+                  - {label: "Team", name: "team", widget: "string", required: false}
+                  - {label: "Flower/Plant", name: "plant", widget: "string", required: false}
+                  - {label: "Food", name: "food", widget: "string", required: false}
+                  - {label: "Movie", name: "movie", widget: "string", required: false}
+                  - {label: "Song", name: "song", widget: "string", required: false}
               - label: "Image"
                 name: "team_image"
                 widget: "image" 

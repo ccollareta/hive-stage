@@ -541,7 +541,7 @@ svg .a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     padding-bottom: 150px;
     position: relative;
-    z-index: 5; }
+    }
     .footer .footer-primary .primary-container {
       display: flex;
       flex-wrap: wrap; }

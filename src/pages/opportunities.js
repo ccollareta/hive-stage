@@ -155,7 +155,7 @@ export const pageQuery = graphql`
   query {
       posts: allMarkdownRemark(
       filter: { fields: { sourceName: { eq: "opps" } } }
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { fields: frontmatter___order, order: ASC }
     ) {
       edges {
         node {
@@ -166,6 +166,7 @@ export const pageQuery = graphql`
             title
             tags
             collections
+            order
             excerpt
             featured_image
             thumbnail
@@ -178,7 +179,7 @@ export const pageQuery = graphql`
     }
     feat: allMarkdownRemark(
       filter: {fields: {sourceName: {eq: "opps"}}, frontmatter: {featured: {eq: "Yes"}}}
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { fields: frontmatter___order, order: ASC }
       limit: 3
     ) {
       edges {

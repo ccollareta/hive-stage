@@ -1093,11 +1093,11 @@ svg .a {
     padding-right: 40px; }
   .hive-faqs .hexagon-img {
     position: relative;
-    top: 0;
-    left: -50px; }
+    top: -80px;
+    left: -120px; }
   .hive-faqs .hexagon-img svg {
-    height: 100%;
-    width: 100%; }
+    height: 800px;
+    width: 800px; }
   .accordion .acc-body .acc-content {
     padding-right: 0; }
   .hive-cards-section.style-2 .row .col-5 {

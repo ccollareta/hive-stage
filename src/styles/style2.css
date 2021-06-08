@@ -447,6 +447,7 @@ svg .a {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  top: 0 !important;
 }
 
 .hive-2-col-section .card .card-img:hover img {
@@ -2200,7 +2201,7 @@ svg .a {
   }
 
   .hex-grid.small-row .round-hex {
-    height: 5em;
+    height: 9em;
   }
 
   .hex-grid.medium-row {

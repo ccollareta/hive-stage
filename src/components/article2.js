@@ -18,7 +18,7 @@ const Article2 = ({path, title,tags, author,excerpt,featured_image,date,thumbnai
                             <div className="card-img">
                                 <img src={thumbnail} className="img-fluid" />
                                 <a href={path} className="card-overlay">
-                                    <img src={hovericon} />
+                                    <img src={hovericon} className="hover"/>
                                 </a>
                             </div>
                             <div className="card-body">

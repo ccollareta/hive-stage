@@ -39,7 +39,7 @@ blocks:
                                         HIVE, opportunities, news, and events.
 four_blocks:
   small_text: WE’RE BUZZING WITH INFORMATION
-  headline: What is HIVE?
+  headline: What Is HIVE?
   description: Health Information Vision Exchange (HIVE) is a modern online
     communication medium to allow PEO DHMS and its partners to build a stronger
     Federal Health community with the aim of achieving high quality solutions

@@ -24,9 +24,9 @@ changelog: []
 subtitle: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43511/lounge/posts/625464?tab=comment
 tags:
-  - workforce
+  - peo-3
 collections:
-  - workforce
+  - peo-3
 file: ""
 ---
 Over the last 50 years, one thing has been evident – organizations that are unable to adapt to changing technology lose value and collapse. This has been shown in industry with businesses such as Sears and Blockbuster. This has led industry to use the phrase “agility” to describe an organization’s ability to adapt to new technologies.

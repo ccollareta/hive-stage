@@ -26,9 +26,9 @@ changelog: []
 subtitle: ""
 mobLink: https://hivegov.mobilize.io/main/groups/43575/lounge/posts/608341?tab=comment
 tags:
-  - workforce
+  - peo
 collections:
-  - peo-3
+  - peo
 file: ""
 ---
 I really appreciate all of the engagement in the HIVE!\

@@ -22,9 +22,9 @@ related:
     author: Holly Joers
     link: /news/peo-overview
 tags:
-  - workforce
+  - hive
 collections:
-  - workforce
+  - hive
 ---
 **Announcing the Launch of Our New Website**
 

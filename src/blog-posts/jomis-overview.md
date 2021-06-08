@@ -18,9 +18,9 @@ related:
     author: Holly Joers
     link: /news/peo-overview
 tags:
-  - workforce
+  - jomis
 collections:
-  - peo-3
+  - jomis
 ---
 
 

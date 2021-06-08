@@ -22,9 +22,9 @@ impLinks: []
 changelog: []
 mobLink: https://hivegov.mobilize.io/main/groups/43511/lounge/posts/584843?tab=comment
 tags:
-  - workforce
+  - hive
 collections:
-  - workforce
+  - hive
 file: ""
 ---
 **We're Buzzing with Excitement!** I’ve barely slept a wink over the past two days as my mind continues to swirl on how this could fundamentally change the way our business is conducted. HIVE is the first step in our digital transformation and we look forward to partnering with you on our journey!

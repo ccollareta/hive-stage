@@ -3,3 +3,9 @@ collections:
     name: Workforce 3.0
   - slug: peo-3
     name: PEO 3.0
+  - slug: hive
+    name: HIVE
+  - slug: jomis
+    name: jomis
+  - slug: peo
+    name: PEO

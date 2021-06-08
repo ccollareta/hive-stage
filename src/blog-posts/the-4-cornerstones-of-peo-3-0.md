@@ -11,9 +11,9 @@ excerpt: Over the last 50 years, one thing has been evident – organizations th
 pre_title: ""
 pre_text: ""
 related:
-  - date: 2021-06-08
+  - date: 2021-06-09
     title: HIVE Launch
-    author: Community Admin
+    author: Malissa Smith
     link: /news/hive-launch
 information:
   value: ""

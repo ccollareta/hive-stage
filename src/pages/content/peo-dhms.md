@@ -122,15 +122,16 @@ tab_section:
           - list_item: Electronic Health Record
           - list_item: VirtualHealth Tools
         col_2_list:
-          - list_item: MHS GENESIS
-          - list_item: MHS GENESIS - Theater
-          - list_item: Theater Medical Data Store (TMDS)
-          - list_item: Medical Situational Awareness in Theater (MSAT)
-          - list_item: Theater Medical Information Program - Joint (TMIP-J)
-          - list_item: Medical Common Operating Picture (MedCOP)
+          - list_item: Business Operation
+          - list_item: Shared Test Services
+          - list_item: Finance
+          - list_item: Contracting J-4
+          - list_item: Acquisition
+          - list_item: CMIO
         col_3_list:
           - list_item: MHS GENESIS
           - list_item: MHS GENESIS - Theater
+          - list_item: Joint Health Information Exchange (JHIE)
     - title: JOMIS
       content:
         col_1_title: Capabilities

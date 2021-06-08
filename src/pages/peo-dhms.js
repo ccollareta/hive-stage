@@ -285,14 +285,7 @@ const PeoPage = ({data}) => {
                                 ))}
                             </ul>
                         </div>
-                        <div className="pro-type">
-                            <h3 className="title">{tab.content.col_2_title}</h3>
-                            <ul>
-                            {tab.content.col_2_list && tab.content.col_2_list.map((list)=>(
-                                <li>{list.list_item}</li>
-                                ))}
-                            </ul>
-                        </div>
+            
                         <div className="pro-type">
                             <h3 className="title">{tab.content.col_3_title}</h3>
                             <ul>

@@ -117,6 +117,8 @@ collections:
                 hint: "Name"
               - label: "Title"
                 name: "title"
+              - label: "Short Title"
+                name: "short_title"
                 widget: "string"
                 hint: "Title"
               - label: "Division"

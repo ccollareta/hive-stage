@@ -26,26 +26,24 @@ tags:
 collections:
   - hive
 ---
-**Announcing the Launch of Our New Website**
+ **Announcing the Launch of Our New Website**
 
-After months of hard work, we are incredibly excited to announce the official launch of HIVE.gov on June 9th, 2021. In our mission to transform the delivery of healthcare and become a world-class technology organization, it is important to expand the connection between us and all of you, our partners.
+After a year of hard work, we are incredibly excited to announce the official launch of HIVE.gov on June 9th, 2021. In our mission to transform the delivery of healthcare and become a world-class technology organization, it is important to expand the connection between us and all of you, our partners. 
 
- We just made these conversations easier with HIVE.gov, a place to provide you with the most accurate, up-to-date information on PEO DHMS and our partners. This website represents a step towards providing our partners with an easier way to learn about our opportunities, thought leadership, and future goals in one location.
+We just made these conversations easier with HIVE.gov, a place to provide you with the most accurate, up-to-date information on PEO DHMS and our partners. This website represents a step towards providing our partners with an easier way to learn about our opportunities, thought leadership, and future goals in one location. 
 
- The HIVE Community was first established last year, access it at community.hive.gov, and since its unofficial launch, we have seen unprecedented growth. Our community has allowed our participants to connect with like-minded and like-interested partners, helped facilitate opportunities, and offered a space to share opinions. Here’s a snapshot into the HIVE Community today:
+The HIVE Community was first established last year, access it at community.hive.gov, and since its unofficial launch, we have seen unprecedented growth. Our community has allowed our participants to connect with like-minded and like-interested partners, helped facilitate opportunities, and offered a space to share opinions. Here’s a snapshot into the HIVE Community today:
 
 * 1,100+ Active Users
 * 550+ Unique Companies
 * 230 + Individual Posts
 * 5+ Engagement Groups
 
-The HIVE Community welcomes both traditional and unique partners to share their opinions and shape the future of PEO DHMS and our partners. From consulting firms to startups, the community boasts a diverse set of companies with expertise in areas from Artificial Intelligence/Machine Learning to Health IT.
-
- 
+The HIVE Community welcomes both traditional and unique partners to share their opinions and shape the future of PEO DHMS and our partners. From consulting firms to startups, the community boasts a diverse set of companies with expertise in areas from Artificial Intelligence/Machine Learning to Health IT. 
 
 **Engage with our groups**
 
-While the HIVE groups will change over time with new partners, opportunities, and events, see a glimpse of how you can be involved in the most popular ones below: 
+While the HIVE groups will change over time with new partners, opportunities, and events, see a glimpse of how you can be involved in the most popular ones below:
 
 * Find your next opportunity partner in **[Teaming & Partnering](https://community.hive.gov/main/groups/43576/lounge)**.
 * Speak directly with **[JOMIS](https://community.hive.gov/main/groups/46682/lounge)** and hear about their news and opportunities.
@@ -53,18 +51,23 @@ While the HIVE groups will change over time with new partners, opportunities, an
 * See community questions and thoughts about the **[Workforce 3.0](https://community.hive.gov/main/groups/43575/lounge)** acquisition.
 * Learn about **[Workplace 3.0](https://community.hive.gov/main/groups/43702/lounge)** requirements and ask questions.
 
+ **Learn more about the full HIVE platform below.**
+
+**How do I use HIVE.gov?**
 
 
-**Interact with updated site features**
+Simply access the site and begin browsing. We will be constantly updating our content with helpful information, PEO DHMS announcements, events, and engagement opportunities. You will be able to contact us directly through the site through submission forms.
 
-We will be constantly updating our content with helpful information, announcements, events, and engagement opportunities. In the future, you will be able to contact us directly through the site through submission forms.
+**What does this mean for the current HIVE Community?**
 
- 
+It’s staying! We plan to continue to integrate this HIVE Community with the HIVE.gov site to provide all of you the ability to continue to interact with us in a less formal way. Similar to WF3, WP3, DevMac, and XaaS, opportunities will each have their own group for discussion and teaming. Announcements such as news and blogs will each have a space within the HIVE Community to comment, ask questions, and interact. 
 
-**Choose your engagement type**
+**Why should I use HIVE.gov?**
 
-We plan to continue to integrate our HIVE Community with the HIVE.gov site to provide all of you the ability to continue to interact with us in a less formal way. Similar to Workforce 3.0, Workplace 3.0, DevMAC, and Federal XaaS, each opportunity will have its own group for discussion and teaming. Announcements such as news and blogs will each have a space within the HIVE Community to comment, ask questions, and interact with government participants.
+This site will represent a shift in the paradigm in how government typically works with its partner organizations. We want all of you to use this platform to be heard, learn more, and get involved.
 
- 
+Finally i want to thank Lounge Lizard Worldwide and CloudPareto for making this vision a reality. 
 
-Learn more about the full HIVE platform below.
+Thank you,
+
+Malissa Smith

@@ -427,7 +427,7 @@ svg .a {
   transition: all .3s ease;
 }
 
-.hive-2-col-section .row .col .card:hover .card-img .card-overlay {
+.hive-2-col-section .row .col .card .card-img:hover .card-overlay {
   opacity: 0.88;
 }
 

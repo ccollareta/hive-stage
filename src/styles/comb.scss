@@ -107,8 +107,10 @@
     position: relative;
     font-size: 8px;
     font-weight: 400;
+    width: 130px !important;
     line-height: 1;
     display: block;
+    word-wrap: break-word;
     margin-top: 22px;
     text-align: center;
     text-transform: uppercase;

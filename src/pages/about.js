@@ -193,7 +193,7 @@ const AboutPage = ({data}) => {
                                 <img src={post.team_image} />
                                 <div className="hex-info">
                                     <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
+                                    <span>{post.short_title}</span>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +209,7 @@ const AboutPage = ({data}) => {
                                 <img src={post.team_image} />
                                 <div className="hex-info">
                                     <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
+                                    <span>{post.short_title}</span>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,7 @@ const AboutPage = ({data}) => {
                                 <img src={post.team_image} />
                                 <div className="hex-info">
                                     <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
+                                    <span>{post.short_title}</span>
                                 </div>
                             </div>
                         </div>
@@ -251,7 +251,7 @@ const AboutPage = ({data}) => {
                                 <img src={post.team_image} />
                                 <div className="hex-info">
                                     <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
+                                    <span>{post.short_title}</span>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +268,7 @@ const AboutPage = ({data}) => {
                                 <img src={post.team_image} />
                                 <div className="hex-info">
                                     <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
+                                    <span>{post.short_title}</span>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +283,7 @@ const AboutPage = ({data}) => {
                                 <img src={post.team_image} />
                                 <div className="hex-info">
                                     <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
+                                    <span>{post.short_title}</span>
                                 </div>
                             </div>
                         </div>
@@ -301,7 +301,7 @@ const AboutPage = ({data}) => {
                                 <img src={post.team_image} />
                                 <div className="hex-info">
                                     <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
+                                    <span>{post.short_title}</span>
                                 </div>
                             </div>
                         </div>
@@ -317,7 +317,7 @@ const AboutPage = ({data}) => {
                                 <img src={post.team_image} />
                                 <div className="hex-info">
                                     <h5 className="mb-0">{post.name}</h5>
-                                    <span>{post.title}</span>
+                                    <span>{post.short_title}</span>
                                 </div>
                             </div>
                         </div>

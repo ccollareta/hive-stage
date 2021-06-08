@@ -710,6 +710,11 @@ svg .a {
   justify-content: space-between;
 }
 
+.hive-partners-2 .img-container a img{
+  max-width: 133px;
+}
+
+
 .hive-members {
   position: relative;
   padding: 120px 0 150px;

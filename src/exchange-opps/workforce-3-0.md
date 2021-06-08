@@ -1,7 +1,7 @@
 ---
 title: Workforce 3.0
 date: 2021-04-22
-author: " Community Admin"
+author: Matthew Hudson
 featured: Yes
 order: 1
 thumbnail: /images/wf3e.png

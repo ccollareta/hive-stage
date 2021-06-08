@@ -65,7 +65,11 @@ It’s staying! We plan to continue to integrate this HIVE Community with the HI
 
 This site will represent a shift in the paradigm in how government typically works with its partner organizations. We want all of you to use this platform to be heard, learn more, and get involved.
 
-#### Finally, I want to thank [Lounge Lizard Worldwide](https://www.loungelizard.com) and [CloudPareto](https://www.cloudpareto.com/) for making this vision a reality. 
+#### Finally, I want to thank [Lounge Lizard Worldwide](https://www.loungelizard.com) and [CloudPareto](https://www.cloudpareto.com/) for making this vision a reality.
+
+
+
+
 
 Thank you,
 

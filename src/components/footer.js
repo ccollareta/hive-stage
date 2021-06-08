@@ -55,7 +55,7 @@ const Footer = () => (
                             <li><a href="https://www.section508.gov/">Accessibility/508 Compliance</a></li>
                             <li><a href="https://www.foia.gov/">FOIA</a></li>
                             <li><a href="https://www.usa.gov/">USA.gov</a></li>
-                            <li><a href="https://www.hhs.gov/">HHS.gov</a></li>
+                            <li><a href="https://health.mil/">HEALTH.mil</a></li>
                             <li><a href="https://www.gsa.gov/">GSA.gov</a></li>
                         </ul>
                         <div className="address">

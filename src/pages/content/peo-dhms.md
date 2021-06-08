@@ -142,9 +142,9 @@ tab_section:
           - list_item: System Integration
           - list_item: Health Information Exchange
           - list_item: Information Capture
-          - list_item: Electronic Health Records
           - list_item: Medical Logistics
           - list_item: Medical Command and Control
+          - list_item: Medical Situational Awareness
           - list_item: Operational Medicine
           - list_item: Patient Movement
         col_2_list:

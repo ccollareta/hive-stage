@@ -22,9 +22,7 @@ tags:
 collections:
   - jomis
 ---
-
-
-Hi, I'm David Norley, Program Manager of Joint Operational Medicine Information Systems (JOMIS)
+Hi, I'm David Norley, Program Manager of Joint Operational Medicine Information Systems (JOMIS).
 
 On behalf of JOMIS, I am excited about the engagement opportunities in the HIVE! The JOMIS program provides interoperable medical information technology capabilities to deployed personnel across the full spectrum of military operations. Our mission includes maintaining an existing suite of systems known as the Theater Medical Information Program-Joint (TMIP-J) and developing new capabilities across five interrelated functional areas: health care delivery, medical situational awareness, medical command and control, patient movement, and medical logistics. 
 

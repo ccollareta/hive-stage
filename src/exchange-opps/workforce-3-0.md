@@ -46,17 +46,14 @@ excerpt: >
   incentivizes best practices. new processes, methods, and/or best-in-class
   methodologies from private sector to enable the entire PEO DHMS workforce to
   deliver world-class technology.
-pre_text: For latest information, visit the Beta.SAM posting located at
-  https://beta.sam.gov/opp/c5e644623b1141c396a43046592ff45f/view. Please follow
-  the directions contained in the RFP to submit official questions through our
-  vendor portal.
+pre_text: ""
 information:
   value: $>1,000MM
   type: Enabling Services
   release: " Released (FY21 Q3)"
 changelog: null
 mobLink: https://community.hive.gov/main/groups/43575/lounge
-file: https://beta.sam.gov/api/prod/opps/v3/opportunities/8593b4f9248048e58c50428be58e1ed5/resources/download/zip?api_key=null&token=
+file: https://sam.gov/api/prod/opps/v3/opportunities/c5e644623b1141c396a43046592ff45f/resources/download/zip?api_key=null&token=
 tags:
   - workforce
 collections:

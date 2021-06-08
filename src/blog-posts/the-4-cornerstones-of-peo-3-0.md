@@ -5,7 +5,7 @@ author: Malissa Smith
 featured: Yes
 order: 2
 thumbnail: /images/cornerstones-of-peo3.png
-featured_image: /images/cornerstones-of-peo3.png
+featured_image: /images/peo-3.0-rebuilding-defense-healthcare-i.t.-delivery-wsmith2.png
 excerpt: Over the last 50 years, one thing has been evident – organizations that
   are unable to adapt to changing technology lose value and collapse.
 pre_title: ""
@@ -29,11 +29,11 @@ collections:
   - workforce
 file: ""
 ---
-<iframe src="https://player.vimeo.com/video/528612896" ></iframe>
-
 Over the last 50 years, one thing has been evident – organizations that are unable to adapt to changing technology lose value and collapse. This has been shown in industry with businesses such as Sears and Blockbuster. This has led industry to use the phrase “agility” to describe an organization’s ability to adapt to new technologies.
 
 We at PEO DHMS realize we are no exception. PEO DHMS must be able to adapt to new technology to provide quality Healthcare IT to the Defense Health Community. We have developed an acquisition strategy that enable agility within the government.
+
+<iframe src="https://player.vimeo.com/video/528612896" ></iframe>
 
 **PEO 3.0**
 

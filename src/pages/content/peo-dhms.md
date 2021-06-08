@@ -122,7 +122,7 @@ tab_section:
           - list_item: Electronic Health Record
           - list_item: VirtualHealth Tools
         col_2_list:
-          - list_item: Business Operation
+          - list_item: Business Operations
           - list_item: Shared Test Services
           - list_item: Finance
           - list_item: Contracting J-4
@@ -166,7 +166,7 @@ tab_section:
         col_2_title: Shared Services
         col_3_title: Major Products
         col_2_list:
-          - list_item: Business Operation
+          - list_item: Business Operations
           - list_item: "Shared Test Services "
           - list_item: Finance
           - list_item: Contracting J-4

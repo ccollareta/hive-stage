@@ -29,6 +29,8 @@ collections:
   - workforce
 file: ""
 ---
+<iframe src="https://player.vimeo.com/video/528612896" ></iframe>
+
 https://vimeo.com/manage/videos/528612896
 
 Over the last 50 years, one thing has been evident – organizations that are unable to adapt to changing technology lose value and collapse. This has been shown in industry with businesses such as Sears and Blockbuster. This has led industry to use the phrase “agility” to describe an organization’s ability to adapt to new technologies.

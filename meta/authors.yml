@@ -42,6 +42,7 @@ team_member:
     coffee: "2"
     division: PEO DHMS and FEHRM
     featured: No
+    short_title: Director, Program Integration
     years: "1.5"
     title: Director, Program Integration
     team_image: /images/cori-hughes.png
@@ -81,6 +82,7 @@ team_member:
     division: DoD Healthcare Management System Modernization (DHMSM) Program
       Management Office (PMO)
     featured: No
+    short_title: Acting Deputy Program Manager
     years: "23"
     title: Acting Deputy Program Manager / Assistant Program Manager, Business
       Operations
@@ -110,6 +112,7 @@ team_member:
     coffee: "20"
     division: Defense Healthcare Management System- Contract Division
     featured: No
+    short_title: Contracting Officer
     years: "8"
     title: Contracting Officer
     team_image: /images/indy-toliver.png
@@ -134,6 +137,7 @@ team_member:
     coffee: "0"
     division: Joint Operational Medicine Information Systems (JOMIS)
     featured: No
+    short_title: Deputy Program Manager
     years: "9"
     title: Deputy Program Manager
     team_image: /images/sandy.png
@@ -165,9 +169,10 @@ team_member:
     coffee: "0"
     division: JOMIS
     featured: No
+    short_title: CMIO
     years: "21"
     title: Chief Medical Informatics Officer
-    team_image: /images/darshan-thota.jpg
+    team_image: /images/darshan-1-.png
     description: >-
       LCDR Thota grew up on St. Simons Island, GA. He graduated from Glynn
       Academy in Brunswick, GA (2000)
@@ -214,6 +219,7 @@ team_member:
     coffee: "0"
     division: Defense Healthcare Management Systems  (DHMS) Contracts Division (CD)
     featured: No
+    short_title: Supervisory Contract Specialist
     years: "12"
     title: Supervisory Contract Specialist
     team_image: /images/pace-reed-elaine.jpg
@@ -240,6 +246,7 @@ team_member:
     coffee: "0"
     division: JOMIS
     featured: No
+    short_title: Chief Technology Officer
     years: "22"
     title: Chief Technology Officer
     team_image: /images/ken-johns-1-.png
@@ -262,8 +269,9 @@ team_member:
     coffee: 3+
     division: EIDS
     featured: No
+    short_title: Chief of Business Operations
     years: "19"
-    title: Cheif of Business Operations
+    title: Chief of Business Operations
     team_image: /images/david-sohls.jpg
     description: >-
       Dr David Sohl serves as the Chief of Business Operations for Enterprise
@@ -291,8 +299,9 @@ team_member:
     coffee: 10+
     division: DHMS
     featured: No
+    short_title: Chief, CD-DHMS
     years: "11"
-    title: Cheif, CD-DHMS
+    title: Chief, CD-DHMS
     team_image: /images/matt-dhms-head-shot-1-.jpg
     description: >-
       Nationally recognized, seasoned acquisition professional with
@@ -325,6 +334,7 @@ team_member:
     coffee: "4"
     division: PEO DHMS/ NIWC Atlantic
     featured: No
+    short_title: " APM Contact Tracing"
     years: "39"
     title: " APM Contact Tracing / Proximity Logging JEON 003"
     team_image: /images/terry-rowles-1-.png
@@ -347,6 +357,7 @@ team_member:
     coffee: "0"
     division: EIDS PMO, DHMS PEO and the whole of federal health data space!
     featured: No
+    short_title: Program Manager – EIDS PMO
     years: "22"
     title: Program Manager – EIDS PMO
     team_image: /images/chris-nichols.jpg
@@ -369,6 +380,7 @@ team_member:
     coffee: "1"
     division: DHMS
     featured: No
+    short_title: Contracting Officer
     years: "35"
     title: Contracting Officer
     team_image: /images/roy-smith-1-.png
@@ -393,6 +405,7 @@ team_member:
     coffee: "8"
     division: PEO DHMS
     featured: No
+    short_title: Cost Analysis Lead
     years: "12"
     title: Cost Analysis Lead
     team_image: /images/christopher-metz.jpg
@@ -416,6 +429,7 @@ team_member:
     coffee: "5"
     division: PEO DHMS
     featured: No
+    short_title: Director, Business Operations
     years: "22"
     title: Director, Business Operations
     team_image: /images/peodhms_beletsky-tina_032519.jpg
@@ -445,6 +459,7 @@ team_member:
     division: DoD Healthcare Management System Modernization Program Management
       Office (DHMSM PMO)
     featured: No
+    short_title: Program Manager
     years: "26"
     title: Program Manager
     team_image: /images/ken-slaughter.png
@@ -467,6 +482,7 @@ team_member:
     coffee: "4"
     division: PEO DHMS
     featured: No
+    short_title: Clinical Informatics Officer
     years: "4"
     title: Clinical Informatics Officer
     team_image: /images/diane-struck-1-.png
@@ -490,6 +506,7 @@ team_member:
     coffee: "3"
     division: CD-DHMS
     featured: No
+    short_title: DHMSM Contracts Lead
     years: "19"
     title: DHMSM Contracts Lead
     team_image: /images/sonya-edomjpg.jpg
@@ -506,12 +523,13 @@ team_member:
       food: Grapes
       movie: None
       song: '"I’m here" by Jenifer Hudson'
-    states: 1
+    states: 20
     name: Cheryl Harper-Parham
-    coffee: "?"
+    coffee: "24"
     division: PEO DHMS
     featured: No
-    years: "?"
+    short_title: Chief, Administration and Facilities Operations
+    years: "7"
     title: Chief, Administration and Facilities Operations
     team_image: /images/cheryl-harper.png
     description: >-
@@ -537,8 +555,9 @@ team_member:
     coffee: "2"
     division: DHMSM PMO
     featured: No
+    short_title: CMIO
     years: "26"
-    title: CMIO
+    title: Chief Medical Informatics Officer
     team_image: /images/alexander-holston.png
     description: Alexander Holston, CDR MC USN, serves as the Chief Medical
       Informatics Officer for the DoD Healthcare Management System Modernization
@@ -558,6 +577,7 @@ team_member:
     coffee: "6"
     division: PEO DHMS
     featured: No
+    short_title: Chief Acquisition & Transformation Officer
     years: "17"
     title: Chief Acquisition & Transformation Officer
     team_image: /images/malissa-smith.png
@@ -583,6 +603,7 @@ team_member:
     division: Federal Electronic Healthcare Record Modernization (FEHRM) office, PEO
       DHMS, PMO DHMSM
     featured: No
+    short_title: FEHRM Solutions Integration Director
     years: "33"
     title: FEHRM Solutions Integration Director / APM Interop / Data Systems / PM DMIX
     team_image: /images/whatwashisname.png

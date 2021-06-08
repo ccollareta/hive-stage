@@ -119,6 +119,7 @@ collections:
                 name: "title"
               - label: "Short Title"
                 name: "short_title"
+                required: false
                 widget: "string"
                 hint: "Title"
               - label: "Division"

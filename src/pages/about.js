@@ -331,13 +331,13 @@ const AboutPage = ({data}) => {
         {Team.team_member.map((post,index) => (
                         <>
                    <div className="member-profile lity-hide" id={slugify(post.name)} key={index}>
-                   <img src={pophex2} className="pop-hex" />
+                   
                    <div className="popup-body">
                        <img src={popart} className="pop-art" />
                        <div className="row">
                            <div className="col col-4 image">
                                <div className="hexagon-img">
-                                   <img src={pophex} className="hex-img" />
+                                   
                                    <svg xmlns="http://www.w3.org/2000/svg" width="327.846" height="318.144"
                                        viewBox="0 0 327.846 318.144">
                                        <defs>

@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, Link, withPrefix } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import FeatArticle from '../components/featarticle'
+
 import Tags from '../../meta/tags.yml'
 import Layout from '../components/layout';
 import SocialShare from '../components/social-share';
@@ -71,7 +72,7 @@ const BlogPost = ({ data }) => {
                                     <span>{date2.toLocaleDateString('en-US',options)}</span>
                                 </div>
                             </div>
-                        <SocialShare url={`https://hive.gov/opportunity/${fields.name}`} title={frontmatter.title} />
+                        <SocialShare url={`https://www.hive.gov/opportunity/${fields.name}`} title={frontmatter.title} />
                         </div>
                         <div className="post-content">
                             <h3>{frontmatter.subtitle}</h3>

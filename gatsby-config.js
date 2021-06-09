@@ -25,7 +25,7 @@ module.exports = {
       
     ],
     secondaryLinks: [
-      { text: 'Rnter The Hive', link: 'https://hivegov.mobilize.io' },
+      { text: 'Enter The Hive', link: 'https://hivegov.mobilize.io' },
     ],
 
     /**
@@ -104,7 +104,6 @@ module.exports = {
       resolve: "gatsby-plugin-sitemap",
       options: {
         createLinkInHead: true,
-
       }
     },
     {

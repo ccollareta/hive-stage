@@ -10,6 +10,7 @@ import Highlights from '../components/highlights';
 import MultiList from '../components/multilist';
 import Slider from '../components/slider'
 import FeatOpp from '../components/opp'
+import logo from '../images/new/logo.svg'
 
 import link_arrow from '../images/new/link-arrow.png';
 import arrow_r from '../images/new/arrow-r.svg';
@@ -71,6 +72,7 @@ const IndexPage = ({data}) => {
     
     <SEO title="Health Information Vision Exchange"
     keywords="healthcare technology (MSV 4,400)"
+    image={logo}
     description="Join in the conversation – PEO DHMS wants like-minded innovators and potential business collaborators in healthcare technology to join in the community." />
     <Hero />
     <section className="hive-cards-section">

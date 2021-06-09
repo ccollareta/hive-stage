@@ -28,6 +28,7 @@ const PeoPage = ({data}) => {
   <Layout pgVar={pgVar}>
     <SEO title="PEO DHMS"
     keywords="healthcare technology trends (MSV 480)"
+    image = {posts.top_section.hero_image}
     description="In partnership with the PEO DHMS, the HIVE was created to facilitate community and potential collaboration in the healthcare technology trends arena. " />
     <section className="hero-section-2 style-2 animated-hex" style={{
                 backgroundImage: `url(${posts.top_section.hero_image})`

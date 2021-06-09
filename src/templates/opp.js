@@ -48,7 +48,10 @@ const BlogPost = ({ data }) => {
     
   return (
     <Layout pgVar={pgVar}>
-      <SEO title={frontmatter.title} />
+      <SEO title={frontmatter.title} 
+      description={frontmatter.excerpt}
+      image={frontmatter.featured_image}
+      />
       <section className="hive-submission-details">
             <img src={art5} className="art art-1"/>
             <img src={art4} className="art art-2"/>
@@ -201,6 +204,7 @@ export const pageQuery = graphql`
         date
         title
         subtitle
+        excerpt
         tags
         collections
         pre_title

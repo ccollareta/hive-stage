@@ -54,6 +54,7 @@ const Blog = ({ data, pageContext }) => {
     <Layout pgVar={pgVar}>
       <SEO title="News & Events" 
       keywords="digital transformation in healthcare (MSV 590)"
+      
       description="News and events centered on digital transformation in healthcare with a group of innovative IT pros open to partnering with PEO DHMS. Join us for more." />
       <section className="hero-section-2 style-3 animated-hex"
             style={{

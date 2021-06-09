@@ -44,6 +44,7 @@ const OverviewPage = ({data}) => {
   return (
   <Layout pgVar={pgVar}>
     <SEO title="Our Community"
+    image = {posts.top_section.hero_image}
     keywords="technology trends in healthcare (MSV 4,400)"
     description="The HIVE Community is a vibrant and resourceful place to make connections between and within the technology industry and Federal Health IT. Join us today." />
         <section className="hero-section-2 style-2 animated-hex" style={{

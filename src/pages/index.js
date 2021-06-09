@@ -69,7 +69,9 @@ const IndexPage = ({data}) => {
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' };
   return (
   <Layout pgVar={pgVar}>
-    
+    <Helmet>
+    <meta name="google-site-verification" content="bLRDYx-SIoCHTzweY0nfIktuLDdex_wmP65qEvBjQW4" />
+    </Helmet>
     <SEO title="Health Information Vision Exchange"
     keywords="healthcare technology (MSV 4,400)"
     image={logo}

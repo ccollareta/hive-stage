@@ -6,8 +6,8 @@ featured: Yes
 order: 1
 thumbnail: /images/hive-square.png
 featured_image: /images/hive-square.png
-excerpt: After months of hard work, we are incredibly excited to announce the
-  official launch of HIVE.gov on June 8th, 2021.
+excerpt: After a year of hard work, we are incredibly excited to announce the
+  official launch of HIVE.gov on June 9th, 2021.
 subtitle: ""
 pre_title: ""
 pre_text: ""
@@ -51,7 +51,7 @@ While the HIVE groups will change over time with new partners, opportunities, an
 * See community questions and thoughts about the **[Workforce 3.0](https://community.hive.gov/main/groups/43575/lounge)** acquisition.
 * Learn about **[Workplace 3.0](https://community.hive.gov/main/groups/43702/lounge)** requirements and ask questions.
 
-  **Learn more about the full HIVE platform below.**
+**Learn more about the full HIVE platform below.**
 
 **How do I use HIVE.gov?**
 
@@ -67,10 +67,10 @@ This site will represent a shift in the paradigm in how government typically wor
 
 #### Finally, I want to thank [Lounge Lizard Worldwide](https://www.loungelizard.com) and [CloudPareto](https://www.cloudpareto.com/) for making this vision a reality.
 
+&nbsp;
 
 
 
-
-Thank you,
-
+Thank you,  
+  
 Malissa Smith

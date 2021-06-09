@@ -30,7 +30,7 @@ const Blog = ({ data, pageContext }) => {
   var options = {year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' }
   return (
     <Layout pgVar={pgVar}>
-      <SEO title="Opportunities in Emerging Trends in Healthcare Tech"
+      <SEO title="Opportunities"
       keywords="emerging trends in healthcare technology (MSV 70)"
       description="Partner with collaborative, like-minded industry partners to bring cutting-edge software development, UI/UX, and human-centric design to the PEO DHMS." />
       <section className="hero-section-2 style-3 animated-hex"

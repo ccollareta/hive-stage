@@ -43,7 +43,7 @@ const OverviewPage = ({data}) => {
   const pgVar = 'style-1 animated-hex';
   return (
   <Layout pgVar={pgVar}>
-    <SEO title="Technology Trends in Healthcare-Join Our Community"
+    <SEO title="Our Community"
     keywords="technology trends in healthcare (MSV 4,400)"
     description="The HIVE Community is a vibrant and resourceful place to make connections between and within the technology industry and Federal Health IT. Join us today." />
         <section className="hero-section-2 style-2 animated-hex" style={{

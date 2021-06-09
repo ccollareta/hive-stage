@@ -1509,3 +1509,9 @@ h6 {
   background-color: #f9f9f9;
 }
 
+.footer .art {
+  position: absolute;
+ }
+  .footer .art.art-1 {
+    bottom: 10px;
+    left: 497px;}

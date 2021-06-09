@@ -8,6 +8,7 @@ import foo_hex_1 from '../images/foo-hex-1.svg';
 import foo_hex_2 from '../images/foo-hex-2.svg';
 import foo_hex_3 from '../images/foo-hex-3.svg';
 import col_bg from '../images/col-bg.jpg';
+import art7 from '../images/new/art7.png'
 
 
 const Footer = () => (
@@ -16,12 +17,14 @@ const Footer = () => (
                 <div className="container">
                     <div className="primary-container">
                         <div className="row">
+                        <img src={art7} className="art art-1" />
                             <div className="col col-5">
                                 <div className="footer-social">
                                     <a href="/">
                                         <img src={logo} className="logo" alt="logo" />
                                     </a>
                                 </div>
+                                
                             </div>
                             <div className="col col-4">
                                 <ul className="list-unstyled footer-menu">

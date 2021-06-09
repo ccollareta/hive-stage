@@ -53,7 +53,7 @@ const AboutPage = ({data}) => {
   const pgVar = 'style-1 animated-hex';
   return (
   <Layout pgVar={pgVar}>
-    <SEO title="Healthcare Technology Innovation in Collaboration"
+    <SEO title="About"
     keywords="healthcare technology innovation (MSV 260)"
     description="The HIVE brings together a synergistic group of like-minded tech pros to create healthcare technology innovative across the Federal IT landscape. " />
         <section className="hero-section-2 style-2 animated-hex" style={{

@@ -69,7 +69,7 @@ const IndexPage = ({data}) => {
   return (
   <Layout pgVar={pgVar}>
     
-    <SEO title="Healthcare Technology Information Vision Exchange"
+    <SEO title="Health Information Vision Exchange"
     keywords="healthcare technology (MSV 4,400)"
     description="Join in the conversation – PEO DHMS wants like-minded innovators and potential business collaborators in healthcare technology to join in the community." />
     <Hero />

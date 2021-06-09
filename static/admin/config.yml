@@ -214,6 +214,7 @@ collections:
       fields:
         - { label: "Slug", name: slug, widget: hidden, default: "/"}
         - { label: "Body", name: "body", widget: markdown}
+        - { label: "OG:Image", name: "og_img", widget: image, required: false}
         - label: "Four Blocks"
           name: "four_blocks"
           widget: "object"
@@ -276,6 +277,7 @@ collections:
       file: "src/pages/content/news.yml"
       fields:
         - { label: "Hide Featured", name: hide, widget: boolean, default: false}
+        - { label: "OG:Image", name: "og_img", widget: image, required: false}
     - label: "About"
       name: "about"
       slug: '/'
@@ -284,6 +286,7 @@ collections:
       file: "src/pages/content/about.md"
       fields:
         - { label: "URL", name: url, widget: hidden, default: "/about"}
+        - { label: "OG:Image", name: "og_img", widget: image, required: false}
         - label: "Top Section"
           name: "top_section"
           widget: object
@@ -358,6 +361,7 @@ collections:
         preview: false
       file: "src/pages/content/overview.md"
       fields:
+        - { label: "OG:Image", name: "og_img", widget: image, required: false}
         - label: "Top Section"
           name: "top_section"
           widget: object
@@ -439,6 +443,7 @@ collections:
       editor:
         preview: false
       fields:
+        - { label: "OG:Image", name: "og_img", widget: image, required: false}
         - label: "Top Section"
           name: "top_section"
           widget: object

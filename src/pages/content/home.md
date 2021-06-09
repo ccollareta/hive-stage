@@ -1,4 +1,5 @@
 ---
+og_img: /images/logo.svg
 four_blocks:
   small_text: Let’s make some honey
   headline: "Engage With Us "

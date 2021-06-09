@@ -74,7 +74,7 @@ const IndexPage = ({data}) => {
     </Helmet>
     <SEO title="Health Information Vision Exchange"
     keywords="healthcare technology (MSV 4,400)"
-    image={logo}
+    image={posts.og_img}
     description="Join in the conversation – PEO DHMS wants like-minded innovators and potential business collaborators in healthcare technology to join in the community." />
     <Hero />
     <section className="hive-cards-section">
@@ -296,6 +296,7 @@ const IndexPage = ({data}) => {
     index: markdownRemark(fileAbsolutePath: { regex: "./content/home.md/" }) {
       html
       frontmatter {
+        og_img
         video_block {
           description
           title
